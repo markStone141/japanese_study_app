@@ -9,8 +9,23 @@ if (!inputPath) {
   process.exit(1);
 }
 
+async function getDefaultProjectId() {
+  if (process.env.GOOGLE_CLOUD_PROJECT) return process.env.GOOGLE_CLOUD_PROJECT;
+  if (process.env.GCLOUD_PROJECT) return process.env.GCLOUD_PROJECT;
+
+  try {
+    const firebaseRc = JSON.parse(await readFile(".firebaserc", "utf8"));
+    return firebaseRc.projects && firebaseRc.projects.default;
+  } catch (error) {
+    return null;
+  }
+}
+
+const projectId = await getDefaultProjectId();
+
 admin.initializeApp({
-  credential: admin.credential.applicationDefault()
+  credential: admin.credential.applicationDefault(),
+  projectId
 });
 
 const db = admin.firestore();
