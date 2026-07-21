@@ -2087,7 +2087,7 @@
 
       if (viewName === "list") {
         renderVerbList();
-      } else if (!quizView.classList.contains("hidden")) {
+      } else {
         answerInput.focus();
       }
     }

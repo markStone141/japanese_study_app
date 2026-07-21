@@ -4,7 +4,9 @@
       quizViewButton: document.getElementById("quizViewButton"),
       listViewButton: document.getElementById("listViewButton"),
       quizView: document.getElementById("quizView"),
-      listView: document.getElementById("listView")
+      listView: document.getElementById("listView"),
+      quizViewToggle: document.getElementById("quizViewToggle"),
+      listViewToggle: document.getElementById("listViewToggle")
     };
   }
 
@@ -16,8 +18,11 @@
       return;
     }
 
-    elements.quizView.classList.toggle("hidden", isListView);
-    elements.listView.classList.toggle("hidden", !isListView);
+    if (elements.quizViewToggle && elements.listViewToggle) {
+      elements.quizViewToggle.checked = !isListView;
+      elements.listViewToggle.checked = isListView;
+    }
+
     elements.quizViewButton.classList.toggle("active", !isListView);
     elements.listViewButton.classList.toggle("active", isListView);
     elements.quizViewButton.setAttribute("aria-pressed", String(!isListView));
@@ -34,5 +39,7 @@
     const elements = getElements();
     elements.quizViewButton && elements.quizViewButton.addEventListener("click", () => setStudyView("quiz"));
     elements.listViewButton && elements.listViewButton.addEventListener("click", () => setStudyView("list"));
+    elements.quizViewToggle && elements.quizViewToggle.addEventListener("change", () => setStudyView("quiz"));
+    elements.listViewToggle && elements.listViewToggle.addEventListener("change", () => setStudyView("list"));
   });
 })();

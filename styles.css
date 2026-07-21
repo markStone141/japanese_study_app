@@ -82,6 +82,14 @@
       padding: clamp(20px, 5vw, 34px);
     }
 
+    .view-radio {
+      position: absolute;
+      inline-size: 1px;
+      block-size: 1px;
+      opacity: 0;
+      pointer-events: none;
+    }
+
     .view-tabs {
       display: grid;
       grid-template-columns: 1fr 1fr;
@@ -102,9 +110,14 @@
       color: var(--text);
       background: #f8fafc;
       font-size: 0.92rem;
+      font-weight: 800;
+      text-align: center;
       cursor: pointer;
+      user-select: none;
     }
 
+    #quizViewToggle:checked ~ .view-tabs #quizViewButton,
+    #listViewToggle:checked ~ .view-tabs #listViewButton,
     .view-tab.active {
       color: #fff;
       background: var(--primary);
@@ -113,6 +126,18 @@
 
     .view-tab:hover {
       border-color: var(--primary);
+    }
+
+    #listView {
+      display: none;
+    }
+
+    #listViewToggle:checked ~ #quizView {
+      display: none;
+    }
+
+    #listViewToggle:checked ~ #listView {
+      display: block;
     }
 
     .settings {

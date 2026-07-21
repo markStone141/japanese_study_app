@@ -15,9 +15,12 @@
       <p class="subtitle">じしょけいを みて、ただしい かたちを ひらがなで いれます。<br><span lang="en">Look at the dictionary form and type the correct form in hiragana.</span></p>
     </header>
 
-    <nav class="view-tabs" aria-label="view">
-      <button type="button" id="quizViewButton" class="view-tab active" onclick="window.setStudyView && window.setStudyView('quiz')">くいず<br><span lang="en">Quiz</span></button>
-      <button type="button" id="listViewButton" class="view-tab" onclick="window.setStudyView && window.setStudyView('list')">いちらん<br><span lang="en">Verb list</span></button>
+    <input type="radio" name="viewMode" id="quizViewToggle" class="view-radio" value="quiz" checked>
+    <input type="radio" name="viewMode" id="listViewToggle" class="view-radio" value="list">
+
+    <nav class="view-tabs" aria-label="view mode">
+      <label id="quizViewButton" class="view-tab" for="quizViewToggle">くいず<br><span lang="en">Quiz</span></label>
+      <label id="listViewButton" class="view-tab" for="listViewToggle">いちらん<br><span lang="en">Verb list</span></label>
     </nav>
 
     <section id="quizView">
@@ -152,7 +155,7 @@
       </div>
     </section>
 
-    <section id="listView" class="hidden">
+    <section id="listView">
       <section class="list-panel">
         <div class="list-toolbar">
           <div>
