@@ -1978,7 +1978,7 @@
       state.answered = false;
       state.questionNumber += 1;
 
-      dictionaryForm.textContent = formatWithKanji(state.currentVerb, "dictionary");
+      dictionaryForm.innerHTML = formatWithKanjiHtml(state.currentVerb, "dictionary");
       meaning.textContent = state.currentVerb.meaning;
       const targetForm = formDisplay[state.currentForm];
       prompt.className = `prompt form-${state.currentForm}`;
@@ -2047,7 +2047,19 @@
     }
 
     function formatWithKanjiHtml(verb, form) {
-      return escapeHtml(formatWithKanji(verb, form));
+      const kana = verb[form] || "";
+      const kanji = getKanjiForm(verb, form);
+
+      if (!kanji) {
+        return escapeHtml(kana);
+      }
+
+      return `
+        <span class="word-with-kanji">
+          <span class="kana-form">${escapeHtml(kana)}</span>
+          <span class="kanji-form">${escapeHtml(kanji)}</span>
+        </span>
+      `;
     }
 
     function getExamplePair(verb, form) {
@@ -2143,7 +2155,7 @@
 
     function finishQuestion(isCorrect, userAnswer, counted = true) {
       const correctAnswer = state.currentVerb[state.currentForm];
-      const correctAnswerDisplay = formatWithKanji(state.currentVerb, state.currentForm);
+      const correctAnswerDisplay = formatWithKanjiHtml(state.currentVerb, state.currentForm);
       const key = makeKey(state.currentVerb, state.currentForm);
 
       state.answered = true;
@@ -2164,7 +2176,7 @@
         result.innerHTML = `
           <div class="result-title">○ せいかい！ <span lang="en">Correct!</span></div>
           <div class="answer-line">
-            <span class="correct-answer-big">${escapeHtml(correctAnswerDisplay)}</span>
+            <span class="correct-answer-big">${correctAnswerDisplay}</span>
           </div>
           ${safeExampleHtml(state.currentVerb, state.currentForm)}
         `;
@@ -2175,7 +2187,7 @@
           ${counted ? `<div>あなたの こたえ / Your answer: ${userAnswer || "みとうにゅう / No answer"}</div>` : ""}
           <div class="answer-line">
             <span class="correct-answer-label">ただしい こたえ / Correct answer</span>
-            <span class="correct-answer-big">${escapeHtml(correctAnswerDisplay)}</span>
+            <span class="correct-answer-big">${correctAnswerDisplay}</span>
           </div>
           ${safeExampleHtml(state.currentVerb, state.currentForm)}
         `;

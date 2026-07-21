@@ -72,3 +72,59 @@
     .form-cell {
       white-space: normal;
     }
+
+    .word-with-kanji {
+      display: inline-grid;
+      gap: 2px;
+      line-height: 1.18;
+      vertical-align: middle;
+    }
+
+    .kana-form {
+      display: block;
+      color: var(--muted);
+      font-size: 0.72em;
+      font-weight: 750;
+      letter-spacing: 0;
+    }
+
+    .kanji-form {
+      display: block;
+      font-size: 1em;
+      font-weight: 850;
+      letter-spacing: 0;
+    }
+
+    .kanji-form::before,
+    .kanji-form::after {
+      content: "";
+    }
+
+    .dictionary-form .word-with-kanji {
+      justify-items: center;
+    }
+
+    .dictionary-form .kana-form {
+      font-size: 0.34em;
+    }
+
+    .dictionary-form .kanji-form {
+      font-size: 0.72em;
+    }
+
+    .correct-answer-big .word-with-kanji {
+      justify-items: center;
+    }
+
+    .correct-answer-big .kana-form {
+      font-size: 0.42em;
+    }
+
+    .correct-answer-big .kanji-form {
+      font-size: 0.78em;
+    }
+
+    .verb-main .kana-form,
+    .form-cell .kana-form {
+      font-size: 0.78em;
+    }

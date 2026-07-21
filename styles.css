@@ -276,6 +276,23 @@
       margin: 6px 0 6px;
     }
 
+    .word-with-kanji {
+      display: inline;
+    }
+
+    .kana-form,
+    .kanji-form {
+      display: inline;
+    }
+
+    .kanji-form::before {
+      content: "（";
+    }
+
+    .kanji-form::after {
+      content: "）";
+    }
+
     .meaning {
       text-align: center;
       color: var(--muted);
