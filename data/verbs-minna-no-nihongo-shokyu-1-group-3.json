@@ -38,7 +38,14 @@
     "verbGroupId": "group-3",
     "verbGroupName": "グループ3",
     "order": 1,
-    "enabled": true
+    "enabled": true,
+    "kanji": {
+      "dictionary": "案内する",
+      "masu": "案内します",
+      "te": "案内して",
+      "ta": "案内した",
+      "nai": "案内しない"
+    }
   },
   {
     "id": "minna-shokyu-1-group-3-002",
@@ -79,7 +86,14 @@
     "verbGroupId": "group-3",
     "verbGroupName": "グループ3",
     "order": 2,
-    "enabled": true
+    "enabled": true,
+    "kanji": {
+      "dictionary": "運転する",
+      "masu": "運転します",
+      "te": "運転して",
+      "ta": "運転した",
+      "nai": "運転しない"
+    }
   },
   {
     "id": "minna-shokyu-1-group-3-003",
@@ -120,7 +134,14 @@
     "verbGroupId": "group-3",
     "verbGroupName": "グループ3",
     "order": 3,
-    "enabled": true
+    "enabled": true,
+    "kanji": {
+      "dictionary": "買い物する",
+      "masu": "買い物します",
+      "te": "買い物して",
+      "ta": "買い物した",
+      "nai": "買い物しない"
+    }
   },
   {
     "id": "minna-shokyu-1-group-3-004",
@@ -161,7 +182,14 @@
     "verbGroupId": "group-3",
     "verbGroupName": "グループ3",
     "order": 4,
-    "enabled": true
+    "enabled": true,
+    "kanji": {
+      "dictionary": "来る",
+      "masu": "来ます",
+      "te": "来て",
+      "ta": "来た",
+      "nai": "来ない"
+    }
   },
   {
     "id": "minna-shokyu-1-group-3-005",
@@ -202,7 +230,14 @@
     "verbGroupId": "group-3",
     "verbGroupName": "グループ3",
     "order": 5,
-    "enabled": true
+    "enabled": true,
+    "kanji": {
+      "dictionary": "結婚する",
+      "masu": "結婚します",
+      "te": "結婚して",
+      "ta": "結婚した",
+      "nai": "結婚しない"
+    }
   },
   {
     "id": "minna-shokyu-1-group-3-006",
@@ -243,7 +278,14 @@
     "verbGroupId": "group-3",
     "verbGroupName": "グループ3",
     "order": 6,
-    "enabled": true
+    "enabled": true,
+    "kanji": {
+      "dictionary": "研究する",
+      "masu": "研究します",
+      "te": "研究して",
+      "ta": "研究した",
+      "nai": "研究しない"
+    }
   },
   {
     "id": "minna-shokyu-1-group-3-007",
@@ -284,7 +326,14 @@
     "verbGroupId": "group-3",
     "verbGroupName": "グループ3",
     "order": 7,
-    "enabled": true
+    "enabled": true,
+    "kanji": {
+      "dictionary": "コピーする",
+      "masu": "コピーします",
+      "te": "コピーして",
+      "ta": "コピーした",
+      "nai": "コピーしない"
+    }
   },
   {
     "id": "minna-shokyu-1-group-3-008",
@@ -325,7 +374,14 @@
     "verbGroupId": "group-3",
     "verbGroupName": "グループ3",
     "order": 8,
-    "enabled": true
+    "enabled": true,
+    "kanji": {
+      "dictionary": "散歩する",
+      "masu": "散歩します",
+      "te": "散歩して",
+      "ta": "散歩した",
+      "nai": "散歩しない"
+    }
   },
   {
     "id": "minna-shokyu-1-group-3-009",
@@ -366,7 +422,14 @@
     "verbGroupId": "group-3",
     "verbGroupName": "グループ3",
     "order": 9,
-    "enabled": true
+    "enabled": true,
+    "kanji": {
+      "dictionary": "残業する",
+      "masu": "残業します",
+      "te": "残業して",
+      "ta": "残業した",
+      "nai": "残業しない"
+    }
   },
   {
     "id": "minna-shokyu-1-group-3-010",
@@ -407,7 +470,14 @@
     "verbGroupId": "group-3",
     "verbGroupName": "グループ3",
     "order": 10,
-    "enabled": true
+    "enabled": true,
+    "kanji": {
+      "dictionary": "為る",
+      "masu": "します",
+      "te": "して",
+      "ta": "した",
+      "nai": "しない"
+    }
   },
   {
     "id": "minna-shokyu-1-group-3-011",
@@ -448,7 +518,14 @@
     "verbGroupId": "group-3",
     "verbGroupName": "グループ3",
     "order": 11,
-    "enabled": true
+    "enabled": true,
+    "kanji": {
+      "dictionary": "為る",
+      "masu": "します",
+      "te": "して",
+      "ta": "した",
+      "nai": "しない"
+    }
   },
   {
     "id": "minna-shokyu-1-group-3-012",
@@ -489,7 +566,14 @@
     "verbGroupId": "group-3",
     "verbGroupName": "グループ3",
     "order": 12,
-    "enabled": true
+    "enabled": true,
+    "kanji": {
+      "dictionary": "修理する",
+      "masu": "修理します",
+      "te": "修理して",
+      "ta": "修理した",
+      "nai": "修理しない"
+    }
   },
   {
     "id": "minna-shokyu-1-group-3-013",
@@ -530,7 +614,14 @@
     "verbGroupId": "group-3",
     "verbGroupName": "グループ3",
     "order": 13,
-    "enabled": true
+    "enabled": true,
+    "kanji": {
+      "dictionary": "出張する",
+      "masu": "出張します",
+      "te": "出張して",
+      "ta": "出張した",
+      "nai": "出張しない"
+    }
   },
   {
     "id": "minna-shokyu-1-group-3-014",
@@ -571,7 +662,14 @@
     "verbGroupId": "group-3",
     "verbGroupName": "グループ3",
     "order": 14,
-    "enabled": true
+    "enabled": true,
+    "kanji": {
+      "dictionary": "紹介する",
+      "masu": "紹介します",
+      "te": "紹介して",
+      "ta": "紹介した",
+      "nai": "紹介しない"
+    }
   },
   {
     "id": "minna-shokyu-1-group-3-015",
@@ -612,7 +710,14 @@
     "verbGroupId": "group-3",
     "verbGroupName": "グループ3",
     "order": 15,
-    "enabled": true
+    "enabled": true,
+    "kanji": {
+      "dictionary": "食事する",
+      "masu": "食事します",
+      "te": "食事して",
+      "ta": "食事した",
+      "nai": "食事しない"
+    }
   },
   {
     "id": "minna-shokyu-1-group-3-016",
@@ -653,7 +758,14 @@
     "verbGroupId": "group-3",
     "verbGroupName": "グループ3",
     "order": 16,
-    "enabled": true
+    "enabled": true,
+    "kanji": {
+      "dictionary": "出席する",
+      "masu": "出席します",
+      "te": "出席して",
+      "ta": "出席した",
+      "nai": "出席しない"
+    }
   },
   {
     "id": "minna-shokyu-1-group-3-017",
@@ -694,7 +806,14 @@
     "verbGroupId": "group-3",
     "verbGroupName": "グループ3",
     "order": 17,
-    "enabled": true
+    "enabled": true,
+    "kanji": {
+      "dictionary": "説明する",
+      "masu": "説明します",
+      "te": "説明して",
+      "ta": "説明した",
+      "nai": "説明しない"
+    }
   },
   {
     "id": "minna-shokyu-1-group-3-018",
@@ -735,7 +854,14 @@
     "verbGroupId": "group-3",
     "verbGroupName": "グループ3",
     "order": 18,
-    "enabled": true
+    "enabled": true,
+    "kanji": {
+      "dictionary": "洗濯する",
+      "masu": "洗濯します",
+      "te": "洗濯して",
+      "ta": "洗濯した",
+      "nai": "洗濯しない"
+    }
   },
   {
     "id": "minna-shokyu-1-group-3-019",
@@ -776,7 +902,14 @@
     "verbGroupId": "group-3",
     "verbGroupName": "グループ3",
     "order": 19,
-    "enabled": true
+    "enabled": true,
+    "kanji": {
+      "dictionary": "掃除する",
+      "masu": "掃除します",
+      "te": "掃除して",
+      "ta": "掃除した",
+      "nai": "掃除しない"
+    }
   },
   {
     "id": "minna-shokyu-1-group-3-020",
@@ -817,7 +950,14 @@
     "verbGroupId": "group-3",
     "verbGroupName": "グループ3",
     "order": 20,
-    "enabled": true
+    "enabled": true,
+    "kanji": {
+      "dictionary": "連れて来る",
+      "masu": "連れて来ます",
+      "te": "連れて来て",
+      "ta": "連れて来た",
+      "nai": "連れて来ない"
+    }
   },
   {
     "id": "minna-shokyu-1-group-3-021",
@@ -858,7 +998,14 @@
     "verbGroupId": "group-3",
     "verbGroupName": "グループ3",
     "order": 21,
-    "enabled": true
+    "enabled": true,
+    "kanji": {
+      "dictionary": "電話する",
+      "masu": "電話します",
+      "te": "電話して",
+      "ta": "電話した",
+      "nai": "電話しない"
+    }
   },
   {
     "id": "minna-shokyu-1-group-3-022",
@@ -899,7 +1046,14 @@
     "verbGroupId": "group-3",
     "verbGroupName": "グループ3",
     "order": 22,
-    "enabled": true
+    "enabled": true,
+    "kanji": {
+      "dictionary": "勉強する",
+      "masu": "勉強します",
+      "te": "勉強して",
+      "ta": "勉強した",
+      "nai": "勉強しない"
+    }
   },
   {
     "id": "minna-shokyu-1-group-3-023",
@@ -940,7 +1094,14 @@
     "verbGroupId": "group-3",
     "verbGroupName": "グループ3",
     "order": 23,
-    "enabled": true
+    "enabled": true,
+    "kanji": {
+      "dictionary": "持って来る",
+      "masu": "持って来ます",
+      "te": "持って来て",
+      "ta": "持って来た",
+      "nai": "持って来ない"
+    }
   },
   {
     "id": "minna-shokyu-1-group-3-024",
@@ -981,7 +1142,14 @@
     "verbGroupId": "group-3",
     "verbGroupName": "グループ3",
     "order": 24,
-    "enabled": true
+    "enabled": true,
+    "kanji": {
+      "dictionary": "予約する",
+      "masu": "予約します",
+      "te": "予約して",
+      "ta": "予約した",
+      "nai": "予約しない"
+    }
   },
   {
     "id": "minna-shokyu-1-group-3-025",
@@ -1022,6 +1190,13 @@
     "verbGroupId": "group-3",
     "verbGroupName": "グループ3",
     "order": 25,
-    "enabled": true
+    "enabled": true,
+    "kanji": {
+      "dictionary": "留学する",
+      "masu": "留学します",
+      "te": "留学して",
+      "ta": "留学した",
+      "nai": "留学しない"
+    }
   }
 ]

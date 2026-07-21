@@ -8,7 +8,8 @@
     "import:verbs:group1": "node scripts/import-verbs.mjs data/verbs-minna-no-nihongo-shokyu-1-group-1.json",
     "import:verbs:group2": "node scripts/import-verbs.mjs data/verbs-minna-no-nihongo-shokyu-1-group-2.json",
     "import:verbs:group3": "node scripts/import-verbs.mjs data/verbs-minna-no-nihongo-shokyu-1-group-3.json",
-    "import:verbs:all": "npm run import:verbs:group1 && npm run import:verbs:group2 && npm run import:verbs:group3"
+    "import:verbs:all": "npm run import:verbs:group1 && npm run import:verbs:group2 && npm run import:verbs:group3",
+    "data:apply-kanji": "node scripts/apply-kanji.mjs"
   },
   "dependencies": {
     "firebase-admin": "^12.7.0"

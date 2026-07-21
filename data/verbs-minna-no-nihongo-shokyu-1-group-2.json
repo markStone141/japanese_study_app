@@ -38,7 +38,14 @@
     "verbGroupId": "group-2",
     "verbGroupName": "グループ2",
     "order": 1,
-    "enabled": true
+    "enabled": true,
+    "kanji": {
+      "dictionary": "開ける",
+      "masu": "開けます",
+      "te": "開けて",
+      "ta": "開けた",
+      "nai": "開けない"
+    }
   },
   {
     "id": "minna-shokyu-1-group-2-002",
@@ -79,7 +86,14 @@
     "verbGroupId": "group-2",
     "verbGroupName": "グループ2",
     "order": 2,
-    "enabled": true
+    "enabled": true,
+    "kanji": {
+      "dictionary": "上げる",
+      "masu": "上げます",
+      "te": "上げて",
+      "ta": "上げた",
+      "nai": "上げない"
+    }
   },
   {
     "id": "minna-shokyu-1-group-2-003",
@@ -120,7 +134,14 @@
     "verbGroupId": "group-2",
     "verbGroupName": "グループ2",
     "order": 3,
-    "enabled": true
+    "enabled": true,
+    "kanji": {
+      "dictionary": "集める",
+      "masu": "集めます",
+      "te": "集めて",
+      "ta": "集めた",
+      "nai": "集めない"
+    }
   },
   {
     "id": "minna-shokyu-1-group-2-004",
@@ -161,7 +182,14 @@
     "verbGroupId": "group-2",
     "verbGroupName": "グループ2",
     "order": 4,
-    "enabled": true
+    "enabled": true,
+    "kanji": {
+      "dictionary": "浴びる",
+      "masu": "浴びます",
+      "te": "浴びて",
+      "ta": "浴びた",
+      "nai": "浴びない"
+    }
   },
   {
     "id": "minna-shokyu-1-group-2-005",
@@ -202,7 +230,14 @@
     "verbGroupId": "group-2",
     "verbGroupName": "グループ2",
     "order": 5,
-    "enabled": true
+    "enabled": true,
+    "kanji": {
+      "dictionary": "居る",
+      "masu": "居ます",
+      "te": "居て",
+      "ta": "居た",
+      "nai": "居ない"
+    }
   },
   {
     "id": "minna-shokyu-1-group-2-006",
@@ -243,7 +278,14 @@
     "verbGroupId": "group-2",
     "verbGroupName": "グループ2",
     "order": 6,
-    "enabled": true
+    "enabled": true,
+    "kanji": {
+      "dictionary": "居る",
+      "masu": "居ます",
+      "te": "居て",
+      "ta": "居た",
+      "nai": "居ない"
+    }
   },
   {
     "id": "minna-shokyu-1-group-2-007",
@@ -284,7 +326,14 @@
     "verbGroupId": "group-2",
     "verbGroupName": "グループ2",
     "order": 7,
-    "enabled": true
+    "enabled": true,
+    "kanji": {
+      "dictionary": "居る",
+      "masu": "居ます",
+      "te": "居て",
+      "ta": "居た",
+      "nai": "居ない"
+    }
   },
   {
     "id": "minna-shokyu-1-group-2-008",
@@ -325,7 +374,14 @@
     "verbGroupId": "group-2",
     "verbGroupName": "グループ2",
     "order": 8,
-    "enabled": true
+    "enabled": true,
+    "kanji": {
+      "dictionary": "入れる",
+      "masu": "入れます",
+      "te": "入れて",
+      "ta": "入れた",
+      "nai": "入れない"
+    }
   },
   {
     "id": "minna-shokyu-1-group-2-009",
@@ -366,7 +422,14 @@
     "verbGroupId": "group-2",
     "verbGroupName": "グループ2",
     "order": 9,
-    "enabled": true
+    "enabled": true,
+    "kanji": {
+      "dictionary": "生まれる",
+      "masu": "生まれます",
+      "te": "生まれて",
+      "ta": "生まれた",
+      "nai": "生まれない"
+    }
   },
   {
     "id": "minna-shokyu-1-group-2-010",
@@ -407,7 +470,14 @@
     "verbGroupId": "group-2",
     "verbGroupName": "グループ2",
     "order": 10,
-    "enabled": true
+    "enabled": true,
+    "kanji": {
+      "dictionary": "起きる",
+      "masu": "起きます",
+      "te": "起きて",
+      "ta": "起きた",
+      "nai": "起きない"
+    }
   },
   {
     "id": "minna-shokyu-1-group-2-011",
@@ -448,7 +518,14 @@
     "verbGroupId": "group-2",
     "verbGroupName": "グループ2",
     "order": 11,
-    "enabled": true
+    "enabled": true,
+    "kanji": {
+      "dictionary": "教える",
+      "masu": "教えます",
+      "te": "教えて",
+      "ta": "教えた",
+      "nai": "教えない"
+    }
   },
   {
     "id": "minna-shokyu-1-group-2-012",
@@ -489,7 +566,14 @@
     "verbGroupId": "group-2",
     "verbGroupName": "グループ2",
     "order": 12,
-    "enabled": true
+    "enabled": true,
+    "kanji": {
+      "dictionary": "教える",
+      "masu": "教えます",
+      "te": "教えて",
+      "ta": "教えた",
+      "nai": "教えない"
+    }
   },
   {
     "id": "minna-shokyu-1-group-2-013",
@@ -530,7 +614,14 @@
     "verbGroupId": "group-2",
     "verbGroupName": "グループ2",
     "order": 13,
-    "enabled": true
+    "enabled": true,
+    "kanji": {
+      "dictionary": "覚える",
+      "masu": "覚えます",
+      "te": "覚えて",
+      "ta": "覚えた",
+      "nai": "覚えない"
+    }
   },
   {
     "id": "minna-shokyu-1-group-2-014",
@@ -571,7 +662,14 @@
     "verbGroupId": "group-2",
     "verbGroupName": "グループ2",
     "order": 14,
-    "enabled": true
+    "enabled": true,
+    "kanji": {
+      "dictionary": "降りる",
+      "masu": "降ります",
+      "te": "降りて",
+      "ta": "降りた",
+      "nai": "降りない"
+    }
   },
   {
     "id": "minna-shokyu-1-group-2-015",
@@ -612,7 +710,14 @@
     "verbGroupId": "group-2",
     "verbGroupName": "グループ2",
     "order": 15,
-    "enabled": true
+    "enabled": true,
+    "kanji": {
+      "dictionary": "換える",
+      "masu": "換えます",
+      "te": "換えて",
+      "ta": "換えた",
+      "nai": "換えない"
+    }
   },
   {
     "id": "minna-shokyu-1-group-2-016",
@@ -653,7 +758,14 @@
     "verbGroupId": "group-2",
     "verbGroupName": "グループ2",
     "order": 16,
-    "enabled": true
+    "enabled": true,
+    "kanji": {
+      "dictionary": "変える",
+      "masu": "変えます",
+      "te": "変えて",
+      "ta": "変えた",
+      "nai": "変えない"
+    }
   },
   {
     "id": "minna-shokyu-1-group-2-017",
@@ -694,7 +806,14 @@
     "verbGroupId": "group-2",
     "verbGroupName": "グループ2",
     "order": 17,
-    "enabled": true
+    "enabled": true,
+    "kanji": {
+      "dictionary": "掛ける",
+      "masu": "掛けます",
+      "te": "掛けて",
+      "ta": "掛けた",
+      "nai": "掛けない"
+    }
   },
   {
     "id": "minna-shokyu-1-group-2-018",
@@ -735,7 +854,14 @@
     "verbGroupId": "group-2",
     "verbGroupName": "グループ2",
     "order": 18,
-    "enabled": true
+    "enabled": true,
+    "kanji": {
+      "dictionary": "掛ける",
+      "masu": "掛けます",
+      "te": "掛けて",
+      "ta": "掛けた",
+      "nai": "掛けない"
+    }
   },
   {
     "id": "minna-shokyu-1-group-2-019",
@@ -776,7 +902,14 @@
     "verbGroupId": "group-2",
     "verbGroupName": "グループ2",
     "order": 19,
-    "enabled": true
+    "enabled": true,
+    "kanji": {
+      "dictionary": "借りる",
+      "masu": "借ります",
+      "te": "借りて",
+      "ta": "借りた",
+      "nai": "借りない"
+    }
   },
   {
     "id": "minna-shokyu-1-group-2-020",
@@ -817,7 +950,14 @@
     "verbGroupId": "group-2",
     "verbGroupName": "グループ2",
     "order": 20,
-    "enabled": true
+    "enabled": true,
+    "kanji": {
+      "dictionary": "考える",
+      "masu": "考えます",
+      "te": "考えて",
+      "ta": "考えた",
+      "nai": "考えない"
+    }
   },
   {
     "id": "minna-shokyu-1-group-2-021",
@@ -858,7 +998,14 @@
     "verbGroupId": "group-2",
     "verbGroupName": "グループ2",
     "order": 21,
-    "enabled": true
+    "enabled": true,
+    "kanji": {
+      "dictionary": "着る",
+      "masu": "着ます",
+      "te": "着て",
+      "ta": "着た",
+      "nai": "着ない"
+    }
   },
   {
     "id": "minna-shokyu-1-group-2-022",
@@ -899,7 +1046,14 @@
     "verbGroupId": "group-2",
     "verbGroupName": "グループ2",
     "order": 22,
-    "enabled": true
+    "enabled": true,
+    "kanji": {
+      "dictionary": "気を付ける",
+      "masu": "気を付けます",
+      "te": "気を付けて",
+      "ta": "気を付けた",
+      "nai": "気を付けない"
+    }
   },
   {
     "id": "minna-shokyu-1-group-2-023",
@@ -940,7 +1094,14 @@
     "verbGroupId": "group-2",
     "verbGroupName": "グループ2",
     "order": 23,
-    "enabled": true
+    "enabled": true,
+    "kanji": {
+      "dictionary": "呉れる",
+      "masu": "呉れます",
+      "te": "呉れて",
+      "ta": "呉れた",
+      "nai": "呉れない"
+    }
   },
   {
     "id": "minna-shokyu-1-group-2-024",
@@ -981,7 +1142,14 @@
     "verbGroupId": "group-2",
     "verbGroupName": "グループ2",
     "order": 24,
-    "enabled": true
+    "enabled": true,
+    "kanji": {
+      "dictionary": "閉める",
+      "masu": "閉めます",
+      "te": "閉めて",
+      "ta": "閉めた",
+      "nai": "閉めない"
+    }
   },
   {
     "id": "minna-shokyu-1-group-2-025",
@@ -1022,7 +1190,14 @@
     "verbGroupId": "group-2",
     "verbGroupName": "グループ2",
     "order": 25,
-    "enabled": true
+    "enabled": true,
+    "kanji": {
+      "dictionary": "調べる",
+      "masu": "調べます",
+      "te": "調べて",
+      "ta": "調べた",
+      "nai": "調べない"
+    }
   },
   {
     "id": "minna-shokyu-1-group-2-026",
@@ -1063,7 +1238,14 @@
     "verbGroupId": "group-2",
     "verbGroupName": "グループ2",
     "order": 26,
-    "enabled": true
+    "enabled": true,
+    "kanji": {
+      "dictionary": "捨てる",
+      "masu": "捨てます",
+      "te": "捨てて",
+      "ta": "捨てた",
+      "nai": "捨てない"
+    }
   },
   {
     "id": "minna-shokyu-1-group-2-027",
@@ -1104,7 +1286,14 @@
     "verbGroupId": "group-2",
     "verbGroupName": "グループ2",
     "order": 27,
-    "enabled": true
+    "enabled": true,
+    "kanji": {
+      "dictionary": "食べる",
+      "masu": "食べます",
+      "te": "食べて",
+      "ta": "食べた",
+      "nai": "食べない"
+    }
   },
   {
     "id": "minna-shokyu-1-group-2-028",
@@ -1145,7 +1334,14 @@
     "verbGroupId": "group-2",
     "verbGroupName": "グループ2",
     "order": 28,
-    "enabled": true
+    "enabled": true,
+    "kanji": {
+      "dictionary": "足りる",
+      "masu": "足ります",
+      "te": "足りて",
+      "ta": "足りた",
+      "nai": "足りない"
+    }
   },
   {
     "id": "minna-shokyu-1-group-2-029",
@@ -1186,7 +1382,14 @@
     "verbGroupId": "group-2",
     "verbGroupName": "グループ2",
     "order": 29,
-    "enabled": true
+    "enabled": true,
+    "kanji": {
+      "dictionary": "疲れる",
+      "masu": "疲れます",
+      "te": "疲れて",
+      "ta": "疲れた",
+      "nai": "疲れない"
+    }
   },
   {
     "id": "minna-shokyu-1-group-2-030",
@@ -1227,7 +1430,14 @@
     "verbGroupId": "group-2",
     "verbGroupName": "グループ2",
     "order": 30,
-    "enabled": true
+    "enabled": true,
+    "kanji": {
+      "dictionary": "点ける",
+      "masu": "点けます",
+      "te": "点けて",
+      "ta": "点けた",
+      "nai": "点けない"
+    }
   },
   {
     "id": "minna-shokyu-1-group-2-031",
@@ -1268,7 +1478,14 @@
     "verbGroupId": "group-2",
     "verbGroupName": "グループ2",
     "order": 31,
-    "enabled": true
+    "enabled": true,
+    "kanji": {
+      "dictionary": "出掛ける",
+      "masu": "出掛けます",
+      "te": "出掛けて",
+      "ta": "出掛けた",
+      "nai": "出掛けない"
+    }
   },
   {
     "id": "minna-shokyu-1-group-2-032",
@@ -1309,7 +1526,14 @@
     "verbGroupId": "group-2",
     "verbGroupName": "グループ2",
     "order": 32,
-    "enabled": true
+    "enabled": true,
+    "kanji": {
+      "dictionary": "出来る",
+      "masu": "出来ます",
+      "te": "出来て",
+      "ta": "出来た",
+      "nai": "出来ない"
+    }
   },
   {
     "id": "minna-shokyu-1-group-2-033",
@@ -1350,7 +1574,14 @@
     "verbGroupId": "group-2",
     "verbGroupName": "グループ2",
     "order": 33,
-    "enabled": true
+    "enabled": true,
+    "kanji": {
+      "dictionary": "出る",
+      "masu": "出ます",
+      "te": "出て",
+      "ta": "出た",
+      "nai": "出ない"
+    }
   },
   {
     "id": "minna-shokyu-1-group-2-034",
@@ -1391,7 +1622,14 @@
     "verbGroupId": "group-2",
     "verbGroupName": "グループ2",
     "order": 34,
-    "enabled": true
+    "enabled": true,
+    "kanji": {
+      "dictionary": "出る",
+      "masu": "出ます",
+      "te": "出て",
+      "ta": "出た",
+      "nai": "出ない"
+    }
   },
   {
     "id": "minna-shokyu-1-group-2-035",
@@ -1432,7 +1670,14 @@
     "verbGroupId": "group-2",
     "verbGroupName": "グループ2",
     "order": 35,
-    "enabled": true
+    "enabled": true,
+    "kanji": {
+      "dictionary": "出る",
+      "masu": "出ます",
+      "te": "出て",
+      "ta": "出た",
+      "nai": "出ない"
+    }
   },
   {
     "id": "minna-shokyu-1-group-2-036",
@@ -1473,7 +1718,14 @@
     "verbGroupId": "group-2",
     "verbGroupName": "グループ2",
     "order": 36,
-    "enabled": true
+    "enabled": true,
+    "kanji": {
+      "dictionary": "止める",
+      "masu": "止めます",
+      "te": "止めて",
+      "ta": "止めた",
+      "nai": "止めない"
+    }
   },
   {
     "id": "minna-shokyu-1-group-2-037",
@@ -1514,7 +1766,14 @@
     "verbGroupId": "group-2",
     "verbGroupName": "グループ2",
     "order": 37,
-    "enabled": true
+    "enabled": true,
+    "kanji": {
+      "dictionary": "寝る",
+      "masu": "寝ます",
+      "te": "寝て",
+      "ta": "寝た",
+      "nai": "寝ない"
+    }
   },
   {
     "id": "minna-shokyu-1-group-2-038",
@@ -1555,7 +1814,14 @@
     "verbGroupId": "group-2",
     "verbGroupName": "グループ2",
     "order": 38,
-    "enabled": true
+    "enabled": true,
+    "kanji": {
+      "dictionary": "乗り換える",
+      "masu": "乗り換えます",
+      "te": "乗り換えて",
+      "ta": "乗り換えた",
+      "nai": "乗り換えない"
+    }
   },
   {
     "id": "minna-shokyu-1-group-2-039",
@@ -1596,7 +1862,14 @@
     "verbGroupId": "group-2",
     "verbGroupName": "グループ2",
     "order": 39,
-    "enabled": true
+    "enabled": true,
+    "kanji": {
+      "dictionary": "始める",
+      "masu": "始めます",
+      "te": "始めて",
+      "ta": "始めた",
+      "nai": "始めない"
+    }
   },
   {
     "id": "minna-shokyu-1-group-2-040",
@@ -1637,7 +1910,14 @@
     "verbGroupId": "group-2",
     "verbGroupName": "グループ2",
     "order": 40,
-    "enabled": true
+    "enabled": true,
+    "kanji": {
+      "dictionary": "負ける",
+      "masu": "負けます",
+      "te": "負けて",
+      "ta": "負けた",
+      "nai": "負けない"
+    }
   },
   {
     "id": "minna-shokyu-1-group-2-041",
@@ -1678,7 +1958,14 @@
     "verbGroupId": "group-2",
     "verbGroupName": "グループ2",
     "order": 41,
-    "enabled": true
+    "enabled": true,
+    "kanji": {
+      "dictionary": "見せる",
+      "masu": "見せます",
+      "te": "見せて",
+      "ta": "見せた",
+      "nai": "見せない"
+    }
   },
   {
     "id": "minna-shokyu-1-group-2-042",
@@ -1719,7 +2006,14 @@
     "verbGroupId": "group-2",
     "verbGroupName": "グループ2",
     "order": 42,
-    "enabled": true
+    "enabled": true,
+    "kanji": {
+      "dictionary": "見る",
+      "masu": "見ます",
+      "te": "見て",
+      "ta": "見た",
+      "nai": "見ない"
+    }
   },
   {
     "id": "minna-shokyu-1-group-2-043",
@@ -1760,7 +2054,14 @@
     "verbGroupId": "group-2",
     "verbGroupName": "グループ2",
     "order": 43,
-    "enabled": true
+    "enabled": true,
+    "kanji": {
+      "dictionary": "迎える",
+      "masu": "迎えます",
+      "te": "迎えて",
+      "ta": "迎えた",
+      "nai": "迎えない"
+    }
   },
   {
     "id": "minna-shokyu-1-group-2-044",
@@ -1801,7 +2102,14 @@
     "verbGroupId": "group-2",
     "verbGroupName": "グループ2",
     "order": 44,
-    "enabled": true
+    "enabled": true,
+    "kanji": {
+      "dictionary": "辞める",
+      "masu": "辞めます",
+      "te": "辞めて",
+      "ta": "辞めた",
+      "nai": "辞めない"
+    }
   },
   {
     "id": "minna-shokyu-1-group-2-045",
@@ -1842,6 +2150,13 @@
     "verbGroupId": "group-2",
     "verbGroupName": "グループ2",
     "order": 45,
-    "enabled": true
+    "enabled": true,
+    "kanji": {
+      "dictionary": "忘れる",
+      "masu": "忘れます",
+      "te": "忘れて",
+      "ta": "忘れた",
+      "nai": "忘れない"
+    }
   }
 ]
