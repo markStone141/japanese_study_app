@@ -1,0 +1,12 @@
+{
+  "name": "japanese-study-app",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "import:verbs": "node scripts/import-verbs.mjs data/verbs-minna-no-nihongo-shokyu-1-group-1.json"
+  },
+  "dependencies": {
+    "firebase-admin": "^12.7.0"
+  }
+}

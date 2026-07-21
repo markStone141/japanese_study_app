@@ -1,0 +1,504 @@
+    :root {
+      --bg: #f5f7fb;
+      --card: #ffffff;
+      --text: #1f2937;
+      --muted: #6b7280;
+      --line: #dbe2ea;
+      --primary: #2563eb;
+      --primary-dark: #1d4ed8;
+      --good-bg: #ecfdf5;
+      --good-text: #047857;
+      --bad-bg: #fef2f2;
+      --bad-text: #b91c1c;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+        "Hiragino Sans", "Yu Gothic UI", "Yu Gothic", sans-serif;
+      color: var(--text);
+      background: linear-gradient(180deg, #eef4ff 0%, var(--bg) 45%);
+    }
+
+    .container {
+      width: min(720px, calc(100% - 28px));
+      margin: 0 auto;
+      padding: 28px 0 48px;
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    h1 {
+      margin: 0 0 8px;
+      font-size: clamp(1.6rem, 5vw, 2.2rem);
+    }
+
+    .subtitle {
+      margin: 0;
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+
+    .panel,
+    .card {
+      background: var(--card);
+      border: 1px solid rgba(219, 226, 234, 0.85);
+      border-radius: 18px;
+      box-shadow: 0 12px 34px rgba(31, 41, 55, 0.08);
+    }
+
+    .panel {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 10px;
+      padding: 14px;
+      margin-bottom: 16px;
+    }
+
+    .stat {
+      text-align: center;
+      padding: 8px 4px;
+    }
+
+    .stat-label {
+      display: block;
+      color: var(--muted);
+      font-size: 0.78rem;
+      margin-bottom: 4px;
+    }
+
+    .stat-value {
+      font-weight: 800;
+      font-size: 1.2rem;
+    }
+
+    .card {
+      padding: clamp(20px, 5vw, 34px);
+    }
+
+    .login-screen {
+      width: min(480px, calc(100% - 28px));
+      min-height: 100vh;
+      margin: 0 auto;
+      display: grid;
+      place-items: center;
+      padding: 28px 0;
+    }
+
+    .login-card {
+      width: 100%;
+      padding: clamp(24px, 6vw, 36px);
+      background: var(--card);
+      border: 1px solid rgba(219, 226, 234, 0.9);
+      border-radius: 18px;
+      box-shadow: 0 18px 44px rgba(31, 41, 55, 0.11);
+      text-align: center;
+    }
+
+    .login-title {
+      margin: 0 0 10px;
+      font-size: clamp(1.45rem, 5vw, 2rem);
+      line-height: 1.2;
+    }
+
+    .login-copy,
+    .login-error {
+      margin: 0;
+      color: var(--muted);
+      line-height: 1.65;
+      font-size: 0.94rem;
+    }
+
+    .login-button {
+      width: 100%;
+      margin-top: 22px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      background: #fff;
+      color: var(--text);
+      border: 1px solid var(--line);
+    }
+
+    .google-mark {
+      width: 20px;
+      height: 20px;
+      flex: 0 0 auto;
+    }
+
+    .login-error {
+      display: none;
+      margin-top: 14px;
+      color: var(--bad-text);
+    }
+
+    .login-error.show {
+      display: block;
+    }
+
+    .settings {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 12px;
+      margin-bottom: 18px;
+    }
+
+    @media (max-width: 680px) {
+      .settings { grid-template-columns: 1fr 1fr; }
+    }
+
+    .form-options {
+      margin-bottom: 24px;
+      padding: 14px;
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      background: #f8fafc;
+    }
+
+    .form-options-title {
+      margin-bottom: 10px;
+      color: var(--muted);
+      font-size: 0.82rem;
+      font-weight: 700;
+    }
+
+    .checkbox-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 8px;
+    }
+
+    .checkbox-item {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+      padding: 10px 8px;
+      border: 1px solid var(--line);
+      border-radius: 10px;
+      background: #fff;
+      cursor: pointer;
+      font-size: 0.9rem;
+      text-align: center;
+    }
+
+    .checkbox-item input {
+      width: auto;
+      margin: 0;
+    }
+
+    .mode-message {
+      display: none;
+      margin-bottom: 16px;
+      padding: 12px 14px;
+      border-radius: 12px;
+      background: #eef2ff;
+      color: #3730a3;
+      text-align: center;
+      font-weight: 700;
+      line-height: 1.5;
+    }
+
+    .mode-message.show {
+      display: block;
+    }
+
+    .sync-status {
+      margin: -6px 0 16px;
+      color: var(--muted);
+      text-align: center;
+      font-size: 0.8rem;
+      line-height: 1.5;
+    }
+
+    .start-area {
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    .start-button {
+      width: min(100%, 420px);
+      font-size: 1.05rem;
+    }
+
+    .setting-note {
+      margin-top: 9px;
+      color: var(--muted);
+      font-size: 0.78rem;
+      line-height: 1.5;
+    }
+
+    .retry-button {
+      margin-top: 14px;
+      min-width: 220px;
+    }
+
+    label {
+      display: block;
+      color: var(--muted);
+      font-size: 0.82rem;
+      margin-bottom: 6px;
+    }
+
+    select,
+    input {
+      width: 100%;
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      background: #fff;
+      color: var(--text);
+      font: inherit;
+    }
+
+    select {
+      padding: 11px 12px;
+    }
+
+    .question-number {
+      color: var(--muted);
+      font-size: 0.9rem;
+      text-align: center;
+      margin-bottom: 18px;
+    }
+
+    .dictionary-label {
+      color: var(--muted);
+      font-size: 0.9rem;
+      text-align: center;
+    }
+
+    .dictionary-form {
+      text-align: center;
+      font-size: clamp(2.6rem, 12vw, 4.5rem);
+      line-height: 1.15;
+      font-weight: 850;
+      letter-spacing: 0.06em;
+      margin: 6px 0 6px;
+    }
+
+    .meaning {
+      text-align: center;
+      color: var(--muted);
+      min-height: 1.5em;
+      margin-bottom: 24px;
+    }
+
+    .prompt {
+      margin: 0 0 16px;
+      padding: 16px 14px;
+      border: 3px solid var(--primary);
+      border-radius: 16px;
+      background: #eff6ff;
+      text-align: center;
+      box-shadow: 0 6px 18px rgba(15, 23, 42, 0.08);
+    }
+
+    .target-form-label {
+      display: block;
+      margin-bottom: 4px;
+      color: var(--muted);
+      font-size: 0.8rem;
+      font-weight: 800;
+      letter-spacing: 0.04em;
+    }
+
+    .target-form-name {
+      display: block;
+      font-size: clamp(2rem, 9vw, 3.2rem);
+      line-height: 1.1;
+      font-weight: 900;
+      letter-spacing: 0.08em;
+    }
+
+    .target-form-en {
+      display: block;
+      margin-top: 5px;
+      font-size: 0.92rem;
+      font-weight: 800;
+    }
+
+    .prompt.form-masu {
+      border-color: #2563eb;
+      background: #eff6ff;
+    }
+
+    .prompt.form-te {
+      border-color: #059669;
+      background: #ecfdf5;
+    }
+
+    .prompt.form-ta {
+      border-color: #d97706;
+      background: #fffbeb;
+    }
+
+    .prompt.form-nai {
+      border-color: #dc2626;
+      background: #fef2f2;
+    }
+
+    .answer-input {
+      padding: 15px 16px;
+      text-align: center;
+      font-size: 1.35rem;
+      border-width: 2px;
+      outline: none;
+    }
+
+    .answer-input:focus {
+      border-color: var(--primary);
+      box-shadow: 0 0 0 4px rgba(37, 99, 235, 0.12);
+    }
+
+    .answer-input:disabled {
+      background: #f8fafc;
+    }
+
+    .kana-hint {
+      color: var(--muted);
+      text-align: center;
+      font-size: 0.78rem;
+      margin: 8px 0 0;
+    }
+
+    .buttons {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 10px;
+      margin-top: 20px;
+    }
+
+    button {
+      border: none;
+      border-radius: 12px;
+      padding: 14px 18px;
+      font: inherit;
+      font-weight: 800;
+      cursor: pointer;
+      transition: transform 0.08s ease, opacity 0.2s ease, background 0.2s ease;
+    }
+
+    button:active { transform: translateY(1px); }
+
+    .primary {
+      color: #fff;
+      background: var(--primary);
+    }
+
+    .primary:hover { background: var(--primary-dark); }
+
+    .secondary {
+      color: var(--text);
+      background: #eef2f7;
+    }
+
+    .result {
+      display: none;
+      margin-top: 18px;
+      padding: 16px;
+      border-radius: 12px;
+      line-height: 1.7;
+    }
+
+    .result.correct {
+      display: block;
+      background: var(--good-bg);
+      color: var(--good-text);
+    }
+
+    .result.incorrect {
+      display: block;
+      background: var(--bad-bg);
+      color: var(--bad-text);
+    }
+
+    .result-title {
+      font-size: 1.15rem;
+      font-weight: 850;
+    }
+
+    .answer-line {
+      margin-top: 10px;
+      font-weight: 700;
+    }
+
+    .correct-answer-label {
+      display: block;
+      margin-top: 8px;
+      font-size: 0.9rem;
+      font-weight: 700;
+      opacity: 0.9;
+    }
+
+    .correct-answer-big {
+      display: block;
+      margin-top: 4px;
+      font-size: clamp(2rem, 9vw, 3.4rem);
+      line-height: 1.2;
+      font-weight: 900;
+      letter-spacing: 0.06em;
+      word-break: break-word;
+    }
+
+    .example-box {
+      margin-top: 18px;
+      padding: 14px 16px;
+      border-radius: 12px;
+      background: rgba(255, 255, 255, 0.72);
+      border: 1px solid currentColor;
+      text-align: left;
+    }
+
+    .example-title {
+      margin-bottom: 8px;
+      font-size: 0.85rem;
+      font-weight: 800;
+      opacity: 0.85;
+    }
+
+    .example-ja {
+      font-size: clamp(1.15rem, 5vw, 1.55rem);
+      line-height: 1.65;
+      font-weight: 800;
+    }
+
+    .example-en {
+      margin-top: 6px;
+      font-size: 1rem;
+      line-height: 1.5;
+      font-weight: 500;
+    }
+
+    .footer-actions {
+      display: flex;
+      justify-content: center;
+      gap: 8px;
+      flex-wrap: wrap;
+      margin-top: 16px;
+    }
+
+    [lang="en"] { font-size: 0.88em; font-weight: 500; }
+
+    .small-button {
+      padding: 9px 12px;
+      font-size: 0.82rem;
+      font-weight: 700;
+      color: var(--muted);
+      background: transparent;
+      border: 1px solid var(--line);
+    }
+
+    .hidden { display: none !important; }
+
+    @media (max-width: 520px) {
+      .settings { grid-template-columns: 1fr; }
+      .checkbox-grid { grid-template-columns: repeat(2, 1fr); }
+      .card { border-radius: 15px; }
+    }
