@@ -40,6 +40,20 @@ gcloud auth application-default login
 npm run import:verbs
 ```
 
+グループ別に投入する場合:
+
+```bash
+npm run import:verbs:group1
+npm run import:verbs:group2
+npm run import:verbs:group3
+```
+
+全グループをまとめて投入する場合:
+
+```bash
+npm run import:verbs:all
+```
+
 サービスアカウントを使う場合:
 
 ```bash

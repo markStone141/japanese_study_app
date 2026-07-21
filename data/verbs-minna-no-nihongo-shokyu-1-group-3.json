@@ -1,0 +1,1027 @@
+[
+  {
+    "id": "minna-shokyu-1-group-3-001",
+    "dictionary": "あんないする",
+    "meaning": "show around, show the way",
+    "masu": "あんないします",
+    "te": "あんないして",
+    "ta": "あんないした",
+    "nai": "あんないしない",
+    "forms": {
+      "masu": "あんないします",
+      "te": "あんないして",
+      "ta": "あんないした",
+      "nai": "あんないしない"
+    },
+    "examples": {
+      "masu": {
+        "ja": "わたしが まちを あんないします。",
+        "en": "I will show you around the town."
+      },
+      "te": {
+        "ja": "おきゃくさんを へやに あんないして、おちゃを だします。",
+        "en": "I show the guest to the room and serve tea."
+      },
+      "ta": {
+        "ja": "きのう、ともだちを とうきょうに あんないした。",
+        "en": "Yesterday, I showed my friend around Tokyo."
+      },
+      "nai": {
+        "ja": "きょうは じかんが ないので、まちを あんないしない。",
+        "en": "I do not have time today, so I will not show anyone around the town."
+      }
+    },
+    "textbookId": "minna-no-nihongo",
+    "textbookName": "みんなの日本語",
+    "levelId": "shokyu-1",
+    "levelName": "初級I",
+    "verbGroupId": "group-3",
+    "verbGroupName": "グループ3",
+    "order": 1,
+    "enabled": true
+  },
+  {
+    "id": "minna-shokyu-1-group-3-002",
+    "dictionary": "うんてんする",
+    "meaning": "drive",
+    "masu": "うんてんします",
+    "te": "うんてんして",
+    "ta": "うんてんした",
+    "nai": "うんてんしない",
+    "forms": {
+      "masu": "うんてんします",
+      "te": "うんてんして",
+      "ta": "うんてんした",
+      "nai": "うんてんしない"
+    },
+    "examples": {
+      "masu": {
+        "ja": "まいにち くるまを うんてんします。",
+        "en": "I drive a car every day."
+      },
+      "te": {
+        "ja": "くるまを うんてんして、かいしゃへ いきます。",
+        "en": "I drive a car and go to work."
+      },
+      "ta": {
+        "ja": "きのう、3じかん くるまを うんてんした。",
+        "en": "Yesterday, I drove for three hours."
+      },
+      "nai": {
+        "ja": "おさけを のんだので、くるまを うんてんしない。",
+        "en": "I drank alcohol, so I will not drive."
+      }
+    },
+    "textbookId": "minna-no-nihongo",
+    "textbookName": "みんなの日本語",
+    "levelId": "shokyu-1",
+    "levelName": "初級I",
+    "verbGroupId": "group-3",
+    "verbGroupName": "グループ3",
+    "order": 2,
+    "enabled": true
+  },
+  {
+    "id": "minna-shokyu-1-group-3-003",
+    "dictionary": "かいものする",
+    "meaning": "do shopping",
+    "masu": "かいものします",
+    "te": "かいものして",
+    "ta": "かいものした",
+    "nai": "かいものしない",
+    "forms": {
+      "masu": "かいものします",
+      "te": "かいものして",
+      "ta": "かいものした",
+      "nai": "かいものしない"
+    },
+    "examples": {
+      "masu": {
+        "ja": "しゅうまつに スーパーで かいものします。",
+        "en": "I shop at the supermarket on the weekend."
+      },
+      "te": {
+        "ja": "えきまえで かいものして、うちへ かえります。",
+        "en": "I shop near the station and go home."
+      },
+      "ta": {
+        "ja": "きのう、デパートで かいものした。",
+        "en": "Yesterday, I shopped at a department store."
+      },
+      "nai": {
+        "ja": "きょうは なにも かいものしない。",
+        "en": "I will not buy anything today."
+      }
+    },
+    "textbookId": "minna-no-nihongo",
+    "textbookName": "みんなの日本語",
+    "levelId": "shokyu-1",
+    "levelName": "初級I",
+    "verbGroupId": "group-3",
+    "verbGroupName": "グループ3",
+    "order": 3,
+    "enabled": true
+  },
+  {
+    "id": "minna-shokyu-1-group-3-004",
+    "dictionary": "くる",
+    "meaning": "come",
+    "masu": "きます",
+    "te": "きて",
+    "ta": "きた",
+    "nai": "こない",
+    "forms": {
+      "masu": "きます",
+      "te": "きて",
+      "ta": "きた",
+      "nai": "こない"
+    },
+    "examples": {
+      "masu": {
+        "ja": "あした、ともだちが うちに きます。",
+        "en": "My friend will come to my house tomorrow."
+      },
+      "te": {
+        "ja": "はやく きて、てつだってください。",
+        "en": "Please come early and help me."
+      },
+      "ta": {
+        "ja": "きのう、せんせいが がっこうに きた。",
+        "en": "Yesterday, the teacher came to school."
+      },
+      "nai": {
+        "ja": "かれは きょう ここに こない。",
+        "en": "He will not come here today."
+      }
+    },
+    "textbookId": "minna-no-nihongo",
+    "textbookName": "みんなの日本語",
+    "levelId": "shokyu-1",
+    "levelName": "初級I",
+    "verbGroupId": "group-3",
+    "verbGroupName": "グループ3",
+    "order": 4,
+    "enabled": true
+  },
+  {
+    "id": "minna-shokyu-1-group-3-005",
+    "dictionary": "けっこんする",
+    "meaning": "marry, get married",
+    "masu": "けっこんします",
+    "te": "けっこんして",
+    "ta": "けっこんした",
+    "nai": "けっこんしない",
+    "forms": {
+      "masu": "けっこんします",
+      "te": "けっこんして",
+      "ta": "けっこんした",
+      "nai": "けっこんしない"
+    },
+    "examples": {
+      "masu": {
+        "ja": "らいねん、けっこんします。",
+        "en": "I will get married next year."
+      },
+      "te": {
+        "ja": "けっこんして、おおさかに すみます。",
+        "en": "I will get married and live in Osaka."
+      },
+      "ta": {
+        "ja": "あねは きょねん けっこんした。",
+        "en": "My older sister got married last year."
+      },
+      "nai": {
+        "ja": "わたしは まだ けっこんしない。",
+        "en": "I will not get married yet."
+      }
+    },
+    "textbookId": "minna-no-nihongo",
+    "textbookName": "みんなの日本語",
+    "levelId": "shokyu-1",
+    "levelName": "初級I",
+    "verbGroupId": "group-3",
+    "verbGroupName": "グループ3",
+    "order": 5,
+    "enabled": true
+  },
+  {
+    "id": "minna-shokyu-1-group-3-006",
+    "dictionary": "けんきゅうする",
+    "meaning": "do research",
+    "masu": "けんきゅうします",
+    "te": "けんきゅうして",
+    "ta": "けんきゅうした",
+    "nai": "けんきゅうしない",
+    "forms": {
+      "masu": "けんきゅうします",
+      "te": "けんきゅうして",
+      "ta": "けんきゅうした",
+      "nai": "けんきゅうしない"
+    },
+    "examples": {
+      "masu": {
+        "ja": "だいがくで にほんの ぶんかを けんきゅうします。",
+        "en": "I research Japanese culture at university."
+      },
+      "te": {
+        "ja": "この もんだいを けんきゅうして、ろんぶんを かきます。",
+        "en": "I research this issue and write a paper."
+      },
+      "ta": {
+        "ja": "せんせいは その びょうきを 10ねん けんきゅうした。",
+        "en": "The professor researched that disease for ten years."
+      },
+      "nai": {
+        "ja": "いまは その テーマを けんきゅうしない。",
+        "en": "I am not researching that topic now."
+      }
+    },
+    "textbookId": "minna-no-nihongo",
+    "textbookName": "みんなの日本語",
+    "levelId": "shokyu-1",
+    "levelName": "初級I",
+    "verbGroupId": "group-3",
+    "verbGroupName": "グループ3",
+    "order": 6,
+    "enabled": true
+  },
+  {
+    "id": "minna-shokyu-1-group-3-007",
+    "dictionary": "コピーする",
+    "meaning": "copy",
+    "masu": "コピーします",
+    "te": "コピーして",
+    "ta": "コピーした",
+    "nai": "コピーしない",
+    "forms": {
+      "masu": "コピーします",
+      "te": "コピーして",
+      "ta": "コピーした",
+      "nai": "コピーしない"
+    },
+    "examples": {
+      "masu": {
+        "ja": "この しりょうを コピーします。",
+        "en": "I will copy this document."
+      },
+      "te": {
+        "ja": "しりょうを コピーして、みんなに くばります。",
+        "en": "I copy the document and hand it out to everyone."
+      },
+      "ta": {
+        "ja": "きのう、ひつような ページを コピーした。",
+        "en": "Yesterday, I copied the necessary pages."
+      },
+      "nai": {
+        "ja": "この ほんは コピーしない。",
+        "en": "I will not copy this book."
+      }
+    },
+    "textbookId": "minna-no-nihongo",
+    "textbookName": "みんなの日本語",
+    "levelId": "shokyu-1",
+    "levelName": "初級I",
+    "verbGroupId": "group-3",
+    "verbGroupName": "グループ3",
+    "order": 7,
+    "enabled": true
+  },
+  {
+    "id": "minna-shokyu-1-group-3-008",
+    "dictionary": "さんぽする",
+    "meaning": "take a walk",
+    "masu": "さんぽします",
+    "te": "さんぽして",
+    "ta": "さんぽした",
+    "nai": "さんぽしない",
+    "forms": {
+      "masu": "さんぽします",
+      "te": "さんぽして",
+      "ta": "さんぽした",
+      "nai": "さんぽしない"
+    },
+    "examples": {
+      "masu": {
+        "ja": "まいあさ こうえんを さんぽします。",
+        "en": "I take a walk in the park every morning."
+      },
+      "te": {
+        "ja": "こうえんを さんぽして、コーヒーを のみます。",
+        "en": "I take a walk in the park and drink coffee."
+      },
+      "ta": {
+        "ja": "きのう、かわの ちかくを さんぽした。",
+        "en": "Yesterday, I took a walk near the river."
+      },
+      "nai": {
+        "ja": "あめなので、きょうは さんぽしない。",
+        "en": "It is raining, so I will not take a walk today."
+      }
+    },
+    "textbookId": "minna-no-nihongo",
+    "textbookName": "みんなの日本語",
+    "levelId": "shokyu-1",
+    "levelName": "初級I",
+    "verbGroupId": "group-3",
+    "verbGroupName": "グループ3",
+    "order": 8,
+    "enabled": true
+  },
+  {
+    "id": "minna-shokyu-1-group-3-009",
+    "dictionary": "ざんぎょうする",
+    "meaning": "work overtime",
+    "masu": "ざんぎょうします",
+    "te": "ざんぎょうして",
+    "ta": "ざんぎょうした",
+    "nai": "ざんぎょうしない",
+    "forms": {
+      "masu": "ざんぎょうします",
+      "te": "ざんぎょうして",
+      "ta": "ざんぎょうした",
+      "nai": "ざんぎょうしない"
+    },
+    "examples": {
+      "masu": {
+        "ja": "きょうは 2じかん ざんぎょうします。",
+        "en": "I will work two hours of overtime today."
+      },
+      "te": {
+        "ja": "ざんぎょうして、おそく うちへ かえります。",
+        "en": "I work overtime and go home late."
+      },
+      "ta": {
+        "ja": "きのうは 9じまで ざんぎょうした。",
+        "en": "Yesterday, I worked overtime until nine."
+      },
+      "nai": {
+        "ja": "きょうは ざんぎょうしない。",
+        "en": "I will not work overtime today."
+      }
+    },
+    "textbookId": "minna-no-nihongo",
+    "textbookName": "みんなの日本語",
+    "levelId": "shokyu-1",
+    "levelName": "初級I",
+    "verbGroupId": "group-3",
+    "verbGroupName": "グループ3",
+    "order": 9,
+    "enabled": true
+  },
+  {
+    "id": "minna-shokyu-1-group-3-010",
+    "dictionary": "する",
+    "meaning": "do, play",
+    "masu": "します",
+    "te": "して",
+    "ta": "した",
+    "nai": "しない",
+    "forms": {
+      "masu": "します",
+      "te": "して",
+      "ta": "した",
+      "nai": "しない"
+    },
+    "examples": {
+      "masu": {
+        "ja": "まいしゅう テニスを します。",
+        "en": "I play tennis every week."
+      },
+      "te": {
+        "ja": "しゅくだいを して、テレビを みます。",
+        "en": "I do my homework and watch television."
+      },
+      "ta": {
+        "ja": "きのう、サッカーを した。",
+        "en": "Yesterday, I played soccer."
+      },
+      "nai": {
+        "ja": "きょうは うんどうを しない。",
+        "en": "I will not exercise today."
+      }
+    },
+    "textbookId": "minna-no-nihongo",
+    "textbookName": "みんなの日本語",
+    "levelId": "shokyu-1",
+    "levelName": "初級I",
+    "verbGroupId": "group-3",
+    "verbGroupName": "グループ3",
+    "order": 10,
+    "enabled": true
+  },
+  {
+    "id": "minna-shokyu-1-group-3-011",
+    "dictionary": "する",
+    "meaning": "put on [a tie]",
+    "masu": "します",
+    "te": "して",
+    "ta": "した",
+    "nai": "しない",
+    "forms": {
+      "masu": "します",
+      "te": "して",
+      "ta": "した",
+      "nai": "しない"
+    },
+    "examples": {
+      "masu": {
+        "ja": "しごとの とき、ネクタイを します。",
+        "en": "I wear a tie at work."
+      },
+      "te": {
+        "ja": "ネクタイを して、かいしゃへ いきます。",
+        "en": "I put on a tie and go to work."
+      },
+      "ta": {
+        "ja": "きのうは あおい ネクタイを した。",
+        "en": "Yesterday, I wore a blue tie."
+      },
+      "nai": {
+        "ja": "きょうは ネクタイを しない。",
+        "en": "I will not wear a tie today."
+      }
+    },
+    "textbookId": "minna-no-nihongo",
+    "textbookName": "みんなの日本語",
+    "levelId": "shokyu-1",
+    "levelName": "初級I",
+    "verbGroupId": "group-3",
+    "verbGroupName": "グループ3",
+    "order": 11,
+    "enabled": true
+  },
+  {
+    "id": "minna-shokyu-1-group-3-012",
+    "dictionary": "しゅうりする",
+    "meaning": "repair",
+    "masu": "しゅうりします",
+    "te": "しゅうりして",
+    "ta": "しゅうりした",
+    "nai": "しゅうりしない",
+    "forms": {
+      "masu": "しゅうりします",
+      "te": "しゅうりして",
+      "ta": "しゅうりした",
+      "nai": "しゅうりしない"
+    },
+    "examples": {
+      "masu": {
+        "ja": "こわれた じてんしゃを しゅうりします。",
+        "en": "I will repair the broken bicycle."
+      },
+      "te": {
+        "ja": "パソコンを しゅうりして、また つかいます。",
+        "en": "I repair the computer and use it again."
+      },
+      "ta": {
+        "ja": "きのう、くるまを しゅうりした。",
+        "en": "Yesterday, I repaired the car."
+      },
+      "nai": {
+        "ja": "この とけいは じぶんで しゅうりしない。",
+        "en": "I will not repair this watch by myself."
+      }
+    },
+    "textbookId": "minna-no-nihongo",
+    "textbookName": "みんなの日本語",
+    "levelId": "shokyu-1",
+    "levelName": "初級I",
+    "verbGroupId": "group-3",
+    "verbGroupName": "グループ3",
+    "order": 12,
+    "enabled": true
+  },
+  {
+    "id": "minna-shokyu-1-group-3-013",
+    "dictionary": "しゅっちょうする",
+    "meaning": "go on a business trip",
+    "masu": "しゅっちょうします",
+    "te": "しゅっちょうして",
+    "ta": "しゅっちょうした",
+    "nai": "しゅっちょうしない",
+    "forms": {
+      "masu": "しゅっちょうします",
+      "te": "しゅっちょうして",
+      "ta": "しゅっちょうした",
+      "nai": "しゅっちょうしない"
+    },
+    "examples": {
+      "masu": {
+        "ja": "らいしゅう、おおさかへ しゅっちょうします。",
+        "en": "I will go on a business trip to Osaka next week."
+      },
+      "te": {
+        "ja": "きょうとへ しゅっちょうして、かいぎに でます。",
+        "en": "I go on a business trip to Kyoto and attend a meeting."
+      },
+      "ta": {
+        "ja": "せんげつ、ふくおかへ しゅっちょうした。",
+        "en": "Last month, I went on a business trip to Fukuoka."
+      },
+      "nai": {
+        "ja": "こんげつは しゅっちょうしない。",
+        "en": "I will not go on a business trip this month."
+      }
+    },
+    "textbookId": "minna-no-nihongo",
+    "textbookName": "みんなの日本語",
+    "levelId": "shokyu-1",
+    "levelName": "初級I",
+    "verbGroupId": "group-3",
+    "verbGroupName": "グループ3",
+    "order": 13,
+    "enabled": true
+  },
+  {
+    "id": "minna-shokyu-1-group-3-014",
+    "dictionary": "しょうかいする",
+    "meaning": "introduce",
+    "masu": "しょうかいします",
+    "te": "しょうかいして",
+    "ta": "しょうかいした",
+    "nai": "しょうかいしない",
+    "forms": {
+      "masu": "しょうかいします",
+      "te": "しょうかいして",
+      "ta": "しょうかいした",
+      "nai": "しょうかいしない"
+    },
+    "examples": {
+      "masu": {
+        "ja": "ともだちを かぞくに しょうかいします。",
+        "en": "I introduce my friend to my family."
+      },
+      "te": {
+        "ja": "あたらしい しゃいんを しょうかいして、しごとを せつめいします。",
+        "en": "I introduce the new employee and explain the job."
+      },
+      "ta": {
+        "ja": "きのう、せんせいを ちちに しょうかいした。",
+        "en": "Yesterday, I introduced my teacher to my father."
+      },
+      "nai": {
+        "ja": "まだ かれを かぞくに しょうかいしない。",
+        "en": "I will not introduce him to my family yet."
+      }
+    },
+    "textbookId": "minna-no-nihongo",
+    "textbookName": "みんなの日本語",
+    "levelId": "shokyu-1",
+    "levelName": "初級I",
+    "verbGroupId": "group-3",
+    "verbGroupName": "グループ3",
+    "order": 14,
+    "enabled": true
+  },
+  {
+    "id": "minna-shokyu-1-group-3-015",
+    "dictionary": "しょくじする",
+    "meaning": "have a meal, dine",
+    "masu": "しょくじします",
+    "te": "しょくじして",
+    "ta": "しょくじした",
+    "nai": "しょくじしない",
+    "forms": {
+      "masu": "しょくじします",
+      "te": "しょくじして",
+      "ta": "しょくじした",
+      "nai": "しょくじしない"
+    },
+    "examples": {
+      "masu": {
+        "ja": "7じに かぞくと しょくじします。",
+        "en": "I have dinner with my family at seven."
+      },
+      "te": {
+        "ja": "レストランで しょくじして、えいがを みます。",
+        "en": "I dine at a restaurant and watch a movie."
+      },
+      "ta": {
+        "ja": "きのう、ともだちと しょくじした。",
+        "en": "Yesterday, I had a meal with my friend."
+      },
+      "nai": {
+        "ja": "いそがしいので、まだ しょくじしない。",
+        "en": "I am busy, so I will not eat yet."
+      }
+    },
+    "textbookId": "minna-no-nihongo",
+    "textbookName": "みんなの日本語",
+    "levelId": "shokyu-1",
+    "levelName": "初級I",
+    "verbGroupId": "group-3",
+    "verbGroupName": "グループ3",
+    "order": 15,
+    "enabled": true
+  },
+  {
+    "id": "minna-shokyu-1-group-3-016",
+    "dictionary": "しゅっせきする",
+    "meaning": "attend",
+    "masu": "しゅっせきします",
+    "te": "しゅっせきして",
+    "ta": "しゅっせきした",
+    "nai": "しゅっせきしない",
+    "forms": {
+      "masu": "しゅっせきします",
+      "te": "しゅっせきして",
+      "ta": "しゅっせきした",
+      "nai": "しゅっせきしない"
+    },
+    "examples": {
+      "masu": {
+        "ja": "あした、かいぎに しゅっせきします。",
+        "en": "I will attend the meeting tomorrow."
+      },
+      "te": {
+        "ja": "せつめいかいに しゅっせきして、しつもんします。",
+        "en": "I attend the information session and ask questions."
+      },
+      "ta": {
+        "ja": "きのう、けっこんしきに しゅっせきした。",
+        "en": "Yesterday, I attended a wedding."
+      },
+      "nai": {
+        "ja": "こんかいの かいぎには しゅっせきしない。",
+        "en": "I will not attend this meeting."
+      }
+    },
+    "textbookId": "minna-no-nihongo",
+    "textbookName": "みんなの日本語",
+    "levelId": "shokyu-1",
+    "levelName": "初級I",
+    "verbGroupId": "group-3",
+    "verbGroupName": "グループ3",
+    "order": 16,
+    "enabled": true
+  },
+  {
+    "id": "minna-shokyu-1-group-3-017",
+    "dictionary": "せつめいする",
+    "meaning": "explain",
+    "masu": "せつめいします",
+    "te": "せつめいして",
+    "ta": "せつめいした",
+    "nai": "せつめいしない",
+    "forms": {
+      "masu": "せつめいします",
+      "te": "せつめいして",
+      "ta": "せつめいした",
+      "nai": "せつめいしない"
+    },
+    "examples": {
+      "masu": {
+        "ja": "せんせいが ぶんぽうを せつめいします。",
+        "en": "The teacher explains the grammar."
+      },
+      "te": {
+        "ja": "つかいかたを せつめいして、みせます。",
+        "en": "I explain how to use it and demonstrate it."
+      },
+      "ta": {
+        "ja": "きのう、ルールを せつめいした。",
+        "en": "Yesterday, I explained the rules."
+      },
+      "nai": {
+        "ja": "いまは りゆうを せつめいしない。",
+        "en": "I will not explain the reason now."
+      }
+    },
+    "textbookId": "minna-no-nihongo",
+    "textbookName": "みんなの日本語",
+    "levelId": "shokyu-1",
+    "levelName": "初級I",
+    "verbGroupId": "group-3",
+    "verbGroupName": "グループ3",
+    "order": 17,
+    "enabled": true
+  },
+  {
+    "id": "minna-shokyu-1-group-3-018",
+    "dictionary": "せんたくする",
+    "meaning": "wash clothes",
+    "masu": "せんたくします",
+    "te": "せんたくして",
+    "ta": "せんたくした",
+    "nai": "せんたくしない",
+    "forms": {
+      "masu": "せんたくします",
+      "te": "せんたくして",
+      "ta": "せんたくした",
+      "nai": "せんたくしない"
+    },
+    "examples": {
+      "masu": {
+        "ja": "まいあさ ふくを せんたくします。",
+        "en": "I wash clothes every morning."
+      },
+      "te": {
+        "ja": "シャツを せんたくして、そとに ほします。",
+        "en": "I wash the shirts and hang them outside."
+      },
+      "ta": {
+        "ja": "きのう、シーツを せんたくした。",
+        "en": "Yesterday, I washed the sheets."
+      },
+      "nai": {
+        "ja": "あめなので、きょうは せんたくしない。",
+        "en": "It is raining, so I will not do laundry today."
+      }
+    },
+    "textbookId": "minna-no-nihongo",
+    "textbookName": "みんなの日本語",
+    "levelId": "shokyu-1",
+    "levelName": "初級I",
+    "verbGroupId": "group-3",
+    "verbGroupName": "グループ3",
+    "order": 18,
+    "enabled": true
+  },
+  {
+    "id": "minna-shokyu-1-group-3-019",
+    "dictionary": "そうじする",
+    "meaning": "clean a room",
+    "masu": "そうじします",
+    "te": "そうじして",
+    "ta": "そうじした",
+    "nai": "そうじしない",
+    "forms": {
+      "masu": "そうじします",
+      "te": "そうじして",
+      "ta": "そうじした",
+      "nai": "そうじしない"
+    },
+    "examples": {
+      "masu": {
+        "ja": "まいにち へやを そうじします。",
+        "en": "I clean my room every day."
+      },
+      "te": {
+        "ja": "へやを そうじして、まどを あけます。",
+        "en": "I clean the room and open the window."
+      },
+      "ta": {
+        "ja": "きのう、だいどころを そうじした。",
+        "en": "Yesterday, I cleaned the kitchen."
+      },
+      "nai": {
+        "ja": "きょうは いそがしいので、そうじしない。",
+        "en": "I am busy today, so I will not clean."
+      }
+    },
+    "textbookId": "minna-no-nihongo",
+    "textbookName": "みんなの日本語",
+    "levelId": "shokyu-1",
+    "levelName": "初級I",
+    "verbGroupId": "group-3",
+    "verbGroupName": "グループ3",
+    "order": 19,
+    "enabled": true
+  },
+  {
+    "id": "minna-shokyu-1-group-3-020",
+    "dictionary": "つれてくる",
+    "meaning": "bring someone",
+    "masu": "つれてきます",
+    "te": "つれてきて",
+    "ta": "つれてきた",
+    "nai": "つれてこない",
+    "forms": {
+      "masu": "つれてきます",
+      "te": "つれてきて",
+      "ta": "つれてきた",
+      "nai": "つれてこない"
+    },
+    "examples": {
+      "masu": {
+        "ja": "あした、ともだちを パーティーに つれてきます。",
+        "en": "I will bring my friend to the party tomorrow."
+      },
+      "te": {
+        "ja": "こどもを ここに つれてきてください。",
+        "en": "Please bring the child here."
+      },
+      "ta": {
+        "ja": "かれは いもうとを つれてきた。",
+        "en": "He brought his younger sister."
+      },
+      "nai": {
+        "ja": "きょうは だれも つれてこない。",
+        "en": "I will not bring anyone today."
+      }
+    },
+    "textbookId": "minna-no-nihongo",
+    "textbookName": "みんなの日本語",
+    "levelId": "shokyu-1",
+    "levelName": "初級I",
+    "verbGroupId": "group-3",
+    "verbGroupName": "グループ3",
+    "order": 20,
+    "enabled": true
+  },
+  {
+    "id": "minna-shokyu-1-group-3-021",
+    "dictionary": "でんわする",
+    "meaning": "phone",
+    "masu": "でんわします",
+    "te": "でんわして",
+    "ta": "でんわした",
+    "nai": "でんわしない",
+    "forms": {
+      "masu": "でんわします",
+      "te": "でんわして",
+      "ta": "でんわした",
+      "nai": "でんわしない"
+    },
+    "examples": {
+      "masu": {
+        "ja": "あとで ははに でんわします。",
+        "en": "I will call my mother later."
+      },
+      "te": {
+        "ja": "びょういんに でんわして、よやくします。",
+        "en": "I call the hospital and make an appointment."
+      },
+      "ta": {
+        "ja": "きのう、ともだちに でんわした。",
+        "en": "Yesterday, I called my friend."
+      },
+      "nai": {
+        "ja": "よる おそくには でんわしない。",
+        "en": "I do not call late at night."
+      }
+    },
+    "textbookId": "minna-no-nihongo",
+    "textbookName": "みんなの日本語",
+    "levelId": "shokyu-1",
+    "levelName": "初級I",
+    "verbGroupId": "group-3",
+    "verbGroupName": "グループ3",
+    "order": 21,
+    "enabled": true
+  },
+  {
+    "id": "minna-shokyu-1-group-3-022",
+    "dictionary": "べんきょうする",
+    "meaning": "study",
+    "masu": "べんきょうします",
+    "te": "べんきょうして",
+    "ta": "べんきょうした",
+    "nai": "べんきょうしない",
+    "forms": {
+      "masu": "べんきょうします",
+      "te": "べんきょうして",
+      "ta": "べんきょうした",
+      "nai": "べんきょうしない"
+    },
+    "examples": {
+      "masu": {
+        "ja": "まいにち にほんごを べんきょうします。",
+        "en": "I study Japanese every day."
+      },
+      "te": {
+        "ja": "ぶんぽうを べんきょうして、れんしゅうもんだいを します。",
+        "en": "I study grammar and do practice exercises."
+      },
+      "ta": {
+        "ja": "きのう、3じかん べんきょうした。",
+        "en": "Yesterday, I studied for three hours."
+      },
+      "nai": {
+        "ja": "きょうは つかれたので、べんきょうしない。",
+        "en": "I am tired today, so I will not study."
+      }
+    },
+    "textbookId": "minna-no-nihongo",
+    "textbookName": "みんなの日本語",
+    "levelId": "shokyu-1",
+    "levelName": "初級I",
+    "verbGroupId": "group-3",
+    "verbGroupName": "グループ3",
+    "order": 22,
+    "enabled": true
+  },
+  {
+    "id": "minna-shokyu-1-group-3-023",
+    "dictionary": "もってくる",
+    "meaning": "bring something",
+    "masu": "もってきます",
+    "te": "もってきて",
+    "ta": "もってきた",
+    "nai": "もってこない",
+    "forms": {
+      "masu": "もってきます",
+      "te": "もってきて",
+      "ta": "もってきた",
+      "nai": "もってこない"
+    },
+    "examples": {
+      "masu": {
+        "ja": "あした、じしょを もってきます。",
+        "en": "I will bring a dictionary tomorrow."
+      },
+      "te": {
+        "ja": "ここに いすを もってきてください。",
+        "en": "Please bring a chair here."
+      },
+      "ta": {
+        "ja": "ともだちが ケーキを もってきた。",
+        "en": "My friend brought a cake."
+      },
+      "nai": {
+        "ja": "きょうは パソコンを もってこない。",
+        "en": "I will not bring my computer today."
+      }
+    },
+    "textbookId": "minna-no-nihongo",
+    "textbookName": "みんなの日本語",
+    "levelId": "shokyu-1",
+    "levelName": "初級I",
+    "verbGroupId": "group-3",
+    "verbGroupName": "グループ3",
+    "order": 23,
+    "enabled": true
+  },
+  {
+    "id": "minna-shokyu-1-group-3-024",
+    "dictionary": "よやくする",
+    "meaning": "reserve, book",
+    "masu": "よやくします",
+    "te": "よやくして",
+    "ta": "よやくした",
+    "nai": "よやくしない",
+    "forms": {
+      "masu": "よやくします",
+      "te": "よやくして",
+      "ta": "よやくした",
+      "nai": "よやくしない"
+    },
+    "examples": {
+      "masu": {
+        "ja": "ホテルを よやくします。",
+        "en": "I will book a hotel."
+      },
+      "te": {
+        "ja": "レストランを よやくして、かぞくと いきます。",
+        "en": "I reserve a restaurant and go there with my family."
+      },
+      "ta": {
+        "ja": "きのう、ひこうきの チケットを よやくした。",
+        "en": "Yesterday, I booked a plane ticket."
+      },
+      "nai": {
+        "ja": "まだ ホテルを よやくしない。",
+        "en": "I will not book the hotel yet."
+      }
+    },
+    "textbookId": "minna-no-nihongo",
+    "textbookName": "みんなの日本語",
+    "levelId": "shokyu-1",
+    "levelName": "初級I",
+    "verbGroupId": "group-3",
+    "verbGroupName": "グループ3",
+    "order": 24,
+    "enabled": true
+  },
+  {
+    "id": "minna-shokyu-1-group-3-025",
+    "dictionary": "りゅうがくする",
+    "meaning": "study abroad",
+    "masu": "りゅうがくします",
+    "te": "りゅうがくして",
+    "ta": "りゅうがくした",
+    "nai": "りゅうがくしない",
+    "forms": {
+      "masu": "りゅうがくします",
+      "te": "りゅうがくして",
+      "ta": "りゅうがくした",
+      "nai": "りゅうがくしない"
+    },
+    "examples": {
+      "masu": {
+        "ja": "らいねん、カナダへ りゅうがくします。",
+        "en": "I will study abroad in Canada next year."
+      },
+      "te": {
+        "ja": "にほんに りゅうがくして、にほんごを べんきょうします。",
+        "en": "I study abroad in Japan and learn Japanese."
+      },
+      "ta": {
+        "ja": "あねは アメリカに りゅうがくした。",
+        "en": "My older sister studied abroad in the United States."
+      },
+      "nai": {
+        "ja": "ことしは りゅうがくしない。",
+        "en": "I will not study abroad this year."
+      }
+    },
+    "textbookId": "minna-no-nihongo",
+    "textbookName": "みんなの日本語",
+    "levelId": "shokyu-1",
+    "levelName": "初級I",
+    "verbGroupId": "group-3",
+    "verbGroupName": "グループ3",
+    "order": 25,
+    "enabled": true
+  }
+]
