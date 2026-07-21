@@ -1,8 +1,8 @@
 window.FIREBASE_CONFIG = {
-  apiKey: "YOUR_API_KEY",
-  authDomain: "YOUR_PROJECT_ID.firebaseapp.com",
-  projectId: "YOUR_PROJECT_ID",
-  storageBucket: "YOUR_PROJECT_ID.appspot.com",
-  messagingSenderId: "YOUR_MESSAGING_SENDER_ID",
-  appId: "YOUR_APP_ID"
+  apiKey: "AIzaSyD3-bdkBObiCzQgSAPGZGjKRBoguJLJgu4",
+  authDomain: "japanese-study-app-61e23.firebaseapp.com",
+  projectId: "japanese-study-app-61e23",
+  storageBucket: "japanese-study-app-61e23.firebasestorage.app",
+  messagingSenderId: "439541314897",
+  appId: "1:439541314897:web:643aae949e05797c08cf70"
 };
