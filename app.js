@@ -1741,6 +1741,7 @@
 
     function normalizeVerbDoc(id, data) {
       const forms = data.forms || {};
+      const kanji = data.kanji || {};
 
       return {
         ...defaultSource,
@@ -1752,6 +1753,13 @@
         te: data.te || forms.te || "",
         ta: data.ta || forms.ta || "",
         nai: data.nai || forms.nai || "",
+        kanji: {
+          dictionary: data.dictionaryKanji || kanji.dictionary || "",
+          masu: data.masuKanji || kanji.masu || "",
+          te: data.teKanji || kanji.te || "",
+          ta: data.taKanji || kanji.ta || "",
+          nai: data.naiKanji || kanji.nai || ""
+        },
         examples: data.examples || {}
       };
     }
@@ -1970,7 +1978,7 @@
       state.answered = false;
       state.questionNumber += 1;
 
-      dictionaryForm.textContent = state.currentVerb.dictionary;
+      dictionaryForm.textContent = formatWithKanji(state.currentVerb, "dictionary");
       meaning.textContent = state.currentVerb.meaning;
       const targetForm = formDisplay[state.currentForm];
       prompt.className = `prompt form-${state.currentForm}`;
@@ -2028,6 +2036,20 @@
         .replace(/'/g, "&#039;");
     }
 
+    function getKanjiForm(verb, form) {
+      return verb.kanji && verb.kanji[form] ? verb.kanji[form] : "";
+    }
+
+    function formatWithKanji(verb, form) {
+      const kana = verb[form] || "";
+      const kanji = getKanjiForm(verb, form);
+      return kanji ? `${kana}（${kanji}）` : kana;
+    }
+
+    function formatWithKanjiHtml(verb, form) {
+      return escapeHtml(formatWithKanji(verb, form));
+    }
+
     function getExamplePair(verb, form) {
       const exampleGroup = verb.examples || exampleSentences[verb.dictionary];
       const rawExample = exampleGroup && exampleGroup[form];
@@ -2065,14 +2087,14 @@
       verbTableBody.innerHTML = filteredVerbs.map((verb) => `
         <tr>
           <td data-label="じしょけい">
-            <div class="verb-main">${escapeHtml(verb.dictionary)}</div>
+            <div class="verb-main">${formatWithKanjiHtml(verb, "dictionary")}</div>
             <div class="verb-meta">${escapeHtml(verb.verbGroupName || "")}</div>
           </td>
           <td data-label="いみ">${escapeHtml(verb.meaning)}</td>
-          <td data-label="ます" class="form-cell">${escapeHtml(verb.masu)}</td>
-          <td data-label="て" class="form-cell">${escapeHtml(verb.te)}</td>
-          <td data-label="た" class="form-cell">${escapeHtml(verb.ta)}</td>
-          <td data-label="ない" class="form-cell">${escapeHtml(verb.nai)}</td>
+          <td data-label="ます" class="form-cell">${formatWithKanjiHtml(verb, "masu")}</td>
+          <td data-label="て" class="form-cell">${formatWithKanjiHtml(verb, "te")}</td>
+          <td data-label="た" class="form-cell">${formatWithKanjiHtml(verb, "ta")}</td>
+          <td data-label="ない" class="form-cell">${formatWithKanjiHtml(verb, "nai")}</td>
           <td data-label="れいぶん" class="examples-cell">
             <div class="examples-list">${getExamplesTableHtml(verb)}</div>
           </td>
@@ -2121,6 +2143,7 @@
 
     function finishQuestion(isCorrect, userAnswer, counted = true) {
       const correctAnswer = state.currentVerb[state.currentForm];
+      const correctAnswerDisplay = formatWithKanji(state.currentVerb, state.currentForm);
       const key = makeKey(state.currentVerb, state.currentForm);
 
       state.answered = true;
@@ -2141,7 +2164,7 @@
         result.innerHTML = `
           <div class="result-title">○ せいかい！ <span lang="en">Correct!</span></div>
           <div class="answer-line">
-            <span class="correct-answer-big">${correctAnswer}</span>
+            <span class="correct-answer-big">${escapeHtml(correctAnswerDisplay)}</span>
           </div>
           ${safeExampleHtml(state.currentVerb, state.currentForm)}
         `;
@@ -2152,7 +2175,7 @@
           ${counted ? `<div>あなたの こたえ / Your answer: ${userAnswer || "みとうにゅう / No answer"}</div>` : ""}
           <div class="answer-line">
             <span class="correct-answer-label">ただしい こたえ / Correct answer</span>
-            <span class="correct-answer-big">${correctAnswer}</span>
+            <span class="correct-answer-big">${escapeHtml(correctAnswerDisplay)}</span>
           </div>
           ${safeExampleHtml(state.currentVerb, state.currentForm)}
         `;

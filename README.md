@@ -95,6 +95,13 @@ node scripts/import-verbs.mjs data/your-verbs.json
     "ta": "かいた",
     "nai": "かかない"
   },
+  "kanji": {
+    "dictionary": "書く",
+    "masu": "書きます",
+    "te": "書いて",
+    "ta": "書いた",
+    "nai": "書かない"
+  },
   "examples": {
     "masu": {
       "ja": "のーとに じぶんの なまえを かきます。",
@@ -110,6 +117,8 @@ node scripts/import-verbs.mjs data/your-verbs.json
   "order": 21
 }
 ```
+
+`kanji` は任意です。入っている場合は、画面では `かく（書く）` のように表示されます。クイズの入力判定は今まで通りひらがなのみです。
 
 別のくくりを追加する場合は、`levelId` や `verbGroupId` を変えます。例: `verbGroupId: "group-2"`、`verbGroupName: "グループ2"`。アプリの分類セレクトは Firestore のデータから自動生成されます。
 
