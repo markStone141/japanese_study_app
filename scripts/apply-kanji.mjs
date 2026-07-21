@@ -51,7 +51,7 @@ const kanjiById = {
   "minna-shokyu-1-group-1-042": ["見る", "見ます", "見て", "見た", "見ない"],
   "minna-shokyu-1-group-1-043": ["起きる", "起きます", "起きて", "起きた", "起きない"],
   "minna-shokyu-1-group-1-044": ["寝る", "寝ます", "寝て", "寝た", "寝ない"],
-  "minna-shokyu-1-group-1-045": ["為る", "します", "して", "した", "しない"],
+  "minna-shokyu-1-group-1-045": null,
   "minna-shokyu-1-group-1-046": ["聞く", "聞きます", "聞いて", "聞いた", "聞かない"],
   "minna-shokyu-1-group-1-047": ["切る", "切ります", "切って", "切った", "切らない"],
   "minna-shokyu-1-group-1-048": ["触る", "触ります", "触って", "触った", "触らない"],
@@ -145,8 +145,8 @@ const kanjiById = {
   "minna-shokyu-1-group-3-007": ["コピーする", "コピーします", "コピーして", "コピーした", "コピーしない"],
   "minna-shokyu-1-group-3-008": ["散歩する", "散歩します", "散歩して", "散歩した", "散歩しない"],
   "minna-shokyu-1-group-3-009": ["残業する", "残業します", "残業して", "残業した", "残業しない"],
-  "minna-shokyu-1-group-3-010": ["為る", "します", "して", "した", "しない"],
-  "minna-shokyu-1-group-3-011": ["為る", "します", "して", "した", "しない"],
+  "minna-shokyu-1-group-3-010": null,
+  "minna-shokyu-1-group-3-011": null,
   "minna-shokyu-1-group-3-012": ["修理する", "修理します", "修理して", "修理した", "修理しない"],
   "minna-shokyu-1-group-3-013": ["出張する", "出張します", "出張して", "出張した", "出張しない"],
   "minna-shokyu-1-group-3-014": ["紹介する", "紹介します", "紹介して", "紹介した", "紹介しない"],
@@ -168,6 +168,11 @@ for (const file of files) {
   for (const verb of verbs) {
     const forms = kanjiById[verb.id];
     if (!forms) {
+      if (forms === null) {
+        delete verb.kanji;
+        continue;
+      }
+
       throw new Error(`Missing kanji mapping for ${verb.id}`);
     }
 

@@ -53,10 +53,16 @@ for (const [index, verb] of verbs.entries()) {
   }
 
   const ref = db.collection("verbs").doc(verb.id);
-  batch.set(ref, {
+  const payload = {
     ...verb,
     updatedAt: admin.firestore.FieldValue.serverTimestamp()
-  }, { merge: true });
+  };
+
+  if (!Object.hasOwn(verb, "kanji")) {
+    payload.kanji = admin.firestore.FieldValue.delete();
+  }
+
+  batch.set(ref, payload, { merge: true });
 
   batchCount += 1;
   total += 1;

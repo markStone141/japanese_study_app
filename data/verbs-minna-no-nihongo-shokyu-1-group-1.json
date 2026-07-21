@@ -2150,14 +2150,7 @@
     "verbGroupId": "group-1",
     "verbGroupName": "グループ1",
     "order": 45,
-    "enabled": true,
-    "kanji": {
-      "dictionary": "為る",
-      "masu": "します",
-      "te": "して",
-      "ta": "した",
-      "nai": "しない"
-    }
+    "enabled": true
   },
   {
     "id": "minna-shokyu-1-group-1-046",

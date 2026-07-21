@@ -470,14 +470,7 @@
     "verbGroupId": "group-3",
     "verbGroupName": "グループ3",
     "order": 10,
-    "enabled": true,
-    "kanji": {
-      "dictionary": "為る",
-      "masu": "します",
-      "te": "して",
-      "ta": "した",
-      "nai": "しない"
-    }
+    "enabled": true
   },
   {
     "id": "minna-shokyu-1-group-3-011",
@@ -518,14 +511,7 @@
     "verbGroupId": "group-3",
     "verbGroupName": "グループ3",
     "order": 11,
-    "enabled": true,
-    "kanji": {
-      "dictionary": "為る",
-      "masu": "します",
-      "te": "して",
-      "ta": "した",
-      "nai": "しない"
-    }
+    "enabled": true
   },
   {
     "id": "minna-shokyu-1-group-3-012",
