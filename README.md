@@ -96,6 +96,5 @@ node scripts/import-verbs.mjs data/your-verbs.json
 
 ```bash
 firebase login
-firebase use --add
 firebase deploy
 ```
