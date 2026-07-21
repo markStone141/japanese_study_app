@@ -16,8 +16,8 @@
     </header>
 
     <nav class="view-tabs" aria-label="view">
-      <button type="button" id="quizViewButton" class="view-tab active">くいず<br><span lang="en">Quiz</span></button>
-      <button type="button" id="listViewButton" class="view-tab">いちらん<br><span lang="en">Verb list</span></button>
+      <button type="button" id="quizViewButton" class="view-tab active" onclick="window.setStudyView && window.setStudyView('quiz')">くいず<br><span lang="en">Quiz</span></button>
+      <button type="button" id="listViewButton" class="view-tab" onclick="window.setStudyView && window.setStudyView('list')">いちらん<br><span lang="en">Verb list</span></button>
     </nav>
 
     <section id="quizView">
@@ -197,6 +197,7 @@
   </main>
 
   <script src="./firebase-config.js"></script>
+  <script src="./view-toggle.js"></script>
   <script type="module" src="./app.js"></script>
 </body>
 </html>

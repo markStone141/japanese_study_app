@@ -2081,15 +2081,13 @@
     }
 
     function setActiveView(viewName) {
-      const isListView = viewName === "list";
-      quizView.classList.toggle("hidden", isListView);
-      listView.classList.toggle("hidden", !isListView);
-      quizViewButton.classList.toggle("active", !isListView);
-      listViewButton.classList.toggle("active", isListView);
+      if (window.setStudyView) {
+        window.setStudyView(viewName);
+      }
 
-      if (isListView) {
+      if (viewName === "list") {
         renderVerbList();
-      } else {
+      } else if (!quizView.classList.contains("hidden")) {
         answerInput.focus();
       }
     }
@@ -2239,6 +2237,11 @@
     verbGroup.addEventListener("change", startSession);
     quizViewButton.addEventListener("click", () => setActiveView("quiz"));
     listViewButton.addEventListener("click", () => setActiveView("list"));
+    document.addEventListener("study-view-change", (event) => {
+      if (event.detail && event.detail.view === "list") {
+        renderVerbList();
+      }
+    });
     listTextbook.addEventListener("change", renderVerbList);
     listLevel.addEventListener("change", renderVerbList);
     listVerbGroup.addEventListener("change", renderVerbList);
