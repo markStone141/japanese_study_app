@@ -1,10 +1,20 @@
     .container {
-      width: min(1180px, calc(100% - 32px));
+      width: min(1320px, calc(100% - 40px));
     }
 
     #quizView {
-      width: min(720px, 100%);
+      width: min(960px, 100%);
       margin: 0 auto;
+    }
+
+    .view-tabs {
+      width: min(960px, 100%);
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .settings {
+      grid-template-columns: repeat(5, minmax(0, 1fr));
     }
 
     .list-toolbar {
@@ -12,26 +22,28 @@
     }
 
     .verb-table-wrap {
-      overflow-x: auto;
+      overflow-x: visible;
     }
 
     .verb-table {
-      min-width: 1040px;
+      table-layout: fixed;
+      min-width: 0;
+      font-size: 0.84rem;
     }
 
     .verb-table th,
     .verb-table td {
-      padding: 12px 10px;
+      padding: 10px 8px;
     }
 
     .verb-table th:nth-child(1),
     .verb-table td:nth-child(1) {
-      width: 140px;
+      width: 12%;
     }
 
     .verb-table th:nth-child(2),
     .verb-table td:nth-child(2) {
-      width: 150px;
+      width: 12%;
     }
 
     .verb-table th:nth-child(3),
@@ -42,10 +54,27 @@
     .verb-table td:nth-child(4),
     .verb-table td:nth-child(5),
     .verb-table td:nth-child(6) {
-      width: 92px;
+      width: 9%;
     }
 
     .verb-table th:nth-child(7),
     .verb-table td:nth-child(7) {
-      min-width: 430px;
+      width: 40%;
+    }
+
+    .verb-main {
+      font-size: 1.05rem;
+    }
+
+    .form-cell {
+      white-space: normal;
+      word-break: keep-all;
+    }
+
+    .examples-list {
+      gap: 6px;
+    }
+
+    .example-table-en {
+      font-size: 0.8rem;
     }
