@@ -2,28 +2,13 @@
     import {
       getFirestore,
       collection,
-      doc,
-      getDoc,
-      getDocs,
-      setDoc,
-      serverTimestamp
+      getDocs
     } from "https://www.gstatic.com/firebasejs/10.12.5/firebase-firestore.js";
-    import {
-      getAuth,
-      GoogleAuthProvider,
-      onAuthStateChanged,
-      signInWithPopup,
-      signOut
-    } from "https://www.gstatic.com/firebasejs/10.12.5/firebase-auth.js";
 
     const firebaseConfig = window.FIREBASE_CONFIG || null;
     const firebaseReady = Boolean(firebaseConfig && firebaseConfig.apiKey && !String(firebaseConfig.apiKey).startsWith("YOUR_"));
     let firestore = null;
-    let auth = null;
-    let googleProvider = null;
-    let currentUser = null;
     let syncEnabled = false;
-    let appStartedForUid = null;
     const defaultSource = {
       textbookId: "minna-no-nihongo",
       textbookName: "みんなの日本語",
@@ -1691,87 +1676,28 @@
     const resetStatsButton = document.getElementById("resetStatsButton");
     const resetWrongButton = document.getElementById("resetWrongButton");
     const syncStatus = document.getElementById("syncStatus");
-    const loginScreen = document.getElementById("loginScreen");
-    const appShell = document.getElementById("appShell");
-    const googleLoginButton = document.getElementById("googleLoginButton");
-    const loginError = document.getElementById("loginError");
-    const signOutButton = document.getElementById("signOutButton");
 
     function setSyncStatus(message) {
       syncStatus.textContent = message;
     }
 
-    function setLoginError(message = "") {
-      loginError.textContent = message;
-      loginError.classList.toggle("show", Boolean(message));
-    }
-
-    function showLogin(message = "") {
-      appShell.classList.add("hidden");
-      loginScreen.classList.remove("hidden");
-      setLoginError(message);
-    }
-
-    function showApp() {
-      loginScreen.classList.add("hidden");
-      appShell.classList.remove("hidden");
-      setLoginError("");
-    }
-
-    async function startAuthenticatedApp() {
-      if (!currentUser || appStartedForUid === currentUser.uid) return;
-
-      appStartedForUid = currentUser.uid;
-      updateStats();
-      answerInput.disabled = true;
-      checkButton.classList.add("hidden");
-      nextButton.classList.add("hidden");
-      showAnswerButton.classList.add("hidden");
-      prompt.innerHTML = "よみこみちゅう...<br><span lang=\"en\">Loading...</span>";
-
-      await loadRemoteVerbs();
-      populateFilters();
-      await loadCloudProgress();
-
-      updateStats();
-      startSession();
-    }
-
     function initFirebase() {
       if (!firebaseReady) {
-        showLogin("Firebase設定がまだ入っていません。firebase-config.js を設定してください。");
+        syncEnabled = false;
+        setSyncStatus("Firebase: 未設定のため内蔵データ / Built-in data");
         return false;
       }
 
       try {
         const app = initializeApp(firebaseConfig);
         firestore = getFirestore(app);
-        auth = getAuth(app);
-        googleProvider = new GoogleAuthProvider();
-        googleProvider.setCustomParameters({ prompt: "select_account" });
-
-        onAuthStateChanged(auth, async (user) => {
-          currentUser = user;
-
-          if (!user) {
-            syncEnabled = false;
-            appStartedForUid = null;
-            setSyncStatus("Firebase: ログイン待ち / Waiting for sign in");
-            showLogin();
-            return;
-          }
-
-          syncEnabled = true;
-          setSyncStatus(`Firebase: ${user.email || "Googleアカウント"} と同期中 / Sync enabled`);
-          showApp();
-          await startAuthenticatedApp();
-        });
-
+        syncEnabled = true;
+        setSyncStatus("Firebase: 動詞DBに接続 / Verb database connected");
         return true;
       } catch (error) {
         console.error("Firebase initialization failed.", error);
         syncEnabled = false;
-        showLogin("Firebaseに接続できません。設定とGoogle認証の有効化を確認してください。");
+        setSyncStatus("Firebase: 接続できません。内蔵データを使います / Built-in data");
         return false;
       }
     }
@@ -1822,30 +1748,6 @@
         nai: data.nai || forms.nai || "",
         examples: data.examples || {}
       };
-    }
-
-    async function loadCloudProgress() {
-      if (!syncEnabled || !currentUser) return;
-
-      try {
-        const progressRef = doc(firestore, "users", currentUser.uid, "progress", "verbQuiz");
-        const snapshot = await getDoc(progressRef);
-        if (!snapshot.exists()) {
-          state.correct = 0;
-          state.total = 0;
-          state.wrongKeys = new Set();
-          saveLocalProgress();
-          return;
-        }
-
-        const progress = snapshot.data();
-        state.correct = Number(progress.correct || 0);
-        state.total = Number(progress.total || 0);
-        state.wrongKeys = new Set(Array.isArray(progress.wrongKeys) ? progress.wrongKeys : []);
-        saveLocalProgress();
-      } catch (error) {
-        console.error("Could not load progress from Firestore.", error);
-      }
     }
 
     function normalize(value) {
@@ -2079,23 +1981,8 @@
       safeStorage.set("verbQuizWrong", JSON.stringify(Array.from(state.wrongKeys)));
     }
 
-    async function saveProgress() {
+    function saveProgress() {
       saveLocalProgress();
-
-      if (!syncEnabled || !currentUser) return;
-
-      try {
-        const progressRef = doc(firestore, "users", currentUser.uid, "progress", "verbQuiz");
-        await setDoc(progressRef, {
-          correct: state.correct,
-          total: state.total,
-          wrongKeys: Array.from(state.wrongKeys),
-          updatedAt: serverTimestamp()
-        }, { merge: true });
-      } catch (error) {
-        console.error("Could not save progress to Firestore.", error);
-        setSyncStatus("Firebase: 保存に失敗。ローカル保存済み / Saved locally");
-      }
     }
 
     function updateStats() {
@@ -2281,33 +2168,20 @@
       }
     });
 
-    googleLoginButton.addEventListener("click", async () => {
-      if (!auth || !googleProvider) {
-        setLoginError("Firebase設定を確認してください。");
-        return;
-      }
-
-      googleLoginButton.disabled = true;
-      setLoginError("");
-
-      try {
-        await signInWithPopup(auth, googleProvider);
-      } catch (error) {
-        console.error("Google sign-in failed.", error);
-        setLoginError("Googleログインに失敗しました。もう一度お試しください。");
-      } finally {
-        googleLoginButton.disabled = false;
-      }
-    });
-
-    signOutButton.addEventListener("click", async () => {
-      if (!auth) return;
-      await signOut(auth);
-    });
-
     async function boot() {
-      showLogin();
+      updateStats();
+      answerInput.disabled = true;
+      checkButton.classList.add("hidden");
+      nextButton.classList.add("hidden");
+      showAnswerButton.classList.add("hidden");
+      prompt.innerHTML = "よみこみちゅう...<br><span lang=\"en\">Loading...</span>";
+
       initFirebase();
+      await loadRemoteVerbs();
+      populateFilters();
+
+      updateStats();
+      startSession();
     }
 
     boot();
