@@ -2,6 +2,13 @@
 
 Firebase Hosting と Cloud Firestore に対応した日本語動詞活用クイズです。
 
+## 画面
+
+- クイズ: 選択した教材・レベル・動詞グループから出題します。
+- 一覧: 動詞グループごとの活用と例文をテーブルで確認できます。
+
+CSSは共通の `styles.css`、PC用の `desktop.css`、モバイル用の `mobile.css` に分けています。
+
 ## Firebase 設定
 
 1. Firebase コンソールで Web アプリを作成します。

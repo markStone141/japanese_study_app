@@ -5,6 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>にほんご どうし かつようクイズ | Japanese Verb Conjugation Quiz</title>
   <link rel="stylesheet" href="./styles.css" />
+  <link rel="stylesheet" href="./desktop.css" media="(min-width: 681px)" />
+  <link rel="stylesheet" href="./mobile.css" media="(max-width: 680px)" />
 </head>
 <body>
   <main class="container">
@@ -13,135 +15,185 @@
       <p class="subtitle">じしょけいを みて、ただしい かたちを ひらがなで いれます。<br><span lang="en">Look at the dictionary form and type the correct form in hiragana.</span></p>
     </header>
 
-    <section class="panel" aria-label="score">
-      <div class="stat">
-        <span class="stat-label">せいかい<br><span lang="en">correct</span></span>
-        <span class="stat-value" id="correctCount">0</span>
-      </div>
-      <div class="stat">
-        <span class="stat-label">もんだいすう<br><span lang="en">questions</span></span>
-        <span class="stat-value" id="totalCount">0</span>
-      </div>
-      <div class="stat">
-        <span class="stat-label">せいとうりつ<br><span lang="en">accuracy</span></span>
-        <span class="stat-value" id="accuracy">0%</span>
-      </div>
+    <nav class="view-tabs" aria-label="view">
+      <button type="button" id="quizViewButton" class="view-tab active">くいず<br><span lang="en">Quiz</span></button>
+      <button type="button" id="listViewButton" class="view-tab">いちらん<br><span lang="en">Verb list</span></button>
+    </nav>
+
+    <section id="quizView">
+      <section class="panel" aria-label="score">
+        <div class="stat">
+          <span class="stat-label">せいかい<br><span lang="en">correct</span></span>
+          <span class="stat-value" id="correctCount">0</span>
+        </div>
+        <div class="stat">
+          <span class="stat-label">もんだいすう<br><span lang="en">questions</span></span>
+          <span class="stat-value" id="totalCount">0</span>
+        </div>
+        <div class="stat">
+          <span class="stat-label">せいとうりつ<br><span lang="en">accuracy</span></span>
+          <span class="stat-value" id="accuracy">0%</span>
+        </div>
+      </section>
+
+      <section class="card">
+        <div class="settings">
+          <div>
+            <label for="sourceTextbook">きょうざい<br><span lang="en">Textbook</span></label>
+            <select id="sourceTextbook">
+              <option value="all">すべて / All</option>
+            </select>
+          </div>
+          <div>
+            <label for="sourceLevel">れべる<br><span lang="en">Level</span></label>
+            <select id="sourceLevel">
+              <option value="all">すべて / All</option>
+            </select>
+          </div>
+          <div>
+            <label for="verbGroup">どうし ぐるーぷ<br><span lang="en">Verb group</span></label>
+            <select id="verbGroup">
+              <option value="all">すべて / All</option>
+            </select>
+          </div>
+          <div>
+            <label for="gameMode">もーど<br><span lang="en">Mode</span></label>
+            <select id="gameMode">
+              <option value="ten">10もん らんだむ / 10 random questions</option>
+              <option value="wrong">まちがえた もんだい / Wrong answers</option>
+              <option value="sudden">まちがえるまで / Sudden death</option>
+              <option value="free">じゆう れんしゅう / Free practice</option>
+            </select>
+          </div>
+          <div>
+            <label for="questionOrder">しゅつだい じゅん<br><span lang="en">Question order</span></label>
+            <select id="questionOrder">
+              <option value="random">らんだむ / Random</option>
+              <option value="sequence">じゅんばん / In order</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="form-options">
+          <div class="form-options-title">
+            れんしゅうする かたちを えらんでください
+            <br><span lang="en">Choose one or more forms</span>
+          </div>
+          <div class="checkbox-grid">
+            <label class="checkbox-item">
+              <input type="checkbox" name="formChoice" value="masu" checked>
+              <span>ますけい<br><span lang="en">masu</span></span>
+            </label>
+            <label class="checkbox-item">
+              <input type="checkbox" name="formChoice" value="te" checked>
+              <span>てけい<br><span lang="en">te</span></span>
+            </label>
+            <label class="checkbox-item">
+              <input type="checkbox" name="formChoice" value="ta" checked>
+              <span>たけい<br><span lang="en">ta</span></span>
+            </label>
+            <label class="checkbox-item">
+              <input type="checkbox" name="formChoice" value="nai" checked>
+              <span>ないけい<br><span lang="en">nai</span></span>
+            </label>
+          </div>
+        </div>
+
+        <div class="start-area">
+          <button type="button" id="startButton" class="primary start-button">
+            この せっていで すたーと
+            <br><span lang="en">Start with these settings</span>
+          </button>
+          <div class="setting-note">
+            ちぇっくを かえても、すたーとを おすまで もんだいは かわりません。
+            <br><span lang="en">Changes are applied only after you press Start.</span>
+          </div>
+        </div>
+
+        <div id="modeMessage" class="mode-message" aria-live="polite"></div>
+        <div id="syncStatus" class="sync-status" aria-live="polite">Firebase: ローカル保存 / Local storage</div>
+
+        <div class="question-number" id="questionNumber">だい1もん / Question 1</div>
+        <div class="dictionary-label">じしょけい<br><span lang="en">Dictionary form</span></div>
+        <div class="dictionary-form" id="dictionaryForm">かく</div>
+        <div class="meaning" id="meaning">write</div>
+
+        <div class="prompt form-masu" id="prompt">
+          <span class="target-form-label">こたえる かたち / FORM TO ENTER</span>
+          <span class="target-form-name">ます けい</span>
+          <span class="target-form-en" lang="en">MASU FORM</span>
+        </div>
+
+        <input
+          id="answerInput"
+          class="answer-input"
+          type="text"
+          inputmode="text"
+          autocomplete="off"
+          autocapitalize="off"
+          spellcheck="false"
+          placeholder="ひらがなで いれてください / Type in hiragana"
+          aria-label="answer"
+        />
+        <p class="kana-hint">Enterキーでも こたえあわせ・つぎの もんだいへ すすめます。<br><span lang="en">Press Enter to check the answer or go to the next question.</span></p>
+
+        <div id="result" class="result" aria-live="polite"></div>
+
+        <div class="buttons">
+          <button type="button" id="checkButton" class="primary">こたえあわせ<br><span lang="en">Check answer</span></button>
+          <button type="button" id="nextButton" class="primary hidden">つぎの もんだい<br><span lang="en">Next question</span></button>
+          <button type="button" id="showAnswerButton" class="secondary">こたえを みる<br><span lang="en">Show answer</span></button>
+        </div>
+      </section>
+
+      <div class="footer-actions">
+        <button type="button" id="resetStatsButton" class="small-button">せいせきを りせっと<br><span lang="en">Reset score</span></button>
+        <button type="button" id="resetWrongButton" class="small-button">まちがいを りせっと<br><span lang="en">Reset wrong answers</span></button>
+      </section>
     </section>
 
-    <section class="card">
-      <div class="settings">
-        <div>
-          <label for="sourceTextbook">きょうざい<br><span lang="en">Textbook</span></label>
-          <select id="sourceTextbook">
-            <option value="all">すべて / All</option>
-          </select>
+    <section id="listView" class="hidden">
+      <section class="list-panel">
+        <div class="list-toolbar">
+          <div>
+            <label for="listTextbook">きょうざい<br><span lang="en">Textbook</span></label>
+            <select id="listTextbook">
+              <option value="all">すべて / All</option>
+            </select>
+          </div>
+          <div>
+            <label for="listLevel">れべる<br><span lang="en">Level</span></label>
+            <select id="listLevel">
+              <option value="all">すべて / All</option>
+            </select>
+          </div>
+          <div>
+            <label for="listVerbGroup">どうし ぐるーぷ<br><span lang="en">Verb group</span></label>
+            <select id="listVerbGroup">
+              <option value="all">すべて / All</option>
+            </select>
+          </div>
         </div>
-        <div>
-          <label for="sourceLevel">れべる<br><span lang="en">Level</span></label>
-          <select id="sourceLevel">
-            <option value="all">すべて / All</option>
-          </select>
+        <div class="list-summary" id="listSummary" aria-live="polite">0 verbs</div>
+        <div class="verb-table-wrap">
+          <table class="verb-table">
+            <thead>
+              <tr>
+                <th>じしょけい<br><span lang="en">Dictionary</span></th>
+                <th>いみ<br><span lang="en">Meaning</span></th>
+                <th>ます</th>
+                <th>て</th>
+                <th>た</th>
+                <th>ない</th>
+                <th>れいぶん<br><span lang="en">Examples</span></th>
+              </tr>
+            </thead>
+            <tbody id="verbTableBody"></tbody>
+          </table>
         </div>
-        <div>
-          <label for="verbGroup">どうし ぐるーぷ<br><span lang="en">Verb group</span></label>
-          <select id="verbGroup">
-            <option value="all">すべて / All</option>
-          </select>
-        </div>
-        <div>
-          <label for="gameMode">もーど<br><span lang="en">Mode</span></label>
-          <select id="gameMode">
-            <option value="ten">10もん らんだむ / 10 random questions</option>
-            <option value="wrong">まちがえた もんだい / Wrong answers</option>
-            <option value="sudden">まちがえるまで / Sudden death</option>
-            <option value="free">じゆう れんしゅう / Free practice</option>
-          </select>
-        </div>
-        <div>
-          <label for="questionOrder">しゅつだい じゅん<br><span lang="en">Question order</span></label>
-          <select id="questionOrder">
-            <option value="random">らんだむ / Random</option>
-            <option value="sequence">じゅんばん / In order</option>
-          </select>
-        </div>
-      </div>
-
-      <div class="form-options">
-        <div class="form-options-title">
-          れんしゅうする かたちを えらんでください
-          <br><span lang="en">Choose one or more forms</span>
-        </div>
-        <div class="checkbox-grid">
-          <label class="checkbox-item">
-            <input type="checkbox" name="formChoice" value="masu" checked>
-            <span>ますけい<br><span lang="en">masu</span></span>
-          </label>
-          <label class="checkbox-item">
-            <input type="checkbox" name="formChoice" value="te" checked>
-            <span>てけい<br><span lang="en">te</span></span>
-          </label>
-          <label class="checkbox-item">
-            <input type="checkbox" name="formChoice" value="ta" checked>
-            <span>たけい<br><span lang="en">ta</span></span>
-          </label>
-          <label class="checkbox-item">
-            <input type="checkbox" name="formChoice" value="nai" checked>
-            <span>ないけい<br><span lang="en">nai</span></span>
-          </label>
-        </div>
-      </div>
-
-      <div class="start-area">
-        <button type="button" id="startButton" class="primary start-button">
-          この せっていで すたーと
-          <br><span lang="en">Start with these settings</span>
-        </button>
-        <div class="setting-note">
-          ちぇっくを かえても、すたーとを おすまで もんだいは かわりません。
-          <br><span lang="en">Changes are applied only after you press Start.</span>
-        </div>
-      </div>
-
-      <div id="modeMessage" class="mode-message" aria-live="polite"></div>
-      <div id="syncStatus" class="sync-status" aria-live="polite">Firebase: ローカル保存 / Local storage</div>
-
-      <div class="question-number" id="questionNumber">だい1もん / Question 1</div>
-      <div class="dictionary-label">じしょけい<br><span lang="en">Dictionary form</span></div>
-      <div class="dictionary-form" id="dictionaryForm">かく</div>
-      <div class="meaning" id="meaning">write</div>
-
-      <div class="prompt form-masu" id="prompt">
-        <span class="target-form-label">こたえる かたち / FORM TO ENTER</span>
-        <span class="target-form-name">ます けい</span>
-        <span class="target-form-en" lang="en">MASU FORM</span>
-      </div>
-
-      <input
-        id="answerInput"
-        class="answer-input"
-        type="text"
-        inputmode="text"
-        autocomplete="off"
-        autocapitalize="off"
-        spellcheck="false"
-        placeholder="ひらがなで いれてください / Type in hiragana"
-        aria-label="answer"
-      />
-      <p class="kana-hint">Enterキーでも こたえあわせ・つぎの もんだいへ すすめます。<br><span lang="en">Press Enter to check the answer or go to the next question.</span></p>
-
-      <div id="result" class="result" aria-live="polite"></div>
-
-      <div class="buttons">
-        <button type="button" id="checkButton" class="primary">こたえあわせ<br><span lang="en">Check answer</span></button>
-        <button type="button" id="nextButton" class="primary hidden">つぎの もんだい<br><span lang="en">Next question</span></button>
-        <button type="button" id="showAnswerButton" class="secondary">こたえを みる<br><span lang="en">Show answer</span></button>
+        <div id="emptyListMessage" class="empty-list hidden">このじょうけんの どうしは ありません。<br><span lang="en">No verbs match these filters.</span></div>
       </div>
     </section>
-
-    <div class="footer-actions">
-      <button type="button" id="resetStatsButton" class="small-button">せいせきを りせっと<br><span lang="en">Reset score</span></button>
-      <button type="button" id="resetWrongButton" class="small-button">まちがいを りせっと<br><span lang="en">Reset wrong answers</span></button>
-    </div>
   </main>
 
   <script src="./firebase-config.js"></script>

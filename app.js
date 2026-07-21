@@ -1676,6 +1676,16 @@
     const resetStatsButton = document.getElementById("resetStatsButton");
     const resetWrongButton = document.getElementById("resetWrongButton");
     const syncStatus = document.getElementById("syncStatus");
+    const quizViewButton = document.getElementById("quizViewButton");
+    const listViewButton = document.getElementById("listViewButton");
+    const quizView = document.getElementById("quizView");
+    const listView = document.getElementById("listView");
+    const listTextbook = document.getElementById("listTextbook");
+    const listLevel = document.getElementById("listLevel");
+    const listVerbGroup = document.getElementById("listVerbGroup");
+    const listSummary = document.getElementById("listSummary");
+    const verbTableBody = document.getElementById("verbTableBody");
+    const emptyListMessage = document.getElementById("emptyListMessage");
 
     function setSyncStatus(message) {
       syncStatus.textContent = message;
@@ -1717,11 +1727,7 @@
             verb.ta &&
             verb.nai
           )
-          .sort((a, b) => {
-            const orderA = Number.isFinite(a.order) ? a.order : Number.MAX_SAFE_INTEGER;
-            const orderB = Number.isFinite(b.order) ? b.order : Number.MAX_SAFE_INTEGER;
-            return orderA - orderB || String(a.dictionary).localeCompare(String(b.dictionary), "ja");
-          });
+          .sort(compareVerbs);
 
         if (remoteVerbs.length > 0) {
           verbs = remoteVerbs;
@@ -1765,6 +1771,17 @@
       return items[Math.floor(Math.random() * items.length)];
     }
 
+    function compareVerbs(a, b) {
+      const sourceCompare = String(a.textbookId || "").localeCompare(String(b.textbookId || ""), "ja") ||
+        String(a.levelId || "").localeCompare(String(b.levelId || ""), "ja") ||
+        String(a.verbGroupId || "").localeCompare(String(b.verbGroupId || ""), "ja");
+      if (sourceCompare !== 0) return sourceCompare;
+
+      const orderA = Number.isFinite(a.order) ? a.order : Number.MAX_SAFE_INTEGER;
+      const orderB = Number.isFinite(b.order) ? b.order : Number.MAX_SAFE_INTEGER;
+      return orderA - orderB || String(a.dictionary).localeCompare(String(b.dictionary), "ja");
+    }
+
     function makeOptionLabel(item, idKey, nameKey) {
       return item[nameKey] || item[idKey];
     }
@@ -1794,6 +1811,9 @@
       populateSelect(sourceTextbook, verbs, "textbookId", "textbookName");
       populateSelect(sourceLevel, verbs, "levelId", "levelName");
       populateSelect(verbGroup, verbs, "verbGroupId", "verbGroupName");
+      populateSelect(listTextbook, verbs, "textbookId", "textbookName");
+      populateSelect(listLevel, verbs, "levelId", "levelName");
+      populateSelect(listVerbGroup, verbs, "verbGroupId", "verbGroupName");
     }
 
     function makeKey(verb, form) {
@@ -1808,6 +1828,12 @@
       return (sourceTextbook.value === "all" || verb.textbookId === sourceTextbook.value) &&
         (sourceLevel.value === "all" || verb.levelId === sourceLevel.value) &&
         (verbGroup.value === "all" || verb.verbGroupId === verbGroup.value);
+    }
+
+    function matchesListSource(verb) {
+      return (listTextbook.value === "all" || verb.textbookId === listTextbook.value) &&
+        (listLevel.value === "all" || verb.levelId === listLevel.value) &&
+        (listVerbGroup.value === "all" || verb.verbGroupId === listVerbGroup.value);
     }
 
     function getAvailableQuestions() {
@@ -2002,12 +2028,74 @@
         .replace(/'/g, "&#039;");
     }
 
-    function getExampleHtml(verb, form) {
+    function getExamplePair(verb, form) {
       const exampleGroup = verb.examples || exampleSentences[verb.dictionary];
       const rawExample = exampleGroup && exampleGroup[form];
-      const example = rawExample
-        ? (Array.isArray(rawExample) ? rawExample : [rawExample.ja, rawExample.en])
-        : [`${verb[form]}。`, verb.meaning];
+
+      if (!rawExample) {
+        return [`${verb[form]}。`, verb.meaning];
+      }
+
+      return Array.isArray(rawExample)
+        ? rawExample
+        : [rawExample.ja || `${verb[form]}。`, rawExample.en || verb.meaning];
+    }
+
+    function getExamplesTableHtml(verb) {
+      return ["masu", "te", "ta", "nai"].map((form) => {
+        const example = getExamplePair(verb, form);
+        return `
+          <div class="example-line">
+            <div class="example-form">${escapeHtml(formLabels[form])}</div>
+            <div class="example-table-ja">${escapeHtml(example[0])}</div>
+            <div class="example-table-en" lang="en">${escapeHtml(example[1])}</div>
+          </div>
+        `;
+      }).join("");
+    }
+
+    function renderVerbList() {
+      const filteredVerbs = verbs
+        .filter(matchesListSource)
+        .sort(compareVerbs);
+
+      listSummary.textContent = `${filteredVerbs.length} verbs`;
+      emptyListMessage.classList.toggle("hidden", filteredVerbs.length > 0);
+
+      verbTableBody.innerHTML = filteredVerbs.map((verb) => `
+        <tr>
+          <td data-label="じしょけい">
+            <div class="verb-main">${escapeHtml(verb.dictionary)}</div>
+            <div class="verb-meta">${escapeHtml(verb.verbGroupName || "")}</div>
+          </td>
+          <td data-label="いみ">${escapeHtml(verb.meaning)}</td>
+          <td data-label="ます" class="form-cell">${escapeHtml(verb.masu)}</td>
+          <td data-label="て" class="form-cell">${escapeHtml(verb.te)}</td>
+          <td data-label="た" class="form-cell">${escapeHtml(verb.ta)}</td>
+          <td data-label="ない" class="form-cell">${escapeHtml(verb.nai)}</td>
+          <td data-label="れいぶん" class="examples-cell">
+            <div class="examples-list">${getExamplesTableHtml(verb)}</div>
+          </td>
+        </tr>
+      `).join("");
+    }
+
+    function setActiveView(viewName) {
+      const isListView = viewName === "list";
+      quizView.classList.toggle("hidden", isListView);
+      listView.classList.toggle("hidden", !isListView);
+      quizViewButton.classList.toggle("active", !isListView);
+      listViewButton.classList.toggle("active", isListView);
+
+      if (isListView) {
+        renderVerbList();
+      } else {
+        answerInput.focus();
+      }
+    }
+
+    function getExampleHtml(verb, form) {
+      const example = getExamplePair(verb, form);
 
       return `
         <div class="example-box">
@@ -2149,6 +2237,11 @@
     sourceTextbook.addEventListener("change", startSession);
     sourceLevel.addEventListener("change", startSession);
     verbGroup.addEventListener("change", startSession);
+    quizViewButton.addEventListener("click", () => setActiveView("quiz"));
+    listViewButton.addEventListener("click", () => setActiveView("list"));
+    listTextbook.addEventListener("change", renderVerbList);
+    listLevel.addEventListener("change", renderVerbList);
+    listVerbGroup.addEventListener("change", renderVerbList);
 
     resetStatsButton.addEventListener("click", () => {
       if (!confirm("せいかいすう・もんだいすうを りせっとしますか？\nReset the score and question count?")) return;
@@ -2179,6 +2272,7 @@
       initFirebase();
       await loadRemoteVerbs();
       populateFilters();
+      renderVerbList();
 
       updateStats();
       startSession();
