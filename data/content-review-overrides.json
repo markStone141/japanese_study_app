@@ -1,5 +1,5 @@
 {
-  "reviewVersion": 1,
+  "reviewVersion": 2,
   "verbs": {
     "minna-shokyu-1-group-1-007": { "examples": { "masu": { "ja": "えきまで いそぎます。", "en": "I hurry to the station." }, "ta": { "ja": "えきまで いそいだ。", "en": "I hurried to the station." } } },
     "minna-shokyu-1-group-1-026": { "examples": { "masu": { "ja": "きょうも べんきょうを がんばります。", "en": "I will do my best with my studies today too." } } },
@@ -8,7 +8,43 @@
     "minna-shokyu-1-group-1-059": { "examples": { "te": { "ja": "パソコンが なおって、また つかいます。", "en": "The computer is fixed, so I will use it again." } } },
     "minna-shokyu-1-group-1-070": { "examples": { "masu": { "ja": "ちちは ぎんこうで はたらきます。", "en": "My father works at a bank." } } },
     "minna-shokyu-1-group-1-080": { "examples": { "te": { "ja": "きょうは しごとを やすんで、びょういんへ いきます。", "en": "Today, I take the day off work and go to the hospital." } } },
-    "minna-shokyu-1-group-2-002": { "examples": { "te": { "ja": "いもうとに おかしを あげて、いっしょに たべます。", "en": "I give my younger sister some sweets and eat them together." } } },
+    "minna-shokyu-1-group-2-001": {
+      "examples": {
+        "pastNegative": { "ja": "きのうは さむかったので、まどを あけなかった。", "en": "Yesterday it was cold, so I did not open the window." },
+        "potential": { "ja": "この かぎが あれば、ドアを あけられる。", "en": "If I have this key, I can open the door." },
+        "ba": { "ja": "まどを あければ、すずしい かぜが はいります。", "en": "If you open the window, cool air will come in." },
+        "volitional": { "ja": "あついから、まどを あけよう。", "en": "It is hot, so let's open the window." },
+        "causative": { "ja": "せんせいは がくせいに まどを あけさせる。", "en": "The teacher has the student open the window." }
+      }
+    },
+    "minna-shokyu-1-group-2-002": {
+      "examples": {
+        "te": { "ja": "いもうとに おかしを あげて、いっしょに たべます。", "en": "I give my younger sister some sweets and eat them together." },
+        "pastNegative": { "ja": "その ほんは たいせつなので、だれにも あげなかった。", "en": "That book was important to me, so I did not give it to anyone." },
+        "potential": { "ja": "この おかしなら、こどもに あげられる。", "en": "I can give this snack to the child." },
+        "ba": { "ja": "この はなを あげれば、きっと よろこびます。", "en": "If you give them these flowers, they will surely be happy." },
+        "volitional": { "ja": "たんじょうびに この ほんを あげよう。", "en": "Let's give this book as a birthday present." },
+        "causative": { "ja": "せんせいは がくせいに こどもたちへ プレゼントを あげさせる。", "en": "The teacher has the student give presents to the children." }
+      }
+    },
+    "minna-shokyu-1-group-2-003": {
+      "examples": {
+        "pastNegative": { "ja": "きのうは じかんが なくて、しりょうを あつめなかった。", "en": "Yesterday I had no time, so I did not collect the materials." },
+        "potential": { "ja": "みんなで やれば、たくさんの しりょうを あつめられる。", "en": "If we work together, we can gather a lot of material." },
+        "ba": { "ja": "じょうほうを あつめれば、もっと よく わかります。", "en": "If you gather information, you will understand it better." },
+        "volitional": { "ja": "レポートの ために、しゃしんを あつめよう。", "en": "Let's collect photos for the report." },
+        "causative": { "ja": "せんせいは がくせいに しりょうを あつめさせる。", "en": "The teacher has the students collect materials." }
+      }
+    },
+    "minna-shokyu-1-group-2-004": {
+      "examples": {
+        "pastNegative": { "ja": "けさは じかんが なくて、シャワーを あびなかった。", "en": "I did not have time this morning, so I did not take a shower." },
+        "potential": { "ja": "この ホテルでは いつでも シャワーを あびられる。", "en": "At this hotel, you can take a shower at any time." },
+        "ba": { "ja": "シャワーを あびれば、すっきりします。", "en": "If you take a shower, you will feel refreshed." },
+        "volitional": { "ja": "うんどうが おわったら、シャワーを あびよう。", "en": "Let's take a shower after exercising." },
+        "causative": { "ja": "ははは こどもに シャワーを あびさせる。", "en": "The mother has her child take a shower." }
+      }
+    },
     "minna-shokyu-1-group-2-012": { "examples": { "ta": { "ja": "きのう、ともだちに じゅうしょを おしえた。", "en": "Yesterday, I told my friend my address." } } },
     "minna-shokyu-1-group-2-022": { "examples": { "ta": { "ja": "くらい みちで、くるまに きを つけた。", "en": "I watched out for cars on the dark road." } } },
     "minna-shokyu-1-group-2-035": {

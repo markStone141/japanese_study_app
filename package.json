@@ -13,7 +13,8 @@
     "import:data:all": "npm run import:verbs:all && npm run import:katsuyou2",
     "data:apply-kanji": "node scripts/apply-kanji.mjs",
     "audit:content": "node scripts/audit-content.mjs",
-    "test:katsuyou2": "node scripts/validate-katsuyou2.mjs"
+    "test:katsuyou2": "node scripts/validate-katsuyou2.mjs",
+    "test:katsuyou2-ui": "node scripts/test-katsuyou2-ui.mjs"
   },
   "dependencies": {
     "firebase-admin": "^12.7.0"
