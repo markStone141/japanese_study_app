@@ -30,25 +30,32 @@ const loadJson = async (file) => JSON.parse(await readFile(file, "utf8"));
 const containsTarget = (example, value) => String(example || "").replace(/\s+/g, "").includes(String(value || "").replace(/\s+/g, ""));
 const addIssue = (issue) => issues.push(issue);
 
-function auditExamples(verb, file, forms) {
+function auditExamples(verb, file, forms, { partial = false } = {}) {
   for (const form of forms) {
-    const target = verb[form] || verb.forms?.[form];
+    const hasTarget = Object.hasOwn(verb, form) || Object.hasOwn(verb.forms || {}, form);
+    const hasExample = Object.hasOwn(verb.examples || {}, form);
+    // Source-specific reviewed patches may intentionally contain only the
+    // advanced forms they override. The merged production object is validated
+    // separately by validate-katsuyou2.mjs, so do not require omitted base forms here.
+    if (partial && !hasTarget && !hasExample) continue;
+
+    const target = verb[form] ?? verb.forms?.[form];
     const pair = verb.examples?.[form];
+    if (target === null) {
+      if (pair) addIssue({ severity: "error", file, id: verb.id, form, message: "Unavailable/null form must not have a quiz example" });
+      continue;
+    }
     if (!target) addIssue({ severity: "error", file, id: verb.id, form, message: "Missing target form" });
     if (!pair?.ja || !pair?.en) {
       addIssue({ severity: "error", file, id: verb.id, form, message: "Missing bilingual example" });
       continue;
     }
     exampleCount += 1;
-    // A quiz example that does not contain the requested conjugation is a real
-    // data defect, so keep this as a blocking error rather than a warning.
     if (!containsTarget(pair.ja, target)) addIssue({ severity: "error", file, id: verb.id, form, message: `Example does not visibly contain target: ${target}`, ja: pair.ja });
 
     const key = pair.ja.replace(/\s+/g, "");
     if (exactJapanese.has(key)) {
       const previous = exactJapanese.get(key);
-      // Duplicate wording is useful to review, but it does not make the data
-      // invalid. Report it without failing Continuous Integration (CI).
       addIssue({ severity: "warning", file, id: verb.id, form, message: `Exact Japanese example duplicated from ${previous.id}/${previous.form}`, ja: pair.ja });
     } else exactJapanese.set(key, { id: verb.id, form });
 
@@ -80,10 +87,6 @@ for (const file of VERB_FILES) {
   }
 }
 
-// 動詞の活用2 intentionally reuses the four basic-form examples from the
-// base verb dataset for the same verbs. Duplicate detection restarts here so
-// it catches accidental repetition inside this dataset without rejecting that
-// deliberate cross-course reuse.
 exactJapanese.clear();
 
 const katsuyou2Files = (await readdir("data/katsuyou2")).filter((name) => /^part-\d+\.json$/.test(name)).sort((a, b) => a.localeCompare(b, undefined, { numeric: true }));
@@ -98,7 +101,7 @@ for (const name of katsuyou2Files) {
     if (!verb.id) addIssue({ severity: "error", file, message: "Missing id" });
     if (katsuyou2Ids.has(verb.id)) addIssue({ severity: "error", file, id: verb.id, message: "Duplicate katsuyou2 id" });
     katsuyou2Ids.add(verb.id);
-    auditExamples(verb, file, KATSUYOU2_FORMS);
+    auditExamples(verb, file, KATSUYOU2_FORMS, { partial: Boolean(verb.sourceVerbId) });
   }
 }
 
@@ -111,6 +114,4 @@ const errors = issues.filter((item) => item.severity === "error");
 const warnings = issues.filter((item) => item.severity === "warning");
 const reviews = issues.filter((item) => item.severity === "review");
 console.log(`AUDIT TOTAL errors=${errors.length} warnings=${warnings.length} review=${reviews.length}`);
-// Only real data defects fail CI. Warnings and curriculum-review notices stay
-// visible in the log for the review agents, but they do not block deployment.
 if (errors.length) process.exitCode = 1;
