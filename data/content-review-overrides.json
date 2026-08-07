@@ -1,0 +1,26 @@
+{
+  "reviewVersion": 1,
+  "verbs": {
+    "minna-shokyu-1-group-1-007": { "examples": { "masu": { "ja": "えきまで いそぎます。", "en": "I hurry to the station." }, "ta": { "ja": "えきまで いそいだ。", "en": "I hurried to the station." } } },
+    "minna-shokyu-1-group-1-026": { "examples": { "masu": { "ja": "きょうも べんきょうを がんばります。", "en": "I will do my best with my studies today too." } } },
+    "minna-shokyu-1-group-1-051": { "examples": { "masu": { "ja": "わたしは とうきょうに すみます。", "en": "I live in Tokyo." } } },
+    "minna-shokyu-1-group-1-056": { "examples": { "nai": { "ja": "きょうは てつだわない。", "en": "I will not help today." } } },
+    "minna-shokyu-1-group-1-059": { "examples": { "te": { "ja": "パソコンが なおって、また つかいます。", "en": "The computer is fixed, so I will use it again." } } },
+    "minna-shokyu-1-group-1-070": { "examples": { "masu": { "ja": "ちちは ぎんこうで はたらきます。", "en": "My father works at a bank." } } },
+    "minna-shokyu-1-group-1-080": { "examples": { "te": { "ja": "きょうは しごとを やすんで、びょういんへ いきます。", "en": "Today, I take the day off work and go to the hospital." } } },
+    "minna-shokyu-1-group-2-002": { "examples": { "te": { "ja": "いもうとに おかしを あげて、いっしょに たべます。", "en": "I give my younger sister some sweets and eat them together." } } },
+    "minna-shokyu-1-group-2-012": { "examples": { "ta": { "ja": "きのう、ともだちに じゅうしょを おしえた。", "en": "Yesterday, I told my friend my address." } } },
+    "minna-shokyu-1-group-2-022": { "examples": { "ta": { "ja": "くらい みちで、くるまに きを つけた。", "en": "I watched out for cars on the dark road." } } },
+    "minna-shokyu-1-group-2-035": {
+      "meaning": "leave [a cafe, etc.]",
+      "examples": {
+        "masu": { "ja": "コーヒーを のんで、きっさてんを でます。", "en": "I drink coffee and leave the cafe." },
+        "te": { "ja": "きっさてんを でて、えきへ いきます。", "en": "I leave the cafe and go to the station." },
+        "ta": { "ja": "さっき、きっさてんを でた。", "en": "I left the cafe a little while ago." },
+        "nai": { "ja": "まだ きっさてんを でない。", "en": "I will not leave the cafe yet." }
+      }
+    },
+    "minna-shokyu-1-group-2-043": { "examples": { "masu": { "ja": "えきで ともだちを むかえます。", "en": "I meet my friend at the station." } } }
+  },
+  "katsuyou2": {}
+}

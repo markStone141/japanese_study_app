@@ -1,6 +1,7 @@
 import { readFile } from "node:fs/promises";
 import process from "node:process";
 import admin from "firebase-admin";
+import { loadContentReviewOverrides, reviewItem } from "./content-review.mjs";
 
 const inputPath = process.argv[2];
 
@@ -16,26 +17,22 @@ async function getDefaultProjectId() {
   try {
     const firebaseRc = JSON.parse(await readFile(".firebaserc", "utf8"));
     return firebaseRc.projects && firebaseRc.projects.default;
-  } catch (error) {
+  } catch {
     return null;
   }
 }
 
 const projectId = await getDefaultProjectId();
-
-admin.initializeApp({
-  credential: admin.credential.applicationDefault(),
-  projectId
-});
+admin.initializeApp({ credential: admin.credential.applicationDefault(), projectId });
 
 const db = admin.firestore();
 const raw = await readFile(inputPath, "utf8");
-const verbs = JSON.parse(raw);
+const sourceVerbs = JSON.parse(raw);
+const overrides = await loadContentReviewOverrides();
 
-if (!Array.isArray(verbs)) {
-  throw new Error("The import file must be a JSON array.");
-}
+if (!Array.isArray(sourceVerbs)) throw new Error("The import file must be a JSON array.");
 
+const verbs = sourceVerbs.map((verb) => reviewItem(verb, overrides, "verbs"));
 let batch = db.batch();
 let batchCount = 0;
 let total = 0;
@@ -48,29 +45,17 @@ async function commitBatch() {
 }
 
 for (const [index, verb] of verbs.entries()) {
-  if (!verb.id) {
-    throw new Error(`Verb at index ${index} is missing id.`);
-  }
+  if (!verb.id) throw new Error(`Verb at index ${index} is missing id.`);
 
   const ref = db.collection("verbs").doc(verb.id);
-  const payload = {
-    ...verb,
-    updatedAt: admin.firestore.FieldValue.serverTimestamp()
-  };
-
-  if (!Object.hasOwn(verb, "kanji")) {
-    payload.kanji = admin.firestore.FieldValue.delete();
-  }
+  const payload = { ...verb, updatedAt: admin.firestore.FieldValue.serverTimestamp() };
+  if (!Object.hasOwn(verb, "kanji")) payload.kanji = admin.firestore.FieldValue.delete();
 
   batch.set(ref, payload, { merge: true });
-
   batchCount += 1;
   total += 1;
-
-  if (batchCount >= 400) {
-    await commitBatch();
-  }
+  if (batchCount >= 400) await commitBatch();
 }
 
 await commitBatch();
-console.log(`Imported ${total} verbs into Firestore collection "verbs".`);
+console.log(`Imported ${total} reviewed verbs into Firestore collection "verbs".`);

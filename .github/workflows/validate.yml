@@ -27,10 +27,17 @@ jobs:
       - name: Validate 動詞の活用2 data
         run: npm run test:katsuyou2
 
+      - name: Audit example content
+        run: npm run audit:content
+
       - name: Check JavaScript syntax
         run: |
           node --check app.js
           node --check katsuyou2.js
+          node --check scripts/audit-content.mjs
+          node --check scripts/content-review.mjs
+          node --check scripts/import-verbs.mjs
+          node --check scripts/import-katsuyou2.mjs
 
       - name: Check required pages
         run: |
