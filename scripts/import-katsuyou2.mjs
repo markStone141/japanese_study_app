@@ -3,6 +3,13 @@ import path from "node:path";
 import process from "node:process";
 import admin from "firebase-admin";
 import { loadContentReviewOverrides, reviewItem } from "./content-review.mjs";
+import { buildKatsuyou2FromBase } from "../conjugation-core.js";
+
+const BASE_FILES = [
+  "data/verbs-minna-no-nihongo-shokyu-1-group-1.json",
+  "data/verbs-minna-no-nihongo-shokyu-1-group-2.json",
+  "data/verbs-minna-no-nihongo-shokyu-1-group-3.json"
+];
 
 async function getDefaultProjectId() {
   if (process.env.GOOGLE_CLOUD_PROJECT) return process.env.GOOGLE_CLOUD_PROJECT;
@@ -15,20 +22,39 @@ async function getDefaultProjectId() {
   }
 }
 
+function curatedKey(item) { return `${item.verb?.group}|${item.dictionary}|${item.meaning}`; }
+
 const projectId = await getDefaultProjectId();
 admin.initializeApp({ credential: admin.credential.applicationDefault(), projectId });
-
 const db = admin.firestore();
 const overrides = await loadContentReviewOverrides();
-const dataDir = "data/katsuyou2";
-const files = (await readdir(dataDir))
+
+const curatedFiles = (await readdir("data/katsuyou2"))
   .filter((name) => /^part-\d+\.json$/.test(name))
   .sort((a, b) => a.localeCompare(b, undefined, { numeric: true }));
+const curatedSource = [];
+for (const name of curatedFiles) {
+  const rows = JSON.parse(await readFile(path.join("data/katsuyou2", name), "utf8"));
+  if (!Array.isArray(rows)) throw new Error(`${name} must contain a JSON array.`);
+  curatedSource.push(...rows.map((row) => reviewItem(row, overrides, "katsuyou2")));
+}
+const curatedMap = new Map(curatedSource.map((item) => [curatedKey(item), item]));
+
+const all = [];
+for (const file of BASE_FILES) {
+  const rows = JSON.parse(await readFile(file, "utf8"));
+  if (!Array.isArray(rows)) throw new Error(`${file} must contain a JSON array.`);
+  for (const raw of rows) {
+    const base = reviewItem(raw, overrides, "verbs");
+    const group = Number(String(base.verbGroupId).replace("group-", ""));
+    const curated = curatedMap.get(`${group}|${base.dictionary}|${base.meaning}`) || null;
+    all.push(buildKatsuyou2FromBase(base, curated));
+  }
+}
 
 let batch = db.batch();
 let batchCount = 0;
 let total = 0;
-
 async function commitBatch() {
   if (!batchCount) return;
   await batch.commit();
@@ -36,21 +62,13 @@ async function commitBatch() {
   batchCount = 0;
 }
 
-for (const name of files) {
-  const file = path.join(dataDir, name);
-  const sourceVerbs = JSON.parse(await readFile(file, "utf8"));
-  if (!Array.isArray(sourceVerbs)) throw new Error(`${file} must contain a JSON array.`);
-
-  for (const [index, sourceVerb] of sourceVerbs.entries()) {
-    const verb = reviewItem(sourceVerb, overrides, "katsuyou2");
-    if (!verb.id) throw new Error(`${file}: item ${index} is missing id.`);
-    const ref = db.collection("verbConjugation2").doc(verb.id);
-    batch.set(ref, { ...verb, updatedAt: admin.firestore.FieldValue.serverTimestamp() }, { merge: true });
-    batchCount += 1;
-    total += 1;
-    if (batchCount >= 400) await commitBatch();
-  }
+for (const verb of all) {
+  const ref = db.collection("verbConjugation2").doc(verb.id);
+  batch.set(ref, { ...verb, updatedAt: admin.firestore.FieldValue.serverTimestamp() }, { merge: true });
+  batchCount += 1;
+  total += 1;
+  if (batchCount >= 400) await commitBatch();
 }
-
 await commitBatch();
-console.log(`Imported ${total} reviewed documents into Firestore collection "verbConjugation2".`);
+
+console.log(`Imported ${total} 活用2 documents into Firestore collection "verbConjugation2" (${curatedSource.length} with curated advanced examples).`);
