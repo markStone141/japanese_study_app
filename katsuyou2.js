@@ -240,6 +240,15 @@ function startSession() {
   renderQuestion();
 }
 
+function handlePageEnter(event) {
+  if (event.key !== "Enter" || event.isComposing) return;
+  if (!currentQuestion()) return;
+  const target = event.target;
+  if (target instanceof HTMLElement && (target.matches("button, select, input[type=checkbox], input[type=radio]") || target.isContentEditable)) return;
+  event.preventDefault();
+  state.answered ? nextQuestion() : checkAnswer();
+}
+
 async function init() {
   const [baseResponses, curatedResponses, overridesResponse] = await Promise.all([
     Promise.all(BASE_DATA_URLS.map((url) => fetch(url))),
@@ -269,10 +278,7 @@ async function init() {
   els.nextButton.addEventListener("click", nextQuestion);
   els.groupFilter.addEventListener("change", startSession);
   els.learningMode.forEach((input) => input.addEventListener("change", () => { renderFormChoices(); startSession(); }));
-  els.answerInput.addEventListener("keydown", (event) => {
-    if (event.key !== "Enter") return;
-    if (state.answered) nextQuestion(); else checkAnswer();
-  });
+  document.addEventListener("keydown", handlePageEnter);
 }
 
 init().catch((error) => {
