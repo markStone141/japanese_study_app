@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>動詞の活用2 | みんなの日本語 初級I</title>
+  <link rel="stylesheet" href="./katsuyou2.css" />
+</head>
+<body>
+  <main class="app-shell">
+    <header class="hero">
+      <div>
+        <p class="eyebrow">みんなの日本語・初級I</p>
+        <h1>どうしの かつよう 2</h1>
+        <p class="subtitle">じしょけいを みて、ただしい かつようを ひらがなで こたえます。<br><span lang="en">Look at the dictionary form and type the requested conjugation.</span></p>
+      </div>
+      <a class="back-link" href="./index.html">← かつよう1</a>
+    </header>
+
+    <section class="panel settings-panel" aria-label="quiz settings">
+      <div class="settings-grid">
+        <label>
+          <span>どうし ぐるーぷ <small>Verb group</small></span>
+          <select id="groupFilter">
+            <option value="all">すべて / All</option>
+            <option value="1">グループ1</option>
+            <option value="2">グループ2</option>
+            <option value="3">グループ3</option>
+          </select>
+        </label>
+        <label>
+          <span>もんだいすう <small>Questions</small></span>
+          <select id="questionCount">
+            <option value="10">10もん</option>
+            <option value="20">20もん</option>
+            <option value="all">ぜんぶ / All</option>
+          </select>
+        </label>
+        <label>
+          <span>しゅつだい じゅん <small>Order</small></span>
+          <select id="questionOrder">
+            <option value="balanced">ばらんす / Balanced random</option>
+            <option value="sequence">じゅんばん / In order</option>
+          </select>
+        </label>
+      </div>
+
+      <fieldset class="forms-fieldset">
+        <legend>れんしゅうする かたち <span lang="en">Forms to practice</span></legend>
+        <div id="formChoices" class="form-grid"></div>
+      </fieldset>
+
+      <button id="startButton" class="primary wide" type="button">この せっていで すたーと<br><span lang="en">Start with these settings</span></button>
+    </section>
+
+    <section class="score-grid" aria-label="score">
+      <div class="score-card"><span>せいかい</span><strong id="correctCount">0</strong></div>
+      <div class="score-card"><span>もんだい</span><strong id="progressCount">0 / 0</strong></div>
+      <div class="score-card"><span>せいとうりつ</span><strong id="accuracy">0%</strong></div>
+    </section>
+
+    <section class="quiz-card" aria-live="polite">
+      <div class="question-meta">
+        <span id="groupBadge" class="badge">グループ1</span>
+        <span id="formBadge" class="badge secondary">ます形</span>
+      </div>
+
+      <div class="dictionary-label">じしょけい <span lang="en">Dictionary form</span></div>
+      <div class="word">
+        <div id="dictionaryKana" class="kana">—</div>
+        <div id="dictionaryKanji" class="kanji"></div>
+      </div>
+      <div id="meaning" class="meaning"></div>
+
+      <div class="prompt-box">
+        <span>この かたちに してください</span>
+        <strong id="targetFormName">—</strong>
+        <small id="targetFormEnglish" lang="en"></small>
+      </div>
+
+      <input id="answerInput" class="answer-input" type="text" autocomplete="off" autocapitalize="off" spellcheck="false" placeholder="ひらがなで こたえてください" />
+
+      <div class="button-row">
+        <button id="checkButton" class="primary" type="button">こたえあわせ</button>
+        <button id="showButton" class="secondary-button" type="button">こたえを みる</button>
+        <button id="nextButton" class="primary hidden" type="button">つぎへ</button>
+      </div>
+
+      <div id="result" class="result"></div>
+    </section>
+
+    <section class="panel review-panel">
+      <div class="review-head">
+        <div>
+          <p class="eyebrow">REVIEW</p>
+          <h2>かつよう いちらん</h2>
+        </div>
+        <input id="searchInput" type="search" placeholder="どうしを けんさく" />
+      </div>
+      <div id="verbList" class="verb-list"></div>
+    </section>
+  </main>
+
+  <script type="module" src="./katsuyou2.js"></script>
+</body>
+</html>
