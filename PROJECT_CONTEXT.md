@@ -53,6 +53,8 @@ For advanced sentence-cloze coverage, work in reviewed batches. Each batch must 
 7. automated tests
 8. Firestore sync after merge
 
+Technically generatable forms may be skipped for sentence examples when they are pragmatically odd or misleading for beginners. Example: a verb such as `うまれる` can be mechanically conjugated, but its potential/causative forms are poor candidates for ordinary beginner cloze examples.
+
 ## Development workflow
 Use test-first development for regressions and structured content batches:
 
@@ -64,14 +66,14 @@ Do not merge known failing validation.
 The detailed source of truth is `AGENTS.md`.
 
 The Example Content Team consists of:
-1. Beginner Japanese Teacher
-2. Native Japanese Editor
-3. English Translation Editor
-4. Learning & Memory Designer
-5. Context Diversity Editor
-6. Cloze Question Designer
-7. Japanese Culture Context Editor
-8. Conversation Material Designer
+1. Beginner Japanese Teacher / 初級日本語教師
+2. Native Japanese Editor / ネイティブ校正担当
+3. English Translation Editor / 英訳担当
+4. Learning & Memory Designer / 学習心理担当
+5. Context Diversity Editor / 多様性担当
+6. Cloze Question Designer / 穴埋め問題担当
+7. Japanese Culture Context Editor / 日本文化担当
+8. Conversation Material Designer / 会話教材担当
 
 The overall team also includes Coordinator, Question Design, Japanese QA, UI/UX, Implementation, Test & Balance, Learning Analysis, Refactoring/Code Quality, GitHub/CI & Firestore operations, and Final Review.
 
@@ -84,7 +86,9 @@ The overall team also includes Coordinator, Question Design, Japanese QA, UI/UX,
 - GitHub Actions validation
 - automated Firestore sync
 - result/answer feedback regression test
+- Example Content Team formally expanded to eight roles
 - reviewed advanced example Batch 1
+- reviewed advanced example Batch 2
 
 ### Advanced example coverage
 Batch 1 completed:
@@ -93,10 +97,24 @@ Batch 1 completed:
 - あつめる
 - あびる
 
-Batch 1 contains 20 reviewed advanced bilingual examples (5 advanced forms × 4 verbs).
+Batch 1: 20 reviewed advanced bilingual examples.
+
+Batch 2 completed:
+- いれる
+- おきる
+- おしえる (teach)
+- おしえる (tell an address / information)
+- おぼえる
+- おりる
+
+Batch 2: 30 reviewed advanced bilingual examples.
+
+Total reviewed advanced examples after Batch 2: 50 examples across 10 verb entries.
+
+Batch 2 deliberately skips `いる` variants and `うまれる` for now because some advanced forms need separate pedagogical treatment rather than forced everyday examples.
 
 ### Current work
-Continue advanced examples in small reviewed batches. The next batch should continue from Group 2 after Batch 1, with tests added before production overrides.
+Continue Group 2 in small reviewed batches. Before adding a verb to advanced sentence-cloze coverage, decide whether all five advanced forms are pedagogically suitable. If not, document the exception instead of forcing an unnatural sentence.
 
 ## Maintenance rule
 Update this file whenever any of the following changes:
