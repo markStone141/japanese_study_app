@@ -1,0 +1,58 @@
+name: Sync Firestore
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "data/verbs-minna-no-nihongo-shokyu-1-group-1.json"
+      - "data/verbs-minna-no-nihongo-shokyu-1-group-2.json"
+      - "data/verbs-minna-no-nihongo-shokyu-1-group-3.json"
+      - "scripts/import-verbs.mjs"
+      - "package.json"
+      - ".firebaserc"
+      - ".github/workflows/firestore-sync.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: firestore-sync-main
+  cancel-in-progress: false
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    environment: production
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Validate 動詞の活用2 data
+        run: npm run test:katsuyou2
+
+      - name: Create Google service account credentials
+        shell: bash
+        env:
+          FIREBASE_SERVICE_ACCOUNT: ${{ secrets.FIREBASE_SERVICE_ACCOUNT }}
+        run: |
+          if [ -z "$FIREBASE_SERVICE_ACCOUNT" ]; then
+            echo "FIREBASE_SERVICE_ACCOUNT secret is not configured."
+            exit 1
+          fi
+          printf '%s' "$FIREBASE_SERVICE_ACCOUNT" > "$RUNNER_TEMP/firebase-service-account.json"
+          chmod 600 "$RUNNER_TEMP/firebase-service-account.json"
+
+      - name: Sync verb data to Cloud Firestore
+        env:
+          GOOGLE_APPLICATION_CREDENTIALS: ${{ runner.temp }}/firebase-service-account.json
+          GOOGLE_CLOUD_PROJECT: japanese-study-app-61e23
+        run: npm run import:verbs:all
