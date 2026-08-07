@@ -4,9 +4,9 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>にほんご どうし かつようクイズ | Japanese Verb Conjugation Quiz</title>
-  <link rel="stylesheet" href="./styles.css" />
-  <link rel="stylesheet" href="./desktop.css" media="(min-width: 681px)" />
-  <link rel="stylesheet" href="./mobile.css" media="(max-width: 680px)" />
+  <link rel="stylesheet" href="./styles.css?v=20260807-2" />
+  <link rel="stylesheet" href="./desktop.css?v=20260807-2" media="(min-width: 681px)" />
+  <link rel="stylesheet" href="./mobile.css?v=20260807-2" media="(max-width: 680px)" />
 </head>
 <body>
   <main class="container">
@@ -18,9 +18,10 @@
     <input type="radio" name="viewMode" id="quizViewToggle" class="view-radio" value="quiz" checked>
     <input type="radio" name="viewMode" id="listViewToggle" class="view-radio" value="list">
 
-    <nav class="view-tabs" aria-label="view mode">
-      <label id="quizViewButton" class="view-tab" for="quizViewToggle">くいず<br><span lang="en">Quiz</span></label>
+    <nav class="view-tabs" aria-label="view mode" style="grid-template-columns: repeat(3, 1fr);">
+      <label id="quizViewButton" class="view-tab" for="quizViewToggle">かつよう1<br><span lang="en">Quiz</span></label>
       <label id="listViewButton" class="view-tab" for="listViewToggle">いちらん<br><span lang="en">Verb list</span></label>
+      <a class="view-tab" href="./katsuyou2.html" style="text-decoration:none;display:flex;flex-direction:column;align-items:center;justify-content:center;">かつよう2<br><span lang="en">9 forms</span></a>
     </nav>
 
     <section id="quizView">
@@ -199,8 +200,8 @@
     </section>
   </main>
 
-  <script src="./firebase-config.js"></script>
-  <script src="./view-toggle.js"></script>
-  <script type="module" src="./app.js"></script>
+  <script src="./firebase-config.js?v=20260807-2"></script>
+  <script src="./view-toggle.js?v=20260807-2"></script>
+  <script type="module" src="./app.js?v=20260807-2"></script>
 </body>
 </html>
