@@ -51,6 +51,7 @@ select, input[type="search"] { width: 100%; padding: 12px; border: 1px solid var
 .form-choice small { display: block; font-size: .74rem; margin-top: 2px; }
 button { border: 0; border-radius: 13px; padding: 12px 18px; font-weight: 900; cursor: pointer; }
 .primary { color: #fff; background: var(--primary); }
+.primary [lang="en"] { color: #fff; opacity: .92; }
 .primary:hover { background: var(--primary-dark); }
 .secondary-button { color: var(--primary); background: #eef3ff; }
 .wide { width: 100%; }
