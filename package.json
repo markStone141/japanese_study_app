@@ -9,7 +9,10 @@
     "import:verbs:group2": "node scripts/import-verbs.mjs data/verbs-minna-no-nihongo-shokyu-1-group-2.json",
     "import:verbs:group3": "node scripts/import-verbs.mjs data/verbs-minna-no-nihongo-shokyu-1-group-3.json",
     "import:verbs:all": "npm run import:verbs:group1 && npm run import:verbs:group2 && npm run import:verbs:group3",
+    "import:katsuyou2": "node scripts/import-katsuyou2.mjs",
+    "import:data:all": "npm run import:verbs:all && npm run import:katsuyou2",
     "data:apply-kanji": "node scripts/apply-kanji.mjs",
+    "audit:content": "node scripts/audit-content.mjs",
     "test:katsuyou2": "node scripts/validate-katsuyou2.mjs"
   },
   "dependencies": {
