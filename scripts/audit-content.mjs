@@ -40,11 +40,15 @@ function auditExamples(verb, file, forms) {
       continue;
     }
     exampleCount += 1;
-    if (!containsTarget(pair.ja, target)) addIssue({ severity: "warning", file, id: verb.id, form, message: `Example does not visibly contain target: ${target}`, ja: pair.ja });
+    // A quiz example that does not contain the requested conjugation is a real
+    // data defect, so keep this as a blocking error rather than a warning.
+    if (!containsTarget(pair.ja, target)) addIssue({ severity: "error", file, id: verb.id, form, message: `Example does not visibly contain target: ${target}`, ja: pair.ja });
 
     const key = pair.ja.replace(/\s+/g, "");
     if (exactJapanese.has(key)) {
       const previous = exactJapanese.get(key);
+      // Duplicate wording is useful to review, but it does not make the data
+      // invalid. Report it without failing Continuous Integration (CI).
       addIssue({ severity: "warning", file, id: verb.id, form, message: `Exact Japanese example duplicated from ${previous.id}/${previous.form}`, ja: pair.ja });
     } else exactJapanese.set(key, { id: verb.id, form });
 
@@ -107,4 +111,6 @@ const errors = issues.filter((item) => item.severity === "error");
 const warnings = issues.filter((item) => item.severity === "warning");
 const reviews = issues.filter((item) => item.severity === "review");
 console.log(`AUDIT TOTAL errors=${errors.length} warnings=${warnings.length} review=${reviews.length}`);
-if (errors.length || warnings.length) process.exitCode = 1;
+// Only real data defects fail CI. Warnings and curriculum-review notices stay
+// visible in the log for the review agents, but they do not block deployment.
+if (errors.length) process.exitCode = 1;
