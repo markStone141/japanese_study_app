@@ -5,7 +5,7 @@ const BASE_DATA_URLS = [
   "./data/verbs-minna-no-nihongo-shokyu-1-group-2.json",
   "./data/verbs-minna-no-nihongo-shokyu-1-group-3.json"
 ];
-const CURATED_DATA_URLS = [1, 2, 3, 4, 5, 6, 7].map((part) => `./data/katsuyou2/part-${part}.json`);
+const CURATED_DATA_URLS = [1, 2, 3, 4, 5, 6, 7, 8].map((part) => `./data/katsuyou2/part-${part}.json`);
 const OVERRIDES_URL = "./data/content-review-overrides.json";
 
 const FORM_CONFIG = [

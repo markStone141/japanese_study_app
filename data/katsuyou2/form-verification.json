@@ -13,160 +13,20 @@
     "できる": { "potential": "not_applicable" }
   },
   "records": {
-    "minna-shokyu-1-group-1-001": {
-      "dictionary": "あう",
-      "kanji": "会う",
-      "confidence": "high",
-      "sources": [
-        { "type": "dictionary-conjugation", "name": "JapanDict 会う", "url": "https://www.japandict.com/%E4%BC%9A%E3%81%86" },
-        { "type": "reference-index", "name": "国立国語研究所 基本動詞ハンドブック", "url": "https://www2.ninjal.ac.jp/verbhandbook/" }
-      ],
-      "forms": {
-        "pastNegative": { "status": "valid", "value": "あわなかった" },
-        "potential": { "status": "valid", "value": "あえる" },
-        "ba": { "status": "valid", "value": "あえば" },
-        "volitional": { "status": "valid", "value": "あおう" },
-        "causative": { "status": "valid", "value": "あわせる", "note": "The same surface form can also be understood lexically as bringing people together; the example must keep a clear causative context." }
-      }
-    },
-    "minna-shokyu-1-group-1-004": {
-      "dictionary": "あるく",
-      "kanji": "歩く",
-      "confidence": "high",
-      "sources": [
-        { "type": "dictionary-conjugation", "name": "JapanDict 歩く", "url": "https://www.japandict.com/%E6%AD%A9%E3%81%8F" },
-        { "type": "reference-index", "name": "国立国語研究所 基本動詞ハンドブック", "url": "https://www2.ninjal.ac.jp/verbhandbook/" }
-      ],
-      "forms": {
-        "pastNegative": { "status": "valid", "value": "あるかなかった" },
-        "potential": { "status": "valid", "value": "あるける" },
-        "ba": { "status": "valid", "value": "あるけば" },
-        "volitional": { "status": "valid", "value": "あるこう" },
-        "causative": { "status": "valid", "value": "あるかせる" }
-      }
-    },
-    "minna-shokyu-1-group-1-005": {
-      "dictionary": "いう",
-      "kanji": "言う",
-      "confidence": "high",
-      "sources": [
-        { "type": "dictionary-conjugation", "name": "JapanDict 言う", "url": "https://www.japandict.com/%E8%A8%80%E3%81%86" },
-        { "type": "corpus", "name": "国立国語研究所 日本語日常会話コーパス報告書", "url": "https://www2.ninjal.ac.jp/conversation/report/report04.pdf" }
-      ],
-      "forms": {
-        "pastNegative": { "status": "valid", "value": "いわなかった" },
-        "potential": { "status": "valid", "value": "いえる" },
-        "ba": { "status": "valid", "value": "いえば" },
-        "volitional": { "status": "valid", "value": "いおう" },
-        "causative": { "status": "valid", "value": "いわせる" }
-      }
-    },
-    "minna-shokyu-1-group-1-009": {
-      "dictionary": "うごく",
-      "kanji": "動く",
-      "confidence": "high",
-      "sources": [
-        { "type": "dictionary-conjugation", "name": "JapanDict 動く", "url": "https://www.japandict.com/%E5%8B%95%E3%81%8F" },
-        { "type": "reference-index", "name": "国立国語研究所 基本動詞ハンドブック", "url": "https://www2.ninjal.ac.jp/verbhandbook/" }
-      ],
-      "forms": {
-        "pastNegative": { "status": "valid", "value": "うごかなかった" },
-        "potential": { "status": "valid", "value": "うごける" },
-        "ba": { "status": "valid", "value": "うごけば" },
-        "volitional": { "status": "valid", "value": "うごこう" },
-        "causative": { "status": "valid", "value": "うごかせる", "note": "Surface form overlaps with the potential of 動かす; examples must make the subject/causer relationship clear." }
-      }
-    },
-    "minna-shokyu-1-group-1-018": {
-      "dictionary": "かう",
-      "kanji": "買う",
-      "confidence": "high",
-      "sources": [
-        { "type": "dictionary-conjugation", "name": "JapanDict / JMdict-based 買う entry", "url": "https://www.japandict.com/%E8%B2%B7%E3%81%86" },
-        { "type": "conjugation-cross-check", "name": "Wiktionary 買う", "url": "https://zh.wiktionary.org/wiki/%E8%B2%B7%E3%81%86" }
-      ],
-      "forms": {
-        "pastNegative": { "status": "valid", "value": "かわなかった" },
-        "potential": { "status": "valid", "value": "かえる" },
-        "ba": { "status": "valid", "value": "かえば" },
-        "volitional": { "status": "valid", "value": "かおう" },
-        "causative": { "status": "valid", "value": "かわせる" }
-      }
-    },
-    "minna-shokyu-1-group-1-019": {
-      "dictionary": "かえす",
-      "kanji": "返す",
-      "confidence": "high",
-      "sources": [
-        { "type": "dictionary-conjugation", "name": "JapanDict 返す", "url": "https://www.japandict.com/%E8%BF%94%E3%81%99" }
-      ],
-      "forms": {
-        "pastNegative": { "status": "valid", "value": "かえさなかった" },
-        "potential": { "status": "valid", "value": "かえせる" },
-        "ba": { "status": "valid", "value": "かえせば" },
-        "volitional": { "status": "valid", "value": "かえそう" },
-        "causative": { "status": "valid", "value": "かえさせる" }
-      }
-    },
-    "minna-shokyu-1-group-1-020": {
-      "dictionary": "かえる",
-      "kanji": "帰る",
-      "confidence": "high",
-      "sources": [
-        { "type": "dictionary-conjugation", "name": "JapanDict 帰る", "url": "https://www.japandict.com/%E5%B8%B0%E3%82%8B" }
-      ],
-      "forms": {
-        "pastNegative": { "status": "valid", "value": "かえらなかった" },
-        "potential": { "status": "valid", "value": "かえれる" },
-        "ba": { "status": "valid", "value": "かえれば" },
-        "volitional": { "status": "valid", "value": "かえろう" },
-        "causative": { "status": "valid", "value": "かえらせる" }
-      }
-    },
-    "minna-shokyu-1-group-1-021": {
-      "dictionary": "かく",
-      "kanji": "書く",
-      "confidence": "high",
-      "sources": [
-        { "type": "dictionary-conjugation", "name": "JapanDict 書く", "url": "https://www.japandict.com/%E6%9B%B8%E3%81%8F" }
-      ],
-      "forms": {
-        "pastNegative": { "status": "valid", "value": "かかなかった" },
-        "potential": { "status": "valid", "value": "かける" },
-        "ba": { "status": "valid", "value": "かけば" },
-        "volitional": { "status": "valid", "value": "かこう" },
-        "causative": { "status": "valid", "value": "かかせる" }
-      }
-    },
-    "minna-shokyu-1-group-1-023": {
-      "dictionary": "かす",
-      "kanji": "貸す",
-      "confidence": "high",
-      "sources": [
-        { "type": "dictionary-conjugation", "name": "JapanDict 貸す", "url": "https://www.japandict.com/%E8%B2%B8%E3%81%99" }
-      ],
-      "forms": {
-        "pastNegative": { "status": "valid", "value": "かさなかった" },
-        "potential": { "status": "valid", "value": "かせる" },
-        "ba": { "status": "valid", "value": "かせば" },
-        "volitional": { "status": "valid", "value": "かそう" },
-        "causative": { "status": "valid", "value": "かさせる" }
-      }
-    },
-    "minna-shokyu-1-group-1-024": {
-      "dictionary": "かつ",
-      "kanji": "勝つ",
-      "confidence": "high",
-      "sources": [
-        { "type": "dictionary-conjugation", "name": "JapanDict 勝つ", "url": "https://www.japandict.com/%E5%8B%9D%E3%81%A4" }
-      ],
-      "forms": {
-        "pastNegative": { "status": "valid", "value": "かたなかった" },
-        "potential": { "status": "valid", "value": "かてる" },
-        "ba": { "status": "valid", "value": "かてば" },
-        "volitional": { "status": "valid", "value": "かとう" },
-        "causative": { "status": "valid", "value": "かたせる", "note": "For beginner examples, use a clear 'let someone win' context so the causative role is easy to understand." }
-      }
-    }
+    "minna-shokyu-1-group-1-001": {"dictionary":"あう","kanji":"会う","confidence":"high","sources":[{"type":"dictionary-conjugation","name":"JapanDict 会う","url":"https://www.japandict.com/%E4%BC%9A%E3%81%86"},{"type":"reference-index","name":"国立国語研究所 基本動詞ハンドブック","url":"https://www2.ninjal.ac.jp/verbhandbook/"}],"forms":{"pastNegative":{"status":"valid","value":"あわなかった"},"potential":{"status":"valid","value":"あえる"},"ba":{"status":"valid","value":"あえば"},"volitional":{"status":"valid","value":"あおう"},"causative":{"status":"valid","value":"あわせる","note":"The same surface form can also be understood lexically as bringing people together; the example must keep a clear causative context."}}},
+    "minna-shokyu-1-group-1-004": {"dictionary":"あるく","kanji":"歩く","confidence":"high","sources":[{"type":"dictionary-conjugation","name":"JapanDict 歩く","url":"https://www.japandict.com/%E6%AD%A9%E3%81%8F"},{"type":"reference-index","name":"国立国語研究所 基本動詞ハンドブック","url":"https://www2.ninjal.ac.jp/verbhandbook/"}],"forms":{"pastNegative":{"status":"valid","value":"あるかなかった"},"potential":{"status":"valid","value":"あるける"},"ba":{"status":"valid","value":"あるけば"},"volitional":{"status":"valid","value":"あるこう"},"causative":{"status":"valid","value":"あるかせる"}}},
+    "minna-shokyu-1-group-1-005": {"dictionary":"いう","kanji":"言う","confidence":"high","sources":[{"type":"dictionary-conjugation","name":"JapanDict 言う","url":"https://www.japandict.com/%E8%A8%80%E3%81%86"},{"type":"corpus","name":"国立国語研究所 日本語日常会話コーパス報告書","url":"https://www2.ninjal.ac.jp/conversation/report/report04.pdf"}],"forms":{"pastNegative":{"status":"valid","value":"いわなかった"},"potential":{"status":"valid","value":"いえる"},"ba":{"status":"valid","value":"いえば"},"volitional":{"status":"valid","value":"いおう"},"causative":{"status":"valid","value":"いわせる"}}},
+    "minna-shokyu-1-group-1-009": {"dictionary":"うごく","kanji":"動く","confidence":"high","sources":[{"type":"dictionary-conjugation","name":"JapanDict 動く","url":"https://www.japandict.com/%E5%8B%95%E3%81%8F"},{"type":"reference-index","name":"国立国語研究所 基本動詞ハンドブック","url":"https://www2.ninjal.ac.jp/verbhandbook/"}],"forms":{"pastNegative":{"status":"valid","value":"うごかなかった"},"potential":{"status":"valid","value":"うごける"},"ba":{"status":"valid","value":"うごけば"},"volitional":{"status":"valid","value":"うごこう"},"causative":{"status":"valid","value":"うごかせる","note":"Surface form overlaps with the potential of 動かす; examples must make the subject/causer relationship clear."}}},
+    "minna-shokyu-1-group-1-018": {"dictionary":"かう","kanji":"買う","confidence":"high","sources":[{"type":"dictionary-conjugation","name":"JapanDict / JMdict-based 買う entry","url":"https://www.japandict.com/%E8%B2%B7%E3%81%86"},{"type":"conjugation-cross-check","name":"Wiktionary 買う","url":"https://zh.wiktionary.org/wiki/%E8%B2%B7%E3%81%86"}],"forms":{"pastNegative":{"status":"valid","value":"かわなかった"},"potential":{"status":"valid","value":"かえる"},"ba":{"status":"valid","value":"かえば"},"volitional":{"status":"valid","value":"かおう"},"causative":{"status":"valid","value":"かわせる"}}},
+    "minna-shokyu-1-group-1-019": {"dictionary":"かえす","kanji":"返す","confidence":"high","sources":[{"type":"dictionary-conjugation","name":"JapanDict 返す","url":"https://www.japandict.com/%E8%BF%94%E3%81%99"}],"forms":{"pastNegative":{"status":"valid","value":"かえさなかった"},"potential":{"status":"valid","value":"かえせる"},"ba":{"status":"valid","value":"かえせば"},"volitional":{"status":"valid","value":"かえそう"},"causative":{"status":"valid","value":"かえさせる"}}},
+    "minna-shokyu-1-group-1-020": {"dictionary":"かえる","kanji":"帰る","confidence":"high","sources":[{"type":"dictionary-conjugation","name":"JapanDict 帰る","url":"https://www.japandict.com/%E5%B8%B0%E3%82%8B"}],"forms":{"pastNegative":{"status":"valid","value":"かえらなかった"},"potential":{"status":"valid","value":"かえれる"},"ba":{"status":"valid","value":"かえれば"},"volitional":{"status":"valid","value":"かえろう"},"causative":{"status":"valid","value":"かえらせる"}}},
+    "minna-shokyu-1-group-1-021": {"dictionary":"かく","kanji":"書く","confidence":"high","sources":[{"type":"dictionary-conjugation","name":"JapanDict 書く","url":"https://www.japandict.com/%E6%9B%B8%E3%81%8F"}],"forms":{"pastNegative":{"status":"valid","value":"かかなかった"},"potential":{"status":"valid","value":"かける"},"ba":{"status":"valid","value":"かけば"},"volitional":{"status":"valid","value":"かこう"},"causative":{"status":"valid","value":"かかせる"}}},
+    "minna-shokyu-1-group-1-023": {"dictionary":"かす","kanji":"貸す","confidence":"high","sources":[{"type":"dictionary-conjugation","name":"JapanDict 貸す","url":"https://www.japandict.com/%E8%B2%B8%E3%81%99"}],"forms":{"pastNegative":{"status":"valid","value":"かさなかった"},"potential":{"status":"valid","value":"かせる"},"ba":{"status":"valid","value":"かせば"},"volitional":{"status":"valid","value":"かそう"},"causative":{"status":"valid","value":"かさせる"}}},
+    "minna-shokyu-1-group-1-024": {"dictionary":"かつ","kanji":"勝つ","confidence":"high","sources":[{"type":"dictionary-conjugation","name":"JapanDict 勝つ","url":"https://www.japandict.com/%E5%8B%9D%E3%81%A4"}],"forms":{"pastNegative":{"status":"valid","value":"かたなかった"},"potential":{"status":"valid","value":"かてる"},"ba":{"status":"valid","value":"かてば"},"volitional":{"status":"valid","value":"かとう"},"causative":{"status":"valid","value":"かたせる","note":"For beginner examples, use a clear 'let someone win' context so the causative role is easy to understand."}}},
+    "minna-shokyu-1-group-1-025": {"dictionary":"かぶる","kanji":"被る","confidence":"high","sources":[{"type":"dictionary-conjugation","name":"JapanDict 被る","url":"https://www.japandict.com/%E8%A2%AB%E3%82%8B"}],"forms":{"pastNegative":{"status":"valid","value":"かぶらなかった"},"potential":{"status":"valid","value":"かぶれる","note":"This surface form also overlaps with the separate verb かぶれる; keep the hat-wearing context explicit."},"ba":{"status":"valid","value":"かぶれば"},"volitional":{"status":"valid","value":"かぶろう"},"causative":{"status":"valid","value":"かぶらせる"}}},
+    "minna-shokyu-1-group-1-026": {"dictionary":"がんばる","kanji":"頑張る","confidence":"high","sources":[{"type":"dictionary-conjugation","name":"JapanDict 頑張る","url":"https://www.japandict.com/%E9%A0%91%E5%BC%B5%E3%82%8B"}],"forms":{"pastNegative":{"status":"valid","value":"がんばらなかった"},"potential":{"status":"valid","value":"がんばれる"},"ba":{"status":"valid","value":"がんばれば"},"volitional":{"status":"valid","value":"がんばろう"},"causative":{"status":"valid","value":"がんばらせる","note":"The causative can imply pressure; examples should make the causer relationship clear and avoid presenting coercion as the only use."}}},
+    "minna-shokyu-1-group-1-027": {"dictionary":"きく","kanji":"聞く","confidence":"high","sources":[{"type":"dictionary-conjugation","name":"JapanDict 聞く","url":"https://www.japandict.com/%E8%81%9E%E3%81%8F"}],"forms":{"pastNegative":{"status":"valid","value":"きかなかった"},"potential":{"status":"valid","value":"きける","note":"Potential 聞ける is distinct from 聞こえる, which expresses something being audible / naturally heard."},"ba":{"status":"valid","value":"きけば"},"volitional":{"status":"valid","value":"きこう"},"causative":{"status":"valid","value":"きかせる"}}},
+    "minna-shokyu-1-group-1-028": {"dictionary":"けす","kanji":"消す","confidence":"high","sources":[{"type":"dictionary-conjugation","name":"JapanDict 消す","url":"https://www.japandict.com/%E6%B6%88%E3%81%99"}],"forms":{"pastNegative":{"status":"valid","value":"けさなかった"},"potential":{"status":"valid","value":"けせる"},"ba":{"status":"valid","value":"けせば"},"volitional":{"status":"valid","value":"けそう"},"causative":{"status":"valid","value":"けさせる"}}},
+    "minna-shokyu-1-group-1-029": {"dictionary":"さがす","kanji":"探す","confidence":"high","sources":[{"type":"dictionary-conjugation","name":"JapanDict 探す","url":"https://www.japandict.com/%E6%8E%A2%E3%81%99"}],"forms":{"pastNegative":{"status":"valid","value":"さがさなかった"},"potential":{"status":"valid","value":"さがせる"},"ba":{"status":"valid","value":"さがせば"},"volitional":{"status":"valid","value":"さがそう"},"causative":{"status":"valid","value":"さがさせる"}}}
   }
 }

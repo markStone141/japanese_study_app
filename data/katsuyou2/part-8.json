@@ -1,0 +1,167 @@
+[
+  {
+    "id": "katsuyou2-minna-shokyu-1-group-1-025",
+    "sourceVerbId": "minna-shokyu-1-group-1-025",
+    "verificationRequired": true,
+    "dictionary": "かぶる",
+    "reading": "かぶる",
+    "kanji": "被る",
+    "meaning": "put on a hat",
+    "verb": { "group": 1, "groupName": "グループ1" },
+    "forms": {
+      "masu": "かぶります",
+      "te": "かぶって",
+      "ta": "かぶった",
+      "nai": "かぶらない",
+      "pastNegative": "かぶらなかった",
+      "potential": "かぶれる",
+      "ba": "かぶれば",
+      "volitional": "かぶろう",
+      "causative": "かぶらせる"
+    },
+    "examples": {
+      "masu": { "ja": "ひざしが つよいので、ぼうしを かぶります。", "en": "The sun is strong, so I wear a hat." },
+      "te": { "ja": "そとへ でるまえに、ぼうしを かぶって ください。", "en": "Please put on a hat before going outside." },
+      "ta": { "ja": "きのうは あたらしい ぼうしを かぶった。", "en": "Yesterday, I wore a new hat." },
+      "nai": { "ja": "きょうは くもりなので、ぼうしを かぶらない。", "en": "It is cloudy today, so I will not wear a hat." },
+      "pastNegative": { "ja": "きのうは ぼうしを かぶらなかった。", "en": "I did not wear a hat yesterday." },
+      "potential": { "ja": "この ぼうしなら、わたしも かぶれる。", "en": "I can wear this hat too." },
+      "ba": { "ja": "ぼうしを かぶれば、ひざしが すこし らくです。", "en": "If you wear a hat, the sunlight is a little easier to handle." },
+      "volitional": { "ja": "そとへ でるから、ぼうしを かぶろう。", "en": "We are going outside, so let's put on our hats." },
+      "causative": { "ja": "ははは こどもに ぼうしを かぶらせる。", "en": "The mother has her child put on a hat." }
+    },
+    "enabled": true
+  },
+  {
+    "id": "katsuyou2-minna-shokyu-1-group-1-026",
+    "sourceVerbId": "minna-shokyu-1-group-1-026",
+    "verificationRequired": true,
+    "dictionary": "がんばる",
+    "reading": "がんばる",
+    "kanji": "頑張る",
+    "meaning": "do one's best",
+    "verb": { "group": 1, "groupName": "グループ1" },
+    "forms": {
+      "masu": "がんばります",
+      "te": "がんばって",
+      "ta": "がんばった",
+      "nai": "がんばらない",
+      "pastNegative": "がんばらなかった",
+      "potential": "がんばれる",
+      "ba": "がんばれば",
+      "volitional": "がんばろう",
+      "causative": "がんばらせる"
+    },
+    "examples": {
+      "masu": { "ja": "つぎの しけんも がんばります。", "en": "I will do my best on the next exam too." },
+      "te": { "ja": "あと すこしです。がんばって ください。", "en": "You are almost there. Please keep trying." },
+      "ta": { "ja": "きのうの れんしゅうは よく がんばった。", "en": "I worked hard in yesterday's practice." },
+      "nai": { "ja": "きょうは つかれているので、むりに がんばらない。", "en": "I am tired today, so I will not push myself too hard." },
+      "pastNegative": { "ja": "きのうは つかれていて、あまり がんばらなかった。", "en": "I was tired yesterday, so I did not push myself very hard." },
+      "potential": { "ja": "あと 10ぷんだけなら、まだ がんばれる。", "en": "I can keep going for another ten minutes." },
+      "ba": { "ja": "もう すこし がんばれば、おわります。", "en": "If you keep trying a little longer, you will finish." },
+      "volitional": { "ja": "あと すこしだから、いっしょに がんばろう。", "en": "We are almost done, so let's keep going together." },
+      "causative": { "ja": "コーチは せんしゅを さいごまで がんばらせる。", "en": "The coach makes the athlete keep trying until the end." }
+    },
+    "enabled": true
+  },
+  {
+    "id": "katsuyou2-minna-shokyu-1-group-1-027",
+    "sourceVerbId": "minna-shokyu-1-group-1-027",
+    "verificationRequired": true,
+    "dictionary": "きく",
+    "reading": "きく",
+    "kanji": "聞く",
+    "meaning": "listen, ask",
+    "verb": { "group": 1, "groupName": "グループ1" },
+    "forms": {
+      "masu": "ききます",
+      "te": "きいて",
+      "ta": "きいた",
+      "nai": "きかない",
+      "pastNegative": "きかなかった",
+      "potential": "きける",
+      "ba": "きけば",
+      "volitional": "きこう",
+      "causative": "きかせる"
+    },
+    "examples": {
+      "masu": { "ja": "でんしゃで おんがくを ききます。", "en": "I listen to music on the train." },
+      "te": { "ja": "せんせいの せつめいを よく きいて ください。", "en": "Please listen carefully to the teacher's explanation." },
+      "ta": { "ja": "きのう、ラジオで その ニュースを きいた。", "en": "Yesterday, I heard that news on the radio." },
+      "nai": { "ja": "べんきょうするときは おんがくを きかない。", "en": "I do not listen to music while studying." },
+      "pastNegative": { "ja": "きのうは ラジオを きかなかった。", "en": "I did not listen to the radio yesterday." },
+      "potential": { "ja": "ここなら、せんせいの こえが よく きける。", "en": "From here, I can listen to the teacher's voice clearly." },
+      "ba": { "ja": "わからない ことは せんせいに きけば、だいじょうぶです。", "en": "If you ask the teacher about what you do not understand, you will be fine." },
+      "volitional": { "ja": "つぎは この うたを きこう。", "en": "Let's listen to this song next." },
+      "causative": { "ja": "せんせいは がくせいに にほんごの おんせいを きかせる。", "en": "The teacher has the students listen to Japanese audio." }
+    },
+    "enabled": true
+  },
+  {
+    "id": "katsuyou2-minna-shokyu-1-group-1-028",
+    "sourceVerbId": "minna-shokyu-1-group-1-028",
+    "verificationRequired": true,
+    "dictionary": "けす",
+    "reading": "けす",
+    "kanji": "消す",
+    "meaning": "turn off, erase",
+    "verb": { "group": 1, "groupName": "グループ1" },
+    "forms": {
+      "masu": "けします",
+      "te": "けして",
+      "ta": "けした",
+      "nai": "けさない",
+      "pastNegative": "けさなかった",
+      "potential": "けせる",
+      "ba": "けせば",
+      "volitional": "けそう",
+      "causative": "けさせる"
+    },
+    "examples": {
+      "masu": { "ja": "へやを でるまえに でんきを けします。", "en": "I turn off the light before leaving the room." },
+      "te": { "ja": "ねるまえに テレビを けして ください。", "en": "Please turn off the television before going to bed." },
+      "ta": { "ja": "さっき、エアコンを けした。", "en": "I turned off the air conditioner a little while ago." },
+      "nai": { "ja": "まだ つかっているので、でんきを けさない。", "en": "I am still using it, so I will not turn off the light." },
+      "pastNegative": { "ja": "きのうは でんきを けさなかった。", "en": "I did not turn off the light yesterday." },
+      "potential": { "ja": "この ボタンで でんきを けせる。", "en": "You can turn off the light with this button." },
+      "ba": { "ja": "でんきを けせば、へやが くらく なります。", "en": "If you turn off the light, the room will become dark." },
+      "volitional": { "ja": "もう ねるから、テレビを けそう。", "en": "We are going to bed now, so let's turn off the television." },
+      "causative": { "ja": "せんせいは がくせいに きょうしつの でんきを けさせる。", "en": "The teacher has the student turn off the classroom light." }
+    },
+    "enabled": true
+  },
+  {
+    "id": "katsuyou2-minna-shokyu-1-group-1-029",
+    "sourceVerbId": "minna-shokyu-1-group-1-029",
+    "verificationRequired": true,
+    "dictionary": "さがす",
+    "reading": "さがす",
+    "kanji": "探す",
+    "meaning": "look for",
+    "verb": { "group": 1, "groupName": "グループ1" },
+    "forms": {
+      "masu": "さがします",
+      "te": "さがして",
+      "ta": "さがした",
+      "nai": "さがさない",
+      "pastNegative": "さがさなかった",
+      "potential": "さがせる",
+      "ba": "さがせば",
+      "volitional": "さがそう",
+      "causative": "さがさせる"
+    },
+    "examples": {
+      "masu": { "ja": "インターネットで しごとを さがします。", "en": "I look for a job online." },
+      "te": { "ja": "なくした かぎを いっしょに さがして ください。", "en": "Please help me look for the lost key." },
+      "ta": { "ja": "えきの ちかくで やすい ホテルを さがした。", "en": "I looked for an inexpensive hotel near the station." },
+      "nai": { "ja": "きょうは つかれたので、もう さがさない。", "en": "I am tired today, so I will not search anymore." },
+      "pastNegative": { "ja": "きのうは あたらしい しごとを さがさなかった。", "en": "I did not look for a new job yesterday." },
+      "potential": { "ja": "この サイトなら、やすい ホテルを さがせる。", "en": "On this website, I can find an inexpensive hotel." },
+      "ba": { "ja": "えきの ちかくを さがせば、ホテルが あります。", "en": "If you look near the station, there are hotels." },
+      "volitional": { "ja": "いっしょに かぎを さがそう。", "en": "Let's look for the key together." },
+      "causative": { "ja": "せんせいは がくせいに じしょで ことばを さがさせる。", "en": "The teacher has the student look up the word in a dictionary." }
+    },
+    "enabled": true
+  }
+]
