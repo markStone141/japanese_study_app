@@ -1,5 +1,5 @@
 {
-  "reviewVersion": 2,
+  "reviewVersion": 3,
   "verbs": {
     "minna-shokyu-1-group-1-007": { "examples": { "masu": { "ja": "えきまで いそぎます。", "en": "I hurry to the station." }, "ta": { "ja": "えきまで いそいだ。", "en": "I hurried to the station." } } },
     "minna-shokyu-1-group-1-026": { "examples": { "masu": { "ja": "きょうも べんきょうを がんばります。", "en": "I will do my best with my studies today too." } } },
@@ -45,7 +45,61 @@
         "causative": { "ja": "ははは こどもに シャワーを あびさせる。", "en": "The mother has her child take a shower." }
       }
     },
-    "minna-shokyu-1-group-2-012": { "examples": { "ta": { "ja": "きのう、ともだちに じゅうしょを おしえた。", "en": "Yesterday, I told my friend my address." } } },
+    "minna-shokyu-1-group-2-008": {
+      "examples": {
+        "pastNegative": { "ja": "きょうは コーヒーに さとうを いれなかった。", "en": "I did not put sugar in my coffee today." },
+        "potential": { "ja": "この おおきさなら、かばんに いれられる。", "en": "If it is this size, I can put it in my bag." },
+        "ba": { "ja": "ジュースを れいぞうこに いれれば、つめたく なります。", "en": "If you put the juice in the refrigerator, it will get cold." },
+        "volitional": { "ja": "でかける まえに、おちゃを すいとうに いれよう。", "en": "Before going out, let's put some tea in the bottle." },
+        "causative": { "ja": "せんせいは がくせいに しりょうを ふくろへ いれさせる。", "en": "The teacher has the student put the materials into a bag." }
+      }
+    },
+    "minna-shokyu-1-group-2-010": {
+      "examples": {
+        "pastNegative": { "ja": "にちようびは 7じまで おきなかった。", "en": "On Sunday, I did not get up until seven." },
+        "potential": { "ja": "あしたは 6じに おきられる。", "en": "I can get up at six tomorrow." },
+        "ba": { "ja": "6じに おきれば、はやい でんしゃに のれます。", "en": "If I get up at six, I can catch an early train." },
+        "volitional": { "ja": "あしたは はやく おきよう。", "en": "Let's get up early tomorrow." },
+        "causative": { "ja": "ははは こどもを 7じに おきさせる。", "en": "The mother makes her child get up at seven." }
+      }
+    },
+    "minna-shokyu-1-group-2-011": {
+      "examples": {
+        "pastNegative": { "ja": "きのうは かんじを おしえなかった。", "en": "I did not teach kanji yesterday." },
+        "potential": { "ja": "ひらがななら、わたしも おしえられる。", "en": "I can teach hiragana too." },
+        "ba": { "ja": "ゆっくり おしえれば、みんな わかります。", "en": "If you teach slowly, everyone will understand." },
+        "volitional": { "ja": "こんど、いもうとに この うたを おしえよう。", "en": "Next time, I will teach my younger sister this song." },
+        "causative": { "ja": "せんせいは がくせいに こどもへ ひらがなを おしえさせる。", "en": "The teacher has the student teach hiragana to a child." }
+      }
+    },
+    "minna-shokyu-1-group-2-012": {
+      "examples": {
+        "ta": { "ja": "きのう、ともだちに じゅうしょを おしえた。", "en": "Yesterday, I told my friend my address." },
+        "pastNegative": { "ja": "しらない ひとには じゅうしょを おしえなかった。", "en": "I did not tell the stranger my address." },
+        "potential": { "ja": "この ちずが あれば、えきまでの みちを おしえられる。", "en": "With this map, I can tell you the way to the station." },
+        "ba": { "ja": "でんわばんごうを おしえれば、あとで れんらくできます。", "en": "If you give me your phone number, I can contact you later." },
+        "volitional": { "ja": "ともだちに あたらしい じゅうしょを おしえよう。", "en": "I will tell my friend my new address." },
+        "causative": { "ja": "ははは あにに おとうとへ でんわばんごうを おしえさせる。", "en": "The mother has the older brother tell the younger brother the phone number." }
+      }
+    },
+    "minna-shokyu-1-group-2-013": {
+      "examples": {
+        "pastNegative": { "ja": "きのうは いそがしくて、あたらしい ことばを おぼえなかった。", "en": "I was busy yesterday, so I did not memorize any new words." },
+        "potential": { "ja": "この かんじなら、すぐ おぼえられる。", "en": "I can memorize this kanji quickly." },
+        "ba": { "ja": "この ことばを おぼえれば、かいわが もっと らくに なります。", "en": "If you learn this word, conversation will become easier." },
+        "volitional": { "ja": "きょうは あたらしい ことばを 5つ おぼえよう。", "en": "Let's learn five new words today." },
+        "causative": { "ja": "せんせいは がくせいに あたらしい ことばを おぼえさせる。", "en": "The teacher has the students memorize new words." }
+      }
+    },
+    "minna-shokyu-1-group-2-014": {
+      "examples": {
+        "pastNegative": { "ja": "きのうは この えきで おりなかった。", "en": "I did not get off at this station yesterday." },
+        "potential": { "ja": "つぎの えきでも おりられる。", "en": "I can get off at the next station too." },
+        "ba": { "ja": "つぎの えきで おりれば、びょういんは すぐです。", "en": "If you get off at the next station, the hospital is nearby." },
+        "volitional": { "ja": "つぎの えきで おりよう。", "en": "Let's get off at the next station." },
+        "causative": { "ja": "せんせいは がくせいを えきで バスから おりさせる。", "en": "The teacher has the students get off the bus at the station." }
+      }
+    },
     "minna-shokyu-1-group-2-022": { "examples": { "ta": { "ja": "くらい みちで、くるまに きを つけた。", "en": "I watched out for cars on the dark road." } } },
     "minna-shokyu-1-group-2-035": {
       "meaning": "leave [a cafe, etc.]",
