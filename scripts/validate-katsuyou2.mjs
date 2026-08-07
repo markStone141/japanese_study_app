@@ -1,20 +1,24 @@
 import fs from "node:fs";
-import { buildKatsuyou2FromBase, conjugate, TARGET_FORMS } from "../conjugation-core.js";
+import { buildKatsuyou2FromBase, conjugate, resolveGroupFromBase, TARGET_FORMS } from "../conjugation-core.js";
 
 const BASE_FILES = [
   "data/verbs-minna-no-nihongo-shokyu-1-group-1.json",
   "data/verbs-minna-no-nihongo-shokyu-1-group-2.json",
   "data/verbs-minna-no-nihongo-shokyu-1-group-3.json"
 ];
-const CURATED_FILES = [1, 2, 3, 4, 5].map((part) => `data/katsuyou2/part-${part}.json`);
+const CURATED_FILES = [1, 2, 3, 4, 5, 6].map((part) => `data/katsuyou2/part-${part}.json`);
 
 const base = BASE_FILES.flatMap((file) => JSON.parse(fs.readFileSync(file, "utf8")));
 const curated = CURATED_FILES.flatMap((file) => JSON.parse(fs.readFileSync(file, "utf8")));
 const curatedKey = (item) => `${item.verb?.group}|${item.dictionary}|${item.meaning}`;
 const curatedMap = new Map(curated.map((item) => [curatedKey(item), item]));
-const groupOf = (item) => Number(String(item.verbGroupId || "").replace("group-", ""));
-const verbs = base.map((item) => buildKatsuyou2FromBase(item, curatedMap.get(`${groupOf(item)}|${item.dictionary}|${item.meaning}`) || null));
+const declaredGroupOf = (item) => Number(String(item.verbGroupId || "").replace("group-", ""));
+const verbs = base.map((item) => {
+  const group = resolveGroupFromBase(item);
+  return buildKatsuyou2FromBase(item, curatedMap.get(`${group}|${item.dictionary}|${item.meaning}`) || null);
+});
 const baseById = new Map(base.map((item) => [item.id, item]));
+const verbBySourceId = new Map(verbs.map((item) => [item.sourceVerbId, item]));
 
 const errors = [];
 const ids = new Set();
@@ -35,6 +39,7 @@ for (const verb of verbs) {
   catch (error) { errors.push(`${verb.id}: ${error.message}`); continue; }
 
   for (const form of TARGET_FORMS) {
+    if (verb.forms?.[form] === null) continue; // reviewed as 該当なし
     if (verb.forms?.[form] !== expected[form]) errors.push(`${verb.id}: ${form} expected "${expected[form]}" but got "${verb.forms?.[form]}"`);
   }
 
@@ -52,6 +57,7 @@ for (const verb of verbs) {
 
   if (verb.exampleCoverage === "full") {
     for (const form of TARGET_FORMS) {
+      if (verb.forms?.[form] === null) continue;
       const example = verb.examples?.[form];
       if (!example?.ja || !example?.en) {
         errors.push(`${verb.id}: full coverage but missing ${form} example`);
@@ -64,10 +70,46 @@ for (const verb of verbs) {
   }
 }
 
+// Regression set found by comparing 活用1 source forms against generated 活用2 forms.
+const expectedCorrections = {
+  "minna-shokyu-1-group-1-041": { group: 2, dictionary: "たべる", pastNegative: "たべなかった", causative: "たべさせる" },
+  "minna-shokyu-1-group-1-042": { group: 2, dictionary: "みる", pastNegative: "みなかった", causative: "みさせる" },
+  "minna-shokyu-1-group-1-043": { group: 2, dictionary: "おきる", pastNegative: "おきなかった", causative: "おきさせる" },
+  "minna-shokyu-1-group-1-044": { group: 2, dictionary: "ねる", pastNegative: "ねなかった", causative: "ねさせる" },
+  "minna-shokyu-1-group-1-045": { group: 3, dictionary: "する", pastNegative: "しなかった", causative: "させる" },
+  "minna-shokyu-1-group-1-055": { group: 1, dictionary: "つれていく", te: "つれていって", ta: "つれていった" },
+  "minna-shokyu-1-group-1-076": { group: 1, dictionary: "もっていく", te: "もっていって", ta: "もっていった" },
+  "minna-shokyu-1-group-1-082": { group: 3, dictionary: "くる", pastNegative: "こなかった", causative: "こさせる" }
+};
+for (const [id, expected] of Object.entries(expectedCorrections)) {
+  const verb = verbBySourceId.get(id);
+  if (!verb) { errors.push(`Regression verb missing: ${id}`); continue; }
+  if (verb.dictionary !== expected.dictionary) errors.push(`${id}: expected dictionary ${expected.dictionary}, got ${verb.dictionary}`);
+  if (verb.verb.group !== expected.group) errors.push(`${id}: expected resolved group ${expected.group}, got ${verb.verb.group}`);
+  for (const [form, value] of Object.entries(expected)) {
+    if (["group", "dictionary"].includes(form)) continue;
+    if (verb.forms?.[form] !== value) errors.push(`${id}: expected ${form} ${value}, got ${verb.forms?.[form]}`);
+  }
+}
+
+const neru = verbBySourceId.get("minna-shokyu-1-group-1-044");
+if (neru?.forms?.pastNegative !== "ねなかった") errors.push("寝る: なかった形 must be ねなかった");
+if (neru?.forms?.causative !== "ねさせる") errors.push("寝る: grammatical causative form must be ねさせる (寝かせる is a separate lexical transitive verb)");
+
+// Reviewed unavailable forms must remain null so they cannot become quiz questions.
+for (const [dictionary, form] of [["わかる", "potential"], ["ある", "potential"], ["くれる", "potential"], ["できる", "potential"]]) {
+  for (const verb of verbs.filter((item) => item.dictionary === dictionary)) {
+    if (verb.forms?.[form] !== null) errors.push(`${verb.sourceVerbId}: ${dictionary} ${form} must be null/該当なし after review`);
+  }
+}
+
+const correctedDeclaredGroups = base.filter((item) => resolveGroupFromBase(item) !== declaredGroupOf(item));
 const curatedFull = verbs.filter((verb) => verb.exampleCoverage === "full").length;
-const advancedReady = Object.fromEntries(TARGET_FORMS.slice(4).map((form) => [form, verbs.filter((verb) => verb.examples?.[form]).length]));
+const advancedReady = Object.fromEntries(TARGET_FORMS.slice(4).map((form) => [form, verbs.filter((verb) => verb.forms?.[form] && verb.examples?.[form]).length]));
 
 console.log(`Validated full 活用2 coverage: ${verbs.length}/${base.length} verbs.`);
+console.log(`Source records with corrected group inference: ${correctedDeclaredGroups.length}`);
+for (const item of correctedDeclaredGroups) console.log(`- ${item.id}: declared group ${declaredGroupOf(item)} -> resolved group ${resolveGroupFromBase(item)} (${item.dictionary})`);
 console.log(`Curated full-example verbs: ${curatedFull}/${verbs.length}`);
 console.log("Advanced cloze example coverage:", advancedReady);
 
@@ -77,4 +119,4 @@ if (errors.length) {
   process.exit(1);
 }
 
-console.log("OK: every 活用1 verb can be used in 活用2; generated core forms agree with 活用1 and all 9 conjugations are verified.");
+console.log("OK: every 活用1 verb can be used in 活用2; generated core forms agree with 活用1, known unavailable forms are excluded, and audited regressions are covered.");
