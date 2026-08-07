@@ -14,6 +14,7 @@ const curatedKey = (item) => `${item.verb?.group}|${item.dictionary}|${item.mean
 const curatedMap = new Map(curated.map((item) => [curatedKey(item), item]));
 const groupOf = (item) => Number(String(item.verbGroupId || "").replace("group-", ""));
 const verbs = base.map((item) => buildKatsuyou2FromBase(item, curatedMap.get(`${groupOf(item)}|${item.dictionary}|${item.meaning}`) || null));
+const baseById = new Map(base.map((item) => [item.id, item]));
 
 const errors = [];
 const ids = new Set();
@@ -37,7 +38,14 @@ for (const verb of verbs) {
     if (verb.forms?.[form] !== expected[form]) errors.push(`${verb.id}: ${form} expected "${expected[form]}" but got "${verb.forms?.[form]}"`);
   }
 
+  // The four core forms already exist in 活用1. They are an independent source-of-truth
+  // check against the 活用2 generator and catch irregular verbs / wrong group assumptions.
+  const source = baseById.get(verb.sourceVerbId);
   for (const form of ["masu", "te", "ta", "nai"]) {
+    const sourceValue = source?.forms?.[form] ?? source?.[form];
+    if (sourceValue && verb.forms?.[form] !== sourceValue) {
+      errors.push(`${verb.id}: generated ${form} "${verb.forms?.[form]}" disagrees with 活用1 source "${sourceValue}"`);
+    }
     const example = verb.examples?.[form];
     if (!example?.ja || !example?.en) errors.push(`${verb.id}: missing bilingual basic example for ${form}`);
   }
@@ -69,4 +77,4 @@ if (errors.length) {
   process.exit(1);
 }
 
-console.log("OK: every 活用1 verb can be used in 活用2; all 9 conjugations are generated and verified.");
+console.log("OK: every 活用1 verb can be used in 活用2; generated core forms agree with 活用1 and all 9 conjugations are verified.");
