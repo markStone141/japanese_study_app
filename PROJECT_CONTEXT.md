@@ -1,7 +1,7 @@
 # Japanese Study App — Project Context
 
 ## Purpose
-A Japanese-learning web app based on the supplied みんなの日本語 初級I verb data. The current focus is verb conjugation practice with natural bilingual examples, reliable testing, and incremental content review.
+A Japanese-learning web app based on the supplied みんなの日本語 初級I verb data. The current focus is verb conjugation practice with natural bilingual examples, reliable testing, incremental content review, and evidence-informed learning design.
 
 ## Public app
 - GitHub Pages: `https://markstone141.github.io/japanese_study_app/`
@@ -40,6 +40,12 @@ Learning modes:
 
 The review list is intentionally on a separate page so answers are not visible during the quiz.
 
+Keyboard / quiz usability policy:
+- Enter should check the current answer during a question.
+- After feedback is shown, Enter should move to the next question.
+- Japanese input-method composition must finish before Enter is treated as submission.
+- Primary-action helper text must keep sufficient contrast; global muted English styles must not turn button labels gray.
+
 ## Content policy
 Example-sentence quality is a top priority. Do not mass-generate unreviewed advanced examples merely to increase coverage.
 
@@ -75,6 +81,21 @@ The Example Content Team consists of:
 7. Japanese Culture Context Editor / 日本文化担当
 8. Conversation Material Designer / 会話教材担当
 
+The Learner Research Team consists of:
+1. Second Language Acquisition Researcher / 第二言語習得リサーチ担当
+2. Learner Error Researcher / 学習者エラー調査担当
+3. Materials Benchmark Researcher / 教材ベンチマーク担当
+4. Evidence & Source Reviewer / リサーチ検証担当
+
+Research-team purpose:
+- identify common learner stumbling points;
+- distinguish general errors from mother-tongue-specific patterns when supported by evidence;
+- benchmark common textbook/app exercise types and their tradeoffs;
+- turn findings into small product hypotheses and tests;
+- preserve source citations, dates, confidence, and limitations rather than treating intuition as research.
+
+Research informs product design but does not silently override the supplied textbook sequence or reviewed content.
+
 The overall team also includes Coordinator, Question Design, Japanese QA, UI/UX, Implementation, Test & Balance, Learning Analysis, Refactoring/Code Quality, GitHub/CI & Firestore operations, and Final Review.
 
 ## Current progress
@@ -87,6 +108,7 @@ The overall team also includes Coordinator, Question Design, Japanese QA, UI/UX,
 - automated Firestore sync
 - result/answer feedback regression test
 - Example Content Team formally expanded to eight roles
+- Learner Research Team formally added
 - reviewed advanced example Batch 1
 - reviewed advanced example Batch 2
 
@@ -114,7 +136,9 @@ Total reviewed advanced examples after Batch 2: 50 examples across 10 verb entri
 Batch 2 deliberately skips `いる` variants and `うまれる` for now because some advanced forms need separate pedagogical treatment rather than forced everyday examples.
 
 ### Current work
-Continue Group 2 in small reviewed batches. Before adding a verb to advanced sentence-cloze coverage, decide whether all five advanced forms are pedagogically suitable. If not, document the exception instead of forcing an unnatural sentence.
+- Continue Group 2 in small reviewed advanced-example batches.
+- Use the Learner Research Team when deciding which trouble spots, explanations, and exercise formats deserve priority.
+- Before adding a verb to advanced sentence-cloze coverage, decide whether all five advanced forms are pedagogically suitable. If not, document the exception instead of forcing an unnatural sentence.
 
 ## Maintenance rule
 Update this file whenever any of the following changes:
@@ -122,6 +146,7 @@ Update this file whenever any of the following changes:
 - Firestore collections / import flow
 - agent roles or workflow
 - learning modes
+- keyboard / interaction policy
 - data schema
 - major test policy
 - completed example batches / current work
