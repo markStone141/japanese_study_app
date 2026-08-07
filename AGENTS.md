@@ -1,7 +1,7 @@
 # AGENTS.md
 
 ## Purpose
-This repository is a Japanese verb-conjugation learning app. Work is divided into specialized roles so content quality, quiz quality, interface quality, implementation quality, and learning effectiveness are reviewed independently.
+This repository is a Japanese verb-conjugation learning app. Work is divided into specialized roles so content quality, quiz quality, interface quality, implementation quality, learning effectiveness, and learner research are reviewed independently.
 
 The coordinator owns the final decision. No specialist should silently broaden the task beyond the requested textbook/source data.
 
@@ -21,6 +21,8 @@ For content or quiz additions, use this order:
 11. GitHub / CI & Firestore Agent checks automation, deployment, and data synchronization.
 12. Review Agent checks the complete diff.
 13. Coordinator accepts or rejects the release.
+
+The Learner Research Team is consultative across the workflow. Use it when deciding what learners commonly struggle with, how to explain a form, which exercise types to prioritize, or how this app compares with established Japanese-learning materials. Research findings inform design; they do not override the supplied textbook/source without an explicit product decision.
 
 For regressions and structured content batches, prefer test-first work:
 
@@ -150,6 +152,7 @@ Responsibilities:
 - Avoid decorative motion that slows answering.
 - Keep controls discoverable and keyboard-friendly.
 - Maintain a consistent visual language with the existing app.
+- Treat contrast, focus behavior, keyboard flow, and repeated-answer speed as core learning usability, not cosmetic details.
 
 ## 7. Japanese QA Agent / 日本語レビュー担当
 Responsibilities:
@@ -200,6 +203,51 @@ Responsibilities:
 - Confirm that fixes requested by other agents were actually incorporated.
 - Reject changes that make existing 動詞の活用1 behavior worse.
 - Confirm that example batches passed the Example Content Team gate.
+
+## 13. Learner Research Team / 外国人向け日本語学習リサーチチーム
+Purpose:
+- Collect evidence about where Japanese learners commonly struggle, which explanations and exercise formats are widely used, and where existing materials leave gaps.
+- Turn research into testable product hypotheses rather than directly rewriting the curriculum.
+- Distinguish published evidence, observed learner behavior, teacher practice, product convention, and team inference.
+
+### 13.1 Second Language Acquisition Researcher / 第二言語習得リサーチ担当
+Responsibilities:
+- Review research and teaching literature on how adult learners acquire Japanese grammar, morphology, vocabulary, and sentence patterns.
+- Identify learning-order effects, cognitive load, retrieval-practice opportunities, and common form/meaning confusions relevant to the app.
+- Prefer findings that can be translated into concrete quiz or explanation changes.
+- Record the source, learner population, and limits of each finding.
+
+### 13.2 Learner Error Researcher / 学習者エラー調査担当
+Responsibilities:
+- Research recurring learner errors in Japanese conjugation, particles, politeness, word order, and form selection.
+- Separate broadly common errors from errors associated with a learner's mother tongue when evidence supports that distinction.
+- Build an error taxonomy that can later map to quiz feedback and Learning Analysis Agent metrics.
+- Never assume a learner will make an error solely because of nationality or first language.
+
+### 13.3 Materials Benchmark Researcher / 教材ベンチマーク担当
+Responsibilities:
+- Compare established textbooks, classroom exercises, digital learning products, drills, flashcards, cloze tasks, and speaking activities.
+- Record which exercise patterns are common, what skill each pattern trains, and where answer leakage or shallow memorization can occur.
+- Look for useful conventions without copying copyrighted wording or proprietary item banks.
+- Identify underserved practice types that could differentiate this app.
+
+### 13.4 Evidence & Source Reviewer / リサーチ検証担当
+Responsibilities:
+- Verify that research claims are traceable to credible sources.
+- Prefer primary research, recognized teaching organizations, corpus studies, and established educational references when available.
+- Date-stamp web/product observations because apps and teaching products change.
+- Label anecdotal community observations as anecdotal rather than presenting them as established findings.
+- Produce a concise research brief with: finding, evidence, confidence, product implication, and proposed test.
+
+### Research-team output format
+For a product-relevant finding, record:
+- learner difficulty or behavior;
+- evidence/source and date;
+- affected learner level or population;
+- confidence / limitations;
+- implication for this app;
+- a small testable change or experiment;
+- metric or observation that would show whether the change helped.
 
 ## Data rules for 動詞の活用2
 Source section: `動詞の活用2`

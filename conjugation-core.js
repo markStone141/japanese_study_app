@@ -25,9 +25,11 @@ export function group1Forms(dictionary) {
 
   let te;
   let ta;
-  if (word === "いく") {
-    te = "いって";
-    ta = "いった";
+  // 行く is exceptional even inside compounds such as つれていく / もっていく.
+  if (word.endsWith("いく")) {
+    const beforeIku = word.slice(0, -2);
+    te = `${beforeIku}いって`;
+    ta = `${beforeIku}いった`;
   } else if (["う", "つ", "る"].includes(last)) {
     te = `${stem}って`;
     ta = `${stem}った`;
@@ -53,7 +55,7 @@ export function group1Forms(dictionary) {
     ta,
     nai,
     pastNegative: nai === "ない" ? "なかった" : nai.replace(/ない$/, "なかった"),
-    potential: word === "ある" ? "ありえる" : `${stem}${row.e}る`,
+    potential: `${stem}${row.e}る`,
     ba: `${stem}${row.e}ば`,
     volitional: `${stem}${row.o}う`,
     causative: `${stem}${row.a}せる`
@@ -120,10 +122,52 @@ export function conjugate(dictionary, group) {
   throw new Error(`Unknown verb group: ${group}`);
 }
 
-function readBaseGroup(base) {
+function readDeclaredGroup(base) {
   if (base.verb?.group) return Number(base.verb.group);
   const match = String(base.verbGroupId || "").match(/group-(\d+)/);
   return match ? Number(match[1]) : null;
+}
+
+function sourceCoreForms(base) {
+  return Object.fromEntries(["masu", "te", "ta", "nai"].map((form) => [form, base.forms?.[form] ?? base[form]]));
+}
+
+function coreMatches(candidate, source) {
+  return ["masu", "te", "ta", "nai"].every((form) => !source[form] || candidate?.[form] === source[form]);
+}
+
+export function resolveGroupFromBase(base) {
+  const declared = readDeclaredGroup(base);
+  const source = sourceCoreForms(base);
+  const candidates = [];
+  for (const group of [1, 2, 3]) {
+    try {
+      const forms = conjugate(base.dictionary, group);
+      if (coreMatches(forms, source)) candidates.push(group);
+    } catch { /* not a candidate */ }
+  }
+  if (candidates.length === 1) return candidates[0];
+  if (candidates.includes(declared)) return declared;
+  return declared;
+}
+
+// Forms explicitly marked unavailable only when a reviewed reference treats that
+// form as absent for this lexical verb. `null` means “該当なし” and is excluded
+// from quiz generation; it is not an empty answer.
+const UNAVAILABLE_FORMS = {
+  "ある": new Set(["potential"]),
+  "わかる": new Set(["potential"]),
+  "くれる": new Set(["potential"]),
+  "できる": new Set(["potential"])
+};
+
+function applyAvailability(forms, base) {
+  const word = lexicalDictionary(base.dictionary);
+  const unavailable = UNAVAILABLE_FORMS[word];
+  if (!unavailable) return forms;
+  const out = { ...forms };
+  for (const form of unavailable) out[form] = null;
+  return out;
 }
 
 function baseKanji(base) {
@@ -132,7 +176,8 @@ function baseKanji(base) {
 }
 
 export function buildKatsuyou2FromBase(base, curated = null) {
-  const group = readBaseGroup(base);
+  const group = resolveGroupFromBase(base);
+  const generatedForms = applyAvailability(conjugate(base.dictionary, group), base);
   const generated = {
     id: `katsuyou2-${base.id}`,
     sourceVerbId: base.id,
@@ -149,8 +194,8 @@ export function buildKatsuyou2FromBase(base, curated = null) {
       sourceSection: "動詞の活用2",
       sourceSectionId: "doushi-katsuyou-2"
     },
-    verb: { group, groupName: base.verbGroupName || base.verb?.groupName || `グループ${group}` },
-    forms: conjugate(base.dictionary, group),
+    verb: { group, groupName: `グループ${group}` },
+    forms: generatedForms,
     examples: { ...(base.examples || {}) },
     order: base.order,
     enabled: base.enabled !== false,
@@ -158,12 +203,16 @@ export function buildKatsuyou2FromBase(base, curated = null) {
   };
 
   if (!curated) return generated;
+  const mergedForms = { ...generated.forms, ...(curated.forms || {}) };
+  // Never allow curated data to silently re-enable a reviewed-unavailable form.
+  for (const form of TARGET_FORMS) if (generated.forms[form] === null) mergedForms[form] = null;
   return {
     ...generated,
     ...curated,
     sourceVerbId: base.id,
-    forms: { ...generated.forms, ...(curated.forms || {}) },
+    verb: { ...generated.verb, ...(curated.verb || {}) },
+    forms: mergedForms,
     examples: { ...generated.examples, ...(curated.examples || {}) },
-    exampleCoverage: TARGET_FORMS.every((form) => curated.examples?.[form]) ? "full" : "partial"
+    exampleCoverage: TARGET_FORMS.filter((form) => mergedForms[form] !== null).every((form) => curated.examples?.[form] || generated.examples?.[form]) ? "full" : "partial"
   };
 }
