@@ -1,62 +1,51 @@
-const DATA_URLS = [
-  "./data/katsuyou2/part-1.json",
-  "./data/katsuyou2/part-2.json",
-  "./data/katsuyou2/part-3.json",
-  "./data/katsuyou2/part-4.json",
-  "./data/katsuyou2/part-5.json"
+import { TARGET_FORMS, buildKatsuyou2FromBase } from "./conjugation-core.js";
+
+const BASE_DATA_URLS = [
+  "./data/verbs-minna-no-nihongo-shokyu-1-group-1.json",
+  "./data/verbs-minna-no-nihongo-shokyu-1-group-2.json",
+  "./data/verbs-minna-no-nihongo-shokyu-1-group-3.json"
 ];
+const CURATED_DATA_URLS = [1, 2, 3, 4, 5].map((part) => `./data/katsuyou2/part-${part}.json`);
+const OVERRIDES_URL = "./data/content-review-overrides.json";
 
 const FORM_CONFIG = [
-  ["masu", "ます形", "masu-form", "〜ます / polite"],
-  ["te", "て形", "te-form", "〜て / connect・request"],
-  ["ta", "た形", "ta-form", "〜た / did"],
-  ["nai", "ない形", "nai-form", "〜ない / do not"],
-  ["pastNegative", "なかった形", "past negative", "〜なかった / did not"],
-  ["potential", "可能形", "potential form", "〜できる / can"],
-  ["ba", "ば形", "conditional ba-form", "〜すれば / if"],
-  ["volitional", "意向形", "volitional form", "〜しよう / let's・I will"],
-  ["causative", "使役形", "causative form", "〜させる / make・let" ]
+  ["masu", "ます形", "〜ます", "polite / masu-form"],
+  ["te", "て形", "〜て", "te-form"],
+  ["ta", "た形", "〜た", "past / ta-form"],
+  ["nai", "ない形", "〜ない", "negative / nai-form"],
+  ["pastNegative", "なかった形", "〜なかった", "did not ..."],
+  ["potential", "可能形", "〜できる", "can / be able to"],
+  ["ba", "ば形", "〜すれば", "if ..."],
+  ["volitional", "意向形", "〜しよう", "let's / I will"],
+  ["causative", "使役形", "〜させる", "make / let someone ..."]
 ];
-
-const MODE_CONFIG = {
-  basic: {
-    forms: ["masu", "te", "ta", "nai"],
-    description: "まずは よくつかう4つの形を、辞書形から作る練習です。"
-  },
-  master: {
-    forms: ["pastNegative", "potential", "ba", "volitional", "causative"],
-    description: "活用名だけでなく『〜できる』『〜しよう』の意味ヒントも見ながら練習します。"
-  },
-  situation: {
-    forms: ["pastNegative", "potential", "ba", "volitional", "causative"],
-    description: "文の中の空欄を埋めます。文法名より、文の意味から必要な形を考えるモードです。"
-  }
-};
+const BASIC_FORMS = ["masu", "te", "ta", "nai"];
+const MASTER_FORMS = ["pastNegative", "potential", "ba", "volitional", "causative"];
 
 const els = {
-  learningModes: [...document.querySelectorAll('input[name="learningMode"]')],
+  learningMode: [...document.querySelectorAll('input[name="learningMode"]')],
   modeDescription: document.getElementById("modeDescription"),
   groupFilter: document.getElementById("groupFilter"),
   questionCount: document.getElementById("questionCount"),
   questionOrder: document.getElementById("questionOrder"),
   formChoices: document.getElementById("formChoices"),
+  coverageNote: document.getElementById("coverageNote"),
   startButton: document.getElementById("startButton"),
   correctCount: document.getElementById("correctCount"),
   progressCount: document.getElementById("progressCount"),
   accuracy: document.getElementById("accuracy"),
   groupBadge: document.getElementById("groupBadge"),
   formBadge: document.getElementById("formBadge"),
-  dictionaryBlock: document.getElementById("dictionaryBlock"),
   dictionaryKana: document.getElementById("dictionaryKana"),
   dictionaryKanji: document.getElementById("dictionaryKanji"),
   meaning: document.getElementById("meaning"),
-  standardPrompt: document.getElementById("standardPrompt"),
+  promptBox: document.getElementById("promptBox"),
   targetFormName: document.getElementById("targetFormName"),
   targetFormEnglish: document.getElementById("targetFormEnglish"),
   usageHint: document.getElementById("usageHint"),
-  clozePrompt: document.getElementById("clozePrompt"),
-  clozeJapanese: document.getElementById("clozeJapanese"),
-  clozeEnglish: document.getElementById("clozeEnglish"),
+  clozeCard: document.getElementById("clozeCard"),
+  clozeJa: document.getElementById("clozeJa"),
+  clozeEn: document.getElementById("clozeEn"),
   clozeHint: document.getElementById("clozeHint"),
   answerInput: document.getElementById("answerInput"),
   checkButton: document.getElementById("checkButton"),
@@ -65,21 +54,12 @@ const els = {
   result: document.getElementById("result")
 };
 
-const state = { verbs: [], questions: [], index: 0, correct: 0, answered: false, mode: "basic" };
+const state = { verbs: [], questions: [], index: 0, correct: 0, answered: false };
 
 function escapeHtml(value) {
-  return String(value ?? "")
-    .replace(/&/g, "&amp;")
-    .replace(/</g, "&lt;")
-    .replace(/>/g, "&gt;")
-    .replace(/"/g, "&quot;")
-    .replace(/'/g, "&#039;");
+  return String(value ?? "").replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;").replace(/'/g, "&#039;");
 }
-
-function normalize(value) {
-  return String(value || "").trim().replace(/\s+/g, "").normalize("NFKC");
-}
-
+function normalize(value) { return String(value || "").trim().replace(/\s+/g, "").normalize("NFKC"); }
 function shuffle(items) {
   const copy = [...items];
   for (let i = copy.length - 1; i > 0; i -= 1) {
@@ -88,41 +68,52 @@ function shuffle(items) {
   }
   return copy;
 }
+function currentMode() { return els.learningMode.find((input) => input.checked)?.value || "basic"; }
+function formConfig(id) { return FORM_CONFIG.find(([key]) => key === id) || [id, id, id, id]; }
+function selectedForms() { return [...els.formChoices.querySelectorAll("input:checked")].map((input) => input.value); }
 
-function formConfig(id) {
-  return FORM_CONFIG.find(([key]) => key === id) || [id, id, id, id];
+function deepMerge(base, patch) {
+  if (!patch || typeof patch !== "object" || Array.isArray(patch)) return patch;
+  const out = base && typeof base === "object" && !Array.isArray(base) ? { ...base } : {};
+  for (const [key, value] of Object.entries(patch)) out[key] = value && typeof value === "object" && !Array.isArray(value) ? deepMerge(out[key], value) : value;
+  return out;
 }
-
-function selectedForms() {
-  return [...els.formChoices.querySelectorAll("input:checked")].map((input) => input.value);
+function reviewBase(base, overrides) {
+  const patch = overrides?.verbs?.[base.id];
+  return patch ? deepMerge(base, patch) : base;
 }
+function curatedKey(item) { return `${item.verb?.group}|${item.dictionary}|${item.meaning}`; }
 
 function renderFormChoices() {
-  const allowed = new Set(MODE_CONFIG[state.mode].forms);
-  els.formChoices.innerHTML = FORM_CONFIG
-    .filter(([id]) => allowed.has(id))
-    .map(([id, ja, en, hint]) => `
-      <label class="form-choice">
-        <input type="checkbox" value="${id}" checked>
-        <span><strong>${ja}</strong><small lang="en">${en}</small><small>${hint}</small></span>
-      </label>
-    `).join("");
-}
-
-function setMode(mode) {
-  state.mode = mode;
-  els.modeDescription.textContent = MODE_CONFIG[mode].description;
-  renderFormChoices();
-  startSession();
+  const mode = currentMode();
+  const defaults = mode === "basic" ? BASIC_FORMS : mode === "master" ? MASTER_FORMS : TARGET_FORMS;
+  els.formChoices.innerHTML = FORM_CONFIG.map(([id, ja, hint, en]) => `
+    <label class="form-choice">
+      <input type="checkbox" value="${id}" ${defaults.includes(id) ? "checked" : ""}>
+      <span><strong>${ja}</strong><small>${hint} / ${en}</small></span>
+    </label>
+  `).join("");
+  els.modeDescription.textContent = mode === "basic"
+    ? "まずは ます・て・た・ない の4つを、辞書形から作る練習です。"
+    : mode === "master"
+      ? "文法名だけでなく『〜できる』『〜しよう』『〜させる』の意味ヒントも見ながら練習します。"
+      : "例文の動詞だけを隠します。文の意味から、どの形が自然か考えて答えます。";
+  if (els.coverageNote) {
+    els.coverageNote.textContent = mode === "sentence"
+      ? "穴埋めは、基本4形なら全動詞、発展5形は例文を人が確認済みの動詞から出題します。"
+      : `活用1にある全 ${state.verbs.length || 152} 動詞を出題できます。`;
+  }
 }
 
 function filteredVerbs() {
   const group = els.groupFilter.value;
   return state.verbs.filter((verb) => group === "all" || String(verb.verb.group) === group);
 }
-
-function makeBalancedQuestions(verbs, forms) {
-  const buckets = forms.map((form) => ({ form, items: shuffle(verbs).map((verb) => ({ verb, form })) }));
+function makeBalancedQuestions(verbs, forms, sentenceMode) {
+  const buckets = forms.map((form) => ({
+    form,
+    items: shuffle(verbs.filter((verb) => !sentenceMode || Boolean(verb.examples?.[form]))).map((verb) => ({ verb, form }))
+  }));
   const questions = [];
   let cursor = 0;
   while (buckets.some((bucket) => bucket.items.length)) {
@@ -132,37 +123,29 @@ function makeBalancedQuestions(verbs, forms) {
   }
   return questions;
 }
-
 function makeQuestions() {
   const verbs = filteredVerbs();
   const forms = selectedForms();
+  const sentenceMode = currentMode() === "sentence";
   if (!verbs.length || !forms.length) return [];
   let questions = [];
   if (els.questionOrder.value === "sequence") {
-    for (const verb of verbs) for (const form of forms) questions.push({ verb, form });
-  } else {
-    questions = makeBalancedQuestions(verbs, shuffle(forms));
-  }
+    for (const verb of verbs) for (const form of forms) if (!sentenceMode || verb.examples?.[form]) questions.push({ verb, form });
+  } else questions = makeBalancedQuestions(verbs, shuffle(forms), sentenceMode);
   if (els.questionCount.value !== "all") questions = questions.slice(0, Number(els.questionCount.value));
   return questions;
 }
-
 function updateScore() {
   const attempted = Math.min(state.index + (state.answered ? 1 : 0), state.questions.length);
   els.correctCount.textContent = String(state.correct);
   els.progressCount.textContent = `${attempted} / ${state.questions.length}`;
   els.accuracy.textContent = attempted ? `${Math.round(state.correct / attempted * 100)}%` : "0%";
 }
-
-function currentQuestion() {
-  return state.questions[state.index] || null;
-}
-
-function clozeSentence(example, answer) {
+function currentQuestion() { return state.questions[state.index] || null; }
+function blankExample(example, answer) {
   if (!example) return "";
-  const index = example.indexOf(answer);
-  if (index === -1) return example;
-  return `${example.slice(0, index)}＿＿＿＿${example.slice(index + answer.length)}`;
+  const i = example.indexOf(answer);
+  return i === -1 ? example : `${example.slice(0, i)}＿＿＿＿${example.slice(i + answer.length)}`;
 }
 
 function renderQuestion() {
@@ -174,49 +157,39 @@ function renderQuestion() {
   els.showButton.classList.remove("hidden");
   els.nextButton.classList.add("hidden");
   state.answered = false;
-
   if (!q) {
-    els.dictionaryBlock.classList.remove("hidden");
-    els.standardPrompt.classList.remove("hidden");
-    els.clozePrompt.classList.add("hidden");
     els.dictionaryKana.textContent = "おわり";
     els.dictionaryKanji.textContent = "";
     els.meaning.textContent = "";
     els.targetFormName.textContent = "ぜんぶ おわりました";
     els.targetFormEnglish.textContent = "Session complete";
     els.usageHint.textContent = "";
+    els.clozeCard.classList.add("hidden");
     els.answerInput.disabled = true;
     els.checkButton.classList.add("hidden");
     els.showButton.classList.add("hidden");
     updateScore();
     return;
   }
-
-  const [, ja, en, hint] = formConfig(q.form);
-  const answer = q.verb.forms[q.form];
-  const example = q.verb.examples?.[q.form];
+  const [, ja, hint, en] = formConfig(q.form);
+  const sentenceMode = currentMode() === "sentence";
   els.groupBadge.textContent = q.verb.verb.groupName;
-  els.formBadge.textContent = state.mode === "situation" ? "あなうめ" : ja;
+  els.formBadge.textContent = ja;
   els.dictionaryKana.textContent = q.verb.reading || q.verb.dictionary;
   els.dictionaryKanji.textContent = q.verb.kanji && q.verb.kanji !== q.verb.reading ? q.verb.kanji : "";
   els.meaning.textContent = q.verb.meaning;
-
-  if (state.mode === "situation") {
-    els.dictionaryBlock.classList.add("hidden");
-    els.standardPrompt.classList.add("hidden");
-    els.clozePrompt.classList.remove("hidden");
-    els.clozeJapanese.textContent = clozeSentence(example?.ja || "", answer);
-    els.clozeEnglish.textContent = example?.en || "";
-    els.clozeHint.textContent = hint;
-  } else {
-    els.dictionaryBlock.classList.remove("hidden");
-    els.standardPrompt.classList.remove("hidden");
-    els.clozePrompt.classList.add("hidden");
-    els.targetFormName.textContent = ja;
-    els.targetFormEnglish.textContent = en;
-    els.usageHint.textContent = state.mode === "master" ? hint : "";
+  els.targetFormName.textContent = ja;
+  els.targetFormEnglish.textContent = en;
+  els.usageHint.textContent = hint;
+  els.promptBox.classList.toggle("hidden", sentenceMode);
+  els.clozeCard.classList.toggle("hidden", !sentenceMode);
+  if (sentenceMode) {
+    const example = q.verb.examples[q.form];
+    const answer = q.verb.forms[q.form];
+    els.clozeJa.textContent = blankExample(example.ja, answer);
+    els.clozeEn.textContent = example.en;
+    els.clozeHint.textContent = `${ja}：${hint}`;
   }
-
   updateScore();
   els.answerInput.focus();
 }
@@ -224,17 +197,15 @@ function renderQuestion() {
 function resultHtml(q, correct, revealed = false) {
   const answer = q.verb.forms[q.form];
   const example = q.verb.examples?.[q.form];
-  const [, ja, , hint] = formConfig(q.form);
+  const [, ja, hint] = formConfig(q.form);
   const title = revealed ? "こたえ" : correct ? "せいかい！" : "もういちど かくにん";
-  return `
-    <div class="result-card ${correct ? "correct" : "wrong"}">
-      <div class="result-title">${title}</div>
-      <div class="correct-answer">${escapeHtml(answer)}</div>
-      <div class="answer-meaning">${escapeHtml(ja)} ・ ${escapeHtml(hint)}</div>
-      ${example ? `<div class="example"><div>${escapeHtml(example.ja)}</div><div class="example-en" lang="en">${escapeHtml(example.en)}</div></div>` : ""}
-    </div>`;
+  return `<div class="result-card ${correct ? "correct" : "wrong"}">
+    <div class="result-title">${title}</div>
+    <div class="correct-answer">${escapeHtml(answer)}</div>
+    <div class="answer-meaning">${escapeHtml(ja)}：${escapeHtml(hint)}</div>
+    ${example ? `<div class="example"><div>${escapeHtml(example.ja)}</div><div class="example-en" lang="en">${escapeHtml(example.en)}</div></div>` : ""}
+  </div>`;
 }
-
 function finishAnswer(correct, revealed = false) {
   const q = currentQuestion();
   if (!q || state.answered) return;
@@ -248,7 +219,6 @@ function finishAnswer(correct, revealed = false) {
   updateScore();
   els.nextButton.focus();
 }
-
 function checkAnswer() {
   const q = currentQuestion();
   if (!q || state.answered) return;
@@ -256,17 +226,11 @@ function checkAnswer() {
   if (!input) return els.answerInput.focus();
   finishAnswer(input === normalize(q.verb.forms[q.form]));
 }
-
-function nextQuestion() {
-  if (!state.answered) return;
-  state.index += 1;
-  renderQuestion();
-}
-
+function nextQuestion() { if (state.answered) { state.index += 1; renderQuestion(); } }
 function startSession() {
   const questions = makeQuestions();
   if (!questions.length) {
-    els.result.innerHTML = '<div class="result-card wrong"><div class="result-title">かつようを ひとつ いじょう えらんでください。</div></div>';
+    els.result.innerHTML = '<div class="result-card wrong"><div class="result-title">この条件では問題を作れません。活用形を選び直してください。</div></div>';
     return;
   }
   state.questions = questions;
@@ -277,25 +241,37 @@ function startSession() {
 }
 
 async function init() {
-  renderFormChoices();
-  els.modeDescription.textContent = MODE_CONFIG[state.mode].description;
-  const responses = await Promise.all(DATA_URLS.map((url) => fetch(url)));
-  const failed = responses.findIndex((response) => !response.ok);
-  if (failed !== -1) throw new Error(`Could not load ${DATA_URLS[failed]}`);
-  const parts = await Promise.all(responses.map((response) => response.json()));
-  state.verbs = parts.flat().filter((verb) => verb.enabled !== false);
-  startSession();
+  const [baseResponses, curatedResponses, overridesResponse] = await Promise.all([
+    Promise.all(BASE_DATA_URLS.map((url) => fetch(url))),
+    Promise.all(CURATED_DATA_URLS.map((url) => fetch(url))),
+    fetch(OVERRIDES_URL)
+  ]);
+  if ([...baseResponses, ...curatedResponses, overridesResponse].some((response) => !response.ok)) throw new Error("Could not load conjugation data");
+  const [baseParts, curatedParts, overrides] = await Promise.all([
+    Promise.all(baseResponses.map((response) => response.json())),
+    Promise.all(curatedResponses.map((response) => response.json())),
+    overridesResponse.json()
+  ]);
+  const curated = curatedParts.flat();
+  const curatedMap = new Map(curated.map((item) => [curatedKey(item), item]));
+  state.verbs = baseParts.flat().map((raw) => {
+    const base = reviewBase(raw, overrides);
+    const group = Number(String(base.verbGroupId).replace("group-", ""));
+    const match = curatedMap.get(`${group}|${base.dictionary}|${base.meaning}`) || null;
+    return buildKatsuyou2FromBase(base, match);
+  }).filter((verb) => verb.enabled !== false);
 
-  els.learningModes.forEach((input) => input.addEventListener("change", () => setMode(input.value)));
+  renderFormChoices();
+  startSession();
   els.startButton.addEventListener("click", startSession);
   els.checkButton.addEventListener("click", checkAnswer);
   els.showButton.addEventListener("click", () => finishAnswer(false, true));
   els.nextButton.addEventListener("click", nextQuestion);
   els.groupFilter.addEventListener("change", startSession);
+  els.learningMode.forEach((input) => input.addEventListener("change", () => { renderFormChoices(); startSession(); }));
   els.answerInput.addEventListener("keydown", (event) => {
     if (event.key !== "Enter") return;
-    if (state.answered) nextQuestion();
-    else checkAnswer();
+    if (state.answered) nextQuestion(); else checkAnswer();
   });
 }
 
