@@ -30,13 +30,20 @@ const KATAKANA_REPLACEMENTS = [
   ["ばす", "バス"], ["たくしー", "タクシー"], ["すてーじ", "ステージ"], ["かれー", "カレー"],
   ["こーと", "コート"], ["しゃつ", "シャツ"], ["すーつ", "スーツ"], ["ぴあの", "ピアノ"],
   ["ぎたー", "ギター"], ["ぷれぜんと", "プレゼント"], ["ぱすぽーと", "パスポート"],
-  ["れしーと", "レシート"], ["ぴくにっく", "ピクニック"], ["ほてる", "ホテル"]
+  ["れしーと", "レシート"], ["ぴくにっく", "ピクニック"], ["ほてる", "ホテル"],
+  ["こーひー", "コーヒー"], ["てーぶる", "テーブル"], ["ぷーる", "プール"],
+  ["しゃわー", "シャワー"], ["げーむ", "ゲーム"], ["てすと", "テスト"], ["のーと", "ノート"]
 ];
+
+function replaceToken(text, from, to) {
+  const escaped = from.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+  return text.replace(new RegExp(`(^|[\\s、。！？「」（）])${escaped}(?=$|[\\s、。！？「」（）])`, "g"), `$1${to}`);
+}
 
 export function normalizeExampleTypography(pair) {
   if (!pair?.ja) return pair;
   let ja = pair.ja;
-  for (const [from, to] of KATAKANA_REPLACEMENTS) ja = ja.replaceAll(from, to);
+  for (const [from, to] of KATAKANA_REPLACEMENTS) ja = replaceToken(ja, from, to);
   return { ...pair, ja };
 }
 
