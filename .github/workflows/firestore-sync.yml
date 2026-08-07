@@ -7,7 +7,13 @@ on:
       - "data/verbs-minna-no-nihongo-shokyu-1-group-1.json"
       - "data/verbs-minna-no-nihongo-shokyu-1-group-2.json"
       - "data/verbs-minna-no-nihongo-shokyu-1-group-3.json"
+      - "data/katsuyou2/**"
+      - "data/content-review-overrides.json"
       - "scripts/import-verbs.mjs"
+      - "scripts/import-katsuyou2.mjs"
+      - "scripts/content-review.mjs"
+      - "scripts/audit-content.mjs"
+      - "scripts/validate-katsuyou2.mjs"
       - "package.json"
       - ".firebaserc"
       - ".github/workflows/firestore-sync.yml"
@@ -39,6 +45,9 @@ jobs:
       - name: Validate 動詞の活用2 data
         run: npm run test:katsuyou2
 
+      - name: Audit reviewed content
+        run: npm run audit:content
+
       - name: Create Google service account credentials
         shell: bash
         env:
@@ -51,8 +60,8 @@ jobs:
           printf '%s' "$FIREBASE_SERVICE_ACCOUNT" > "$RUNNER_TEMP/firebase-service-account.json"
           chmod 600 "$RUNNER_TEMP/firebase-service-account.json"
 
-      - name: Sync verb data to Cloud Firestore
+      - name: Sync reviewed learning data to Cloud Firestore
         env:
           GOOGLE_APPLICATION_CREDENTIALS: ${{ runner.temp }}/firebase-service-account.json
           GOOGLE_CLOUD_PROJECT: japanese-study-app-61e23
-        run: npm run import:verbs:all
+        run: npm run import:data:all
