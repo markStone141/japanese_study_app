@@ -101,6 +101,13 @@ button { border: 0; border-radius: 13px; padding: 12px 18px; font-weight: 900; c
 .forms-mini { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 6px; margin-top: 10px; }
 .mini { padding: 7px 8px; border-radius: 9px; background: #f7f9fc; font-size: .78rem; overflow-wrap: anywhere; }
 .mini b { display: block; color: #475467; font-size: .68rem; }
+.mini b span { color: var(--muted); font-weight: 600; }
+.review-examples { margin-top: 12px; border-top: 1px solid var(--line); padding-top: 10px; }
+.review-examples summary { cursor: pointer; color: var(--primary); font-weight: 900; }
+.examples-list { display: grid; gap: 10px; margin-top: 10px; }
+.review-example { padding: 10px 12px; border-radius: 10px; background: #f8fafc; line-height: 1.6; }
+.review-example b { display: block; margin-bottom: 3px; color: #344054; font-size: .78rem; }
+.review-example small { display: block; margin-top: 3px; }
 @media (max-width: 720px) {
   .app-shell { width: min(100% - 18px, 1080px); padding-top: 16px; }
   .hero { display: block; }
