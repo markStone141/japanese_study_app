@@ -33,16 +33,19 @@ jobs:
       - name: Check JavaScript syntax
         run: |
           node --check app.js
+          node --check conjugation-core.js
           node --check katsuyou2.js
           node --check katsuyou2-review.js
           node --check scripts/audit-content.mjs
           node --check scripts/content-review.mjs
           node --check scripts/import-verbs.mjs
           node --check scripts/import-katsuyou2.mjs
+          node --check scripts/validate-katsuyou2.mjs
 
       - name: Check required pages
         run: |
           test -f index.html
+          test -f conjugation-core.js
           test -f katsuyou2.html
           test -f katsuyou2-review.html
           test -f styles.css

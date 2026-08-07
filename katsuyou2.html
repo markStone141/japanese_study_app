@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>動詞の活用2 | みんなの日本語 初級I</title>
-  <link rel="stylesheet" href="./katsuyou2.css?v=20260807b" />
+  <link rel="stylesheet" href="./katsuyou2.css?v=20260807c" />
 </head>
 <body>
   <main class="app-shell">
@@ -12,7 +12,7 @@
       <div>
         <p class="eyebrow">みんなの日本語・初級I</p>
         <h1>どうしの かつよう 2</h1>
-        <p class="subtitle">かつようを おぼえるだけでなく、ぶんの なかで つかえるように れんしゅうします。<br><span lang="en">Practice conjugations as forms and in real sentence contexts.</span></p>
+        <p class="subtitle">かつよう1にある全動詞を、基本形から発展形まで練習できます。<br><span lang="en">Practice every verb from Conjugation 1, from basic to advanced forms.</span></p>
       </div>
       <nav class="header-links" aria-label="page navigation">
         <a class="back-link" href="./index.html">← かつよう1</a>
@@ -32,11 +32,12 @@
           <span><strong>かつようマスター</strong><small>可能・ば・意向・使役など</small></span>
         </label>
         <label class="mode-card featured">
-          <input type="radio" name="learningMode" value="situation">
+          <input type="radio" name="learningMode" value="sentence">
           <span><strong>ぶんの あなうめ</strong><small>意味から形を考える / Context</small></span>
         </label>
       </div>
       <p id="modeDescription" class="mode-description"></p>
+      <p id="coverageNote" class="coverage-note"></p>
     </section>
 
     <section class="panel settings-panel" aria-label="quiz settings">
@@ -87,26 +88,24 @@
         <span id="formBadge" class="badge secondary">ます形</span>
       </div>
 
-      <div id="dictionaryBlock">
-        <div class="dictionary-label">じしょけい <span lang="en">Dictionary form</span></div>
-        <div class="word">
-          <div id="dictionaryKana" class="kana">—</div>
-          <div id="dictionaryKanji" class="kanji"></div>
-        </div>
-        <div id="meaning" class="meaning"></div>
+      <div class="dictionary-label">じしょけい <span lang="en">Dictionary form</span></div>
+      <div class="word">
+        <div id="dictionaryKana" class="kana">—</div>
+        <div id="dictionaryKanji" class="kanji"></div>
       </div>
+      <div id="meaning" class="meaning"></div>
 
-      <div id="standardPrompt" class="prompt-box">
+      <div id="promptBox" class="prompt-box">
         <span>この かたちに してください</span>
         <strong id="targetFormName">—</strong>
         <small id="targetFormEnglish" lang="en"></small>
         <div id="usageHint" class="usage-hint"></div>
       </div>
 
-      <div id="clozePrompt" class="cloze-card hidden">
+      <div id="clozeCard" class="cloze-card hidden">
         <div class="cloze-label">ぶんの あなに はいる かたちを こたえてください</div>
-        <div id="clozeJapanese" class="cloze-ja"></div>
-        <div id="clozeEnglish" class="cloze-en" lang="en"></div>
+        <div id="clozeJa" class="cloze-ja"></div>
+        <div id="clozeEn" class="cloze-en" lang="en"></div>
         <div id="clozeHint" class="cloze-hint"></div>
       </div>
 
@@ -117,11 +116,10 @@
         <button id="showButton" class="secondary-button" type="button">こたえを みる</button>
         <button id="nextButton" class="primary hidden" type="button">つぎへ</button>
       </div>
-
       <div id="result" class="result"></div>
     </section>
   </main>
 
-  <script type="module" src="./katsuyou2.js?v=20260807b"></script>
+  <script type="module" src="./katsuyou2.js?v=20260807c"></script>
 </body>
 </html>

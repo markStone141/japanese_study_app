@@ -1,10 +1,12 @@
-const DATA_URLS = [
-  "./data/katsuyou2/part-1.json",
-  "./data/katsuyou2/part-2.json",
-  "./data/katsuyou2/part-3.json",
-  "./data/katsuyou2/part-4.json",
-  "./data/katsuyou2/part-5.json"
+import { buildKatsuyou2FromBase } from "./conjugation-core.js";
+
+const BASE_DATA_URLS = [
+  "./data/verbs-minna-no-nihongo-shokyu-1-group-1.json",
+  "./data/verbs-minna-no-nihongo-shokyu-1-group-2.json",
+  "./data/verbs-minna-no-nihongo-shokyu-1-group-3.json"
 ];
+const CURATED_DATA_URLS = [1, 2, 3, 4, 5].map((part) => `./data/katsuyou2/part-${part}.json`);
+const OVERRIDES_URL = "./data/content-review-overrides.json";
 
 const FORM_CONFIG = [
   ["masu", "ます形", "〜ます"],
@@ -24,21 +26,19 @@ const els = {
   reviewCount: document.getElementById("reviewCount"),
   verbList: document.getElementById("verbList")
 };
-
 let verbs = [];
 
 function escapeHtml(value) {
-  return String(value ?? "")
-    .replace(/&/g, "&amp;")
-    .replace(/</g, "&lt;")
-    .replace(/>/g, "&gt;")
-    .replace(/"/g, "&quot;")
-    .replace(/'/g, "&#039;");
+  return String(value ?? "").replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;").replace(/'/g, "&#039;");
 }
-
-function normalize(value) {
-  return String(value || "").trim().replace(/\s+/g, "").normalize("NFKC").toLowerCase();
+function normalize(value) { return String(value || "").trim().replace(/\s+/g, "").normalize("NFKC").toLowerCase(); }
+function deepMerge(base, patch) {
+  if (!patch || typeof patch !== "object" || Array.isArray(patch)) return patch;
+  const out = base && typeof base === "object" && !Array.isArray(base) ? { ...base } : {};
+  for (const [key, value] of Object.entries(patch)) out[key] = value && typeof value === "object" && !Array.isArray(value) ? deepMerge(out[key], value) : value;
+  return out;
 }
+function curatedKey(item) { return `${item.verb?.group}|${item.dictionary}|${item.meaning}`; }
 
 function render() {
   const term = normalize(els.searchInput.value);
@@ -48,8 +48,7 @@ function render() {
     const haystack = normalize(`${verb.dictionary}${verb.reading}${verb.kanji}${verb.meaning}`);
     return groupOk && (!term || haystack.includes(term));
   });
-
-  els.reviewCount.textContent = `${list.length} verbs`;
+  els.reviewCount.textContent = `${list.length} / ${verbs.length} verbs`;
   els.verbList.innerHTML = list.map((verb) => `
     <article class="verb-item">
       <div class="verb-title">
@@ -58,12 +57,10 @@ function render() {
         <span>${escapeHtml(verb.meaning)}</span>
       </div>
       <div class="forms-mini">
-        ${FORM_CONFIG.map(([id, ja, hint]) => `
-          <div class="mini"><b>${ja} <span>${hint}</span></b>${escapeHtml(verb.forms[id])}</div>
-        `).join("")}
+        ${FORM_CONFIG.map(([id, ja, hint]) => `<div class="mini"><b>${ja} <span>${hint}</span></b>${escapeHtml(verb.forms[id])}</div>`).join("")}
       </div>
       <details class="review-examples">
-        <summary>れいぶんを みる</summary>
+        <summary>れいぶんを みる ${verb.exampleCoverage === "full" ? "（9形）" : "（基本4形）"}</summary>
         <div class="examples-list">
           ${FORM_CONFIG.map(([id, ja]) => {
             const example = verb.examples?.[id];
@@ -77,11 +74,24 @@ function render() {
 }
 
 async function init() {
-  const responses = await Promise.all(DATA_URLS.map((url) => fetch(url)));
-  const failed = responses.findIndex((response) => !response.ok);
-  if (failed !== -1) throw new Error(`Could not load ${DATA_URLS[failed]}`);
-  const parts = await Promise.all(responses.map((response) => response.json()));
-  verbs = parts.flat().filter((verb) => verb.enabled !== false);
+  const [baseResponses, curatedResponses, overridesResponse] = await Promise.all([
+    Promise.all(BASE_DATA_URLS.map((url) => fetch(url))),
+    Promise.all(CURATED_DATA_URLS.map((url) => fetch(url))),
+    fetch(OVERRIDES_URL)
+  ]);
+  if ([...baseResponses, ...curatedResponses, overridesResponse].some((r) => !r.ok)) throw new Error("Could not load review data");
+  const [baseParts, curatedParts, overrides] = await Promise.all([
+    Promise.all(baseResponses.map((r) => r.json())),
+    Promise.all(curatedResponses.map((r) => r.json())),
+    overridesResponse.json()
+  ]);
+  const curatedMap = new Map(curatedParts.flat().map((item) => [curatedKey(item), item]));
+  verbs = baseParts.flat().map((raw) => {
+    const patch = overrides?.verbs?.[raw.id];
+    const base = patch ? deepMerge(raw, patch) : raw;
+    const group = Number(String(base.verbGroupId).replace("group-", ""));
+    return buildKatsuyou2FromBase(base, curatedMap.get(`${group}|${base.dictionary}|${base.meaning}`) || null);
+  }).filter((verb) => verb.enabled !== false);
   render();
   els.reviewGroup.addEventListener("change", render);
   els.searchInput.addEventListener("input", render);
