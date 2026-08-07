@@ -27,6 +27,9 @@ jobs:
       - name: Validate 動詞の活用2 data
         run: npm run test:katsuyou2
 
+      - name: Validate evidence before examples
+        run: npm run test:form-verification
+
       - name: Test 活用2 feedback and reviewed batches
         run: npm run test:katsuyou2-ui
 
@@ -44,6 +47,7 @@ jobs:
           node --check scripts/import-verbs.mjs
           node --check scripts/import-katsuyou2.mjs
           node --check scripts/validate-katsuyou2.mjs
+          node --check scripts/validate-form-verification.mjs
           node --check scripts/test-katsuyou2-ui.mjs
 
       - name: Check required pages

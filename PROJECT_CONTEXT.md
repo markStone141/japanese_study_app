@@ -52,20 +52,12 @@ Do not trust only the file name or declared `verbGroupId` when generating 活用
 For every 活用1 entry, compare the existing ます・て・た・ない forms against the candidate Group 1 / 2 / 3 conjugations. If exactly one candidate matches all four source forms, that candidate is the resolved group for 活用2.
 
 The 2026-08-07 full 152-entry source-vs-generated audit found:
-- 6 source records whose declared group did not match their own four core forms:
-  - たべる: declared Group 1 -> resolved Group 2
-  - みる: Group 1 -> Group 2
-  - おきる: Group 1 -> Group 2
-  - ねる: Group 1 -> Group 2
-  - する: Group 1 -> Group 3
-  - くる: Group 1 -> Group 3
-- 2 compound verbs ending in 行く had incorrect て / た generation because the 行く exception was only applied to the standalone word:
-  - つれていく -> つれていって / つれていった
-  - もっていく -> もっていって / もっていった
+- 6 source records whose declared group did not match their own four core forms: たべる・みる・おきる・ねる were resolved as Group 2; する・くる were resolved as Group 3.
+- 2 compound verbs ending in 行く had incorrect て / た generation: つれていく and もっていく now use `〜いって / 〜いった`.
 
 Explicit regression rules include:
 - 寝る past negative = `ねなかった`.
-- The grammatical Group 2 causative of 寝る = `ねさせる`. `寝かせる` is treated as a separate lexical transitive verb, though it can be more natural in many real situations and should eventually be explained to learners.
+- The grammatical Group 2 causative of 寝る = `ねさせる`. `寝かせる` is treated as a separate lexical transitive verb, although it is more natural in many everyday situations.
 - Compound verbs ending in `いく` receive the 行く て / た exception.
 
 ### Applicable vs unavailable forms
@@ -77,15 +69,31 @@ Currently reviewed as unavailable:
 - `くれる` potential
 - `できる` potential
 
-This list must expand only with evidence. Do not infer that all stative or intransitive verbs lack a potential form.
-
 Detailed audit ledger: `docs/KATSUYOU2_AUDIT_2026-08-07.md`.
+
+## Evidence-first form verification policy
+Starting with the next content batch after the structural audit, **form verification happens before example writing**.
+
+The fixed sequence is:
+
+`活用1 core check -> morphology -> dictionary/teaching reference -> actual-use check when needed -> valid/not_applicable/deferred decision -> example writing -> language review -> automated tests -> merge -> Firestore`
+
+Decision statuses:
+- `valid`: example and quiz item may be created after pedagogical review.
+- `not_applicable`: production value must be `null`; show `該当なし`; exclude from quiz.
+- `deferred`: do not create an example or quiz item until the evidence/pedagogical question is resolved.
+
+Evidence ledger: `data/katsuyou2/form-verification.json`.
+Full policy: `docs/KATSUYOU2_FORM_VERIFICATION_POLICY.md`.
+CI gate: `npm run test:form-verification`.
+
+New evidence-first production entries carry `verificationRequired: true`. CI rejects them if the external verification record is absent, the verified value differs from production, a non-valid form has an example, or the example does not contain the verified answer.
 
 ## Content policy
 Example-sentence quality is a top priority. Do not mass-generate unreviewed advanced examples merely to increase coverage.
 
 For advanced sentence-cloze coverage, work in reviewed batches. Each batch must pass:
-1. target-form correctness
+1. target-form correctness and evidence decision
 2. Japanese naturalness review
 3. beginner-level appropriateness review
 4. English translation review
@@ -94,21 +102,17 @@ For advanced sentence-cloze coverage, work in reviewed batches. Each batch must 
 7. automated tests
 8. Firestore sync after merge
 
-Technically generatable forms may be skipped for sentence examples when they are pragmatically odd or misleading for beginners. Example: a verb such as `うまれる` can be mechanically conjugated, but its potential/causative forms are poor candidates for ordinary beginner cloze examples.
+Technically generatable forms may be skipped for sentence examples when they are pragmatically odd or misleading for beginners.
 
 ## Development workflow
 Use test-first development for regressions and structured content batches:
 
-`test / review criteria -> implementation -> CI -> review -> main -> Firestore sync`
+`test / review criteria -> form evidence -> implementation -> CI -> review -> main -> Firestore sync`
 
 Do not merge known failing validation.
 
-For conjugation review, use:
-
-`活用1 source comparison -> morphology check -> dictionary / teaching-reference check -> applicable / 該当なし decision -> example review -> automated regression test`
-
 ## Agent organization
-The detailed source of truth is `AGENTS.md`.
+The detailed source of truth remains `AGENTS.md`.
 
 The Example Content Team consists of:
 1. Beginner Japanese Teacher / 初級日本語教師
@@ -120,22 +124,15 @@ The Example Content Team consists of:
 7. Japanese Culture Context Editor / 日本文化担当
 8. Conversation Material Designer / 会話教材担当
 
+A dedicated Form Verification Agent / 活用検証担当 now sits immediately before the Example Content Team. It owns the external evidence decision for each advanced form and may stop example production with `not_applicable` or `deferred`.
+
 The Learner Research Team consists of:
 1. Second Language Acquisition Researcher / 第二言語習得リサーチ担当
 2. Learner Error Researcher / 学習者エラー調査担当
 3. Materials Benchmark Researcher / 教材ベンチマーク担当
 4. Evidence & Source Reviewer / リサーチ検証担当
 
-Research-team purpose:
-- identify common learner stumbling points;
-- distinguish general errors from mother-tongue-specific patterns when supported by evidence;
-- benchmark common textbook/app exercise types and their tradeoffs;
-- turn findings into small product hypotheses and tests;
-- preserve source citations, dates, confidence, and limitations rather than treating intuition as research.
-
 Research informs product design but does not silently override the supplied textbook sequence or reviewed content.
-
-The overall team also includes Coordinator, Question Design, Japanese QA, UI/UX, Implementation, Test & Balance, Learning Analysis, Refactoring/Code Quality, GitHub/CI & Firestore operations, and Final Review.
 
 ## Current progress
 ### Completed
@@ -145,70 +142,40 @@ The overall team also includes Coordinator, Question Design, Japanese QA, UI/UX,
 - three learning modes
 - GitHub Actions validation
 - automated Firestore sync
-- result/answer feedback regression test
-- Enter-key answer / next flow
-- primary button English contrast regression fix
-- Example Content Team formally expanded to eight roles
-- Learner Research Team formally added
-- reviewed advanced example Batch 1
-- reviewed advanced example Batch 2
-- full 152-entry 活用1 core-form vs 活用2 generation audit
-- automatic group resolution from the four known source forms
-- reviewed `該当なし` mechanism and quiz exclusion
-- audited correction example batch for the 8 detected conversion defects
+- answer feedback and Enter-key flow regression tests
+- Example Content Team expanded to eight roles
+- Learner Research Team added
+- reviewed advanced example Batch 1 and Batch 2
+- full 152-entry core-form vs generated-form audit
+- automatic group resolution from four known source forms
+- `該当なし` mechanism and quiz exclusion
+- audit correction examples for 8 detected conversion defects
+- evidence-first verification ledger and CI release gate
 
 ### Advanced example coverage
-Batch 1 completed:
-- あける
-- あげる
-- あつめる
-- あびる
+Batch 1: 20 reviewed advanced bilingual examples across あける・あげる・あつめる・あびる.
 
-Batch 1: 20 reviewed advanced bilingual examples.
+Batch 2: 30 reviewed advanced bilingual examples across いれる・おきる・おしえる (teach)・おしえる (tell)・おぼえる・おりる.
 
-Batch 2 completed:
-- いれる
-- おきる
-- おしえる (teach)
-- おしえる (tell an address / information)
-- おぼえる
-- おりる
+Audit correction batch: 40 reviewed advanced bilingual examples across たべる・みる・おきる・ねる・する・つれていく・もっていく・くる.
 
-Batch 2: 30 reviewed advanced bilingual examples.
+### Evidence-first Batch 3
+The first batch produced under the new verification-before-writing policy:
+- あう / 会う
+- あるく / 歩く
+- いう / 言う
+- うごく / 動く
+- かう / 買う
 
-Audit correction batch (`data/katsuyou2/part-6.json`):
-- たべる
-- みる
-- おきる
-- ねる
-- する
-- つれていく
-- もっていく
-- くる
-
-Audit correction batch: 40 reviewed advanced bilingual examples (5 advanced forms × 8 entries).
-
-Total newly reviewed advanced examples represented by Batch 1 + Batch 2 + audit correction batch: 90 examples. Some older curated 活用2 examples also exist independently in `part-1` through `part-5`.
-
-Batch 2 deliberately skips `いる` variants and `うまれる` for now because some advanced forms need separate pedagogical treatment rather than forced everyday examples.
+For each entry, なかった・可能・ば・意向・使役 were externally checked and recorded before examples were added. Batch 3 adds 25 reviewed advanced examples; the production entries also include reviewed basic examples so the existing full-content audit remains effective.
 
 ### Current work
-- Continue the dictionary / actual-usage audit of advanced forms beyond the first reviewed `該当なし` set. The 152-entry structural/core-form audit is complete, but do not claim every advanced form has been individually dictionary-verified yet.
-- Continue Group 2 in small reviewed advanced-example batches.
-- Use the Learner Research Team when deciding which trouble spots, explanations, and exercise formats deserve priority.
-- Before adding a verb to advanced sentence-cloze coverage, decide whether each selected advanced form is both grammatically valid and pedagogically suitable. Document unavailable forms instead of forcing an unnatural sentence.
+- Continue the dictionary / actual-usage audit together with example creation rather than as a separate later pass.
+- Every new batch must create/update `form-verification.json` before example data is accepted.
+- Existing pre-policy curated entries will be migrated through the same evidence ledger incrementally; do not claim all legacy advanced forms are externally verified yet.
+- Use the Learner Research Team when deciding whether a formally valid but rare form is useful for beginner practice.
 
 ## Maintenance rule
-Update this file whenever any of the following changes:
-- architecture or hosting
-- Firestore collections / import flow
-- agent roles or workflow
-- learning modes
-- keyboard / interaction policy
-- conjugation evidence / unavailable-form policy
-- data schema
-- major test policy
-- completed example batches / current work
-- known limitations or migration plans
+Update this file whenever architecture, Firestore flow, agent roles, learning modes, interaction policy, form-evidence policy, data schema, tests, completed example batches, or known limitations change.
 
-This file is intended to be sufficient context for a future ChatGPT Work handoff together with `AGENTS.md`, the audit ledger, and the repository itself.
+This file is intended to be sufficient context for a future ChatGPT Work handoff together with `AGENTS.md`, the audit ledger, the form-verification policy, and the repository itself.
