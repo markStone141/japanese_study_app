@@ -1,0 +1,40 @@
+name: Validate
+
+on:
+  pull_request:
+    branches: [main]
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Validate 動詞の活用2 data
+        run: npm run test:katsuyou2
+
+      - name: Check JavaScript syntax
+        run: |
+          node --check app.js
+          node --check katsuyou2.js
+
+      - name: Check required pages
+        run: |
+          test -f index.html
+          test -f katsuyou2.html
+          test -f styles.css
+          test -f katsuyou2.css
