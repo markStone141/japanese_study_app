@@ -3,7 +3,7 @@ import path from "node:path";
 import process from "node:process";
 import admin from "firebase-admin";
 import { loadContentReviewOverrides, reviewItem } from "./content-review.mjs";
-import { buildKatsuyou2FromBase } from "../conjugation-core.js";
+import { buildKatsuyou2FromBase, resolveGroupFromBase } from "../conjugation-core.js";
 
 const BASE_FILES = [
   "data/verbs-minna-no-nihongo-shokyu-1-group-1.json",
@@ -46,7 +46,7 @@ for (const file of BASE_FILES) {
   if (!Array.isArray(rows)) throw new Error(`${file} must contain a JSON array.`);
   for (const raw of rows) {
     const base = reviewItem(raw, overrides, "verbs");
-    const group = Number(String(base.verbGroupId).replace("group-", ""));
+    const group = resolveGroupFromBase(base);
     const curated = curatedMap.get(`${group}|${base.dictionary}|${base.meaning}`) || null;
     all.push(buildKatsuyou2FromBase(base, curated));
   }
@@ -71,4 +71,4 @@ for (const verb of all) {
 }
 await commitBatch();
 
-console.log(`Imported ${total} 活用2 documents into Firestore collection "verbConjugation2" (${curatedSource.length} with curated advanced examples).`);
+console.log(`Imported ${total} 活用2 documents into Firestore collection "verbConjugation2" (${curatedSource.length} curated entries).`);
