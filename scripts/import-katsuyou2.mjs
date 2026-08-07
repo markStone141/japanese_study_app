@@ -17,58 +17,26 @@ async function getDefaultProjectId() {
   try {
     const firebaseRc = JSON.parse(await readFile(".firebaserc", "utf8"));
     return firebaseRc.projects && firebaseRc.projects.default;
-  } catch {
-    return null;
-  }
+  } catch { return null; }
 }
 
-function curatedKey(item) { return `${item.verb?.group}|${item.dictionary}|${item.meaning}`; }
+function curatedKey(item) { return item.sourceVerbId ? `source:${item.sourceVerbId}` : `${item.verb?.group}|${item.dictionary}|${item.meaning}`; }
 
 const projectId = await getDefaultProjectId();
 admin.initializeApp({ credential: admin.credential.applicationDefault(), projectId });
 const db = admin.firestore();
 const overrides = await loadContentReviewOverrides();
 
-const curatedFiles = (await readdir("data/katsuyou2"))
-  .filter((name) => /^part-\d+\.json$/.test(name))
-  .sort((a, b) => a.localeCompare(b, undefined, { numeric: true }));
-const curatedSource = [];
-for (const name of curatedFiles) {
-  const rows = JSON.parse(await readFile(path.join("data/katsuyou2", name), "utf8"));
-  if (!Array.isArray(rows)) throw new Error(`${name} must contain a JSON array.`);
-  curatedSource.push(...rows.map((row) => reviewItem(row, overrides, "katsuyou2")));
-}
-const curatedMap = new Map(curatedSource.map((item) => [curatedKey(item), item]));
+const curatedFiles = (await readdir("data/katsuyou2")).filter((name) => /^part-\d+\.json$/.test(name)).sort((a,b)=>a.localeCompare(b,undefined,{numeric:true}));
+const curatedSource=[];
+for(const name of curatedFiles){const rows=JSON.parse(await readFile(path.join("data/katsuyou2",name),"utf8"));if(!Array.isArray(rows))throw new Error(`${name} must contain a JSON array.`);curatedSource.push(...rows.map((row)=>reviewItem(row,overrides,"katsuyou2")));}
+const curatedMap=new Map(curatedSource.map((item)=>[curatedKey(item),item]));
 
-const all = [];
-for (const file of BASE_FILES) {
-  const rows = JSON.parse(await readFile(file, "utf8"));
-  if (!Array.isArray(rows)) throw new Error(`${file} must contain a JSON array.`);
-  for (const raw of rows) {
-    const base = reviewItem(raw, overrides, "verbs");
-    const group = resolveGroupFromBase(base);
-    const curated = curatedMap.get(`${group}|${base.dictionary}|${base.meaning}`) || null;
-    all.push(buildKatsuyou2FromBase(base, curated));
-  }
-}
+const all=[];
+for(const file of BASE_FILES){const rows=JSON.parse(await readFile(file,"utf8"));if(!Array.isArray(rows))throw new Error(`${file} must contain a JSON array.`);for(const raw of rows){const base=reviewItem(raw,overrides,"verbs");const group=resolveGroupFromBase(base);const curated=curatedMap.get(`source:${base.id}`)||curatedMap.get(`${group}|${base.dictionary}|${base.meaning}`)||null;all.push(buildKatsuyou2FromBase(base,curated));}}
 
-let batch = db.batch();
-let batchCount = 0;
-let total = 0;
-async function commitBatch() {
-  if (!batchCount) return;
-  await batch.commit();
-  batch = db.batch();
-  batchCount = 0;
-}
-
-for (const verb of all) {
-  const ref = db.collection("verbConjugation2").doc(verb.id);
-  batch.set(ref, { ...verb, updatedAt: admin.firestore.FieldValue.serverTimestamp() }, { merge: true });
-  batchCount += 1;
-  total += 1;
-  if (batchCount >= 400) await commitBatch();
-}
+let batch=db.batch();let batchCount=0;let total=0;
+async function commitBatch(){if(!batchCount)return;await batch.commit();batch=db.batch();batchCount=0;}
+for(const verb of all){const ref=db.collection("verbConjugation2").doc(verb.id);batch.set(ref,{...verb,updatedAt:admin.firestore.FieldValue.serverTimestamp()},{merge:true});batchCount+=1;total+=1;if(batchCount>=400)await commitBatch();}
 await commitBatch();
-
 console.log(`Imported ${total} 活用2 documents into Firestore collection "verbConjugation2" (${curatedSource.length} curated entries).`);
