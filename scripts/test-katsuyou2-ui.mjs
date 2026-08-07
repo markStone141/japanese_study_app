@@ -2,11 +2,27 @@ import fs from "node:fs";
 import assert from "node:assert/strict";
 
 const html = fs.readFileSync("katsuyou2.html", "utf8");
+const css = fs.readFileSync("katsuyou2.css", "utf8");
+const js = fs.readFileSync("katsuyou2.js", "utf8");
 const resultIndex = html.indexOf('id="result"');
 const buttonsIndex = html.indexOf('class="button-row"');
 assert.ok(resultIndex !== -1, "katsuyou2.html must contain #result");
 assert.ok(buttonsIndex !== -1, "katsuyou2.html must contain .button-row");
 assert.ok(resultIndex < buttonsIndex, "The answer/result panel must appear before the navigation buttons so the learner sees feedback immediately.");
+
+// Regression: the global [lang=en] muted style must not make English text on primary buttons gray.
+assert.match(css, /\.primary\s+\[lang=["']en["']\][^{]*\{[^}]*color\s*:\s*(?:#fff|white)/s,
+  "English helper text inside primary buttons must remain high-contrast white");
+
+// Regression: Enter should act as answer-check / next even when focus is not currently in the answer input.
+assert.match(js, /document\.addEventListener\(["']keydown["']/,
+  "katsuyou2.js must register a page-level keyboard handler");
+assert.match(js, /event\.key\s*!==\s*["']Enter["']/,
+  "page-level keyboard handler must explicitly handle Enter");
+assert.match(js, /event\.isComposing/,
+  "Enter handling must not submit while a Japanese IME composition is still active");
+assert.match(js, /state\.answered\s*\?\s*nextQuestion\(\)\s*:\s*checkAnswer\(\)/,
+  "Enter must check the current answer, then advance after feedback is shown");
 
 const advanced = JSON.parse(fs.readFileSync("data/katsuyou2/advanced-examples.json", "utf8"));
 const overrides = JSON.parse(fs.readFileSync("data/content-review-overrides.json", "utf8"));
@@ -47,6 +63,9 @@ const agents = fs.readFileSync("AGENTS.md", "utf8");
 for (const role of ["初級日本語教師", "ネイティブ校正", "英訳担当", "学習心理", "多様性", "穴埋め問題", "日本文化", "会話教材"]) {
   assert.ok(agents.includes(role), `AGENTS.md must define example-team role: ${role}`);
 }
+for (const role of ["第二言語習得", "学習者エラー", "教材ベンチマーク", "リサーチ検証"]) {
+  assert.ok(agents.includes(role), `AGENTS.md must define learner-research role: ${role}`);
+}
 assert.ok(fs.existsSync("PROJECT_CONTEXT.md"), "PROJECT_CONTEXT.md must exist for project handoff");
 
-console.log(`OK: result placement, example-team definition, and ${advanced.length} reviewed advanced-example entries passed.`);
+console.log(`OK: keyboard/contrast regressions, research-team definition, and ${advanced.length} reviewed advanced-example entries passed.`);
