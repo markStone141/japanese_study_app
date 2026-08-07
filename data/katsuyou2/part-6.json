@@ -30,7 +30,7 @@
     "examples":{"pastNegative":{"ja":"あめだったので、こどもを こうえんへ つれていかなかった。","en":"It was raining, so I did not take the child to the park."},"potential":{"ja":"くるまなら、みんなを いっしょに つれていける。","en":"If we go by car, I can take everyone together."},"ba":{"ja":"こどもを どうぶつえんへ つれていけば、きっと よろこびます。","en":"If you take the child to the zoo, they will surely be happy."},"volitional":{"ja":"こんど、りょうしんを きょうとへ つれていこう。","en":"Next time, let's take my parents to Kyoto."},"causative":{"ja":"せんせいは せんぱいに こうはいを きょうしつへ つれていかせる。","en":"The teacher has the senior student take the junior student to the classroom."}},"enabled":true
   },
   {
-    "id":"audit-katsuyou2-076","sourceVerbId":"minna-shokyu-1-group-1-076","dictionary":"もっていく","reading":"もっていく","kanji":"持って行く","meaning":"take, carry something","verb":{"group":1,"groupName":"グループ1"},
+    "id":"audit-katsuyou2-076","sourceVerbId":"minna-shokyu-1-group-1-076","dictionary":"もっていく","reading":"もっていく","kanji":"持って行く","meaning":"take something","verb":{"group":1,"groupName":"グループ1"},
     "forms":{"pastNegative":"もっていかなかった","potential":"もっていける","ba":"もっていけば","volitional":"もっていこう","causative":"もっていかせる"},
     "examples":{"pastNegative":{"ja":"きのうは かさを もっていかなかった。","en":"I did not take an umbrella yesterday."},"potential":{"ja":"この かばんには、ほんを 3さつ もっていける。","en":"I can carry three books in this bag."},"ba":{"ja":"みずを もっていけば、あんしんです。","en":"If you take water with you, you will be prepared."},"volitional":{"ja":"ピクニックに おべんとうを もっていこう。","en":"Let's take a boxed lunch to the picnic."},"causative":{"ja":"せんせいは がくせいに しりょうを かいぎしつへ もっていかせる。","en":"The teacher has the student take the materials to the meeting room."}},"enabled":true
   },
