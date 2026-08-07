@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>動詞の活用2 | みんなの日本語 初級I</title>
-  <link rel="stylesheet" href="./katsuyou2.css?v=20260807-2" />
+  <link rel="stylesheet" href="./katsuyou2.css?v=20260807b" />
 </head>
 <body>
   <main class="app-shell">
@@ -12,10 +12,32 @@
       <div>
         <p class="eyebrow">みんなの日本語・初級I</p>
         <h1>どうしの かつよう 2</h1>
-        <p class="subtitle">じしょけいを みて、ただしい かつようを ひらがなで こたえます。<br><span lang="en">Look at the dictionary form and type the requested conjugation.</span></p>
+        <p class="subtitle">かつようを おぼえるだけでなく、ぶんの なかで つかえるように れんしゅうします。<br><span lang="en">Practice conjugations as forms and in real sentence contexts.</span></p>
       </div>
-      <a class="back-link" href="./index.html">← かつよう1</a>
+      <nav class="header-links" aria-label="page navigation">
+        <a class="back-link" href="./index.html">← かつよう1</a>
+        <a class="back-link" href="./katsuyou2-review.html">かつよう いちらん</a>
+      </nav>
     </header>
+
+    <section class="panel mode-panel" aria-label="learning mode">
+      <p class="mode-title">れんしゅうモード <span lang="en">Learning mode</span></p>
+      <div class="mode-grid">
+        <label class="mode-card">
+          <input type="radio" name="learningMode" value="basic" checked>
+          <span><strong>きほん</strong><small>ます・て・た・ない</small></span>
+        </label>
+        <label class="mode-card">
+          <input type="radio" name="learningMode" value="master">
+          <span><strong>かつようマスター</strong><small>可能・ば・意向・使役など</small></span>
+        </label>
+        <label class="mode-card featured">
+          <input type="radio" name="learningMode" value="situation">
+          <span><strong>ぶんの あなうめ</strong><small>意味から形を考える / Context</small></span>
+        </label>
+      </div>
+      <p id="modeDescription" class="mode-description"></p>
+    </section>
 
     <section class="panel settings-panel" aria-label="quiz settings">
       <div class="settings-grid">
@@ -65,17 +87,27 @@
         <span id="formBadge" class="badge secondary">ます形</span>
       </div>
 
-      <div class="dictionary-label">じしょけい <span lang="en">Dictionary form</span></div>
-      <div class="word">
-        <div id="dictionaryKana" class="kana">—</div>
-        <div id="dictionaryKanji" class="kanji"></div>
+      <div id="dictionaryBlock">
+        <div class="dictionary-label">じしょけい <span lang="en">Dictionary form</span></div>
+        <div class="word">
+          <div id="dictionaryKana" class="kana">—</div>
+          <div id="dictionaryKanji" class="kanji"></div>
+        </div>
+        <div id="meaning" class="meaning"></div>
       </div>
-      <div id="meaning" class="meaning"></div>
 
-      <div class="prompt-box">
+      <div id="standardPrompt" class="prompt-box">
         <span>この かたちに してください</span>
         <strong id="targetFormName">—</strong>
         <small id="targetFormEnglish" lang="en"></small>
+        <div id="usageHint" class="usage-hint"></div>
+      </div>
+
+      <div id="clozePrompt" class="cloze-card hidden">
+        <div class="cloze-label">ぶんの あなに はいる かたちを こたえてください</div>
+        <div id="clozeJapanese" class="cloze-ja"></div>
+        <div id="clozeEnglish" class="cloze-en" lang="en"></div>
+        <div id="clozeHint" class="cloze-hint"></div>
       </div>
 
       <input id="answerInput" class="answer-input" type="text" autocomplete="off" autocapitalize="off" spellcheck="false" placeholder="ひらがなで こたえてください" />
@@ -88,19 +120,8 @@
 
       <div id="result" class="result"></div>
     </section>
-
-    <section class="panel review-panel">
-      <div class="review-head">
-        <div>
-          <p class="eyebrow">REVIEW</p>
-          <h2>かつよう いちらん</h2>
-        </div>
-        <input id="searchInput" type="search" placeholder="どうしを けんさく" />
-      </div>
-      <div id="verbList" class="verb-list"></div>
-    </section>
   </main>
 
-  <script type="module" src="./katsuyou2.js?v=20260807-2"></script>
+  <script type="module" src="./katsuyou2.js?v=20260807b"></script>
 </body>
 </html>

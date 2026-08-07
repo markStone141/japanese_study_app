@@ -34,6 +34,7 @@ jobs:
         run: |
           node --check app.js
           node --check katsuyou2.js
+          node --check katsuyou2-review.js
           node --check scripts/audit-content.mjs
           node --check scripts/content-review.mjs
           node --check scripts/import-verbs.mjs
@@ -43,5 +44,6 @@ jobs:
         run: |
           test -f index.html
           test -f katsuyou2.html
+          test -f katsuyou2-review.html
           test -f styles.css
           test -f katsuyou2.css
