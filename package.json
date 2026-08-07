@@ -14,7 +14,8 @@
     "data:apply-kanji": "node scripts/apply-kanji.mjs",
     "audit:content": "node scripts/audit-content.mjs",
     "test:katsuyou2": "node scripts/validate-katsuyou2.mjs",
-    "test:katsuyou2-ui": "node scripts/test-katsuyou2-ui.mjs"
+    "test:katsuyou2-ui": "node scripts/test-katsuyou2-ui.mjs",
+    "test:form-verification": "node scripts/validate-form-verification.mjs"
   },
   "dependencies": {
     "firebase-admin": "^12.7.0"
