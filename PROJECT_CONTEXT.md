@@ -167,7 +167,19 @@ The first batch produced under the new verification-before-writing policy:
 - うごく / 動く
 - かう / 買う
 
-For each entry, なかった・可能・ば・意向・使役 were externally checked and recorded before examples were added. Batch 3 adds 25 reviewed advanced examples; the production entries also include reviewed basic examples so the existing full-content audit remains effective.
+For each entry, なかった・可能・ば・意向・使役 were externally checked and recorded before examples were added. Batch 3 adds 25 reviewed advanced examples.
+
+### Evidence-first Batch 4
+The next verified batch:
+- かえす / 返す
+- かえる / 帰る
+- かく / 書く
+- かす / 貸す
+- かつ / 勝つ
+
+All five advanced forms were verified before example writing for each verb. Batch 4 adds 25 reviewed advanced examples. Full ledger: `docs/KATSUYOU2_BATCH4_2026-08-07.md`.
+
+The frontend curated-data loader now includes `part-7.json` for both quiz and review pages.
 
 ### Current work
 - Continue the dictionary / actual-usage audit together with example creation rather than as a separate later pass.
