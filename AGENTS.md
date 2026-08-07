@@ -10,23 +10,24 @@ For content or quiz additions, use this order:
 
 1. Coordinator defines scope and source files.
 2. Japanese Teacher Agent confirms the textbook/learning scope and prerequisite grammar.
-3. Example Content Team creates and reviews examples through its eight specialist roles.
-4. Question Design Agent defines what is tested and how questions are distributed.
-5. Japanese QA Agent checks naturalness and level.
-6. UI/UX Agent checks presentation and interaction.
-7. Implementation Agent integrates the reviewed data and behavior.
-8. Test & Balance Agent runs structural and distribution checks.
-9. Learning Analysis Agent checks whether the learning data and review logic can surface meaningful weaknesses without distorting the curriculum.
-10. Refactoring / Code Quality Agent checks duplication, file boundaries, and maintainability.
-11. GitHub / CI & Firestore Agent checks automation, deployment, and data synchronization.
-12. Review Agent checks the complete diff.
-13. Coordinator accepts or rejects the release.
+3. Form Verification Agent checks each target conjugation against morphology plus external dictionary/teaching evidence and marks it `valid`, `not_applicable`, or `deferred`.
+4. Example Content Team creates examples only for forms cleared as `valid`, then reviews them through its eight specialist roles.
+5. Question Design Agent defines what is tested and how questions are distributed.
+6. Japanese QA Agent checks naturalness and level.
+7. UI/UX Agent checks presentation and interaction.
+8. Implementation Agent integrates the reviewed data and behavior.
+9. Test & Balance Agent runs structural and distribution checks.
+10. Learning Analysis Agent checks whether the learning data and review logic can surface meaningful weaknesses without distorting the curriculum.
+11. Refactoring / Code Quality Agent checks duplication, file boundaries, and maintainability.
+12. GitHub / CI & Firestore Agent checks automation, deployment, and data synchronization.
+13. Review Agent checks the complete diff.
+14. Coordinator accepts or rejects the release.
 
 The Learner Research Team is consultative across the workflow. Use it when deciding what learners commonly struggle with, how to explain a form, which exercise types to prioritize, or how this app compares with established Japanese-learning materials. Research findings inform design; they do not override the supplied textbook/source without an explicit product decision.
 
 For regressions and structured content batches, prefer test-first work:
 
-`test / explicit review criteria -> implementation -> CI -> review -> main -> Firestore sync`
+`test / explicit review criteria -> form evidence -> example creation -> implementation -> CI -> review -> main -> Firestore sync`
 
 If a review finds a content contradiction, fix it before implementation. Do not hide a source inconsistency by changing unrelated fields.
 
@@ -53,7 +54,7 @@ Responsibilities:
 - Flag forms that are technically valid but uncommon or pedagogically misleading for beginners.
 
 ## 3. Example Content Team / 例文チーム
-This is the highest-priority content-production team. An advanced example batch is not considered reviewed until all relevant roles below have passed it.
+This is the highest-priority content-production team. An advanced example batch is not considered reviewed until all relevant roles below have passed it. The team may only write an advanced example after the Form Verification Agent has cleared that verb/form as `valid`.
 
 ### 3.1 Beginner Japanese Teacher / 初級日本語教師
 Responsibilities:
@@ -114,6 +115,7 @@ Responsibilities:
 
 ### Example-team release gate
 Before an advanced example enters production:
+- the target form must already have a `valid` Form Verification decision;
 - the target form must be morphologically correct;
 - the exact target form must occur in the Japanese example;
 - Japanese and English must match;
@@ -249,6 +251,25 @@ For a product-relevant finding, record:
 - a small testable change or experiment;
 - metric or observation that would show whether the change helped.
 
+## 14. Form Verification Agent / 活用検証担当
+Purpose:
+- Prevent generated-but-wrong, unattested, semantically misleading, or pedagogically unsuitable conjugations from reaching examples or quizzes.
+
+Responsibilities:
+- Start from the four trusted 活用1 source forms and resolved verb group.
+- Generate the candidate advanced form, but never accept it only because the code generated it.
+- Check dictionary or recognized Japanese-teaching references for the target form.
+- Check actual usage or corpus evidence when a form is ambiguous, rare, homographic with another word, or semantically questionable.
+- Record evidence in `data/katsuyou2/form-verification.json` before example writing begins.
+- Assign one status per advanced form: `valid`, `not_applicable`, or `deferred`.
+- For `not_applicable`, require production value `null` and quiz exclusion.
+- For `deferred`, prohibit both examples and quiz items until reviewed again.
+- Add a note when a surface form is valid but likely to confuse learners because it overlaps with another lexical item or conjugation.
+- Preserve source URLs, evidence type, review date, confidence, and limitations.
+
+Release rule:
+- A new evidence-first example batch must not enter production unless `npm run test:form-verification` succeeds.
+
 ## Data rules for 動詞の活用2
 Source section: `動詞の活用2`
 Machine ID: `doushi-katsuyou-2`
@@ -266,4 +287,4 @@ Quiz target forms:
 
 The `dictionary` form is shown as the prompt source and is not used as a quiz target.
 
-All 活用1 verbs must have mechanically validated conjugation forms in 活用2. Advanced sentence-cloze examples are added only after review; do not invent filler sentences solely to claim 100% example coverage.
+All 活用1 verbs must have mechanically validated conjugation forms in 活用2. Advanced sentence-cloze examples are added only after form verification and example-team review; do not invent filler sentences solely to claim 100% example coverage.

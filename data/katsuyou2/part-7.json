@@ -1,0 +1,167 @@
+[
+  {
+    "id": "katsuyou2-minna-shokyu-1-group-1-019",
+    "sourceVerbId": "minna-shokyu-1-group-1-019",
+    "verificationRequired": true,
+    "dictionary": "かえす",
+    "reading": "かえす",
+    "kanji": "返す",
+    "meaning": "give back, return",
+    "verb": { "group": 1, "groupName": "グループ1" },
+    "forms": {
+      "masu": "かえします",
+      "te": "かえして",
+      "ta": "かえした",
+      "nai": "かえさない",
+      "pastNegative": "かえさなかった",
+      "potential": "かえせる",
+      "ba": "かえせば",
+      "volitional": "かえそう",
+      "causative": "かえさせる"
+    },
+    "examples": {
+      "masu": { "ja": "きょう、としょかんに ほんを かえします。", "en": "I will return a book to the library today." },
+      "te": { "ja": "この ほんを としょかんに かえして ください。", "en": "Please return this book to the library." },
+      "ta": { "ja": "きのう、ともだちに かりた かさを かえした。", "en": "Yesterday, I returned the umbrella I borrowed from my friend." },
+      "nai": { "ja": "まだ よんでいるから、この ほんは きょう かえさない。", "en": "I am still reading it, so I will not return this book today." },
+      "pastNegative": { "ja": "きのうは としょかんの ほんを かえさなかった。", "en": "I did not return the library book yesterday." },
+      "potential": { "ja": "きょうなら、としょかんの ほんを かえせる。", "en": "I can return the library book today." },
+      "ba": { "ja": "この ほんを かえせば、つぎの ほんを かりられます。", "en": "If I return this book, I can borrow the next one." },
+      "volitional": { "ja": "しごとの あとで、この ほんを かえそう。", "en": "Let's return this book after work." },
+      "causative": { "ja": "せんせいは がくせいに かりた ほんを かえさせる。", "en": "The teacher has the student return the borrowed book." }
+    },
+    "enabled": true
+  },
+  {
+    "id": "katsuyou2-minna-shokyu-1-group-1-020",
+    "sourceVerbId": "minna-shokyu-1-group-1-020",
+    "verificationRequired": true,
+    "dictionary": "かえる",
+    "reading": "かえる",
+    "kanji": "帰る",
+    "meaning": "go home, return",
+    "verb": { "group": 1, "groupName": "グループ1" },
+    "forms": {
+      "masu": "かえります",
+      "te": "かえって",
+      "ta": "かえった",
+      "nai": "かえらない",
+      "pastNegative": "かえらなかった",
+      "potential": "かえれる",
+      "ba": "かえれば",
+      "volitional": "かえろう",
+      "causative": "かえらせる"
+    },
+    "examples": {
+      "masu": { "ja": "まいにち 6じごろ うちへ かえります。", "en": "I go home around six every day." },
+      "te": { "ja": "うちへ かえって、ばんごはんを たべます。", "en": "I go home and eat dinner." },
+      "ta": { "ja": "きのうは 8じに うちへ かえった。", "en": "I went home at eight yesterday." },
+      "nai": { "ja": "きょうは ざんぎょうが あるから、はやく かえらない。", "en": "I have overtime today, so I will not go home early." },
+      "pastNegative": { "ja": "きのうは 9じまで うちへ かえらなかった。", "en": "Yesterday, I did not go home until nine." },
+      "potential": { "ja": "きょうは 6じに かえれる。", "en": "I can go home at six today." },
+      "ba": { "ja": "6じに かえれば、いっしょに ばんごはんを たべられます。", "en": "If I go home at six, we can eat dinner together." },
+      "volitional": { "ja": "きょうは はやく うちへ かえろう。", "en": "Let's go home early today." },
+      "causative": { "ja": "せんせいは ぐあいの わるい がくせいを うちへ かえらせる。", "en": "The teacher lets the sick student go home." }
+    },
+    "enabled": true
+  },
+  {
+    "id": "katsuyou2-minna-shokyu-1-group-1-021",
+    "sourceVerbId": "minna-shokyu-1-group-1-021",
+    "verificationRequired": true,
+    "dictionary": "かく",
+    "reading": "かく",
+    "kanji": "書く",
+    "meaning": "write, draw, paint",
+    "verb": { "group": 1, "groupName": "グループ1" },
+    "forms": {
+      "masu": "かきます",
+      "te": "かいて",
+      "ta": "かいた",
+      "nai": "かかない",
+      "pastNegative": "かかなかった",
+      "potential": "かける",
+      "ba": "かけば",
+      "volitional": "かこう",
+      "causative": "かかせる"
+    },
+    "examples": {
+      "masu": { "ja": "ノートに きょうの よていを かきます。", "en": "I write today's schedule in my notebook." },
+      "te": { "ja": "ここに なまえを かいて ください。", "en": "Please write your name here." },
+      "ta": { "ja": "きのう、ともだちに てがみを かいた。", "en": "Yesterday, I wrote a letter to my friend." },
+      "nai": { "ja": "きょうは にっきを かかない。", "en": "I will not write in my diary today." },
+      "pastNegative": { "ja": "きのうは にっきを かかなかった。", "en": "I did not write in my diary yesterday." },
+      "potential": { "ja": "この かんじなら、もう かける。", "en": "I can write this kanji now." },
+      "ba": { "ja": "メモを かけば、あとで わすれません。", "en": "If you write a note, you will not forget later." },
+      "volitional": { "ja": "りょこうの あとで、にっきを かこう。", "en": "Let's write in our diary after the trip." },
+      "causative": { "ja": "せんせいは がくせいに なまえを かかせる。", "en": "The teacher has the student write their name." }
+    },
+    "enabled": true
+  },
+  {
+    "id": "katsuyou2-minna-shokyu-1-group-1-023",
+    "sourceVerbId": "minna-shokyu-1-group-1-023",
+    "verificationRequired": true,
+    "dictionary": "かす",
+    "reading": "かす",
+    "kanji": "貸す",
+    "meaning": "lend",
+    "verb": { "group": 1, "groupName": "グループ1" },
+    "forms": {
+      "masu": "かします",
+      "te": "かして",
+      "ta": "かした",
+      "nai": "かさない",
+      "pastNegative": "かさなかった",
+      "potential": "かせる",
+      "ba": "かせば",
+      "volitional": "かそう",
+      "causative": "かさせる"
+    },
+    "examples": {
+      "masu": { "ja": "ともだちに じてんしゃを かします。", "en": "I lend my bicycle to my friend." },
+      "te": { "ja": "その ペンを ちょっと かして ください。", "en": "Please lend me that pen for a moment." },
+      "ta": { "ja": "きのう、いもうとに かさを かした。", "en": "Yesterday, I lent my umbrella to my younger sister." },
+      "nai": { "ja": "この ほんは たいせつだから、だれにも かさない。", "en": "This book is important to me, so I will not lend it to anyone." },
+      "pastNegative": { "ja": "きのうは じてんしゃを だれにも かさなかった。", "en": "I did not lend my bicycle to anyone yesterday." },
+      "potential": { "ja": "この ほんなら、あしたまで かせる。", "en": "I can lend you this book until tomorrow." },
+      "ba": { "ja": "かさを かせば、ともだちは ぬれません。", "en": "If I lend my friend an umbrella, they will not get wet." },
+      "volitional": { "ja": "この ほんを ともだちに かそう。", "en": "Let's lend this book to our friend." },
+      "causative": { "ja": "せんせいは がくせいに じしょを かさせる。", "en": "The teacher has the student lend a dictionary." }
+    },
+    "enabled": true
+  },
+  {
+    "id": "katsuyou2-minna-shokyu-1-group-1-024",
+    "sourceVerbId": "minna-shokyu-1-group-1-024",
+    "verificationRequired": true,
+    "dictionary": "かつ",
+    "reading": "かつ",
+    "kanji": "勝つ",
+    "meaning": "win",
+    "verb": { "group": 1, "groupName": "グループ1" },
+    "forms": {
+      "masu": "かちます",
+      "te": "かって",
+      "ta": "かった",
+      "nai": "かたない",
+      "pastNegative": "かたなかった",
+      "potential": "かてる",
+      "ba": "かてば",
+      "volitional": "かとう",
+      "causative": "かたせる"
+    },
+    "examples": {
+      "masu": { "ja": "つぎの しあいでは ぜったいに かちます。", "en": "I will definitely win the next match." },
+      "te": { "ja": "しあいに かって、みんなで よろこびました。", "en": "We won the match and celebrated together." },
+      "ta": { "ja": "きのうの しあいで、わたしたちの チームが かった。", "en": "Our team won yesterday's match." },
+      "nai": { "ja": "れんしゅうしないと、つぎの しあいには かたない。", "en": "If we do not practice, we will not win the next match." },
+      "pastNegative": { "ja": "きのうの しあいでは かたなかった。", "en": "I did not win yesterday's match." },
+      "potential": { "ja": "つぎの しあいなら、かてる。", "en": "I can win the next match." },
+      "ba": { "ja": "この しあいに かてば、つぎへ すすめます。", "en": "If we win this match, we can move on to the next round." },
+      "volitional": { "ja": "つぎの しあいは ぜったいに かとう。", "en": "Let's definitely win the next match." },
+      "causative": { "ja": "ちちは ゲームで こどもを いちど かたせる。", "en": "The father lets the child win once in the game." }
+    },
+    "enabled": true
+  }
+]

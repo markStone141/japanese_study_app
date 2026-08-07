@@ -92,6 +92,81 @@
         "volitional": { "status": "valid", "value": "かおう" },
         "causative": { "status": "valid", "value": "かわせる" }
       }
+    },
+    "minna-shokyu-1-group-1-019": {
+      "dictionary": "かえす",
+      "kanji": "返す",
+      "confidence": "high",
+      "sources": [
+        { "type": "dictionary-conjugation", "name": "JapanDict 返す", "url": "https://www.japandict.com/%E8%BF%94%E3%81%99" }
+      ],
+      "forms": {
+        "pastNegative": { "status": "valid", "value": "かえさなかった" },
+        "potential": { "status": "valid", "value": "かえせる" },
+        "ba": { "status": "valid", "value": "かえせば" },
+        "volitional": { "status": "valid", "value": "かえそう" },
+        "causative": { "status": "valid", "value": "かえさせる" }
+      }
+    },
+    "minna-shokyu-1-group-1-020": {
+      "dictionary": "かえる",
+      "kanji": "帰る",
+      "confidence": "high",
+      "sources": [
+        { "type": "dictionary-conjugation", "name": "JapanDict 帰る", "url": "https://www.japandict.com/%E5%B8%B0%E3%82%8B" }
+      ],
+      "forms": {
+        "pastNegative": { "status": "valid", "value": "かえらなかった" },
+        "potential": { "status": "valid", "value": "かえれる" },
+        "ba": { "status": "valid", "value": "かえれば" },
+        "volitional": { "status": "valid", "value": "かえろう" },
+        "causative": { "status": "valid", "value": "かえらせる" }
+      }
+    },
+    "minna-shokyu-1-group-1-021": {
+      "dictionary": "かく",
+      "kanji": "書く",
+      "confidence": "high",
+      "sources": [
+        { "type": "dictionary-conjugation", "name": "JapanDict 書く", "url": "https://www.japandict.com/%E6%9B%B8%E3%81%8F" }
+      ],
+      "forms": {
+        "pastNegative": { "status": "valid", "value": "かかなかった" },
+        "potential": { "status": "valid", "value": "かける" },
+        "ba": { "status": "valid", "value": "かけば" },
+        "volitional": { "status": "valid", "value": "かこう" },
+        "causative": { "status": "valid", "value": "かかせる" }
+      }
+    },
+    "minna-shokyu-1-group-1-023": {
+      "dictionary": "かす",
+      "kanji": "貸す",
+      "confidence": "high",
+      "sources": [
+        { "type": "dictionary-conjugation", "name": "JapanDict 貸す", "url": "https://www.japandict.com/%E8%B2%B8%E3%81%99" }
+      ],
+      "forms": {
+        "pastNegative": { "status": "valid", "value": "かさなかった" },
+        "potential": { "status": "valid", "value": "かせる" },
+        "ba": { "status": "valid", "value": "かせば" },
+        "volitional": { "status": "valid", "value": "かそう" },
+        "causative": { "status": "valid", "value": "かさせる" }
+      }
+    },
+    "minna-shokyu-1-group-1-024": {
+      "dictionary": "かつ",
+      "kanji": "勝つ",
+      "confidence": "high",
+      "sources": [
+        { "type": "dictionary-conjugation", "name": "JapanDict 勝つ", "url": "https://www.japandict.com/%E5%8B%9D%E3%81%A4" }
+      ],
+      "forms": {
+        "pastNegative": { "status": "valid", "value": "かたなかった" },
+        "potential": { "status": "valid", "value": "かてる" },
+        "ba": { "status": "valid", "value": "かてば" },
+        "volitional": { "status": "valid", "value": "かとう" },
+        "causative": { "status": "valid", "value": "かたせる", "note": "For beginner examples, use a clear 'let someone win' context so the causative role is easy to understand." }
+      }
     }
   }
 }

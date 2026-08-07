@@ -5,7 +5,7 @@ const BASE_DATA_URLS = [
   "./data/verbs-minna-no-nihongo-shokyu-1-group-2.json",
   "./data/verbs-minna-no-nihongo-shokyu-1-group-3.json"
 ];
-const CURATED_DATA_URLS = [1, 2, 3, 4, 5, 6].map((part) => `./data/katsuyou2/part-${part}.json`);
+const CURATED_DATA_URLS = [1, 2, 3, 4, 5, 6, 7].map((part) => `./data/katsuyou2/part-${part}.json`);
 const OVERRIDES_URL = "./data/content-review-overrides.json";
 
 const FORM_CONFIG = [
@@ -36,7 +36,7 @@ const els = {
 };
 const state = { verbs: [], questions: [], index: 0, correct: 0, answered: false };
 
-function escapeHtml(value) { return String(value ?? "").replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;").replace(/"/g,"&quot;").replace(/'/g,"&#039;"); }
+function escapeHtml(value) { return String(value ?? "").replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;").replace(/\"/g,"&quot;").replace(/'/g,"&#039;"); }
 function normalize(value) { return String(value || "").trim().replace(/\s+/g, "").normalize("NFKC"); }
 function shuffle(items) { const copy=[...items]; for(let i=copy.length-1;i>0;i-=1){const j=Math.floor(Math.random()*(i+1));[copy[i],copy[j]]=[copy[j],copy[i]];} return copy; }
 function currentMode(){ return els.learningMode.find((input)=>input.checked)?.value || "basic"; }

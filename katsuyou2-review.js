@@ -5,7 +5,7 @@ const BASE_DATA_URLS = [
   "./data/verbs-minna-no-nihongo-shokyu-1-group-2.json",
   "./data/verbs-minna-no-nihongo-shokyu-1-group-3.json"
 ];
-const CURATED_DATA_URLS = [1, 2, 3, 4, 5, 6].map((part) => `./data/katsuyou2/part-${part}.json`);
+const CURATED_DATA_URLS = [1, 2, 3, 4, 5, 6, 7].map((part) => `./data/katsuyou2/part-${part}.json`);
 const OVERRIDES_URL = "./data/content-review-overrides.json";
 
 const FORM_CONFIG = [
@@ -15,7 +15,7 @@ const FORM_CONFIG = [
 ];
 const els={reviewGroup:document.getElementById("reviewGroup"),searchInput:document.getElementById("searchInput"),reviewCount:document.getElementById("reviewCount"),verbList:document.getElementById("verbList")};
 let verbs=[];
-function escapeHtml(value){return String(value??"").replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;").replace(/"/g,"&quot;").replace(/'/g,"&#039;");}
+function escapeHtml(value){return String(value??"").replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;").replace(/\"/g,"&quot;").replace(/'/g,"&#039;");}
 function normalize(value){return String(value||"").trim().replace(/\s+/g,"").normalize("NFKC").toLowerCase();}
 function deepMerge(base,patch){if(!patch||typeof patch!=="object"||Array.isArray(patch))return patch;const out=base&&typeof base==="object"&&!Array.isArray(base)?{...base}:{};for(const[key,value]of Object.entries(patch))out[key]=value&&typeof value==="object"&&!Array.isArray(value)?deepMerge(out[key],value):value;return out;}
 function curatedKey(item){return item.sourceVerbId?`source:${item.sourceVerbId}`:`${item.verb?.group}|${item.dictionary}|${item.meaning}`;}
