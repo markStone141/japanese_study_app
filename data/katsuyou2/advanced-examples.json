@@ -1,0 +1,50 @@
+[
+  {
+    "batch": 1,
+    "sourceVerbId": "minna-shokyu-1-group-2-001",
+    "dictionary": "あける",
+    "examples": {
+      "pastNegative": {"answer":"あけなかった","ja":"きのうは さむかったので、まどを あけなかった。","en":"Yesterday it was cold, so I did not open the window."},
+      "potential": {"answer":"あけられる","ja":"この かぎが あれば、ドアを あけられる。","en":"If I have this key, I can open the door."},
+      "ba": {"answer":"あければ","ja":"まどを あければ、すずしい かぜが はいります。","en":"If you open the window, cool air will come in."},
+      "volitional": {"answer":"あけよう","ja":"あついから、まどを あけよう。","en":"It is hot, so let's open the window."},
+      "causative": {"answer":"あけさせる","ja":"せんせいは がくせいに まどを あけさせる。","en":"The teacher has the student open the window."}
+    }
+  },
+  {
+    "batch": 1,
+    "sourceVerbId": "minna-shokyu-1-group-2-002",
+    "dictionary": "あげる",
+    "examples": {
+      "pastNegative": {"answer":"あげなかった","ja":"その ほんは たいせつなので、だれにも あげなかった。","en":"That book was important to me, so I did not give it to anyone."},
+      "potential": {"answer":"あげられる","ja":"この おかしなら、こどもに あげられる。","en":"I can give this snack to the child."},
+      "ba": {"answer":"あげれば","ja":"この はなを あげれば、きっと よろこびます。","en":"If you give them these flowers, they will surely be happy."},
+      "volitional": {"answer":"あげよう","ja":"たんじょうびに この ほんを あげよう。","en":"Let's give this book as a birthday present."},
+      "causative": {"answer":"あげさせる","ja":"せんせいは がくせいに こどもたちへ プレゼントを あげさせる。","en":"The teacher has the student give presents to the children."}
+    }
+  },
+  {
+    "batch": 1,
+    "sourceVerbId": "minna-shokyu-1-group-2-003",
+    "dictionary": "あつめる",
+    "examples": {
+      "pastNegative": {"answer":"あつめなかった","ja":"きのうは じかんが なくて、しりょうを あつめなかった。","en":"Yesterday I had no time, so I did not collect the materials."},
+      "potential": {"answer":"あつめられる","ja":"みんなで やれば、たくさんの しりょうを あつめられる。","en":"If we work together, we can gather a lot of material."},
+      "ba": {"answer":"あつめれば","ja":"じょうほうを あつめれば、もっと よく わかります。","en":"If you gather information, you will understand it better."},
+      "volitional": {"answer":"あつめよう","ja":"レポートの ために、しゃしんを あつめよう。","en":"Let's collect photos for the report."},
+      "causative": {"answer":"あつめさせる","ja":"せんせいは がくせいに しりょうを あつめさせる。","en":"The teacher has the students collect materials."}
+    }
+  },
+  {
+    "batch": 1,
+    "sourceVerbId": "minna-shokyu-1-group-2-004",
+    "dictionary": "あびる",
+    "examples": {
+      "pastNegative": {"answer":"あびなかった","ja":"けさは じかんが なくて、シャワーを あびなかった。","en":"I did not have time this morning, so I did not take a shower."},
+      "potential": {"answer":"あびられる","ja":"この ホテルでは いつでも シャワーを あびられる。","en":"At this hotel, you can take a shower at any time."},
+      "ba": {"answer":"あびれば","ja":"シャワーを あびれば、すっきりします。","en":"If you take a shower, you will feel refreshed."},
+      "volitional": {"answer":"あびよう","ja":"うんどうが おわったら、シャワーを あびよう。","en":"Let's take a shower after exercising."},
+      "causative": {"answer":"あびさせる","ja":"ははは こどもに シャワーを あびさせる。","en":"The mother has her child take a shower."}
+    }
+  }
+]
