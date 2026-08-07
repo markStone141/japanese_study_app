@@ -65,3 +65,6 @@ jobs:
           GOOGLE_APPLICATION_CREDENTIALS: ${{ runner.temp }}/firebase-service-account.json
           GOOGLE_CLOUD_PROJECT: japanese-study-app-61e23
         run: npm run import:data:all
+
+      # This comment intentionally keeps the workflow in the data-change path set;
+      # updating this file is also a safe way to re-run a full Firestore sync.
