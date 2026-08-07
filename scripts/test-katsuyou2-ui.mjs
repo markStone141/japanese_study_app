@@ -12,18 +12,18 @@ const advanced = JSON.parse(fs.readFileSync("data/katsuyou2/advanced-examples.js
 const overrides = JSON.parse(fs.readFileSync("data/content-review-overrides.json", "utf8"));
 assert.ok(Array.isArray(advanced) && advanced.length > 0, "advanced-examples.json must contain at least one reviewed batch");
 
+// Batch 2 deliberately skips verbs whose advanced forms are technically generatable
+// but pedagogically awkward in ordinary beginner contexts (for example 生まれる potential/causative).
 const requiredBatch2 = [
   "minna-shokyu-1-group-2-008",
-  "minna-shokyu-1-group-2-009",
   "minna-shokyu-1-group-2-010",
   "minna-shokyu-1-group-2-011",
   "minna-shokyu-1-group-2-012",
-  "minna-shokyu-1-group-2-013"
+  "minna-shokyu-1-group-2-013",
+  "minna-shokyu-1-group-2-014"
 ];
 const batch2Ids = new Set(advanced.filter((item) => item.batch === 2).map((item) => item.sourceVerbId));
-for (const id of requiredBatch2) {
-  assert.ok(batch2Ids.has(id), `Batch 2 must include ${id}`);
-}
+for (const id of requiredBatch2) assert.ok(batch2Ids.has(id), `Batch 2 must include ${id}`);
 
 const forms = ["pastNegative", "potential", "ba", "volitional", "causative"];
 const sentenceKeys = new Set();
@@ -44,16 +44,7 @@ for (const item of advanced) {
 }
 
 const agents = fs.readFileSync("AGENTS.md", "utf8");
-for (const role of [
-  "初級日本語教師",
-  "ネイティブ校正",
-  "英訳担当",
-  "学習心理",
-  "多様性",
-  "穴埋め問題",
-  "日本文化",
-  "会話教材"
-]) {
+for (const role of ["初級日本語教師", "ネイティブ校正", "英訳担当", "学習心理", "多様性", "穴埋め問題", "日本文化", "会話教材"]) {
   assert.ok(agents.includes(role), `AGENTS.md must define example-team role: ${role}`);
 }
 assert.ok(fs.existsSync("PROJECT_CONTEXT.md"), "PROJECT_CONTEXT.md must exist for project handoff");
