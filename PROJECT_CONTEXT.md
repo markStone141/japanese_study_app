@@ -170,7 +170,6 @@ The first batch produced under the new verification-before-writing policy:
 For each entry, なかった・可能・ば・意向・使役 were externally checked and recorded before examples were added. Batch 3 adds 25 reviewed advanced examples.
 
 ### Evidence-first Batch 4
-The next verified batch:
 - かえす / 返す
 - かえる / 帰る
 - かく / 書く
@@ -179,13 +178,23 @@ The next verified batch:
 
 All five advanced forms were verified before example writing for each verb. Batch 4 adds 25 reviewed advanced examples. Full ledger: `docs/KATSUYOU2_BATCH4_2026-08-07.md`.
 
-The frontend curated-data loader now includes `part-7.json` for both quiz and review pages.
+### Evidence-first Batch 5
+- かぶる / 被る
+- がんばる / 頑張る
+- きく / 聞く
+- けす / 消す
+- さがす / 探す
+
+Batch 5 adds 25 reviewed advanced bilingual examples after external form verification. Special notes are recorded for `かぶれる` (surface-form ambiguity with the separate verb かぶれる), `きける` versus `きこえる`, and the pragmatic force of `がんばらせる`. Full ledger: `docs/KATSUYOU2_BATCH5_2026-08-07.md`.
+
+The frontend curated-data loader now includes `part-8.json` for both quiz and review pages.
 
 ### Current work
 - Continue the dictionary / actual-usage audit together with example creation rather than as a separate later pass.
 - Every new batch must create/update `form-verification.json` before example data is accepted.
 - Existing pre-policy curated entries will be migrated through the same evidence ledger incrementally; do not claim all legacy advanced forms are externally verified yet.
 - Use the Learner Research Team when deciding whether a formally valid but rare form is useful for beginner practice.
+- Treat `しぬ` and other semantically sensitive or pedagogically awkward verbs as separate review cases rather than automatically filling every advanced form.
 
 ## Maintenance rule
 Update this file whenever architecture, Firestore flow, agent roles, learning modes, interaction policy, form-evidence policy, data schema, tests, completed example batches, or known limitations change.
