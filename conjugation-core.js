@@ -12,15 +12,20 @@ const ROWS = {
   "る": { i: "り", a: "ら", e: "れ", o: "ろ" }
 };
 
+export function lexicalDictionary(dictionary) {
+  return String(dictionary || "").replace(/（.*$/, "").replace(/\s*\[.*$/, "").trim();
+}
+
 export function group1Forms(dictionary) {
-  const last = dictionary.at(-1);
-  const stem = dictionary.slice(0, -1);
+  const word = lexicalDictionary(dictionary);
+  const last = word.at(-1);
+  const stem = word.slice(0, -1);
   const row = ROWS[last];
   if (!row) throw new Error(`Unsupported group-1 ending: ${dictionary}`);
 
   let te;
   let ta;
-  if (dictionary === "いく") {
+  if (word === "いく") {
     te = "いって";
     ta = "いった";
   } else if (["う", "つ", "る"].includes(last)) {
@@ -40,15 +45,15 @@ export function group1Forms(dictionary) {
     ta = `${stem}した`;
   }
 
-  const nai = dictionary === "ある" ? "ない" : `${stem}${row.a}ない`;
+  const nai = word === "ある" ? "ない" : `${stem}${row.a}ない`;
   return {
-    dictionary,
+    dictionary: word,
     masu: `${stem}${row.i}ます`,
     te,
     ta,
     nai,
     pastNegative: nai === "ない" ? "なかった" : nai.replace(/ない$/, "なかった"),
-    potential: dictionary === "ある" ? "ありえる" : `${stem}${row.e}る`,
+    potential: word === "ある" ? "ありえる" : `${stem}${row.e}る`,
     ba: `${stem}${row.e}ば`,
     volitional: `${stem}${row.o}う`,
     causative: `${stem}${row.a}せる`
@@ -56,9 +61,10 @@ export function group1Forms(dictionary) {
 }
 
 export function group2Forms(dictionary) {
-  const stem = dictionary.slice(0, -1);
+  const word = lexicalDictionary(dictionary);
+  const stem = word.slice(0, -1);
   return {
-    dictionary,
+    dictionary: word,
     masu: `${stem}ます`,
     te: `${stem}て`,
     ta: `${stem}た`,
@@ -72,10 +78,11 @@ export function group2Forms(dictionary) {
 }
 
 export function group3Forms(dictionary) {
-  if (dictionary.endsWith("する")) {
-    const prefix = dictionary.slice(0, -2);
+  const word = lexicalDictionary(dictionary);
+  if (word.endsWith("する")) {
+    const prefix = word.slice(0, -2);
     return {
-      dictionary,
+      dictionary: word,
       masu: `${prefix}します`,
       te: `${prefix}して`,
       ta: `${prefix}した`,
@@ -87,10 +94,10 @@ export function group3Forms(dictionary) {
       causative: `${prefix}させる`
     };
   }
-  if (dictionary.endsWith("くる")) {
-    const prefix = dictionary.slice(0, -2);
+  if (word.endsWith("くる")) {
+    const prefix = word.slice(0, -2);
     return {
-      dictionary,
+      dictionary: word,
       masu: `${prefix}きます`,
       te: `${prefix}きて`,
       ta: `${prefix}きた`,
