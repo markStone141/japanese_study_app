@@ -1,0 +1,127 @@
+[
+  {
+    "id": "katsuyou2-minna-shokyu-1-group-1-001",
+    "sourceVerbId": "minna-shokyu-1-group-1-001",
+    "reviewScope": "advanced",
+    "dictionary": "あう",
+    "reading": "あう",
+    "kanji": "会う",
+    "meaning": "meet",
+    "verb": { "group": 1, "groupName": "グループ1" },
+    "forms": {
+      "pastNegative": "あわなかった",
+      "potential": "あえる",
+      "ba": "あえば",
+      "volitional": "あおう",
+      "causative": "あわせる"
+    },
+    "examples": {
+      "pastNegative": { "ja": "きのうは いそがしくて、ともだちに あわなかった。", "en": "I was busy yesterday, so I did not meet my friend." },
+      "potential": { "ja": "らいしゅうなら、ともだちに あえる。", "en": "I can meet my friend next week." },
+      "ba": { "ja": "えきで あえば、いっしょに いけます。", "en": "If we meet at the station, we can go together." },
+      "volitional": { "ja": "しゅうまつに ひさしぶりに ともだちに あおう。", "en": "Let's meet our friend this weekend for the first time in a while." },
+      "causative": { "ja": "ははは こどもを せんせいに あわせる。", "en": "The mother has her child meet the teacher." }
+    },
+    "enabled": true
+  },
+  {
+    "id": "katsuyou2-minna-shokyu-1-group-1-004",
+    "sourceVerbId": "minna-shokyu-1-group-1-004",
+    "reviewScope": "advanced",
+    "dictionary": "あるく",
+    "reading": "あるく",
+    "kanji": "歩く",
+    "meaning": "walk",
+    "verb": { "group": 1, "groupName": "グループ1" },
+    "forms": {
+      "pastNegative": "あるかなかった",
+      "potential": "あるける",
+      "ba": "あるけば",
+      "volitional": "あるこう",
+      "causative": "あるかせる"
+    },
+    "examples": {
+      "pastNegative": { "ja": "あめだったので、えきまで あるかなかった。", "en": "It was raining, so I did not walk to the station." },
+      "potential": { "ja": "この きょりなら、あるける。", "en": "I can walk this distance." },
+      "ba": { "ja": "えきまで あるけば、20ぷん かかります。", "en": "If you walk to the station, it takes twenty minutes." },
+      "volitional": { "ja": "てんきが いいから、えきまで あるこう。", "en": "The weather is nice, so let's walk to the station." },
+      "causative": { "ja": "せんせいは こどもたちを こうえんで あるかせる。", "en": "The teacher has the children walk in the park." }
+    },
+    "enabled": true
+  },
+  {
+    "id": "katsuyou2-minna-shokyu-1-group-1-005",
+    "sourceVerbId": "minna-shokyu-1-group-1-005",
+    "reviewScope": "advanced",
+    "dictionary": "いう",
+    "reading": "いう",
+    "kanji": "言う",
+    "meaning": "say",
+    "verb": { "group": 1, "groupName": "グループ1" },
+    "forms": {
+      "pastNegative": "いわなかった",
+      "potential": "いえる",
+      "ba": "いえば",
+      "volitional": "いおう",
+      "causative": "いわせる"
+    },
+    "examples": {
+      "pastNegative": { "ja": "きのうは その ことを だれにも いわなかった。", "en": "I did not tell anyone about that yesterday." },
+      "potential": { "ja": "この ことばなら、すぐ いえる。", "en": "I can say this word right away." },
+      "ba": { "ja": "ほんとうの ことを いえば、みんな わかります。", "en": "If you tell the truth, everyone will understand." },
+      "volitional": { "ja": "せんせいに「ありがとう」と いおう。", "en": "Let's say 'thank you' to the teacher." },
+      "causative": { "ja": "せんせいは がくせいに なまえを いわせる。", "en": "The teacher has the student say their name." }
+    },
+    "enabled": true
+  },
+  {
+    "id": "katsuyou2-minna-shokyu-1-group-1-009",
+    "sourceVerbId": "minna-shokyu-1-group-1-009",
+    "reviewScope": "advanced",
+    "dictionary": "うごく",
+    "reading": "うごく",
+    "kanji": "動く",
+    "meaning": "move, work",
+    "verb": { "group": 1, "groupName": "グループ1" },
+    "forms": {
+      "pastNegative": "うごかなかった",
+      "potential": "うごける",
+      "ba": "うごけば",
+      "volitional": "うごこう",
+      "causative": "うごかせる"
+    },
+    "examples": {
+      "pastNegative": { "ja": "でんちが なくて、おもちゃが うごかなかった。", "en": "The toy did not move because the battery was dead." },
+      "potential": { "ja": "この ロボットは みぎにも ひだりにも うごける。", "en": "This robot can move both right and left." },
+      "ba": { "ja": "きかいが うごけば、しごとを はじめられます。", "en": "If the machine works, we can start the work." },
+      "volitional": { "ja": "つぎの ばしょへ うごこう。", "en": "Let's move to the next place." },
+      "causative": { "ja": "せんせいは がくせいを まえへ うごかせる。", "en": "The teacher has the student move to the front." }
+    },
+    "enabled": true
+  },
+  {
+    "id": "katsuyou2-minna-shokyu-1-group-1-018",
+    "sourceVerbId": "minna-shokyu-1-group-1-018",
+    "reviewScope": "advanced",
+    "dictionary": "かう",
+    "reading": "かう",
+    "kanji": "買う",
+    "meaning": "buy",
+    "verb": { "group": 1, "groupName": "グループ1" },
+    "forms": {
+      "pastNegative": "かわなかった",
+      "potential": "かえる",
+      "ba": "かえば",
+      "volitional": "かおう",
+      "causative": "かわせる"
+    },
+    "examples": {
+      "pastNegative": { "ja": "きのうは なにも かわなかった。", "en": "I did not buy anything yesterday." },
+      "potential": { "ja": "この ねだんなら、わたしも かえる。", "en": "At this price, I can buy it too." },
+      "ba": { "ja": "いま かえば、あした つかえます。", "en": "If you buy it now, you can use it tomorrow." },
+      "volitional": { "ja": "きょうは やさいを かおう。", "en": "Let's buy vegetables today." },
+      "causative": { "ja": "ちちは むすこに じぶんで きっぷを かわせる。", "en": "The father has his son buy the ticket himself." }
+    },
+    "enabled": true
+  }
+]
