@@ -76,6 +76,12 @@ for (const file of VERB_FILES) {
   }
 }
 
+// 動詞の活用2 intentionally reuses the four basic-form examples from the
+// base verb dataset for the same verbs. Duplicate detection restarts here so
+// it catches accidental repetition inside this dataset without rejecting that
+// deliberate cross-course reuse.
+exactJapanese.clear();
+
 const katsuyou2Files = (await readdir("data/katsuyou2")).filter((name) => /^part-\d+\.json$/.test(name)).sort((a, b) => a.localeCompare(b, undefined, { numeric: true }));
 const katsuyou2Ids = new Set();
 for (const name of katsuyou2Files) {
