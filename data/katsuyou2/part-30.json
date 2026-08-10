@@ -1,0 +1,64 @@
+[
+  {
+    "id": "katsuyou2-minna-shokyu-1-group-2-037", "sourceVerbId": "minna-shokyu-1-group-2-037", "verificationRequired": true,
+    "dictionary": "ねる", "reading": "ねる", "kanji": "寝る", "meaning": "sleep or go to bed", "verb": { "group": 2, "groupName": "グループ2" },
+    "forms": { "masu": "ねます", "te": "ねて", "ta": "ねた", "nai": "ねない", "pastNegative": "ねなかった", "potential": "ねられる", "ba": "ねれば", "volitional": "ねよう", "causative": "ねさせる" },
+    "examples": {
+      "masu": { "ja": "まいばん 11じに ねます。", "en": "I go to bed at eleven every night." },
+      "te": { "ja": "はやく ねて、あした はやく おきます。", "en": "I go to bed early and wake up early tomorrow." },
+      "ta": { "ja": "きのうは 10じに ねた。", "en": "Yesterday, I went to bed at ten." },
+      "nai": { "ja": "きょうは まだ ねない。", "en": "I will not go to bed yet today." },
+      "pastNegative": { "ja": "きのうは 12じまで ねなかった。", "en": "I did not go to bed until midnight yesterday." },
+      "potential": { "ja": "この へやなら しずかに ねられる。", "en": "I can sleep peacefully in this room." },
+      "ba": { "ja": "はやく ねれば、あさ げんきに おきられます。", "en": "If you go to bed early, you can wake up feeling well in the morning." },
+      "volitional": { "ja": "きょうは 10じに ねよう。", "en": "I will go to bed at ten today." },
+      "causative": { "ja": "ちちは あかちゃんを 8じに ねさせる。", "en": "The father puts the baby to bed at eight." }
+    }, "enabled": true
+  },
+  {
+    "id": "katsuyou2-minna-shokyu-1-group-2-038", "sourceVerbId": "minna-shokyu-1-group-2-038", "verificationRequired": true,
+    "dictionary": "のりかえる", "reading": "のりかえる", "kanji": "乗り換える", "meaning": "change trains or other transport", "verb": { "group": 2, "groupName": "グループ2" },
+    "forms": { "masu": "のりかえます", "te": "のりかえて", "ta": "のりかえた", "nai": "のりかえない", "pastNegative": "のりかえなかった", "potential": "のりかえられる", "ba": "のりかえれば", "volitional": "のりかえよう", "causative": "のりかえさせる" },
+    "examples": {
+      "masu": { "ja": "しんじゅくで ちゅうおうせんに のりかえます。", "en": "I change to the Chuo Line at Shinjuku." },
+      "te": { "ja": "つぎの えきで ちかてつに のりかえてください。", "en": "Please change to the subway at the next station." },
+      "ta": { "ja": "とうきょうえきで しんかんせんに のりかえた。", "en": "I changed to the bullet train at Tokyo Station." },
+      "nai": { "ja": "この でんしゃなら のりかえない。", "en": "I do not need to change trains if I take this train." },
+      "pastNegative": { "ja": "きのうは バスに のりかえなかった。", "en": "I did not change to a bus yesterday." },
+      "potential": { "ja": "この えきで ちかてつに のりかえられる。", "en": "You can change to the subway at this station." },
+      "ba": { "ja": "つぎの えきで のりかえれば、はやく つきます。", "en": "If you change trains at the next station, you will arrive early." },
+      "volitional": { "ja": "しんじゅくで ちゅうおうせんに のりかえよう。", "en": "Let's change to the Chuo Line at Shinjuku." },
+      "causative": { "ja": "せんせいは がくせいを つぎの えきで ちかてつに のりかえさせる。", "en": "The teacher has the students change to the subway at the next station." }
+    }, "enabled": true
+  },
+  {
+    "id": "katsuyou2-minna-shokyu-1-group-2-039", "sourceVerbId": "minna-shokyu-1-group-2-039", "verificationRequired": true,
+    "dictionary": "はじめる", "reading": "はじめる", "kanji": "始める", "meaning": "start or begin", "verb": { "group": 2, "groupName": "グループ2" },
+    "forms": { "masu": "はじめます", "te": "はじめて", "ta": "はじめた", "nai": "はじめない", "pastNegative": "はじめなかった", "potential": "はじめられる", "ba": "はじめれば", "volitional": "はじめよう", "causative": "はじめさせる" },
+    "examples": {
+      "masu": { "ja": "9じに しごとを はじめます。", "en": "I start work at nine." },
+      "te": { "ja": "べんきょうを はじめて、1じかん れんしゅうします。", "en": "I begin studying and practice for one hour." },
+      "ta": { "ja": "せんげつ、にほんごの べんきょうを はじめた。", "en": "I started studying Japanese last month." },
+      "nai": { "ja": "まだ かいぎを はじめない。", "en": "We will not start the meeting yet." },
+      "pastNegative": { "ja": "きのうは あたらしい しごとを はじめなかった。", "en": "I did not start the new job yesterday." },
+      "potential": { "ja": "らいしゅうから にほんごの べんきょうを はじめられる。", "en": "I can start studying Japanese next week." },
+      "ba": { "ja": "いま しごとを はじめれば、5じに おわります。", "en": "If you start work now, you will finish at five." },
+      "volitional": { "ja": "そろそろ かいぎを はじめよう。", "en": "Let's start the meeting soon." },
+      "causative": { "ja": "ぶちょうは たんとうしゃに かいぎを はじめさせる。", "en": "The manager has the person in charge start the meeting." }
+    }, "enabled": true
+  },
+  {
+    "id": "katsuyou2-minna-shokyu-1-group-2-040", "sourceVerbId": "minna-shokyu-1-group-2-040", "verificationRequired": true,
+    "dictionary": "まける", "reading": "まける", "kanji": "負ける", "meaning": "lose or be beaten", "verb": { "group": 2, "groupName": "グループ2" },
+    "forms": { "masu": "まけます", "te": "まけて", "ta": "まけた", "nai": "まけない", "pastNegative": "まけなかった", "potential": null, "ba": "まければ", "volitional": "まけよう", "causative": null },
+    "examples": {
+      "masu": { "ja": "つよい チームに まけます。", "en": "We lose to a strong team." },
+      "te": { "ja": "しあいに まけて、くやしかったです。", "en": "We lost the match, and it was frustrating." },
+      "ta": { "ja": "きのうの ゲームで まけた。", "en": "We lost yesterday's game." },
+      "nai": { "ja": "つぎの しあいでは まけない。", "en": "We will not lose the next match." },
+      "pastNegative": { "ja": "きのうの しあいでは まけなかった。", "en": "We did not lose yesterday's match." },
+      "ba": { "ja": "つぎの しあいに まければ、たいかいは おわりです。", "en": "If we lose the next match, the tournament is over for us." },
+      "volitional": { "ja": "きょうは おとうとに わざと まけよう。", "en": "I will let my younger brother win on purpose today." }
+    }, "enabled": true
+  }
+]
