@@ -1,0 +1,66 @@
+[
+  {
+    "id": "katsuyou2-minna-shokyu-1-group-2-017", "sourceVerbId": "minna-shokyu-1-group-2-017", "verificationRequired": true,
+    "dictionary": "かける", "reading": "かける", "kanji": "掛ける", "meaning": "make [a telephone call]", "verb": { "group": 2, "groupName": "グループ2" },
+    "forms": { "masu": "かけます", "te": "かけて", "ta": "かけた", "nai": "かけない", "pastNegative": "かけなかった", "potential": "かけられる", "ba": "かければ", "volitional": "かけよう", "causative": "かけさせる" },
+    "examples": {
+      "masu": { "ja": "あとで かいしゃに でんわを かけます。", "en": "I will call the company later." },
+      "te": { "ja": "びょういんに でんわを かけて、よやくします。", "en": "I call the hospital and make an appointment." },
+      "ta": { "ja": "さっき ははに でんわを かけた。", "en": "I called my mother a little while ago." },
+      "nai": { "ja": "よる おそくには でんわを かけない。", "en": "I do not make phone calls late at night." },
+      "pastNegative": { "ja": "きのうは いそがしくて、かぞくに でんわを かけなかった。", "en": "I was busy yesterday, so I did not call my family." },
+      "potential": { "ja": "ここなら、しずかに でんわを かけられる。", "en": "I can make a phone call quietly here." },
+      "ba": { "ja": "みせに でんわを かければ、あいているか わかります。", "en": "If you call the shop, you can find out whether it is open." },
+      "volitional": { "ja": "つく じかんが わかったら、ホテルに でんわを かけよう。", "en": "Once we know our arrival time, let's call the hotel." },
+      "causative": { "ja": "じょうしは たんとうしゃに おきゃくさんへ でんわを かけさせる。", "en": "The manager has the staff member call the customer." }
+    }, "enabled": true
+  },
+  {
+    "id": "katsuyou2-minna-shokyu-1-group-2-018", "sourceVerbId": "minna-shokyu-1-group-2-018", "verificationRequired": true,
+    "dictionary": "かける", "reading": "かける", "kanji": "掛ける", "meaning": "put on [glasses]", "verb": { "group": 2, "groupName": "グループ2" },
+    "forms": { "masu": "かけます", "te": "かけて", "ta": "かけた", "nai": "かけない", "pastNegative": "かけなかった", "potential": "かけられる", "ba": "かければ", "volitional": "かけよう", "causative": "かけさせる" },
+    "examples": {
+      "masu": { "ja": "ほんを よむ とき、めがねを かけます。", "en": "I wear glasses when I read a book." },
+      "te": { "ja": "めがねを かけて、こくばんを みます。", "en": "I put on my glasses and look at the board." },
+      "ta": { "ja": "きのうは サングラスを かけた。", "en": "Yesterday, I wore sunglasses." },
+      "nai": { "ja": "うちでは めがねを かけない。", "en": "I do not wear glasses at home." },
+      "pastNegative": { "ja": "きょうは くもりだったから、サングラスを かけなかった。", "en": "It was cloudy today, so I did not wear sunglasses." },
+      "potential": { "ja": "この かるい めがねなら、ながい じかん かけられる。", "en": "I can wear these light glasses for a long time." },
+      "ba": { "ja": "めがねを かければ、ちいさい じも よめます。", "en": "If I put on my glasses, I can read small print too." },
+      "volitional": { "ja": "ひざしが つよいから、サングラスを かけよう。", "en": "The sunlight is strong, so let's put on sunglasses." },
+      "causative": { "ja": "めの けんさで、いしゃは かんじゃに めがねを かけさせる。", "en": "During the eye exam, the doctor has the patient put on glasses." }
+    }, "enabled": true
+  },
+  {
+    "id": "katsuyou2-minna-shokyu-1-group-2-019", "sourceVerbId": "minna-shokyu-1-group-2-019", "verificationRequired": true,
+    "dictionary": "かりる", "reading": "かりる", "kanji": "借りる", "meaning": "borrow", "verb": { "group": 2, "groupName": "グループ2" },
+    "forms": { "masu": "かります", "te": "かりて", "ta": "かりた", "nai": "かりない", "pastNegative": "かりなかった", "potential": "かりられる", "ba": "かりれば", "volitional": "かりよう", "causative": "かりさせる" },
+    "examples": {
+      "masu": { "ja": "としょかんで ほんを かります。", "en": "I borrow a book from the library." },
+      "te": { "ja": "ともだちに じてんしゃを かりて、えきへ いきます。", "en": "I borrow my friend's bicycle and go to the station." },
+      "ta": { "ja": "きのう、せんせいに じしょを かりた。", "en": "Yesterday, I borrowed a dictionary from my teacher." },
+      "nai": { "ja": "おかねは かりない。", "en": "I do not borrow money." },
+      "pastNegative": { "ja": "けさは あめが ふらなかったから、かさを かりなかった。", "en": "It did not rain this morning, so I did not borrow an umbrella." },
+      "potential": { "ja": "この カードが あれば、ほんを 10さつ かりられる。", "en": "With this card, you can borrow ten books." },
+      "ba": { "ja": "じてんしゃを かりれば、うみまで すぐです。", "en": "If we borrow bicycles, the beach is not far." },
+      "volitional": { "ja": "この ほんは たかいから、としょかんで かりよう。", "en": "This book is expensive, so let's borrow it from the library." },
+      "causative": { "ja": "せんせいは がくせいに がっこうの カメラを かりさせる。", "en": "The teacher lets the student borrow the school's camera." }
+    }, "enabled": true
+  },
+  {
+    "id": "katsuyou2-minna-shokyu-1-group-2-020", "sourceVerbId": "minna-shokyu-1-group-2-020", "verificationRequired": true,
+    "dictionary": "かんがえる", "reading": "かんがえる", "kanji": "考える", "meaning": "think, consider", "verb": { "group": 2, "groupName": "グループ2" },
+    "forms": { "masu": "かんがえます", "te": "かんがえて", "ta": "かんがえた", "nai": "かんがえない", "pastNegative": "かんがえなかった", "potential": "かんがえられる", "ba": "かんがえれば", "volitional": "かんがえよう", "causative": "かんがえさせる" },
+    "examples": {
+      "masu": { "ja": "しょうらいの ことを かんがえます。", "en": "I think about the future." },
+      "te": { "ja": "よく かんがえて、こたえを きめます。", "en": "I think carefully and decide on an answer." },
+      "ta": { "ja": "その もんだいを いちにちじゅう かんがえた。", "en": "I thought about that problem all day." },
+      "nai": { "ja": "いまは しごとの ことを かんがえない。", "en": "I will not think about work now." },
+      "pastNegative": { "ja": "きのうは つかれていて、あしたの よていを かんがえなかった。", "en": "I was tired yesterday, so I did not think about tomorrow's plans." },
+      "potential": { "ja": "しずかな へやなら、ゆっくり かんがえられる。", "en": "I can think carefully in a quiet room." },
+      "ba": { "ja": "みんなで かんがえれば、いい ほうほうが みつかります。", "en": "If we think about it together, we will find a good way." },
+      "volitional": { "ja": "つぎの やすみに どこへ いくか かんがえよう。", "en": "Let's think about where to go on our next day off." },
+      "causative": { "ja": "せきにんしゃは たんとうしゃに あたらしい ほうほうを かんがえさせる。", "en": "The supervisor has the staff member think of a new method." }
+    }, "enabled": true
+  }
+]
