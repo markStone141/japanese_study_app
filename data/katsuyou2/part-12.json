@@ -1,0 +1,65 @@
+[
+  {
+    "id": "katsuyou2-minna-shokyu-1-group-1-047", "sourceVerbId": "minna-shokyu-1-group-1-047", "verificationRequired": true,
+    "dictionary": "きる", "reading": "きる", "kanji": "切る", "meaning": "cut, slice", "verb": { "group": 1, "groupName": "グループ1" },
+    "forms": { "masu": "きります", "te": "きって", "ta": "きった", "nai": "きらない", "pastNegative": "きらなかった", "potential": "きれる", "ba": "きれば", "volitional": "きろう", "causative": "きらせる" },
+    "examples": {
+      "masu": { "ja": "りょうりの まえに、にんじんを きります。", "en": "I cut a carrot before cooking." },
+      "te": { "ja": "この かみを はんぶんに きって ください。", "en": "Please cut this paper in half." },
+      "ta": { "ja": "けさ、パンを うすく きった。", "en": "I sliced the bread thinly this morning." },
+      "nai": { "ja": "この ケーキは まだ きらない。", "en": "I will not cut this cake yet." },
+      "pastNegative": { "ja": "きのうは やさいを きらなかった。", "en": "I did not cut any vegetables yesterday." },
+      "potential": { "ja": "この はさみなら、あつい かみも きれる。", "en": "With these scissors, I can cut thick paper too." },
+      "ba": { "ja": "たまねぎを ちいさく きれば、はやく にえます。", "en": "If you cut the onion into small pieces, it will cook quickly." },
+      "volitional": { "ja": "みんなで たべるから、ケーキを おおきく きろう。", "en": "We are all going to eat it, so let's cut the cake into large pieces." },
+      "causative": { "ja": "ちちは こどもに やわらかい バナナを きらせる。", "en": "The father lets the child cut a soft banana." }
+    }, "enabled": true
+  },
+  {
+    "id": "katsuyou2-minna-shokyu-1-group-1-048", "sourceVerbId": "minna-shokyu-1-group-1-048", "verificationRequired": true,
+    "dictionary": "さわる（どあに）", "reading": "さわる", "kanji": "触る（ドアに）", "meaning": "touch a door", "verb": { "group": 1, "groupName": "グループ1" },
+    "forms": { "masu": "さわります", "te": "さわって", "ta": "さわった", "nai": "さわらない", "pastNegative": "さわらなかった", "potential": "さわれる", "ba": "さわれば", "volitional": "さわろう", "causative": "さわらせる" },
+    "examples": {
+      "masu": { "ja": "ドアを あける とき、ここに さわります。", "en": "When I open the door, I touch here." },
+      "te": { "ja": "ドアに さわって、ぬれて いるか たしかめます。", "en": "I touch the door to check whether it is wet." },
+      "ta": { "ja": "くらい へやで、てが ドアに さわった。", "en": "In the dark room, my hand touched the door." },
+      "nai": { "ja": "ペンキが かわくまで、ドアに さわらない。", "en": "I will not touch the door until the paint dries." },
+      "pastNegative": { "ja": "ドアが あいて いたから、どこにも さわらなかった。", "en": "The door was open, so I did not touch anything." },
+      "potential": { "ja": "この たかさなら、こどもも ドアに さわれる。", "en": "At this height, a child can touch the door too." },
+      "ba": { "ja": "この ドアに さわれば、ベルが なります。", "en": "If you touch this door, a bell will ring." },
+      "volitional": { "ja": "あついか どうか、ドアに さわろう。", "en": "Let's touch the door to see whether it is hot." },
+      "causative": { "ja": "ははは こどもに ぬれた ドアを さわらせる。", "en": "The mother lets the child touch the wet door." }
+    }, "enabled": true
+  },
+  {
+    "id": "katsuyou2-minna-shokyu-1-group-1-049", "sourceVerbId": "minna-shokyu-1-group-1-049", "verificationRequired": true,
+    "dictionary": "しる", "reading": "しる", "kanji": "知る", "meaning": "get to know", "verb": { "group": 1, "groupName": "グループ1" },
+    "forms": { "masu": "しります", "te": "しって", "ta": "しった", "nai": "しらない", "pastNegative": "しらなかった", "potential": null, "ba": "しれば", "volitional": "しろう", "causative": "しらせる" },
+    "examples": {
+      "masu": { "ja": "ニュースを みて、あたらしい じじつを しります。", "en": "I learn a new fact from the news." },
+      "te": { "ja": "その みせを しって、すぐに いきました。", "en": "I learned about the shop and went there right away." },
+      "ta": { "ja": "ともだちから、まつりの ひを しった。", "en": "I learned the date of the festival from a friend." },
+      "nai": { "ja": "わたしは その ひとの なまえを しらない。", "en": "I do not know that person's name." },
+      "pastNegative": { "ja": "きのうまで、この こうえんを しらなかった。", "en": "I did not know about this park until yesterday." },
+      "ba": { "ja": "でんしゃの じかんを しれば、はやく じゅんびできます。", "en": "If you know the train time, you can get ready early." },
+      "volitional": { "ja": "この まちの れきしを もっと しろう。", "en": "Let's learn more about the history of this town." },
+      "causative": { "ja": "せんせいは しゃしんを みせて、がくせいに その じじつを しらせる。", "en": "The teacher shows a photo and makes the students learn that fact." }
+    }, "enabled": true
+  },
+  {
+    "id": "katsuyou2-minna-shokyu-1-group-1-050", "sourceVerbId": "minna-shokyu-1-group-1-050", "verificationRequired": true,
+    "dictionary": "すう（たばこを）", "reading": "すう", "kanji": "吸う（たばこを）", "meaning": "smoke a cigarette", "verb": { "group": 1, "groupName": "グループ1" },
+    "forms": { "masu": "すいます", "te": "すって", "ta": "すった", "nai": "すわない", "pastNegative": "すわなかった", "potential": "すえる", "ba": "すえば", "volitional": "すおう", "causative": "すわせる" },
+    "examples": {
+      "masu": { "ja": "かれは そとの きまった ばしょで たばこを すいます。", "en": "He smokes in the designated area outside." },
+      "te": { "ja": "ここで たばこを すっては いけません。", "en": "You must not smoke here." },
+      "ta": { "ja": "その ひとは そとで たばこを すった。", "en": "That person smoked outside." },
+      "nai": { "ja": "わたしは けんこうの ために たばこを すわない。", "en": "I do not smoke for my health." },
+      "pastNegative": { "ja": "かれは きのう、たばこを いっぽんも すわなかった。", "en": "He did not smoke a single cigarette yesterday." },
+      "potential": { "ja": "そとの きまった ばしょなら、たばこを すえる。", "en": "You can smoke in the designated area outside." },
+      "ba": { "ja": "たばこを すえば、ふくに においが つきます。", "en": "If you smoke, the smell will get on your clothes." },
+      "volitional": { "ja": "たばこを すおうと したが、ここでは すえなかった。", "en": "I tried to smoke, but I could not smoke here." },
+      "causative": { "ja": "むかしは、みせが きゃくに たばこを すわせる ことも あった。", "en": "In the past, some shops allowed customers to smoke." }
+    }, "enabled": true
+  }
+]

@@ -1,0 +1,80 @@
+[
+  {
+    "id": "katsuyou2-minna-shokyu-1-group-1-038",
+    "sourceVerbId": "minna-shokyu-1-group-1-038",
+    "verificationRequired": true,
+    "dictionary": "よぶ", "reading": "よぶ", "kanji": "呼ぶ", "meaning": "call",
+    "verb": { "group": 1, "groupName": "グループ1" },
+    "forms": { "masu": "よびます", "te": "よんで", "ta": "よんだ", "nai": "よばない", "pastNegative": "よばなかった", "potential": "よべる", "ba": "よべば", "volitional": "よぼう", "causative": "よばせる" },
+    "examples": {
+      "masu": { "ja": "にもつが おもいから、タクシーを よびます。", "en": "My luggage is heavy, so I will call a taxi." },
+      "te": { "ja": "うけつけの ひとを よんで ください。", "en": "Please call the receptionist." },
+      "ta": { "ja": "パーティーに かいしゃの ともだちを よんだ。", "en": "I invited a friend from work to the party." },
+      "nai": { "ja": "きょうは いえに だれも よばない。", "en": "I will not invite anyone to my home today." },
+      "pastNegative": { "ja": "けさは タクシーを よばなかった。", "en": "I did not call a taxi this morning." },
+      "potential": { "ja": "この アプリで すぐに タクシーを よべる。", "en": "You can call a taxi right away with this app." },
+      "ba": { "ja": "てんいんを よべば、メニューを もらえます。", "en": "If you call a server, you can get a menu." },
+      "volitional": { "ja": "にもつが おおいから、タクシーを よぼう。", "en": "We have a lot of luggage, so let's call a taxi." },
+      "causative": { "ja": "せんせいは がくせいに つぎの ひとを よばせる。", "en": "The teacher has a student call the next person." }
+    },
+    "enabled": true
+  },
+  {
+    "id": "katsuyou2-minna-shokyu-1-group-1-039",
+    "sourceVerbId": "minna-shokyu-1-group-1-039",
+    "verificationRequired": true,
+    "dictionary": "よむ", "reading": "よむ", "kanji": "読む", "meaning": "read",
+    "verb": { "group": 1, "groupName": "グループ1" },
+    "forms": { "masu": "よみます", "te": "よんで", "ta": "よんだ", "nai": "よまない", "pastNegative": "よまなかった", "potential": "よめる", "ba": "よめば", "volitional": "よもう", "causative": "よませる" },
+    "examples": {
+      "masu": { "ja": "でんしゃの なかで しんぶんを よみます。", "en": "I read the newspaper on the train." },
+      "te": { "ja": "この てがみを ゆっくり よんで ください。", "en": "Please read this letter slowly." },
+      "ta": { "ja": "きのう、みじかい しょうせつを よんだ。", "en": "I read a short novel yesterday." },
+      "nai": { "ja": "ねる まえは スマートフォンの ニュースを よまない。", "en": "I do not read news on my smartphone before bed." },
+      "pastNegative": { "ja": "けさは じかんが なくて、しんぶんを よまなかった。", "en": "I did not have time this morning, so I did not read the newspaper." },
+      "potential": { "ja": "この ほんは かんじが すくないから、ひとりで よめる。", "en": "This book has few kanji, so I can read it by myself." },
+      "ba": { "ja": "この せつめいを よめば、つかいかたが わかります。", "en": "If you read these instructions, you will understand how to use it." },
+      "volitional": { "ja": "つぎは この まんがを よもう。", "en": "Let's read this manga next." },
+      "causative": { "ja": "せんせいは がくせいに ぶんを こえに だして よませる。", "en": "The teacher has the students read the sentence aloud." }
+    },
+    "enabled": true
+  },
+  {
+    "id": "katsuyou2-minna-shokyu-1-group-1-040",
+    "sourceVerbId": "minna-shokyu-1-group-1-040",
+    "verificationRequired": true,
+    "dictionary": "わかる", "reading": "わかる", "kanji": "分かる", "meaning": "understand",
+    "verb": { "group": 1, "groupName": "グループ1" },
+    "forms": { "masu": "わかります", "te": "わかって", "ta": "わかった", "nai": "わからない", "pastNegative": "わからなかった", "potential": null, "ba": "わかれば", "volitional": null, "causative": "わからせる" },
+    "examples": {
+      "masu": { "ja": "この ちずを みると、みちが よく わかります。", "en": "When I look at this map, I understand the route well." },
+      "te": { "ja": "せつめいが わかって、あんしんしました。", "en": "I understood the explanation and felt relieved." },
+      "ta": { "ja": "せんせいに きいて、こたえが わかった。", "en": "I asked the teacher and understood the answer." },
+      "nai": { "ja": "この かんじの よみかたが わからない。", "en": "I do not know how to read this kanji." },
+      "pastNegative": { "ja": "ちずを みても、えきの ばしょが わからなかった。", "en": "Even after looking at the map, I did not know where the station was." },
+      "ba": { "ja": "こたえが わかれば、てを あげて ください。", "en": "If you know the answer, please raise your hand." },
+      "causative": { "ja": "せんせいは えを みせて、がくせいに ことばの いみを わからせる。", "en": "The teacher shows a picture to make the students understand the meaning of the word." }
+    },
+    "enabled": true
+  },
+  {
+    "id": "katsuyou2-minna-shokyu-1-group-1-046",
+    "sourceVerbId": "minna-shokyu-1-group-1-046",
+    "verificationRequired": true,
+    "dictionary": "きく（せんせいに）", "reading": "きく", "kanji": "聞く（先生に）", "meaning": "ask the teacher",
+    "verb": { "group": 1, "groupName": "グループ1" },
+    "forms": { "masu": "ききます", "te": "きいて", "ta": "きいた", "nai": "きかない", "pastNegative": "きかなかった", "potential": "きける", "ba": "きけば", "volitional": "きこう", "causative": "きかせる" },
+    "examples": {
+      "masu": { "ja": "しゅくだいについて せんせいに ききます。", "en": "I ask the teacher about the homework." },
+      "te": { "ja": "わからない ことは せんせいに きいて ください。", "en": "Please ask the teacher about anything you do not understand." },
+      "ta": { "ja": "じゅぎょうの あとで、せんせいに テストの ひを きいた。", "en": "After class, I asked the teacher the date of the test." },
+      "nai": { "ja": "かんたんな ことは せんせいに きかない。", "en": "I do not ask the teacher simple questions." },
+      "pastNegative": { "ja": "きのうは せんせいに しゅくだいの ことを きかなかった。", "en": "I did not ask the teacher about the homework yesterday." },
+      "potential": { "ja": "じゅぎょうの あとなら、せんせいに ゆっくり きける。", "en": "After class, I can take my time asking the teacher." },
+      "ba": { "ja": "せんせいに きけば、こたえが わかります。", "en": "If you ask the teacher, you will understand the answer." },
+      "volitional": { "ja": "わからないから、せんせいに きこう。", "en": "We do not understand, so let's ask the teacher." },
+      "causative": { "ja": "せんせいは がくせいに うけつけで じかんを きかせる。", "en": "The teacher has the student ask the receptionist for the time." }
+    },
+    "enabled": true
+  }
+]

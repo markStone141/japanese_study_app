@@ -6,7 +6,10 @@ const BASE_FILES = [
   "data/verbs-minna-no-nihongo-shokyu-1-group-2.json",
   "data/verbs-minna-no-nihongo-shokyu-1-group-3.json"
 ];
-const CURATED_FILES = [1, 2, 3, 4, 5, 6].map((part) => `data/katsuyou2/part-${part}.json`);
+const CURATED_FILES = fs.readdirSync("data/katsuyou2")
+  .filter((name) => /^part-\d+\.json$/.test(name))
+  .sort((a, b) => a.localeCompare(b, undefined, { numeric: true }))
+  .map((name) => `data/katsuyou2/${name}`);
 const base = BASE_FILES.flatMap((file) => JSON.parse(fs.readFileSync(file, "utf8")));
 const curated = CURATED_FILES.flatMap((file) => JSON.parse(fs.readFileSync(file, "utf8")));
 const curatedKey = (item) => `${item.verb?.group}|${item.dictionary}|${item.meaning}`;

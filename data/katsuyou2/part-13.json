@@ -1,0 +1,66 @@
+[
+  {
+    "id": "katsuyou2-minna-shokyu-1-group-1-051", "sourceVerbId": "minna-shokyu-1-group-1-051", "verificationRequired": true,
+    "dictionary": "すむ", "reading": "すむ", "kanji": "住む", "meaning": "live, reside", "verb": { "group": 1, "groupName": "グループ1" },
+    "forms": { "masu": "すみます", "te": "すんで", "ta": "すんだ", "nai": "すまない", "pastNegative": "すまなかった", "potential": "すめる", "ba": "すめば", "volitional": "すもう", "causative": "すませる" },
+    "examples": {
+      "masu": { "ja": "らいげつから、かぞくと よこはまに すみます。", "en": "Starting next month, I will live in Yokohama with my family." },
+      "te": { "ja": "あには うみに ちかい まちに すんで います。", "en": "My older brother lives in a town near the sea." },
+      "ta": { "ja": "りゅうがくした とき、きょうとに すんだ。", "en": "I lived in Kyoto when I studied abroad." },
+      "nai": { "ja": "しごとが おわったら、この まちには すまない。", "en": "After my job ends, I will not live in this town." },
+      "pastNegative": { "ja": "だいがくせいの ときは、りょうに すまなかった。", "en": "I did not live in a dormitory when I was a university student." },
+      "potential": { "ja": "この へやなら、ふたりで すめる。", "en": "Two people can live in this room." },
+      "ba": { "ja": "えきの ちかくに すめば、つうきんが らくです。", "en": "If you live near the station, commuting is easy." },
+      "volitional": { "ja": "しずかで べんりだから、この まちに すもう。", "en": "This town is quiet and convenient, so let's live here." },
+      "causative": { "ja": "りょうしんは むすこを だいがくの りょうに すませる。", "en": "The parents have their son live in the university dormitory." }
+    }, "enabled": true
+  },
+  {
+    "id": "katsuyou2-minna-shokyu-1-group-1-052", "sourceVerbId": "minna-shokyu-1-group-1-052", "verificationRequired": true,
+    "dictionary": "だす", "reading": "だす", "kanji": "出す", "meaning": "take out, hand in, send", "verb": { "group": 1, "groupName": "グループ1" },
+    "forms": { "masu": "だします", "te": "だして", "ta": "だした", "nai": "ださない", "pastNegative": "ださなかった", "potential": "だせる", "ba": "だせば", "volitional": "だそう", "causative": "ださせる" },
+    "examples": {
+      "masu": { "ja": "ひるやすみに、ゆうびんきょくで にもつを だします。", "en": "I will send a package at the post office during lunch break." },
+      "te": { "ja": "つぎの じゅぎょうで、この レポートを だして ください。", "en": "Please hand in this report in the next class." },
+      "ta": { "ja": "さっき、れいぞうこから ジュースを だした。", "en": "I took some juice out of the refrigerator a moment ago." },
+      "nai": { "ja": "まだ かいて いるから、てがみを ださない。", "en": "I am still writing the letter, so I will not send it yet." },
+      "pastNegative": { "ja": "しめきりを わすれて、レポートを ださなかった。", "en": "I forgot the deadline and did not hand in the report." },
+      "potential": { "ja": "ごご ごじまでなら、きょう この にもつを だせる。", "en": "If it is before five p.m., I can send this package today." },
+      "ba": { "ja": "この はがきを きょう だせば、らいしゅう とどきます。", "en": "If you mail this postcard today, it will arrive next week." },
+      "volitional": { "ja": "かきおわったから、いっしょに しゅくだいを だそう。", "en": "We have finished writing, so let's hand in our homework together." },
+      "causative": { "ja": "せんせいは がくせいに しゅくだいを もういちど ださせる。", "en": "The teacher makes the student submit the homework again." }
+    }, "enabled": true
+  },
+  {
+    "id": "katsuyou2-minna-shokyu-1-group-1-053", "sourceVerbId": "minna-shokyu-1-group-1-053", "verificationRequired": true,
+    "dictionary": "つく", "reading": "つく", "kanji": "着く", "meaning": "arrive", "verb": { "group": 1, "groupName": "グループ1" },
+    "forms": { "masu": "つきます", "te": "ついて", "ta": "ついた", "nai": "つかない", "pastNegative": "つかなかった", "potential": "つける", "ba": "つけば", "volitional": "つこう", "causative": "つかせる" },
+    "examples": {
+      "masu": { "ja": "バスは ひるまえに くうこうへ つきます。", "en": "The bus arrives at the airport before noon." },
+      "te": { "ja": "ホテルに ついて、すぐ シャワーを あびました。", "en": "I arrived at the hotel and took a shower right away." },
+      "ta": { "ja": "ひこうきは よる おそく なりたくうこうに ついた。", "en": "The plane arrived at Narita Airport late at night." },
+      "nai": { "ja": "この バスでは、ひるまでに くうこうへ つかない。", "en": "This bus will not arrive at the airport by noon." },
+      "pastNegative": { "ja": "ゆきで、でんしゃは じかんどおりに つかなかった。", "en": "Because of the snow, the train did not arrive on time." },
+      "potential": { "ja": "この でんしゃなら、じかんどおりに とうきょうえきに つける。", "en": "With this train, we can arrive at Tokyo Station on time." },
+      "ba": { "ja": "くじまでに えきに つけば、バスに のれます。", "en": "If you arrive at the station by nine, you can catch the bus." },
+      "volitional": { "ja": "くらく なる まえに、キャンプじょうに つこう。", "en": "Let's arrive at the campsite before it gets dark." },
+      "causative": { "ja": "うんてんしゅは バスを よていより はやく えきに つかせる。", "en": "The driver gets the bus to the station earlier than scheduled." }
+    }, "enabled": true
+  },
+  {
+    "id": "katsuyou2-minna-shokyu-1-group-1-054", "sourceVerbId": "minna-shokyu-1-group-1-054", "verificationRequired": true,
+    "dictionary": "つくる", "reading": "つくる", "kanji": "作る", "meaning": "make, produce", "verb": { "group": 1, "groupName": "グループ1" },
+    "forms": { "masu": "つくります", "te": "つくって", "ta": "つくった", "nai": "つくらない", "pastNegative": "つくらなかった", "potential": "つくれる", "ba": "つくれば", "volitional": "つくろう", "causative": "つくらせる" },
+    "examples": {
+      "masu": { "ja": "にちようびに、こどもと クッキーを つくります。", "en": "I make cookies with my child on Sundays." },
+      "te": { "ja": "あたたかい スープを つくって、かぞくに だしました。", "en": "I made warm soup and served it to my family." },
+      "ta": { "ja": "ちちは きで ちいさな いすを つくった。", "en": "My father made a small chair out of wood." },
+      "nai": { "ja": "こんやは そとで たべるから、りょうりを つくらない。", "en": "We are eating out tonight, so I will not cook." },
+      "pastNegative": { "ja": "けさは じかんが なくて、べんとうを つくらなかった。", "en": "I did not make a packed lunch this morning because I had no time." },
+      "potential": { "ja": "この ざいりょうで、よにんぶんの カレーが つくれる。", "en": "With these ingredients, I can make curry for four people." },
+      "ba": { "ja": "じぶんで つくれば、すきな あじに できます。", "en": "If you make it yourself, you can give it the flavor you like." },
+      "volitional": { "ja": "たんじょうびに、みんなで ケーキを つくろう。", "en": "Let's make a cake together for the birthday." },
+      "causative": { "ja": "ははは こどもに じぶんの サンドイッチを つくらせる。", "en": "The mother lets her child make their own sandwich." }
+    }, "enabled": true
+  }
+]

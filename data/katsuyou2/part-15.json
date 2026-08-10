@@ -1,0 +1,63 @@
+[
+  {
+    "id": "katsuyou2-minna-shokyu-1-group-1-060", "sourceVerbId": "minna-shokyu-1-group-1-060", "verificationRequired": true,
+    "dictionary": "なくす", "reading": "なくす", "kanji": "失くす", "meaning": "lose, misplace", "verb": { "group": 1, "groupName": "グループ1" },
+    "forms": { "masu": "なくします", "te": "なくして", "ta": "なくした", "nai": "なくさない", "pastNegative": "なくさなかった", "potential": null, "ba": "なくせば", "volitional": null, "causative": null },
+    "examples": {
+      "masu": { "ja": "あには ときどき でんしゃで かさを なくします。", "en": "My older brother sometimes loses his umbrella on the train." },
+      "te": { "ja": "としょかんの かーどを なくして、こまりました。", "en": "I lost my library card and was in trouble." },
+      "ta": { "ja": "りょこうちゅうに かぎを なくした。", "en": "I lost my key during the trip." },
+      "nai": { "ja": "この きっぷは たいせつだから、なくさない。", "en": "This ticket is important, so I will not lose it." },
+      "pastNegative": { "ja": "こんどの りょこうでは、にもつを ひとつも なくさなかった。", "en": "I did not lose any luggage on this trip." },
+      "ba": { "ja": "さいふを なくせば、すぐに けいさつへ いきます。", "en": "If I lose my wallet, I will go to the police immediately." }
+    }, "enabled": true
+  },
+  {
+    "id": "katsuyou2-minna-shokyu-1-group-1-061", "sourceVerbId": "minna-shokyu-1-group-1-061", "verificationRequired": true,
+    "dictionary": "ならう", "reading": "ならう", "kanji": "習う", "meaning": "learn from someone", "verb": { "group": 1, "groupName": "グループ1" },
+    "forms": { "masu": "ならいます", "te": "ならって", "ta": "ならった", "nai": "ならわない", "pastNegative": "ならわなかった", "potential": "ならえる", "ba": "ならえば", "volitional": "ならおう", "causative": "ならわせる" },
+    "examples": {
+      "masu": { "ja": "どようびに せんせいから しょどうを ならいます。", "en": "I learn Japanese calligraphy from a teacher on Saturdays." },
+      "te": { "ja": "そぼに りょうりを ならって、かれーを つくりました。", "en": "I learned cooking from my grandmother and made curry." },
+      "ta": { "ja": "しょうがくせいの とき、みずのおよぎかたを ならった。", "en": "I learned how to swim when I was in elementary school." },
+      "nai": { "ja": "ことしは ぴあのを ならわない。", "en": "I will not take piano lessons this year." },
+      "pastNegative": { "ja": "こどもの ころ、えいごを ならわなかった。", "en": "I did not learn English when I was a child." },
+      "potential": { "ja": "この きょうしつでは、にほんの りょうりを ならえる。", "en": "You can learn Japanese cooking in this class." },
+      "ba": { "ja": "せんせいに ならえば、ただしい もちかたが わかります。", "en": "If you learn from a teacher, you will understand the correct way to hold it." },
+      "volitional": { "ja": "らいげつから、いもうとと だんすを ならおう。", "en": "I will start learning dance with my younger sister next month." },
+      "causative": { "ja": "ははは こどもに すいえいを ならわせる。", "en": "The mother has her child take swimming lessons." }
+    }, "enabled": true
+  },
+  {
+    "id": "katsuyou2-minna-shokyu-1-group-1-062", "sourceVerbId": "minna-shokyu-1-group-1-062", "verificationRequired": true,
+    "dictionary": "なる", "reading": "なる", "kanji": "なる", "meaning": "become", "verb": { "group": 1, "groupName": "グループ1" },
+    "forms": { "masu": "なります", "te": "なって", "ta": "なった", "nai": "ならない", "pastNegative": "ならなかった", "potential": "なれる", "ba": "なれば", "volitional": "なろう", "causative": "ならせる" },
+    "examples": {
+      "masu": { "ja": "らいげつ、あには だいがくせいに なります。", "en": "My older brother will become a university student next month." },
+      "te": { "ja": "よるに なって、かぜが つよく なりました。", "en": "Night came, and the wind grew stronger." },
+      "ta": { "ja": "おとうとは きょねん こうこうせいに なった。", "en": "My younger brother became a high school student last year." },
+      "nai": { "ja": "この ぼたんを おしても、おとが おおきく ならない。", "en": "The sound does not get louder even if I press this button." },
+      "pastNegative": { "ja": "きのうは よほうと ちがって、あめに ならなかった。", "en": "Contrary to the forecast, it did not turn rainy yesterday." },
+      "potential": { "ja": "まいにち れんしゅうすれば、じょうずに なれる。", "en": "If you practice every day, you can become good at it." },
+      "ba": { "ja": "はるに なれば、さくらが さきます。", "en": "When spring comes, the cherry blossoms bloom." },
+      "volitional": { "ja": "しょうらい、こどもを たすける いしゃに なろう。", "en": "I will become a doctor who helps children in the future." },
+      "causative": { "ja": "ちちは むすこを かいしゃの しゃちょうに ならせる。", "en": "The father makes his son president of the company." }
+    }, "enabled": true
+  },
+  {
+    "id": "katsuyou2-minna-shokyu-1-group-1-063", "sourceVerbId": "minna-shokyu-1-group-1-063", "verificationRequired": true,
+    "dictionary": "ぬぐ", "reading": "ぬぐ", "kanji": "脱ぐ", "meaning": "take off clothes or shoes", "verb": { "group": 1, "groupName": "グループ1" },
+    "forms": { "masu": "ぬぎます", "te": "ぬいで", "ta": "ぬいだ", "nai": "ぬがない", "pastNegative": "ぬがなかった", "potential": "ぬげる", "ba": "ぬげば", "volitional": "ぬごう", "causative": "ぬがせる" },
+    "examples": {
+      "masu": { "ja": "げんかんで くつを ぬぎます。", "en": "I take off my shoes at the entrance." },
+      "te": { "ja": "ぬれた うわぎを ぬいで、いすに かけました。", "en": "I took off my wet jacket and hung it on a chair." },
+      "ta": { "ja": "へやが あつかったから、せーたーを ぬいだ。", "en": "The room was hot, so I took off my sweater." },
+      "nai": { "ja": "そとは さむいから、こーとは ぬがない。", "en": "It is cold outside, so I will not take off my coat." },
+      "pastNegative": { "ja": "さむかったから、まふらーを ぬがなかった。", "en": "I did not take off my scarf because it was cold." },
+      "potential": { "ja": "ひもを ほどけば、この くつは すぐ ぬげる。", "en": "If you untie the laces, you can take these shoes off quickly." },
+      "ba": { "ja": "あつい こーとを ぬげば、すずしく なります。", "en": "If you take off your heavy coat, you will feel cooler." },
+      "volitional": { "ja": "へやが あついから、うわぎを ぬごう。", "en": "The room is hot, so I will take off my jacket." },
+      "causative": { "ja": "ははは ぬれた ふくを こどもに ぬがせる。", "en": "The mother makes her child take off the wet clothes." }
+    }, "enabled": true
+  }
+]

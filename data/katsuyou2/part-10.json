@@ -1,0 +1,85 @@
+[
+  {
+    "id": "katsuyou2-minna-shokyu-1-group-1-034",
+    "sourceVerbId": "minna-shokyu-1-group-1-034",
+    "verificationRequired": true,
+    "dictionary": "とる",
+    "reading": "とる",
+    "kanji": "取る",
+    "meaning": "take",
+    "verb": { "group": 1, "groupName": "グループ1" },
+    "forms": { "masu": "とります", "te": "とって", "ta": "とった", "nai": "とらない", "pastNegative": "とらなかった", "potential": "とれる", "ba": "とれば", "volitional": "とろう", "causative": "とらせる" },
+    "examples": {
+      "masu": { "ja": "らいしゅうの ホテルの よやくを とります。", "en": "I will make a hotel reservation for next week." },
+      "te": { "ja": "その はこから あかい ペンを とって ください。", "en": "Please take the red pen from that box." },
+      "ta": { "ja": "テーブルの うえから さいふを とった。", "en": "I took the wallet from the table." },
+      "nai": { "ja": "ひつようの ない パンフレットは とらない。", "en": "I do not take brochures that I do not need." },
+      "pastNegative": { "ja": "きのうは しゃしんを いちまいも とらなかった。", "en": "I did not take any photos yesterday." },
+      "potential": { "ja": "この カメラなら、きれいな しゃしんが とれる。", "en": "You can take beautiful photos with this camera." },
+      "ba": { "ja": "すこし やすみを とれば、また げんきに はたらけます。", "en": "If you take a short break, you can work energetically again." },
+      "volitional": { "ja": "つかれたから、すこし やすみを とろう。", "en": "We are tired, so let's take a short break." },
+      "causative": { "ja": "せんせいは がくせいに ノートを とらせる。", "en": "The teacher has the students take notes." }
+    },
+    "enabled": true
+  },
+  {
+    "id": "katsuyou2-minna-shokyu-1-group-1-035",
+    "sourceVerbId": "minna-shokyu-1-group-1-035",
+    "verificationRequired": true,
+    "dictionary": "のむ", "reading": "のむ", "kanji": "飲む", "meaning": "drink",
+    "verb": { "group": 1, "groupName": "グループ1" },
+    "forms": { "masu": "のみます", "te": "のんで", "ta": "のんだ", "nai": "のまない", "pastNegative": "のまなかった", "potential": "のめる", "ba": "のめば", "volitional": "のもう", "causative": "のませる" },
+    "examples": {
+      "masu": { "ja": "まいあさ、コーヒーを のみます。", "en": "I drink coffee every morning." },
+      "te": { "ja": "この くすりを みずと いっしょに のんで ください。", "en": "Please take this medicine with water." },
+      "ta": { "ja": "ひるやすみに つめたい ぎゅうにゅうを のんだ。", "en": "I drank cold milk during lunch break." },
+      "nai": { "ja": "よるは コーヒーを のまない。", "en": "I do not drink coffee at night." },
+      "pastNegative": { "ja": "けさは いそいでいて、コーヒーを のまなかった。", "en": "I was in a hurry this morning, so I did not drink coffee." },
+      "potential": { "ja": "この みせでは、めずらしい おちゃが のめる。", "en": "You can drink rare kinds of tea at this shop." },
+      "ba": { "ja": "みずを たくさん のめば、のどが らくに なります。", "en": "If you drink plenty of water, your throat will feel better." },
+      "volitional": { "ja": "あついから、つめたい おちゃを のもう。", "en": "It is hot, so let's drink some cold tea." },
+      "causative": { "ja": "いしゃは かんじゃに この くすりを のませる。", "en": "The doctor has the patient take this medicine." }
+    },
+    "enabled": true
+  },
+  {
+    "id": "katsuyou2-minna-shokyu-1-group-1-036",
+    "sourceVerbId": "minna-shokyu-1-group-1-036",
+    "verificationRequired": true,
+    "dictionary": "はなす", "reading": "はなす", "kanji": "話す", "meaning": "speak",
+    "verb": { "group": 1, "groupName": "グループ1" },
+    "forms": { "masu": "はなします", "te": "はなして", "ta": "はなした", "nai": "はなさない", "pastNegative": "はなさなかった", "potential": "はなせる", "ba": "はなせば", "volitional": "はなそう", "causative": "はなさせる" },
+    "examples": {
+      "masu": { "ja": "まいばん、かぞくと でんわで はなします。", "en": "I talk with my family on the phone every evening." },
+      "te": { "ja": "みんなの まえで、じぶんの くにについて はなして ください。", "en": "Please talk about your country in front of the class." },
+      "ta": { "ja": "きのう、となりの ひとと はじめて はなした。", "en": "Yesterday, I spoke with my neighbor for the first time." },
+      "nai": { "ja": "えいがの あいだは はなさない。", "en": "I do not talk during movies." },
+      "pastNegative": { "ja": "かいぎでは きんちょうして、なにも はなさなかった。", "en": "I was nervous at the meeting and did not say anything." },
+      "potential": { "ja": "えいごなら、でんわでも はなせる。", "en": "I can speak in English even on the phone." },
+      "ba": { "ja": "はっきり はなせば、うしろの ひとにも きこえます。", "en": "If you speak clearly, the people in the back can hear you too." },
+      "volitional": { "ja": "この もんだいについて、みんなで はなそう。", "en": "Let's talk about this problem together." },
+      "causative": { "ja": "せんせいは じゅぎょうで がくせいに にほんごを はなさせる。", "en": "The teacher has the students speak Japanese in class." }
+    },
+    "enabled": true
+  },
+  {
+    "id": "katsuyou2-minna-shokyu-1-group-1-037",
+    "sourceVerbId": "minna-shokyu-1-group-1-037",
+    "verificationRequired": true,
+    "dictionary": "まつ", "reading": "まつ", "kanji": "待つ", "meaning": "wait",
+    "verb": { "group": 1, "groupName": "グループ1" },
+    "forms": { "masu": "まちます", "te": "まって", "ta": "まった", "nai": "またない", "pastNegative": "またなかった", "potential": "まてる", "ba": "まてば", "volitional": "まとう", "causative": "またせる" },
+    "examples": {
+      "masu": { "ja": "びょういんの まちあいしつで じゅんばんを まちます。", "en": "I wait for my turn in the hospital waiting room." },
+      "te": { "ja": "いりぐちの ちかくで まって ください。", "en": "Please wait near the entrance." },
+      "ta": { "ja": "バスを にじゅっぷん まった。", "en": "I waited for the bus for twenty minutes." },
+      "nai": { "ja": "おそい バスは またない。", "en": "I do not wait for a late bus." },
+      "pastNegative": { "ja": "きのうは バスを またなかった。", "en": "I did not wait for the bus yesterday." },
+      "potential": { "ja": "あと じゅっぷんくらいなら まてる。", "en": "I can wait about ten more minutes." },
+      "ba": { "ja": "ここで まてば、タクシーが きます。", "en": "If you wait here, a taxi will come." },
+      "volitional": { "ja": "あめが やむまで、ここで まとう。", "en": "Let's wait here until the rain stops." },
+      "causative": { "ja": "みせの ひとは きゃくを そとで またせる。", "en": "The store staff make the customers wait outside." }
+    },
+    "enabled": true
+  }
+]

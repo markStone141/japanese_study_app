@@ -68,9 +68,9 @@ button { border: 0; border-radius: 13px; padding: 12px 18px; font-weight: 900; c
 .kana { font-size: clamp(2.5rem, 8vw, 4.8rem); font-weight: 900; line-height: 1.1; }
 .kanji { margin-top: 6px; color: #475467; font-size: 1.15rem; }
 .meaning { color: var(--muted); margin: 10px 0 24px; font-size: 1.05rem; }
-.prompt-box { margin: 0 auto 18px; max-width: 560px; padding: 15px; border-radius: 16px; background: #f7f9fc; }
-.prompt-box span, .prompt-box small { display: block; color: var(--muted); }
-.prompt-box strong { display: block; margin: 4px 0; font-size: 1.35rem; }
+.prompt-box { width: min(680px, 100%); margin: 0 auto 22px; padding: clamp(20px, 4vw, 30px); border: 3px solid var(--primary); border-radius: 20px; background: #eef4ff; box-shadow: 0 10px 24px rgba(39, 94, 254, .12); }
+.prompt-box span, .prompt-box small { display: block; color: #344054; font-weight: 800; }
+.prompt-box strong { display: block; margin: 8px 0; color: #1239a6; font-size: clamp(2rem, 7vw, 3rem); line-height: 1.15; letter-spacing: .04em; }
 .usage-hint { margin-top: 10px; padding-top: 10px; border-top: 1px solid var(--line); color: #344054; font-weight: 900; font-size: 1.05rem; }
 .cloze-card { width: min(760px, 100%); margin: 0 auto 20px; padding: clamp(18px, 4vw, 30px); border: 2px solid #b8c8ff; border-radius: 20px; background: #f7f9ff; text-align: left; }
 .cloze-label { margin-bottom: 12px; color: var(--muted); font-size: .85rem; font-weight: 800; }

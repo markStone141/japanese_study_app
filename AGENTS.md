@@ -169,7 +169,7 @@ Responsibilities:
 Responsibilities:
 - Integrate approved content without silently changing reviewed text.
 - Reuse shared conjugation and data-loading logic.
-- Keep 活用1 and 活用2 behavior separated where their learning goals differ.
+- Keep basic-form and advanced-form learning goals distinct through selectable modes and form checkboxes on the unified conjugation page.
 - Preserve stable IDs and Firestore compatibility.
 
 ## 9. Learning Analysis Agent / 学習分析担当
@@ -271,7 +271,7 @@ Release rule:
 - A new evidence-first example batch must not enter production unless `npm run test:form-verification` succeeds.
 
 ## Data rules for 動詞の活用2
-Source section: `動詞の活用2`
+Source section: `動詞の活用2`（既存データ識別子として維持）
 Machine ID: `doushi-katsuyou-2`
 
 Quiz target forms:

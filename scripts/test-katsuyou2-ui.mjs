@@ -2,6 +2,7 @@ import fs from "node:fs";
 import assert from "node:assert/strict";
 
 const html = fs.readFileSync("katsuyou2.html", "utf8");
+const indexHtml = fs.readFileSync("index.html", "utf8");
 const css = fs.readFileSync("katsuyou2.css", "utf8");
 const js = fs.readFileSync("katsuyou2.js", "utf8");
 const resultIndex = html.indexOf('id="result"');
@@ -10,9 +11,21 @@ assert.ok(resultIndex !== -1, "katsuyou2.html must contain #result");
 assert.ok(buttonsIndex !== -1, "katsuyou2.html must contain .button-row");
 assert.ok(resultIndex < buttonsIndex, "The answer/result panel must appear before the navigation buttons so the learner sees feedback immediately.");
 
+// The former 活用1 page now enters the single unified 活用 screen.
+assert.match(indexHtml, /url=\.\/katsuyou2\.html/,
+  "index.html must lead to the unified conjugation page");
+assert.doesNotMatch(html, /かつよう\s*1|かつよう\s*2/,
+  "The unified learning page must not present separate 活用1 / 活用2 navigation");
+
 // Regression: the global [lang=en] muted style must not make English text on primary buttons gray.
 assert.match(css, /\.primary\s+\[lang=["']en["']\][^{]*\{[^}]*color\s*:\s*(?:#fff|white)/s,
   "English helper text inside primary buttons must remain high-contrast white");
+
+// Regression: the requested target form must be the clearest instruction inside the quiz card.
+assert.match(css, /\.prompt-box\s*\{[^}]*width\s*:\s*min\(680px,\s*100%\)[^}]*border\s*:\s*3px\s+solid\s+var\(--primary\)[^}]*background\s*:\s*#eef4ff/s,
+  "The target-form card must remain large and visually prominent");
+assert.match(css, /\.prompt-box\s+strong\s*\{[^}]*font-size\s*:\s*clamp\(2rem,\s*7vw,\s*3rem\)/s,
+  "The target conjugation name must remain easy to identify at a glance");
 
 // Regression: Enter should act as answer-check / next even when focus is not currently in the answer input.
 assert.match(js, /document\.addEventListener\(["']keydown["']/,

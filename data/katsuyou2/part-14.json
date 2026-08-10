@@ -1,0 +1,63 @@
+[
+  {
+    "id": "katsuyou2-minna-shokyu-1-group-1-056", "sourceVerbId": "minna-shokyu-1-group-1-056", "verificationRequired": true,
+    "dictionary": "てつだう", "reading": "てつだう", "kanji": "手伝う", "meaning": "help, assist", "verb": { "group": 1, "groupName": "グループ1" },
+    "forms": { "masu": "てつだいます", "te": "てつだって", "ta": "てつだった", "nai": "てつだわない", "pastNegative": "てつだわなかった", "potential": "てつだえる", "ba": "てつだえば", "volitional": "てつだおう", "causative": "てつだわせる" },
+    "examples": {
+      "masu": { "ja": "しゅうまつは、ちちの にわしごとを てつだいます。", "en": "I help my father with the gardening on weekends." },
+      "te": { "ja": "いもうとは しょくじの じゅんびを てつだって います。", "en": "My younger sister is helping prepare the meal." },
+      "ta": { "ja": "きのう、まつりの じゅんびを てつだった。", "en": "Yesterday, I helped prepare for the festival." },
+      "nai": { "ja": "きょうは しごとが あるから、そうじを てつだわない。", "en": "I have work today, so I will not help with the cleaning." },
+      "pastNegative": { "ja": "いそがしくて、きのうは みせを てつだわなかった。", "en": "I was busy, so I did not help at the shop yesterday." },
+      "potential": { "ja": "ごごなら、ひっこしを てつだえる。", "en": "I can help with the move in the afternoon." },
+      "ba": { "ja": "みんなで てつだえば、はやく おわります。", "en": "If everyone helps, we will finish quickly." },
+      "volitional": { "ja": "にもつが おおいから、わたしも てつだおう。", "en": "There is a lot of luggage, so I will help too." },
+      "causative": { "ja": "てんちょうは しんじんに みせの そうじを てつだわせる。", "en": "The manager makes the new employee help clean the shop." }
+    }, "enabled": true
+  },
+  {
+    "id": "katsuyou2-minna-shokyu-1-group-1-057", "sourceVerbId": "minna-shokyu-1-group-1-057", "verificationRequired": true,
+    "dictionary": "とまる（ほてるに）", "reading": "とまる", "kanji": "泊まる", "meaning": "stay at a hotel", "verb": { "group": 1, "groupName": "グループ1" },
+    "forms": { "masu": "とまります", "te": "とまって", "ta": "とまった", "nai": "とまらない", "pastNegative": "とまらなかった", "potential": "とまれる", "ba": "とまれば", "volitional": "とまろう", "causative": "とまらせる" },
+    "examples": {
+      "masu": { "ja": "しゅっちょうの ときは、かいしゃの ちかくに とまります。", "en": "When I travel for work, I stay near the company." },
+      "te": { "ja": "おんせんの りょかんに とまって、ゆっくり やすみました。", "en": "I stayed at a hot-spring inn and had a relaxing rest." },
+      "ta": { "ja": "なつやすみに、かぞくと おきなわの ホテルに とまった。", "en": "During summer vacation, I stayed at a hotel in Okinawa with my family." },
+      "nai": { "ja": "あした かえるから、こんやは ホテルに とまらない。", "en": "I am going home tomorrow, so I will not stay at a hotel tonight." },
+      "pastNegative": { "ja": "よやくが とれなくて、その ホテルには とまらなかった。", "en": "I could not get a reservation, so I did not stay at that hotel." },
+      "potential": { "ja": "あきべやが あるから、こんや この ホテルに とまれる。", "en": "There is a vacant room, so we can stay at this hotel tonight." },
+      "ba": { "ja": "えきの ちかくに とまれば、あさ ゆっくり できます。", "en": "If you stay near the station, you can take it easy in the morning." },
+      "volitional": { "ja": "つぎの りょこうでは、うみが みえる ホテルに とまろう。", "en": "On our next trip, let's stay at a hotel with an ocean view." },
+      "causative": { "ja": "りょこうがいしゃは きゃくを えきまえの ホテルに とまらせる。", "en": "The travel agency has the guests stay at a hotel in front of the station." }
+    }, "enabled": true
+  },
+  {
+    "id": "katsuyou2-minna-shokyu-1-group-1-058", "sourceVerbId": "minna-shokyu-1-group-1-058", "verificationRequired": true,
+    "dictionary": "とる（しゃしんを）", "reading": "とる", "kanji": "撮る", "meaning": "take a photograph", "verb": { "group": 1, "groupName": "グループ1" },
+    "forms": { "masu": "とります", "te": "とって", "ta": "とった", "nai": "とらない", "pastNegative": "とらなかった", "potential": "とれる", "ba": "とれば", "volitional": "とろう", "causative": "とらせる" },
+    "examples": {
+      "masu": { "ja": "たんじょうびに、みんなで きねんしゃしんを とります。", "en": "We take a commemorative photo together on birthdays." },
+      "te": { "ja": "こうえんで いぬの しゃしんを とって、かぞくに おくりました。", "en": "I took a picture of the dog in the park and sent it to my family." },
+      "ta": { "ja": "やまの うえから、きれいな まちの しゃしんを とった。", "en": "I took a beautiful picture of the town from the top of the mountain." },
+      "nai": { "ja": "カメラを わすれたから、きょうは しゃしんを とらない。", "en": "I forgot my camera, so I will not take pictures today." },
+      "pastNegative": { "ja": "くらかったから、よるの しゃしんは とらなかった。", "en": "It was dark, so I did not take any pictures at night." },
+      "potential": { "ja": "ここからなら、とうきょうタワーの しゃしんが とれる。", "en": "From here, you can take a picture of Tokyo Tower." },
+      "ba": { "ja": "まどの ちかくで とれば、しゃしんが あかるく なります。", "en": "If you take the picture near the window, it will be brighter." },
+      "volitional": { "ja": "さくらが さいて いるから、ここで しゃしんを とろう。", "en": "The cherry blossoms are blooming, so let's take a picture here." },
+      "causative": { "ja": "ははは こどもに かぞくの しゃしんを とらせる。", "en": "The mother lets her child take a picture of the family." }
+    }, "enabled": true
+  },
+  {
+    "id": "katsuyou2-minna-shokyu-1-group-1-059", "sourceVerbId": "minna-shokyu-1-group-1-059", "verificationRequired": true,
+    "dictionary": "なおる", "reading": "なおる", "kanji": "治る", "meaning": "recover, get better", "verb": { "group": 1, "groupName": "グループ1" },
+    "forms": { "masu": "なおります", "te": "なおって", "ta": "なおった", "nai": "なおらない", "pastNegative": "なおらなかった", "potential": null, "ba": "なおれば", "volitional": null, "causative": null },
+    "examples": {
+      "masu": { "ja": "この けがは、あと いっしゅうかんで なおります。", "en": "This injury will heal in another week." },
+      "te": { "ja": "かぜが なおって、きょうから しごとに もどりました。", "en": "My cold got better, and I returned to work today." },
+      "ta": { "ja": "ゆっくり やすんだら、のどの いたみが なおった。", "en": "After I rested, my sore throat got better." },
+      "nai": { "ja": "むりを すると、けがが なかなか なおらない。", "en": "If you overdo it, your injury will not heal easily." },
+      "pastNegative": { "ja": "いっしゅうかん やすんでも、かぜが なおらなかった。", "en": "My cold did not get better even after I rested for a week." },
+      "ba": { "ja": "けがが なおれば、また サッカーが できます。", "en": "If my injury heals, I can play soccer again." }
+    }, "enabled": true
+  }
+]

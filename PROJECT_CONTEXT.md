@@ -15,12 +15,11 @@ A Japanese-learning web app based on the supplied みんなの日本語 初級I 
 - GitHub Secret used for Firestore sync: `FIREBASE_SERVICE_ACCOUNT`
 
 ## Current product structure
-### 動詞の活用1
-- Existing full verb dataset split into Groups 1, 2, and 3.
-- Core forms: ます・て・た・ない.
-
-### 動詞の活用2
-All verbs from 活用1 are made available through the shared conjugation engine.
+### 統合された動詞の活用ページ
+- 旧「動詞の活用1」と「動詞の活用2」は、活用2のUIを使う1つの学習ページへ統合。
+- トップページから統合ページへ自動的に移動する。
+- 既存の全動詞を共有活用エンジンで読み込み、基本形と発展形をチェックボックスで限定できる。
+- 一覧ページは、問題中に答えが見えないよう別ページのまま維持する。
 
 Quiz target forms:
 - `masu`
@@ -136,6 +135,7 @@ Research informs product design but does not silently override the supplied text
 
 ## Current progress
 ### Completed
+- 活用1・活用2の学習画面を、活用2 UIの単一ページへ統合
 - 活用1 implementation
 - 活用2 page and shared conjugation generation for all 活用1 verbs
 - separate 活用2 review page
@@ -151,6 +151,7 @@ Research informs product design but does not silently override the supplied text
 - `該当なし` mechanism and quiz exclusion
 - audit correction examples for 8 detected conversion defects
 - evidence-first verification ledger and CI release gate
+- enlarged, high-contrast target-form instruction card in the 活用2 quiz
 
 ### Advanced example coverage
 Batch 1: 20 reviewed advanced bilingual examples across あける・あげる・あつめる・あびる.
@@ -189,7 +190,102 @@ Batch 5 adds 25 reviewed advanced bilingual examples after external form verific
 
 The frontend curated-data loader now includes `part-8.json` for both quiz and review pages.
 
+### Evidence-first Batch 6
+- しぬ / 死ぬ
+- すわる / 座る
+- たつ / 立つ
+- つかう / 使う
+
+Batch 6 adds 18 reviewed advanced bilingual examples. For `しぬ`, potential `しねる` and volitional `しのう` are marked `deferred`, stored as `null`, and excluded from quizzes; all released `しぬ` examples are limited to fish or plant contexts. Full ledger: `docs/KATSUYOU2_BATCH6_2026-08-10.md`.
+
+The frontend curated-data loader now includes `part-9.json` for both quiz and review pages.
+
+### Evidence-first Batch 7
+- とる / 取る
+- のむ / 飲む
+- はなす / 話す
+- まつ / 待つ
+
+Batch 7 adds 20 reviewed advanced bilingual examples. All five advanced forms for each verb are marked `valid`. Full ledger: `docs/KATSUYOU2_BATCH7_2026-08-10.md`.
+
+The frontend curated-data loader now includes `part-10.json` for both quiz and review pages.
+
+### Evidence-first Batch 8
+- よぶ / 呼ぶ
+- よむ / 読む
+- わかる / 分かる
+- きく（せんせいに） / 聞く（先生に）
+
+Batch 8 adds 18 reviewed advanced bilingual examples. For `わかる`, potential is `not_applicable`; volitional `わかろう` is `deferred` by the user's pedagogical decision. Both are stored as `null` and excluded from quizzes. The separate `きく（せんせいに）` source entry uses asking contexts to distinguish it from the earlier listening-centered `きく` entry. Full ledger: `docs/KATSUYOU2_BATCH8_2026-08-10.md`.
+
+The frontend curated-data loader now includes `part-11.json` for both quiz and review pages.
+
+### Evidence-first Batch 9
+- きる / 切る
+- さわる（どあに） / 触る（ドアに）
+- しる / 知る
+- すう（たばこを） / 吸う（たばこを）
+
+Batch 9 adds 19 reviewed advanced bilingual examples. For `しる`, potential `しれる` is `not_applicable` by the user's pedagogical decision, stored as `null`, and excluded from quizzes. `きる` is kept explicitly distinct from the Group 2 homophone `着る`, and smoking examples avoid encouragement. Full ledger: `docs/KATSUYOU2_BATCH9_2026-08-10.md`.
+
+The frontend curated-data loader now includes `part-12.json` for both quiz and review pages.
+
+### Evidence-first Batch 10
+- すむ / 住む
+- だす / 出す
+- つく / 着く
+- つくる / 作る
+
+Batch 10 adds 20 reviewed advanced bilingual examples. All five advanced forms for each verb are marked `valid`. For `つく`, the potential `つける` is taught with an explicit destination and arrival-time context so it is not confused with `付ける`. Full ledger: `docs/KATSUYOU2_BATCH10_2026-08-10.md`.
+
+The frontend curated-data loader now includes `part-13.json` for both quiz and review pages.
+
+### Evidence-first Batch 11
+- てつだう / 手伝う
+- とまる（ほてるに） / 泊まる（ホテルに）
+- とる（しゃしんを） / 撮る（写真を）
+- なおる / 治る
+
+Batch 11 adds 17 reviewed advanced bilingual examples. For `なおる`, past negative `なおらなかった` and conditional `なおれば` are released. Potential `なおれる` and volitional `なおろう` are `not_applicable`, while causative `なおらせる` is `deferred`; all three are stored as `null` and excluded from quizzes. Natural intentional contexts are reserved for the transitive `なおす`, such as `なおそう` and `なおさせる`. Full ledger: `docs/KATSUYOU2_BATCH11_2026-08-10.md`.
+
+The frontend curated-data loader now includes `part-14.json` for both quiz and review pages.
+
+### Evidence-first Batch 12
+- なくす / 失くす（物を紛失する）
+- ならう / 習う
+- なる
+- ぬぐ / 脱ぐ
+
+Batch 12 adds 17 reviewed advanced bilingual examples. The textbook sense of `なくす` is fixed as `失くす` (misplace), separate from `無くす` (eliminate). For `失くす`, potential `なくせる`, volitional `なくそう`, and causative `なくさせる` are `deferred`, stored as `null`, and excluded from quizzes. Full ledger: `docs/KATSUYOU2_BATCH12_2026-08-10.md`.
+
+The frontend curated-data loader now includes `part-15.json` for both quiz and review pages.
+
+### 2026-08-10: 活用2 evidence-first Batch 13
+
+Added reviewed full example coverage for source IDs 064-067: `のぼる`, `のむ（くすりを）`, `のる`, and `はいる（だいがくに）`. All five advanced forms for each verb were verified as valid, producing 20 advanced bilingual examples in `data/katsuyou2/part-16.json`.
+
+The examples preserve each textbook sense and explicitly disambiguate medicine-taking, transport, and university enrollment. The frontend curated-data loader now includes `part-16.json` for both quiz and review pages.
+
+### 活用2 evidence-first batch 14 (2026-08-10)
+
+Added reviewed full example coverage for source IDs 068-071: `はいる（きっさてんに）`, `はく`, `はたらく`, and `ひく`. All five advanced forms for each verb were verified as valid, producing 20 advanced bilingual examples in `data/katsuyou2/part-17.json`.
+
+Examples keep cafe entry, clothing, work, and musical performance distinct. In particular, `はける` and `ひける` include explicit objects to prevent homophone confusion. The frontend curated-data loader now includes `part-17.json` for both quiz and review pages. Full ledger: `docs/KATSUYOU2_BATCH14_2026-08-10.md`.
+
+### 活用2 evidence-first batch 15 (2026-08-10)
+
+Added reviewed example coverage for source IDs 072-075: `ふる（あめが）`, `まがる`, `まわす`, and `もつ`. Batch 15 adds 18 advanced bilingual examples in `data/katsuyou2/part-18.json`.
+
+For `ふる`, potential `ふれる` and volitional `ふろう` are `not_applicable`, stored as `null`, and excluded from quizzes. The other three verbs release all five advanced forms, with explicit road, rotating-object, and carried-object contexts. The frontend curated-data loader now includes `part-18.json` for both quiz and review pages. Full ledger: `docs/KATSUYOU2_BATCH15_2026-08-10.md`.
+
+### 活用2 evidence-first batch 16 (2026-08-10)
+
+Added reviewed example coverage for source IDs 077-080: `もらう`, `やくにたつ`, `やすむ` (physical rest), and `やすむ（しごとを）` (taking leave from work). Batch 16 adds 19 advanced bilingual examples in `data/katsuyou2/part-19.json`.
+
+For `やくにたつ`, causative `やくにたたせる` is `deferred`, stored as `null`, and excluded from quizzes; ordinary beginner contexts are reserved for the separate transitive verb `やくだてる` / 役立てる. The two `やすむ` entries keep rest and work-leave contexts distinct. The frontend curated-data loader now includes `part-19.json` for both quiz and review pages. Full ledger: `docs/KATSUYOU2_BATCH16_2026-08-10.md`.
+
 ### Current work
+- Evidence-first batch 17 completed source ID 081, `わたる（はしを）`, with all five advanced forms and 5 advanced bilingual examples in `data/katsuyou2/part-20.json`. This completes the remaining reviewed-example gap in the Group 1 source list. Both quiz and review loaders include `part-20.json`. Full ledger: `docs/KATSUYOU2_BATCH17_2026-08-10.md`.
 - Continue the dictionary / actual-usage audit together with example creation rather than as a separate later pass.
 - Every new batch must create/update `form-verification.json` before example data is accepted.
 - Existing pre-policy curated entries will be migrated through the same evidence ledger incrementally; do not claim all legacy advanced forms are externally verified yet.

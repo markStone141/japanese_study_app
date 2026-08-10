@@ -1,0 +1,66 @@
+[
+  {
+    "id": "katsuyou2-minna-shokyu-1-group-1-068", "sourceVerbId": "minna-shokyu-1-group-1-068", "verificationRequired": true,
+    "dictionary": "はいる（きっさてんに）", "reading": "はいる", "kanji": "入る（喫茶店に）", "meaning": "enter a cafe", "verb": { "group": 1, "groupName": "グループ1" },
+    "forms": { "masu": "はいります", "te": "はいって", "ta": "はいった", "nai": "はいらない", "pastNegative": "はいらなかった", "potential": "はいれる", "ba": "はいれば", "volitional": "はいろう", "causative": "はいらせる" },
+    "examples": {
+      "masu": { "ja": "しごとの あとで、えきまえの きっさてんに はいります。", "en": "I go into the cafe in front of the station after work." },
+      "te": { "ja": "あの きっさてんに はいって、すこし やすみました。", "en": "I went into that cafe and rested for a while." },
+      "ta": { "ja": "あめが ふったから、ちかくの きっさてんに はいった。", "en": "It rained, so I went into a nearby cafe." },
+      "nai": { "ja": "きょうは いそがしいから、きっさてんには はいらない。", "en": "I am busy today, so I will not go into a cafe." },
+      "pastNegative": { "ja": "まちあわせまで じかんが なかったから、きっさてんには はいらなかった。", "en": "I did not have time before our meeting, so I did not go into a cafe." },
+      "potential": { "ja": "この きっさてんなら、くるまいすでも はいれる。", "en": "You can enter this cafe in a wheelchair." },
+      "ba": { "ja": "あの きっさてんに はいれば、あたたかい こーひーが のめます。", "en": "If we go into that cafe, we can have some hot coffee." },
+      "volitional": { "ja": "すこし つかれたから、あの きっさてんに はいろう。", "en": "We are a little tired, so let's go into that cafe." },
+      "causative": { "ja": "みせの ひとは そとの きゃくを じゅんばんに きっさてんへ はいらせる。", "en": "The staff let the customers waiting outside enter the cafe in order." }
+    }, "enabled": true
+  },
+  {
+    "id": "katsuyou2-minna-shokyu-1-group-1-069", "sourceVerbId": "minna-shokyu-1-group-1-069", "verificationRequired": true,
+    "dictionary": "はく", "reading": "はく", "kanji": "履く", "meaning": "put on shoes, trousers, etc.", "verb": { "group": 1, "groupName": "グループ1" },
+    "forms": { "masu": "はきます", "te": "はいて", "ta": "はいた", "nai": "はかない", "pastNegative": "はかなかった", "potential": "はける", "ba": "はけば", "volitional": "はこう", "causative": "はかせる" },
+    "examples": {
+      "masu": { "ja": "あめの ひは、ながい くつを はきます。", "en": "I wear tall boots on rainy days." },
+      "te": { "ja": "あたらしい ずぼんを はいて、でかけました。", "en": "I put on my new trousers and went out." },
+      "ta": { "ja": "うんどうかいで、しろい くつを はいた。", "en": "I wore white shoes at the sports day." },
+      "nai": { "ja": "きょうは あついから、ながい ずぼんは はかない。", "en": "It is hot today, so I will not wear long trousers." },
+      "pastNegative": { "ja": "ゆきが ふったけれど、ぶーつを はかなかった。", "en": "It snowed, but I did not wear boots." },
+      "potential": { "ja": "この くつは かるくて、ひとりでも はける。", "en": "These shoes are light, so I can put them on by myself." },
+      "ba": { "ja": "あつい くつしたを はけば、あしが さむく ありません。", "en": "If you wear thick socks, your feet will not be cold." },
+      "volitional": { "ja": "きょうは たくさん あるくから、うんどうぐつを はこう。", "en": "We will walk a lot today, so let's wear sneakers." },
+      "causative": { "ja": "ははは こどもに あかい くつを はかせる。", "en": "The mother puts red shoes on her child." }
+    }, "enabled": true
+  },
+  {
+    "id": "katsuyou2-minna-shokyu-1-group-1-070", "sourceVerbId": "minna-shokyu-1-group-1-070", "verificationRequired": true,
+    "dictionary": "はたらく", "reading": "はたらく", "kanji": "働く", "meaning": "work", "verb": { "group": 1, "groupName": "グループ1" },
+    "forms": { "masu": "はたらきます", "te": "はたらいて", "ta": "はたらいた", "nai": "はたらかない", "pastNegative": "はたらかなかった", "potential": "はたらける", "ba": "はたらけば", "volitional": "はたらこう", "causative": "はたらかせる" },
+    "examples": {
+      "masu": { "ja": "らいげつから、あたらしい かいしゃで はたらきます。", "en": "I will work at a new company starting next month." },
+      "te": { "ja": "ひるまで はたらいて、いえに かえりました。", "en": "I worked until noon and went home." },
+      "ta": { "ja": "なつやすみに、ほてるで はたらいた。", "en": "I worked at a hotel during summer vacation." },
+      "nai": { "ja": "どようびは がっこうが あるから、はたらかない。", "en": "I have school on Saturday, so I will not work." },
+      "pastNegative": { "ja": "ねつが あったから、きのうは はたらかなかった。", "en": "I had a fever, so I did not work yesterday." },
+      "potential": { "ja": "この みせなら、しゅうに みっか はたらける。", "en": "At this shop, I can work three days a week." },
+      "ba": { "ja": "にほんで はたらけば、にほんごを まいにち つかえます。", "en": "If I work in Japan, I can use Japanese every day." },
+      "volitional": { "ja": "らいねんは、うみの ちかくで はたらこう。", "en": "Next year, I will work near the sea." },
+      "causative": { "ja": "てんちょうは しんじんを れじで はたらかせる。", "en": "The manager has the new employee work at the register." }
+    }, "enabled": true
+  },
+  {
+    "id": "katsuyou2-minna-shokyu-1-group-1-071", "sourceVerbId": "minna-shokyu-1-group-1-071", "verificationRequired": true,
+    "dictionary": "ひく", "reading": "ひく", "kanji": "弾く", "meaning": "play a stringed instrument or piano", "verb": { "group": 1, "groupName": "グループ1" },
+    "forms": { "masu": "ひきます", "te": "ひいて", "ta": "ひいた", "nai": "ひかない", "pastNegative": "ひかなかった", "potential": "ひける", "ba": "ひけば", "volitional": "ひこう", "causative": "ひかせる" },
+    "examples": {
+      "masu": { "ja": "まいあさ、じゅっぷん ぴあのを ひきます。", "en": "I play the piano for ten minutes every morning." },
+      "te": { "ja": "みんなの まえで ぎたーを ひいて、うたいました。", "en": "I played the guitar and sang in front of everyone." },
+      "ta": { "ja": "きのうの こんさーとで、ばいおりんを ひいた。", "en": "I played the violin at yesterday's concert." },
+      "nai": { "ja": "よる おそいから、もう ぴあのは ひかない。", "en": "It is late at night, so I will not play the piano anymore." },
+      "pastNegative": { "ja": "てを けがしたから、せんしゅうは ぎたーを ひかなかった。", "en": "I hurt my hand, so I did not play the guitar last week." },
+      "potential": { "ja": "あねは ぴあのも ぎたーも ひける。", "en": "My older sister can play both the piano and the guitar." },
+      "ba": { "ja": "この きょくを ぴあので ひけば、きれいな おとが でます。", "en": "If you play this piece on the piano, it makes a beautiful sound." },
+      "volitional": { "ja": "たんじょうびに、ちちの すきな きょくを ひこう。", "en": "I will play my father's favorite piece on his birthday." },
+      "causative": { "ja": "せんせいは せいとに この きょくを ぴあので ひかせる。", "en": "The teacher has the student play this piece on the piano." }
+    }, "enabled": true
+  }
+]

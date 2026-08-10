@@ -1,0 +1,132 @@
+[
+  {
+    "id": "katsuyou2-minna-shokyu-1-group-1-030",
+    "sourceVerbId": "minna-shokyu-1-group-1-030",
+    "verificationRequired": true,
+    "dictionary": "しぬ",
+    "reading": "しぬ",
+    "kanji": "死ぬ",
+    "meaning": "die",
+    "verb": { "group": 1, "groupName": "グループ1" },
+    "forms": {
+      "masu": "しにます",
+      "te": "しんで",
+      "ta": "しんだ",
+      "nai": "しなない",
+      "pastNegative": "しななかった",
+      "potential": null,
+      "ba": "しねば",
+      "volitional": null,
+      "causative": "しなせる"
+    },
+    "examples": {
+      "masu": { "ja": "みずが よごれると、さかなが しにます。", "en": "Fish die when the water becomes dirty." },
+      "te": { "ja": "ベランダの はなが しんでしまいました。", "en": "The flower on the balcony died." },
+      "ta": { "ja": "なつの あつさで、はちうえの はなが しんだ。", "en": "The potted flower died in the summer heat." },
+      "nai": { "ja": "この しょくぶつは さむくても しなない。", "en": "This plant does not die even in the cold." },
+      "pastNegative": { "ja": "びょうきの さかなは しななかった。", "en": "The sick fish did not die." },
+      "ba": { "ja": "この きが しねば、この にわは さびしく なります。", "en": "If this tree dies, this garden will feel empty." },
+      "causative": { "ja": "みずの よごれは さかなを しなせる ことが あります。", "en": "Dirty water can cause fish to die." }
+    },
+    "enabled": true
+  },
+  {
+    "id": "katsuyou2-minna-shokyu-1-group-1-031",
+    "sourceVerbId": "minna-shokyu-1-group-1-031",
+    "verificationRequired": true,
+    "dictionary": "すわる",
+    "reading": "すわる",
+    "kanji": "座る",
+    "meaning": "sit",
+    "verb": { "group": 1, "groupName": "グループ1" },
+    "forms": {
+      "masu": "すわります",
+      "te": "すわって",
+      "ta": "すわった",
+      "nai": "すわらない",
+      "pastNegative": "すわらなかった",
+      "potential": "すわれる",
+      "ba": "すわれば",
+      "volitional": "すわろう",
+      "causative": "すわらせる"
+    },
+    "examples": {
+      "masu": { "ja": "でんしゃでは いつも まどの ちかくに すわります。", "en": "I always sit near the window on the train." },
+      "te": { "ja": "どうぞ、こちらに すわって ください。", "en": "Please sit here." },
+      "ta": { "ja": "こうえんの べんちに すわった。", "en": "I sat on a bench in the park." },
+      "nai": { "ja": "その いすは ぬれています。すわらないで ください。", "en": "That chair is wet. Please do not sit on it." },
+      "pastNegative": { "ja": "きのうは でんしゃで すわらなかった。", "en": "I did not sit down on the train yesterday." },
+      "potential": { "ja": "ここなら、みんなで すわれる。", "en": "We can all sit here." },
+      "ba": { "ja": "この いすに すわれば、よく みえます。", "en": "If you sit in this chair, you can see well." },
+      "volitional": { "ja": "つかれたから、あの べんちに すわろう。", "en": "We are tired, so let's sit on that bench." },
+      "causative": { "ja": "せんせいは がくせいを まえの せきに すわらせる。", "en": "The teacher has the student sit in the front seat." }
+    },
+    "enabled": true
+  },
+  {
+    "id": "katsuyou2-minna-shokyu-1-group-1-032",
+    "sourceVerbId": "minna-shokyu-1-group-1-032",
+    "verificationRequired": true,
+    "dictionary": "たつ",
+    "reading": "たつ",
+    "kanji": "立つ",
+    "meaning": "stand",
+    "verb": { "group": 1, "groupName": "グループ1" },
+    "forms": {
+      "masu": "たちます",
+      "te": "たって",
+      "ta": "たった",
+      "nai": "たたない",
+      "pastNegative": "たたなかった",
+      "potential": "たてる",
+      "ba": "たてば",
+      "volitional": "たとう",
+      "causative": "たたせる"
+    },
+    "examples": {
+      "masu": { "ja": "あさの でんしゃでは、いつも たちます。", "en": "I always stand on the morning train." },
+      "te": { "ja": "ここに たって、しゃしんを とりましょう。", "en": "Let's stand here and take a picture." },
+      "ta": { "ja": "ベルが なって、せきから たった。", "en": "The bell rang, and I stood up from my seat." },
+      "nai": { "ja": "でんしゃの ドアの まえには たたない。", "en": "I do not stand in front of the train doors." },
+      "pastNegative": { "ja": "きのうの かいぎでは、いちども たたなかった。", "en": "I did not stand up even once during yesterday's meeting." },
+      "potential": { "ja": "あしが よく なって、ひとりで たてる。", "en": "My leg has gotten better, and I can stand by myself." },
+      "ba": { "ja": "ここに たてば、うみが よく みえます。", "en": "If you stand here, you can see the sea clearly." },
+      "volitional": { "ja": "うしろの ひとに せきを ゆずって、わたしは たとう。", "en": "I will give my seat to the person behind me and stand." },
+      "causative": { "ja": "せんせいは はっぴょうする がくせいを まえに たたせる。", "en": "The teacher has the presenting student stand at the front." }
+    },
+    "enabled": true
+  },
+  {
+    "id": "katsuyou2-minna-shokyu-1-group-1-033",
+    "sourceVerbId": "minna-shokyu-1-group-1-033",
+    "verificationRequired": true,
+    "dictionary": "つかう",
+    "reading": "つかう",
+    "kanji": "使う",
+    "meaning": "use",
+    "verb": { "group": 1, "groupName": "グループ1" },
+    "forms": {
+      "masu": "つかいます",
+      "te": "つかって",
+      "ta": "つかった",
+      "nai": "つかわない",
+      "pastNegative": "つかわなかった",
+      "potential": "つかえる",
+      "ba": "つかえば",
+      "volitional": "つかおう",
+      "causative": "つかわせる"
+    },
+    "examples": {
+      "masu": { "ja": "りょうりに この ナイフを つかいます。", "en": "I use this knife for cooking." },
+      "te": { "ja": "この ペンを つかって ください。", "en": "Please use this pen." },
+      "ta": { "ja": "きのう、えきで コインロッカーを つかった。", "en": "Yesterday, I used a coin locker at the station." },
+      "nai": { "ja": "この パソコンは もう つかわない。", "en": "I do not use this computer anymore." },
+      "pastNegative": { "ja": "きのうは げんきんを つかわなかった。", "en": "I did not use cash yesterday." },
+      "potential": { "ja": "この カードは どの みせでも つかえる。", "en": "You can use this card at any store." },
+      "ba": { "ja": "この ボタンを つかえば、ドアが あきます。", "en": "If you use this button, the door will open." },
+      "volitional": { "ja": "こんどの りょこうでは、でんしゃを つかおう。", "en": "Let's use the train on our next trip." },
+      "causative": { "ja": "せんせいは テストで がくせいに じしょを つかわせる。", "en": "The teacher lets the students use a dictionary during the test." }
+    },
+    "enabled": true
+  }
+]

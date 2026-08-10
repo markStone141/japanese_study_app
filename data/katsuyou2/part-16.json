@@ -1,0 +1,66 @@
+[
+  {
+    "id": "katsuyou2-minna-shokyu-1-group-1-064", "sourceVerbId": "minna-shokyu-1-group-1-064", "verificationRequired": true,
+    "dictionary": "のぼる", "reading": "のぼる", "kanji": "登る", "meaning": "climb, go up", "verb": { "group": 1, "groupName": "グループ1" },
+    "forms": { "masu": "のぼります", "te": "のぼって", "ta": "のぼった", "nai": "のぼらない", "pastNegative": "のぼらなかった", "potential": "のぼれる", "ba": "のぼれば", "volitional": "のぼろう", "causative": "のぼらせる" },
+    "examples": {
+      "masu": { "ja": "らいげつ、かぞくと たかおさんに のぼります。", "en": "I will climb Mount Takao with my family next month." },
+      "te": { "ja": "てんぼうだいに のぼって、まちを みました。", "en": "I went up to the observation deck and looked at the city." },
+      "ta": { "ja": "なつやすみに、ともだちと やまに のぼった。", "en": "I climbed a mountain with a friend during summer vacation." },
+      "nai": { "ja": "あめが ふっているから、きょうは やまに のぼらない。", "en": "It is raining, so I will not climb the mountain today." },
+      "pastNegative": { "ja": "つかれていたから、てんしゅかくまで のぼらなかった。", "en": "I was tired, so I did not climb up to the castle tower." },
+      "potential": { "ja": "この やまは ひくいから、こどもでも のぼれる。", "en": "This mountain is low, so even children can climb it." },
+      "ba": { "ja": "おかの うえまで のぼれば、うみが みえます。", "en": "If you climb to the top of the hill, you can see the sea." },
+      "volitional": { "ja": "てんきが いいから、あの やまに のぼろう。", "en": "The weather is nice, so let's climb that mountain." },
+      "causative": { "ja": "せんせいは がくせいを ひとりずつ だいに のぼらせる。", "en": "The teacher has the students step up onto the platform one at a time." }
+    }, "enabled": true
+  },
+  {
+    "id": "katsuyou2-minna-shokyu-1-group-1-065", "sourceVerbId": "minna-shokyu-1-group-1-065", "verificationRequired": true,
+    "dictionary": "のむ（くすりを）", "reading": "のむ", "kanji": "飲む（薬を）", "meaning": "take medicine", "verb": { "group": 1, "groupName": "グループ1" },
+    "forms": { "masu": "のみます", "te": "のんで", "ta": "のんだ", "nai": "のまない", "pastNegative": "のまなかった", "potential": "のめる", "ba": "のめば", "volitional": "のもう", "causative": "のませる" },
+    "examples": {
+      "masu": { "ja": "ばんごはんの あとで、この くすりを のみます。", "en": "I take this medicine after dinner." },
+      "te": { "ja": "くすりを のんで、はやく ねました。", "en": "I took my medicine and went to bed early." },
+      "ta": { "ja": "あたまが いたかったから、くすりを のんだ。", "en": "I had a headache, so I took some medicine." },
+      "nai": { "ja": "いしゃに きくまで、この くすりは のまない。", "en": "I will not take this medicine until I ask the doctor." },
+      "pastNegative": { "ja": "きのうは せきが でなかったから、くすりを のまなかった。", "en": "I did not have a cough yesterday, so I did not take the medicine." },
+      "potential": { "ja": "この くすりは ちいさいから、こどもでも のめる。", "en": "These pills are small, so even children can take them." },
+      "ba": { "ja": "この くすりを のめば、ねつが さがります。", "en": "If you take this medicine, your fever will go down." },
+      "volitional": { "ja": "ねる まえに、わすれないで くすりを のもう。", "en": "I will remember to take my medicine before going to bed." },
+      "causative": { "ja": "かんごしは かんじゃに しょくごの くすりを のませる。", "en": "The nurse has the patient take the medicine after the meal." }
+    }, "enabled": true
+  },
+  {
+    "id": "katsuyou2-minna-shokyu-1-group-1-066", "sourceVerbId": "minna-shokyu-1-group-1-066", "verificationRequired": true,
+    "dictionary": "のる", "reading": "のる", "kanji": "乗る", "meaning": "get on, ride", "verb": { "group": 1, "groupName": "グループ1" },
+    "forms": { "masu": "のります", "te": "のって", "ta": "のった", "nai": "のらない", "pastNegative": "のらなかった", "potential": "のれる", "ba": "のれば", "volitional": "のろう", "causative": "のらせる" },
+    "examples": {
+      "masu": { "ja": "あさ、こまええきから でんしゃに のります。", "en": "I get on the train at Komae Station in the morning." },
+      "te": { "ja": "くうこうから ばすに のって、ほてるへ いきました。", "en": "I took a bus from the airport to the hotel." },
+      "ta": { "ja": "しゅうまつに、はじめて やかたぶねに のった。", "en": "I rode a yakatabune boat for the first time over the weekend." },
+      "nai": { "ja": "きょうは あるくから、ばすには のらない。", "en": "I will walk today, so I will not take the bus." },
+      "pastNegative": { "ja": "えきが ちかかったから、たくしーには のらなかった。", "en": "The station was close, so I did not take a taxi." },
+      "potential": { "ja": "いま でれば、つぎの でんしゃに のれる。", "en": "If we leave now, we can catch the next train." },
+      "ba": { "ja": "この ばすに のれば、びょういんの まえまで いけます。", "en": "If you take this bus, you can go right to the hospital." },
+      "volitional": { "ja": "つぎは、あの あかい ばすに のろう。", "en": "Let's take that red bus next." },
+      "causative": { "ja": "えきいんは こどもを さきに でんしゃへ のらせる。", "en": "The station attendant lets the child board the train first." }
+    }, "enabled": true
+  },
+  {
+    "id": "katsuyou2-minna-shokyu-1-group-1-067", "sourceVerbId": "minna-shokyu-1-group-1-067", "verificationRequired": true,
+    "dictionary": "はいる（だいがくに）", "reading": "はいる", "kanji": "入る（大学に）", "meaning": "enter a university", "verb": { "group": 1, "groupName": "グループ1" },
+    "forms": { "masu": "はいります", "te": "はいって", "ta": "はいった", "nai": "はいらない", "pastNegative": "はいらなかった", "potential": "はいれる", "ba": "はいれば", "volitional": "はいろう", "causative": "はいらせる" },
+    "examples": {
+      "masu": { "ja": "らいねん、とうきょうの だいがくに はいります。", "en": "I will enter a university in Tokyo next year." },
+      "te": { "ja": "だいがくに はいって、けんちくを べんきょうしました。", "en": "I entered university and studied architecture." },
+      "ta": { "ja": "あねは ことし、きぼうした だいがくに はいった。", "en": "My older sister entered the university she wanted to attend this year." },
+      "nai": { "ja": "こうこうを でたら、すぐには だいがくに はいらない。", "en": "After finishing high school, I will not enter university right away." },
+      "pastNegative": { "ja": "あには だいがくに はいらなかった。", "en": "My older brother did not enter university." },
+      "potential": { "ja": "もっと べんきょうすれば、きぼうする だいがくに はいれる。", "en": "If you study more, you can enter the university you want to attend." },
+      "ba": { "ja": "だいがくに はいれば、べつの まちで せいかつします。", "en": "If I enter university, I will live in another city." },
+      "volitional": { "ja": "しょうらい、かいがいの だいがくに はいろう。", "en": "I will enter a university abroad in the future." },
+      "causative": { "ja": "りょうしんは むすめを だいがくに はいらせる。", "en": "The parents send their daughter to university." }
+    }, "enabled": true
+  }
+]

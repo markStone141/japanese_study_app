@@ -1,0 +1,18 @@
+[
+  {
+    "id": "katsuyou2-minna-shokyu-1-group-1-081", "sourceVerbId": "minna-shokyu-1-group-1-081", "verificationRequired": true,
+    "dictionary": "わたる（はしを）", "reading": "わたる", "kanji": "渡る（橋を）", "meaning": "cross a bridge", "verb": { "group": 1, "groupName": "グループ1" },
+    "forms": { "masu": "わたります", "te": "わたって", "ta": "わたった", "nai": "わたらない", "pastNegative": "わたらなかった", "potential": "わたれる", "ba": "わたれば", "volitional": "わたろう", "causative": "わたらせる" },
+    "examples": {
+      "masu": { "ja": "まいあさ、えきへ いく ときに この はしを わたります。", "en": "I cross this bridge every morning on my way to the station." },
+      "te": { "ja": "この はしを わたって、ひだりへ まがって ください。", "en": "Cross this bridge and turn left." },
+      "ta": { "ja": "きのう、あるいて ながい はしを わたった。", "en": "Yesterday, I crossed a long bridge on foot." },
+      "nai": { "ja": "よるは くらくて あぶないから、この はしを わたらない。", "en": "I do not cross this bridge at night because it is dark and dangerous." },
+      "pastNegative": { "ja": "きのうは こうじちゅうだったから、あの はしを わたらなかった。", "en": "I did not cross that bridge yesterday because it was under construction." },
+      "potential": { "ja": "この はしは ひろいから、じてんしゃでも あんぜんに わたれる。", "en": "This bridge is wide, so you can cross it safely by bicycle." },
+      "ba": { "ja": "あの はしを わたれば、すぐ みぎに こうえんが あります。", "en": "If you cross that bridge, there is a park immediately on the right." },
+      "volitional": { "ja": "えきは かわの むこうだから、この はしを わたろう。", "en": "The station is across the river, so let's cross this bridge." },
+      "causative": { "ja": "けいさつかんは くるまを とめて、こどもたちを はしの むこうへ わたらせる。", "en": "The police officer stops the cars and lets the children cross to the other side of the bridge." }
+    }, "enabled": true
+  }
+]

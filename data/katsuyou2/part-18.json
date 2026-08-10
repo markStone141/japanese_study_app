@@ -1,0 +1,64 @@
+[
+  {
+    "id": "katsuyou2-minna-shokyu-1-group-1-072", "sourceVerbId": "minna-shokyu-1-group-1-072", "verificationRequired": true,
+    "dictionary": "ふる（あめが）", "reading": "ふる", "kanji": "降る（雨が）", "meaning": "rain", "verb": { "group": 1, "groupName": "グループ1" },
+    "forms": { "masu": "ふります", "te": "ふって", "ta": "ふった", "nai": "ふらない", "pastNegative": "ふらなかった", "potential": null, "ba": "ふれば", "volitional": null, "causative": "ふらせる" },
+    "examples": {
+      "masu": { "ja": "てんきよほうでは、ゆうがたから あめが ふります。", "en": "According to the forecast, it will rain from the evening." },
+      "te": { "ja": "あめが ふって、こうえんの ひとが すくなく なりました。", "en": "It rained, and there were fewer people in the park." },
+      "ta": { "ja": "きのうの よる、おおきな ゆきが ふった。", "en": "Heavy snow fell last night." },
+      "nai": { "ja": "きょうは あめが ふらないから、せんたくします。", "en": "It will not rain today, so I will do the laundry." },
+      "pastNegative": { "ja": "せんしゅうは あめが ぜんぜん ふらなかった。", "en": "It did not rain at all last week." },
+      "ba": { "ja": "あめが ふれば、うんどうかいは たいいくかんで します。", "en": "If it rains, the sports day will be held in the gym." },
+      "causative": { "ja": "この きかいは、じんこうてきに あめを ふらせる。", "en": "This machine makes rain fall artificially." }
+    }, "enabled": true
+  },
+  {
+    "id": "katsuyou2-minna-shokyu-1-group-1-073", "sourceVerbId": "minna-shokyu-1-group-1-073", "verificationRequired": true,
+    "dictionary": "まがる", "reading": "まがる", "kanji": "曲がる", "meaning": "turn", "verb": { "group": 1, "groupName": "グループ1" },
+    "forms": { "masu": "まがります", "te": "まがって", "ta": "まがった", "nai": "まがらない", "pastNegative": "まがらなかった", "potential": "まがれる", "ba": "まがれば", "volitional": "まがろう", "causative": "まがらせる" },
+    "examples": {
+      "masu": { "ja": "ゆうびんきょくの かどを ひだりに まがります。", "en": "I turn left at the post office corner." },
+      "te": { "ja": "つぎの しんごうを みぎに まがって ください。", "en": "Please turn right at the next traffic light." },
+      "ta": { "ja": "えきの まえで ひだりに まがった。", "en": "I turned left in front of the station." },
+      "nai": { "ja": "この かどでは まがらないで、まっすぐ いきます。", "en": "Do not turn at this corner; go straight." },
+      "pastNegative": { "ja": "みちが ちがうと おもって、あの かどでは まがらなかった。", "en": "I thought it was the wrong road, so I did not turn at that corner." },
+      "potential": { "ja": "この みちは ひろいから、おおきな ばすでも まがれる。", "en": "This road is wide, so even a large bus can make the turn." },
+      "ba": { "ja": "つぎの かどを みぎに まがれば、ぎんこうが あります。", "en": "If you turn right at the next corner, there is a bank." },
+      "volitional": { "ja": "この みちは くらいから、つぎの かどで まがろう。", "en": "This road is dark, so let's turn at the next corner." },
+      "causative": { "ja": "けいさつかんは くるまを ひだりの みちへ まがらせる。", "en": "The police officer directs the car to turn onto the road on the left." }
+    }, "enabled": true
+  },
+  {
+    "id": "katsuyou2-minna-shokyu-1-group-1-074", "sourceVerbId": "minna-shokyu-1-group-1-074", "verificationRequired": true,
+    "dictionary": "まわす", "reading": "まわす", "kanji": "回す", "meaning": "turn, rotate", "verb": { "group": 1, "groupName": "グループ1" },
+    "forms": { "masu": "まわします", "te": "まわして", "ta": "まわした", "nai": "まわさない", "pastNegative": "まわさなかった", "potential": "まわせる", "ba": "まわせば", "volitional": "まわそう", "causative": "まわさせる" },
+    "examples": {
+      "masu": { "ja": "おゆを だす とき、この つまみを まわします。", "en": "I turn this knob when I want hot water." },
+      "te": { "ja": "かぎを みぎに まわして ください。", "en": "Please turn the key to the right." },
+      "ta": { "ja": "どあを あけるために、とってを ゆっくり まわした。", "en": "I slowly turned the handle to open the door." },
+      "nai": { "ja": "こわれていますから、この つまみは まわさないで ください。", "en": "This knob is broken, so please do not turn it." },
+      "pastNegative": { "ja": "つかいかたが わからなかったから、きかいの はんどるを まわさなかった。", "en": "I did not know how to use it, so I did not turn the machine's handle." },
+      "potential": { "ja": "この かるい はんどるなら、こどもでも まわせる。", "en": "This handle is light enough that even a child can turn it." },
+      "ba": { "ja": "この つまみを ひだりに まわせば、おとが ちいさく なります。", "en": "If you turn this knob to the left, the volume will go down." },
+      "volitional": { "ja": "へやが あついから、せんぷうきを まわそう。", "en": "The room is hot, so let's turn on the fan." },
+      "causative": { "ja": "せんせいは がくせいに じっけんの はんどるを まわさせる。", "en": "The teacher has the student turn the experiment's handle." }
+    }, "enabled": true
+  },
+  {
+    "id": "katsuyou2-minna-shokyu-1-group-1-075", "sourceVerbId": "minna-shokyu-1-group-1-075", "verificationRequired": true,
+    "dictionary": "もつ", "reading": "もつ", "kanji": "持つ", "meaning": "hold, carry", "verb": { "group": 1, "groupName": "グループ1" },
+    "forms": { "masu": "もちます", "te": "もって", "ta": "もった", "nai": "もたない", "pastNegative": "もたなかった", "potential": "もてる", "ba": "もてば", "volitional": "もとう", "causative": "もたせる" },
+    "examples": {
+      "masu": { "ja": "あめの ひは、かばんに おりたたみがさを もちます。", "en": "On rainy days, I carry a folding umbrella in my bag." },
+      "te": { "ja": "わたしが どあを あけるから、この はこを もって ください。", "en": "I will open the door, so please hold this box." },
+      "ta": { "ja": "りょうてに かいものの ふくろを もった。", "en": "I held shopping bags in both hands." },
+      "nai": { "ja": "ちかくへ いくだけだから、きょうは かばんを もたない。", "en": "I am only going nearby, so I will not carry a bag today." },
+      "pastNegative": { "ja": "はれの よほうだったから、かさを もたなかった。", "en": "The forecast said it would be sunny, so I did not take an umbrella." },
+      "potential": { "ja": "この はこは かるいから、ひとりで もてる。", "en": "This box is light, so I can carry it by myself." },
+      "ba": { "ja": "ふたりで はこの りょうがわを もてば、らくに はこべます。", "en": "If two people hold opposite sides of the box, they can carry it easily." },
+      "volitional": { "ja": "にもつが おおいから、わたしも ひとつ もとう。", "en": "There is a lot of luggage, so I will carry one item too." },
+      "causative": { "ja": "ちちは こどもに じぶんの りゅっくを もたせる。", "en": "The father has his child carry their own backpack." }
+    }, "enabled": true
+  }
+]

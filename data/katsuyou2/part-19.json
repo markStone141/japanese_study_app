@@ -1,0 +1,65 @@
+[
+  {
+    "id": "katsuyou2-minna-shokyu-1-group-1-077", "sourceVerbId": "minna-shokyu-1-group-1-077", "verificationRequired": true,
+    "dictionary": "もらう", "reading": "もらう", "kanji": "貰う", "meaning": "receive", "verb": { "group": 1, "groupName": "グループ1" },
+    "forms": { "masu": "もらいます", "te": "もらって", "ta": "もらった", "nai": "もらわない", "pastNegative": "もらわなかった", "potential": "もらえる", "ba": "もらえば", "volitional": "もらおう", "causative": "もらわせる" },
+    "examples": {
+      "masu": { "ja": "たんじょうびに ともだちから ぷれぜんとを もらいます。", "en": "I receive a present from my friend on my birthday." },
+      "te": { "ja": "せんせいに さくぶんを みて もらって、なおしました。", "en": "I had my teacher check my essay and then corrected it." },
+      "ta": { "ja": "きのう、かいしゃから しりょうを もらった。", "en": "Yesterday, I received some materials from the company." },
+      "nai": { "ja": "ひつようが ないから、れしーとは もらわない。", "en": "I do not need it, so I will not take a receipt." },
+      "pastNegative": { "ja": "きょねんの たんじょうびには、ぷれぜんとを もらわなかった。", "en": "I did not receive a present on my birthday last year." },
+      "potential": { "ja": "この みせでは、かいものを すると ぽいんとが もらえる。", "en": "At this shop, you can earn points when you make a purchase." },
+      "ba": { "ja": "せんせいから あどばいすを もらえば、もっと よく できます。", "en": "If I get advice from my teacher, I can do better." },
+      "volitional": { "ja": "わからないから、せんせいに あどばいすを もらおう。", "en": "I do not understand, so I will ask my teacher for advice." },
+      "causative": { "ja": "ちちは いもうとにも おなじ ぷれぜんとを もらわせる。", "en": "The father arranges for the younger sister to receive the same present too." }
+    }, "enabled": true
+  },
+  {
+    "id": "katsuyou2-minna-shokyu-1-group-1-078", "sourceVerbId": "minna-shokyu-1-group-1-078", "verificationRequired": true,
+    "dictionary": "やくにたつ", "reading": "やくにたつ", "kanji": "役に立つ", "meaning": "be useful", "verb": { "group": 1, "groupName": "グループ1" },
+    "forms": { "masu": "やくにたちます", "te": "やくにたって", "ta": "やくにたった", "nai": "やくにたたない", "pastNegative": "やくにたたなかった", "potential": "やくにたてる", "ba": "やくにたてば", "volitional": "やくにたとう", "causative": null },
+    "examples": {
+      "masu": { "ja": "この じしょは にほんごの べんきょうに やくにたちます。", "en": "This dictionary is useful for studying Japanese." },
+      "te": { "ja": "この けいけんが しごとで やくにたって、うれしかったです。", "en": "I was happy that this experience proved useful at work." },
+      "ta": { "ja": "その じょうほうは りょこうで とても やくにたった。", "en": "That information was very useful during the trip." },
+      "nai": { "ja": "ふるすぎる じょうほうは あまり やくにたたない。", "en": "Information that is too old is not very useful." },
+      "pastNegative": { "ja": "この ちずは ふるくて、あまり やくにたたなかった。", "en": "This map was old and was not very useful." },
+      "potential": { "ja": "にほんごが できれば、みちに まよった ひとの やくにたてる。", "en": "If I can speak Japanese, I can help someone who is lost." },
+      "ba": { "ja": "この ほんが べんきょうの やくにたてば、うれしいです。", "en": "I will be happy if this book is useful for your studies." },
+      "volitional": { "ja": "ならった ことを つかって、ひとの やくにたとう。", "en": "Let us use what we have learned to help others." }
+    }, "enabled": true
+  },
+  {
+    "id": "katsuyou2-minna-shokyu-1-group-1-079", "sourceVerbId": "minna-shokyu-1-group-1-079", "verificationRequired": true,
+    "dictionary": "やすむ", "reading": "やすむ", "kanji": "休む", "meaning": "take a rest or holiday", "verb": { "group": 1, "groupName": "グループ1" },
+    "forms": { "masu": "やすみます", "te": "やすんで", "ta": "やすんだ", "nai": "やすまない", "pastNegative": "やすまなかった", "potential": "やすめる", "ba": "やすめば", "volitional": "やすもう", "causative": "やすませる" },
+    "examples": {
+      "masu": { "ja": "にちようびは うちで ゆっくり やすみます。", "en": "I rest at home on Sundays." },
+      "te": { "ja": "つかれているから、すこし やすんで ください。", "en": "You are tired, so please rest for a while." },
+      "ta": { "ja": "きのうは いちにち うちで やすんだ。", "en": "Yesterday, I rested at home all day." },
+      "nai": { "ja": "きょうは げんきだから、ひるには やすまない。", "en": "I feel well today, so I will not rest at lunchtime." },
+      "pastNegative": { "ja": "しゅくだいが おおくて、きのうの よるは やすまなかった。", "en": "I had a lot of homework, so I did not rest last night." },
+      "potential": { "ja": "ここには べんちが あるから、すこし やすめる。", "en": "There is a bench here, so we can rest for a while." },
+      "ba": { "ja": "つかれた ときに すこし やすめば、また げんきに なります。", "en": "If you rest a little when you are tired, you will feel better again." },
+      "volitional": { "ja": "たくさん あるいたから、あの きのしたで やすもう。", "en": "We have walked a lot, so let us rest under that tree." },
+      "causative": { "ja": "ははは つかれた こどもを へやで やすませる。", "en": "The mother lets her tired child rest in the room." }
+    }, "enabled": true
+  },
+  {
+    "id": "katsuyou2-minna-shokyu-1-group-1-080", "sourceVerbId": "minna-shokyu-1-group-1-080", "verificationRequired": true,
+    "dictionary": "やすむ（しごとを）", "reading": "やすむ", "kanji": "休む（仕事を）", "meaning": "take a day off work", "verb": { "group": 1, "groupName": "グループ1" },
+    "forms": { "masu": "やすみます", "te": "やすんで", "ta": "やすんだ", "nai": "やすまない", "pastNegative": "やすまなかった", "potential": "やすめる", "ba": "やすめば", "volitional": "やすもう", "causative": "やすませる" },
+    "examples": {
+      "masu": { "ja": "あしたは びょういんへ いくから、しごとを やすみます。", "en": "I will take a day off work tomorrow to go to the hospital." },
+      "te": { "ja": "きのうは しごとを やすんで、びょういんへ いった。", "en": "Yesterday, I took the day off work and went to the hospital." },
+      "ta": { "ja": "せんしゅう、かぜで しごとを やすんだ。", "en": "Last week, I took time off work because of a cold." },
+      "nai": { "ja": "いそがしい じきだから、こんげつは しごとを やすまない。", "en": "It is a busy season, so I will not take any days off work this month." },
+      "pastNegative": { "ja": "せんげつは いそがしくて、しごとを いちども やすまなかった。", "en": "I was busy last month and did not take a single day off work." },
+      "potential": { "ja": "らいしゅうなら、しごとを いちにち やすめる。", "en": "I can take one day off work next week." },
+      "ba": { "ja": "あした しごとを やすめば、びょういんへ いけます。", "en": "If I take tomorrow off work, I can go to the hospital." },
+      "volitional": { "ja": "ねつが あるから、あしたは しごとを やすもう。", "en": "I have a fever, so I will take tomorrow off work." },
+      "causative": { "ja": "てんちょうは ねつが ある てんいんを しごとから やすませる。", "en": "The manager gives the employee with a fever time off work." }
+    }, "enabled": true
+  }
+]
