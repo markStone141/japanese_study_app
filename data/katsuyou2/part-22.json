@@ -1,0 +1,60 @@
+[
+  {
+    "id": "katsuyou2-minna-shokyu-1-group-2-005", "sourceVerbId": "minna-shokyu-1-group-2-005", "verificationRequired": true,
+    "dictionary": "いる", "reading": "いる", "kanji": "居る", "meaning": "exist, be (referring to animate things)", "verb": { "group": 2, "groupName": "グループ2" },
+    "forms": { "masu": "います", "te": "いて", "ta": "いた", "nai": "いない", "pastNegative": "いなかった", "potential": null, "ba": "いれば", "volitional": null, "causative": null },
+    "examples": {
+      "masu": { "ja": "にわに ねこが います。", "en": "There is a cat in the garden." },
+      "te": { "ja": "こうえんに こどもが いて、にぎやかです。", "en": "There are children in the park, so it is lively." },
+      "ta": { "ja": "きのう、うちに ともだちが いた。", "en": "Yesterday, my friend was at my house." },
+      "nai": { "ja": "きょうは きょうしつに だれも いない。", "en": "There is no one in the classroom today." },
+      "pastNegative": { "ja": "けさ、にわに ねこは いなかった。", "en": "The cat was not in the garden this morning." },
+      "ba": { "ja": "こうえんに こどもが いれば、にぎやかに なります。", "en": "If there are children in the park, it becomes lively." }
+    }, "enabled": true
+  },
+  {
+    "id": "katsuyou2-minna-shokyu-1-group-2-006", "sourceVerbId": "minna-shokyu-1-group-2-006", "verificationRequired": true,
+    "dictionary": "いる", "reading": "いる", "kanji": "居る", "meaning": "have [a child]", "verb": { "group": 2, "groupName": "グループ2" },
+    "forms": { "masu": "います", "te": "いて", "ta": "いた", "nai": "いない", "pastNegative": "いなかった", "potential": null, "ba": "いれば", "volitional": null, "causative": null },
+    "examples": {
+      "masu": { "ja": "わたしには こどもが ふたり います。", "en": "I have two children." },
+      "te": { "ja": "あねには こどもが いて、まいにち いそがしいです。", "en": "My older sister has a child, so she is busy every day." },
+      "ta": { "ja": "その ひとには こどもが ひとり いた。", "en": "That person had one child." },
+      "nai": { "ja": "わたしには まだ こどもが いない。", "en": "I do not have children yet." },
+      "pastNegative": { "ja": "そのころ、あには まだ こどもが いなかった。", "en": "At that time, my older brother did not have children yet." },
+      "ba": { "ja": "こどもが ふたり いれば、くるまも おおきい ほうが いいです。", "en": "If you have two children, a larger car is better too." }
+    }, "enabled": true
+  },
+  {
+    "id": "katsuyou2-minna-shokyu-1-group-2-007", "sourceVerbId": "minna-shokyu-1-group-2-007", "verificationRequired": true,
+    "dictionary": "いる", "reading": "いる", "kanji": "居る", "meaning": "stay, be [in Japan]", "verb": { "group": 2, "groupName": "グループ2" },
+    "forms": { "masu": "います", "te": "いて", "ta": "いた", "nai": "いない", "pastNegative": "いなかった", "potential": "いられる", "ba": "いれば", "volitional": "いよう", "causative": "いさせる" },
+    "examples": {
+      "masu": { "ja": "らいねんまで にほんに います。", "en": "I will stay in Japan until next year." },
+      "te": { "ja": "とうきょうに いて、にほんごを べんきょうします。", "en": "I stay in Tokyo and study Japanese." },
+      "ta": { "ja": "きょねんは おおさかに いた。", "en": "Last year, I was in Osaka." },
+      "nai": { "ja": "らいしゅうは とうきょうに いない。", "en": "I will not be in Tokyo next week." },
+      "pastNegative": { "ja": "せんしゅうは にほんに いなかった。", "en": "I was not in Japan last week." },
+      "potential": { "ja": "ビザが あるから、らいねんまで にほんに いられる。", "en": "I can stay in Japan until next year because I have a visa." },
+      "ba": { "ja": "らいげつも とうきょうに いれば、また あえます。", "en": "If you are still in Tokyo next month, we can meet again." },
+      "volitional": { "ja": "ことしの なつは ずっと にほんに いよう。", "en": "I will stay in Japan throughout this summer." },
+      "causative": { "ja": "かいしゃは その しゃいんを もう いちねん にほんに いさせる。", "en": "The company lets the employee stay in Japan for another year." }
+    }, "enabled": true
+  },
+  {
+    "id": "katsuyou2-minna-shokyu-1-group-2-008", "sourceVerbId": "minna-shokyu-1-group-2-008", "verificationRequired": true,
+    "dictionary": "いれる", "reading": "いれる", "kanji": "入れる", "meaning": "put in, insert", "verb": { "group": 2, "groupName": "グループ2" },
+    "forms": { "masu": "いれます", "te": "いれて", "ta": "いれた", "nai": "いれない", "pastNegative": "いれなかった", "potential": "いれられる", "ba": "いれれば", "volitional": "いれよう", "causative": "いれさせる" },
+    "examples": {
+      "masu": { "ja": "かばんに ほんを いれます。", "en": "I put a book in my bag." },
+      "te": { "ja": "コーヒーに さとうを いれて、のみます。", "en": "I put sugar in my coffee and drink it." },
+      "ta": { "ja": "れいぞうこに ジュースを いれた。", "en": "I put juice in the refrigerator." },
+      "nai": { "ja": "この はこには なにも いれない。", "en": "I will not put anything in this box." },
+      "pastNegative": { "ja": "けさは コーヒーに さとうを いれなかった。", "en": "I did not put sugar in my coffee this morning." },
+      "potential": { "ja": "この かばんには、ほんを あと にさつ いれられる。", "en": "I can put two more books in this bag." },
+      "ba": { "ja": "れいぞうこに いれれば、ジュースが つめたく なります。", "en": "If you put the juice in the refrigerator, it will become cold." },
+      "volitional": { "ja": "この しゃしんも アルバムに いれよう。", "en": "Let's put this photo in the album too." },
+      "causative": { "ja": "せんせいは がくせいに しりょうを ふうとうへ いれさせる。", "en": "The teacher has the student put the document into an envelope." }
+    }, "enabled": true
+  }
+]
