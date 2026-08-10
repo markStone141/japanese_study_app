@@ -1,0 +1,63 @@
+[
+  {
+    "id": "katsuyou2-minna-shokyu-1-group-2-025", "sourceVerbId": "minna-shokyu-1-group-2-025", "verificationRequired": true,
+    "dictionary": "しらべる", "reading": "しらべる", "kanji": "調べる", "meaning": "check, investigate", "verb": { "group": 2, "groupName": "グループ2" },
+    "forms": { "masu": "しらべます", "te": "しらべて", "ta": "しらべた", "nai": "しらべない", "pastNegative": "しらべなかった", "potential": "しらべられる", "ba": "しらべれば", "volitional": "しらべよう", "causative": "しらべさせる" },
+    "examples": {
+      "masu": { "ja": "インターネットで じかんを しらべます。", "en": "I check the time online." },
+      "te": { "ja": "じしょで いみを しらべて、ノートに かきます。", "en": "I look up the meaning in a dictionary and write it in my notebook." },
+      "ta": { "ja": "でんしゃの じこくを しらべた。", "en": "I checked the train schedule." },
+      "nai": { "ja": "もう その ことは しらべない。", "en": "I will not investigate that matter anymore." },
+      "pastNegative": { "ja": "きのうは みせの じかんを しらべなかった。", "en": "I did not check the store hours yesterday." },
+      "potential": { "ja": "この アプリで バスの じかんを しらべられる。", "en": "You can check the bus times with this app." },
+      "ba": { "ja": "ちずで しらべれば、ばしょが わかります。", "en": "If you check the map, you will know the location." },
+      "volitional": { "ja": "ホテルの でんわばんごうを しらべよう。", "en": "Let's look up the hotel's phone number." },
+      "causative": { "ja": "せんせいは がくせいに ことばの いみを しらべさせる。", "en": "The teacher has the students look up the meaning of the word." }
+    }, "enabled": true
+  },
+  {
+    "id": "katsuyou2-minna-shokyu-1-group-2-026", "sourceVerbId": "minna-shokyu-1-group-2-026", "verificationRequired": true,
+    "dictionary": "すてる", "reading": "すてる", "kanji": "捨てる", "meaning": "throw away", "verb": { "group": 2, "groupName": "グループ2" },
+    "forms": { "masu": "すてます", "te": "すてて", "ta": "すてた", "nai": "すてない", "pastNegative": "すてなかった", "potential": "すてられる", "ba": "すてれば", "volitional": "すてよう", "causative": "すてさせる" },
+    "examples": {
+      "masu": { "ja": "ごみを すてます。", "en": "I throw away the garbage." },
+      "te": { "ja": "ふるい しんぶんを すてて、へやを そうじします。", "en": "I throw away the old newspapers and clean the room." },
+      "ta": { "ja": "こわれた かさを すてた。", "en": "I threw away the broken umbrella." },
+      "nai": { "ja": "この はこは まだ すてない。", "en": "I will not throw away this box yet." },
+      "pastNegative": { "ja": "その てがみは たいせつだから、すてなかった。", "en": "The letter was important, so I did not throw it away." },
+      "potential": { "ja": "この ごみは えきの ごみばこに すてられる。", "en": "You can throw this garbage away in the station trash can." },
+      "ba": { "ja": "いらない ものを すてれば、へやが ひろく なります。", "en": "If you throw away things you do not need, the room will become more spacious." },
+      "volitional": { "ja": "こわれた いすは もう すてよう。", "en": "Let's throw away the broken chair now." },
+      "causative": { "ja": "てんちょうは てんいんに ふるい はこを すてさせる。", "en": "The manager has the clerk throw away the old boxes." }
+    }, "enabled": true
+  },
+  {
+    "id": "katsuyou2-minna-shokyu-1-group-2-027", "sourceVerbId": "minna-shokyu-1-group-2-027", "verificationRequired": true,
+    "dictionary": "たべる", "reading": "たべる", "kanji": "食べる", "meaning": "eat", "verb": { "group": 2, "groupName": "グループ2" },
+    "forms": { "masu": "たべます", "te": "たべて", "ta": "たべた", "nai": "たべない", "pastNegative": "たべなかった", "potential": "たべられる", "ba": "たべれば", "volitional": "たべよう", "causative": "たべさせる" },
+    "examples": {
+      "masu": { "ja": "まいあさ パンを たべます。", "en": "I eat bread every morning." },
+      "te": { "ja": "ひるごはんを たべて、しごとに もどります。", "en": "I eat lunch and return to work." },
+      "ta": { "ja": "きのう、すしを たべた。", "en": "I ate sushi yesterday." },
+      "nai": { "ja": "あさは あまり たべない。", "en": "I do not eat much in the morning." },
+      "pastNegative": { "ja": "けさは じかんが なくて、あさごはんを たべなかった。", "en": "I did not eat breakfast this morning because I had no time." },
+      "potential": { "ja": "この カレーは からくないから、こどもも たべられる。", "en": "This curry is not spicy, so children can eat it too." },
+      "ba": { "ja": "あさごはんを たべれば、げんきに なります。", "en": "If you eat breakfast, you will feel energized." },
+      "volitional": { "ja": "きょうの ひるは ラーメンを たべよう。", "en": "Let's eat ramen for lunch today." },
+      "causative": { "ja": "ほいくえんの せんせいは こどもに くだものを たべさせる。", "en": "The nursery school teacher gives the children fruit to eat." }
+    }, "enabled": true
+  },
+  {
+    "id": "katsuyou2-minna-shokyu-1-group-2-028", "sourceVerbId": "minna-shokyu-1-group-2-028", "verificationRequired": true,
+    "dictionary": "たりる", "reading": "たりる", "kanji": "足りる", "meaning": "be enough, be sufficient", "verb": { "group": 2, "groupName": "グループ2" },
+    "forms": { "masu": "たります", "te": "たりて", "ta": "たりた", "nai": "たりない", "pastNegative": "たりなかった", "potential": null, "ba": "たりれば", "volitional": null, "causative": null },
+    "examples": {
+      "masu": { "ja": "この おかねで たります。", "en": "This amount of money is enough." },
+      "te": { "ja": "じかんが たりて、ぜんぶ できました。", "en": "There was enough time, so I finished everything." },
+      "ta": { "ja": "りょうりは みんなの ぶん たりた。", "en": "There was enough food for everyone." },
+      "nai": { "ja": "この りょうでは たりない。", "en": "This amount is not enough." },
+      "pastNegative": { "ja": "きのうは じかんが たりなかった。", "en": "There was not enough time yesterday." },
+      "ba": { "ja": "おかねが たりれば、この かばんを かえます。", "en": "If I have enough money, I can buy this bag." }
+    }, "enabled": true
+  }
+]
