@@ -5,7 +5,7 @@ const BASE_DATA_URLS = [
   "./data/verbs-minna-no-nihongo-shokyu-1-group-2.json",
   "./data/verbs-minna-no-nihongo-shokyu-1-group-3.json"
 ];
-const CURATED_DATA_URLS = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23].map((part) => `./data/katsuyou2/part-${part}.json`);
+const CURATED_DATA_URLS = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24].map((part) => `./data/katsuyou2/part-${part}.json`);
 const OVERRIDES_URL = "./data/content-review-overrides.json";
 
 const FORM_CONFIG = [

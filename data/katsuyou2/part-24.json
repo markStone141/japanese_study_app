@@ -1,0 +1,66 @@
+[
+  {
+    "id": "katsuyou2-minna-shokyu-1-group-2-013", "sourceVerbId": "minna-shokyu-1-group-2-013", "verificationRequired": true,
+    "dictionary": "おぼえる", "reading": "おぼえる", "kanji": "覚える", "meaning": "memorise", "verb": { "group": 2, "groupName": "グループ2" },
+    "forms": { "masu": "おぼえます", "te": "おぼえて", "ta": "おぼえた", "nai": "おぼえない", "pastNegative": "おぼえなかった", "potential": "おぼえられる", "ba": "おぼえれば", "volitional": "おぼえよう", "causative": "おぼえさせる" },
+    "examples": {
+      "masu": { "ja": "まいにち ことばを 10こ おぼえます。", "en": "I memorize ten words every day." },
+      "te": { "ja": "あたらしい たんごを おぼえて、ぶんを つくります。", "en": "I memorize new vocabulary and make sentences." },
+      "ta": { "ja": "きのう、でんわばんごうを おぼえた。", "en": "Yesterday, I memorized the phone number." },
+      "nai": { "ja": "むずかしい なまえは すぐに おぼえない。", "en": "I do not memorize difficult names quickly." },
+      "pastNegative": { "ja": "きのうは いそがしくて、あたらしい ことばを おぼえなかった。", "en": "I was busy yesterday, so I did not memorize any new words." },
+      "potential": { "ja": "この かんじなら、すぐ おぼえられる。", "en": "I can memorize this kanji quickly." },
+      "ba": { "ja": "この ことばを おぼえれば、かいわが もっと らくに なります。", "en": "If you learn this word, conversation will become easier." },
+      "volitional": { "ja": "きょうは あたらしい ことばを 5つ おぼえよう。", "en": "Let's learn five new words today." },
+      "causative": { "ja": "せんせいは がくせいに あたらしい ことばを おぼえさせる。", "en": "The teacher has the students memorize new words." }
+    }, "enabled": true
+  },
+  {
+    "id": "katsuyou2-minna-shokyu-1-group-2-014", "sourceVerbId": "minna-shokyu-1-group-2-014", "verificationRequired": true,
+    "dictionary": "おりる", "reading": "おりる", "kanji": "降りる", "meaning": "get off [a train]", "verb": { "group": 2, "groupName": "グループ2" },
+    "forms": { "masu": "おります", "te": "おりて", "ta": "おりた", "nai": "おりない", "pastNegative": "おりなかった", "potential": "おりられる", "ba": "おりれば", "volitional": "おりよう", "causative": "おりさせる" },
+    "examples": {
+      "masu": { "ja": "しんじゅくえきで でんしゃを おります。", "en": "I get off the train at Shinjuku Station." },
+      "te": { "ja": "つぎの えきで おりて、バスに のります。", "en": "I get off at the next station and take a bus." },
+      "ta": { "ja": "ひとつ まえの えきで おりた。", "en": "I got off at the previous station." },
+      "nai": { "ja": "この えきでは おりない。", "en": "I will not get off at this station." },
+      "pastNegative": { "ja": "きのうは この えきで おりなかった。", "en": "I did not get off at this station yesterday." },
+      "potential": { "ja": "この バスは どの バスていでも おりられる。", "en": "You can get off this bus at any bus stop." },
+      "ba": { "ja": "つぎの えきで おりれば、びょういんは すぐです。", "en": "If you get off at the next station, the hospital is nearby." },
+      "volitional": { "ja": "つぎの えきで おりよう。", "en": "Let's get off at the next station." },
+      "causative": { "ja": "バスの うんてんしゅは つぎの バスていで きゃくを おりさせる。", "en": "The bus driver lets the passengers get off at the next bus stop." }
+    }, "enabled": true
+  },
+  {
+    "id": "katsuyou2-minna-shokyu-1-group-2-015", "sourceVerbId": "minna-shokyu-1-group-2-015", "verificationRequired": true,
+    "dictionary": "かえる", "reading": "かえる", "kanji": "換える", "meaning": "exchange, change", "verb": { "group": 2, "groupName": "グループ2" },
+    "forms": { "masu": "かえます", "te": "かえて", "ta": "かえた", "nai": "かえない", "pastNegative": "かえなかった", "potential": "かえられる", "ba": "かえれば", "volitional": "かえよう", "causative": "かえさせる" },
+    "examples": {
+      "masu": { "ja": "えんを ドルに かえます。", "en": "I exchange yen for dollars." },
+      "te": { "ja": "おかねを こまかく かえて、きっぷを かいます。", "en": "I change the money into smaller bills and buy a ticket." },
+      "ta": { "ja": "くうこうで おかねを かえた。", "en": "I exchanged money at the airport." },
+      "nai": { "ja": "きょうは おかねを かえない。", "en": "I will not exchange money today." },
+      "pastNegative": { "ja": "くうこうでは えんを ドルに かえなかった。", "en": "I did not exchange yen for dollars at the airport." },
+      "potential": { "ja": "この ぎんこうなら、えんを ドルに かえられる。", "en": "You can exchange yen for dollars at this bank." },
+      "ba": { "ja": "えんを ドルに かえれば、アメリカで つかえます。", "en": "If you exchange yen for dollars, you can use the money in the United States." },
+      "volitional": { "ja": "りょこうの まえに、えんを ドルに かえよう。", "en": "Let's exchange yen for dollars before the trip." },
+      "causative": { "ja": "てんちょうは てんいんに おきゃくさんの ドルを えんに かえさせる。", "en": "The manager has the clerk exchange the customer's dollars for yen." }
+    }, "enabled": true
+  },
+  {
+    "id": "katsuyou2-minna-shokyu-1-group-2-016", "sourceVerbId": "minna-shokyu-1-group-2-016", "verificationRequired": true,
+    "dictionary": "かえる", "reading": "かえる", "kanji": "変える", "meaning": "change", "verb": { "group": 2, "groupName": "グループ2" },
+    "forms": { "masu": "かえます", "te": "かえて", "ta": "かえた", "nai": "かえない", "pastNegative": "かえなかった", "potential": "かえられる", "ba": "かえれば", "volitional": "かえよう", "causative": "かえさせる" },
+    "examples": {
+      "masu": { "ja": "よていを かえます。", "en": "I change the plan." },
+      "te": { "ja": "じかんを かえて、もういちど よやくします。", "en": "I change the time and make another reservation." },
+      "ta": { "ja": "かみがたを かえた。", "en": "I changed my hairstyle." },
+      "nai": { "ja": "いまの ほうほうは かえない。", "en": "I will not change the current method." },
+      "pastNegative": { "ja": "あめだったが、りょこうの よていは かえなかった。", "en": "It rained, but I did not change the travel plans." },
+      "potential": { "ja": "まだ よやくの じかんを かえられる。", "en": "I can still change the reservation time." },
+      "ba": { "ja": "じかんを かえれば、みんなが さんかできます。", "en": "If we change the time, everyone can participate." },
+      "volitional": { "ja": "あめだから、きょうの よていを かえよう。", "en": "It is raining, so let's change today's plans." },
+      "causative": { "ja": "りょこうがいしゃは たんとうしゃに バスの しゅっぱつじかんを かえさせる。", "en": "The travel agency has the staff member change the bus departure time." }
+    }, "enabled": true
+  }
+]
