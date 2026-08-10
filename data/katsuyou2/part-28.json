@@ -1,0 +1,61 @@
+[
+  {
+    "id": "katsuyou2-minna-shokyu-1-group-2-029", "sourceVerbId": "minna-shokyu-1-group-2-029", "verificationRequired": true,
+    "dictionary": "つかれる", "reading": "つかれる", "kanji": "疲れる", "meaning": "get tired", "verb": { "group": 2, "groupName": "グループ2" },
+    "forms": { "masu": "つかれます", "te": "つかれて", "ta": "つかれた", "nai": "つかれない", "pastNegative": "つかれなかった", "potential": null, "ba": "つかれれば", "volitional": null, "causative": "つかれさせる" },
+    "examples": {
+      "masu": { "ja": "ながく あるくと つかれます。", "en": "I get tired when I walk for a long time." },
+      "te": { "ja": "しごとで つかれて、はやく ねました。", "en": "I got tired from work and went to bed early." },
+      "ta": { "ja": "きょうは とても つかれた。", "en": "I was very tired today." },
+      "nai": { "ja": "この くらいでは つかれない。", "en": "I do not get tired from this much." },
+      "pastNegative": { "ja": "きのうは しごとが すくなくて、つかれなかった。", "en": "I did not get tired yesterday because there was not much work." },
+      "ba": { "ja": "つかれれば、ここで すこし やすみます。", "en": "If I get tired, I will rest here for a while." },
+      "causative": { "ja": "ながい かいぎは みんなを つかれさせる。", "en": "Long meetings make everyone tired." }
+    }, "enabled": true
+  },
+  {
+    "id": "katsuyou2-minna-shokyu-1-group-2-030", "sourceVerbId": "minna-shokyu-1-group-2-030", "verificationRequired": true,
+    "dictionary": "つける", "reading": "つける", "kanji": "点ける", "meaning": "turn on", "verb": { "group": 2, "groupName": "グループ2" },
+    "forms": { "masu": "つけます", "te": "つけて", "ta": "つけた", "nai": "つけない", "pastNegative": "つけなかった", "potential": "つけられる", "ba": "つければ", "volitional": "つけよう", "causative": "つけさせる" },
+    "examples": {
+      "masu": { "ja": "へやの でんきを つけます。", "en": "I turn on the room light." },
+      "te": { "ja": "テレビを つけて、ニュースを みます。", "en": "I turn on the television and watch the news." },
+      "ta": { "ja": "あつかったから、エアコンを つけた。", "en": "It was hot, so I turned on the air conditioner." },
+      "nai": { "ja": "ひるは でんきを つけない。", "en": "I do not turn on the light during the day." },
+      "pastNegative": { "ja": "へやが あかるかったから、でんきを つけなかった。", "en": "The room was bright, so I did not turn on the light." },
+      "potential": { "ja": "この スイッチで エアコンを つけられる。", "en": "You can turn on the air conditioner with this switch." },
+      "ba": { "ja": "テレビを つければ、ニュースが みられます。", "en": "If you turn on the television, you can watch the news." },
+      "volitional": { "ja": "あついから、エアコンを つけよう。", "en": "It is hot, so let's turn on the air conditioner." },
+      "causative": { "ja": "ははは あにに げんかんの でんきを つけさせる。", "en": "My mother has my older brother turn on the entrance light." }
+    }, "enabled": true
+  },
+  {
+    "id": "katsuyou2-minna-shokyu-1-group-2-031", "sourceVerbId": "minna-shokyu-1-group-2-031", "verificationRequired": true,
+    "dictionary": "でかける", "reading": "でかける", "kanji": "出掛ける", "meaning": "go out", "verb": { "group": 2, "groupName": "グループ2" },
+    "forms": { "masu": "でかけます", "te": "でかけて", "ta": "でかけた", "nai": "でかけない", "pastNegative": "でかけなかった", "potential": "でかけられる", "ba": "でかければ", "volitional": "でかけよう", "causative": "でかけさせる" },
+    "examples": {
+      "masu": { "ja": "しゅうまつに かぞくと でかけます。", "en": "I go out with my family on the weekend." },
+      "te": { "ja": "あさ はやく でかけて、よる かえります。", "en": "I go out early in the morning and return at night." },
+      "ta": { "ja": "きのう、かいものに でかけた。", "en": "Yesterday, I went out shopping." },
+      "nai": { "ja": "あめだから、きょうは でかけない。", "en": "It is raining, so I will not go out today." },
+      "pastNegative": { "ja": "にちようびは うちに いて、でかけなかった。", "en": "I stayed home on Sunday and did not go out." },
+      "potential": { "ja": "あしが よくなって、ひとりで でかけられる。", "en": "My leg has gotten better, so I can go out by myself." },
+      "ba": { "ja": "はやく でかければ、でんしゃに まにあいます。", "en": "If you leave early, you will catch the train." },
+      "volitional": { "ja": "てんきが いいから、こうえんへ でかけよう。", "en": "The weather is nice, so let's go out to the park." },
+      "causative": { "ja": "てんちょうは てんいんを かいものに でかけさせる。", "en": "The manager sends the clerk out shopping." }
+    }, "enabled": true
+  },
+  {
+    "id": "katsuyou2-minna-shokyu-1-group-2-032", "sourceVerbId": "minna-shokyu-1-group-2-032", "verificationRequired": true,
+    "dictionary": "できる", "reading": "できる", "kanji": "出来る", "meaning": "be able to, can", "verb": { "group": 2, "groupName": "グループ2" },
+    "forms": { "masu": "できます", "te": "できて", "ta": "できた", "nai": "できない", "pastNegative": "できなかった", "potential": null, "ba": "できれば", "volitional": null, "causative": null },
+    "examples": {
+      "masu": { "ja": "わたしは りょうりが できます。", "en": "I can cook." },
+      "te": { "ja": "にほんごが できて、しごとが べんりに なりました。", "en": "I became able to use Japanese, which made my work easier." },
+      "ta": { "ja": "ひとりで ぜんぶ できた。", "en": "I was able to do everything by myself." },
+      "nai": { "ja": "きょうは じかんが なくて できない。", "en": "I cannot do it today because I do not have time." },
+      "pastNegative": { "ja": "むずかしくて、ひとりでは できなかった。", "en": "It was difficult, so I could not do it by myself." },
+      "ba": { "ja": "ひとりで できれば、せんせいに みせます。", "en": "If I can do it by myself, I will show it to the teacher." }
+    }, "enabled": true
+  }
+]
