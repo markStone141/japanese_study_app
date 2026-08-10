@@ -1,0 +1,63 @@
+[
+  {
+    "id": "katsuyou2-minna-shokyu-1-group-2-033", "sourceVerbId": "minna-shokyu-1-group-2-033", "verificationRequired": true,
+    "dictionary": "でる", "reading": "でる", "kanji": "出る", "meaning": "come out as change", "verb": { "group": 2, "groupName": "グループ2" },
+    "forms": { "masu": "でます", "te": "でて", "ta": "でた", "nai": "でない", "pastNegative": "でなかった", "potential": null, "ba": "でれば", "volitional": null, "causative": null },
+    "examples": {
+      "masu": { "ja": "この きかいから おつりが でます。", "en": "Change comes out of this machine." },
+      "te": { "ja": "おつりが でて、レシートも でました。", "en": "The change came out, and the receipt came out too." },
+      "ta": { "ja": "じどうはんばいきから おつりが でた。", "en": "Change came out of the vending machine." },
+      "nai": { "ja": "この きかいからは おつりが でない。", "en": "Change does not come out of this machine." },
+      "pastNegative": { "ja": "この きかいでは おつりが でなかった。", "en": "No change came out of this machine." },
+      "ba": { "ja": "おつりが でれば、さいふに いれます。", "en": "If change comes out, I will put it in my wallet." }
+    }, "enabled": true
+  },
+  {
+    "id": "katsuyou2-minna-shokyu-1-group-2-034", "sourceVerbId": "minna-shokyu-1-group-2-034", "verificationRequired": true,
+    "dictionary": "でる", "reading": "でる", "kanji": "出る", "meaning": "graduate from university", "verb": { "group": 2, "groupName": "グループ2" },
+    "forms": { "masu": "でます", "te": "でて", "ta": "でた", "nai": "でない", "pastNegative": "でなかった", "potential": "でられる", "ba": "でれば", "volitional": "でよう", "causative": "でさせる" },
+    "examples": {
+      "masu": { "ja": "だいがくを でます。", "en": "I graduate from university." },
+      "te": { "ja": "だいがくを でて、かいしゃに はいります。", "en": "I graduate from university and join a company." },
+      "ta": { "ja": "きょねん、だいがくを でた。", "en": "I graduated from university last year." },
+      "nai": { "ja": "まだ だいがくを でない。", "en": "I have not graduated from university yet." },
+      "pastNegative": { "ja": "あには きょねん だいがくを でなかった。", "en": "My older brother did not graduate from university last year." },
+      "potential": { "ja": "らいねん、だいがくを でられる。", "en": "I can graduate from university next year." },
+      "ba": { "ja": "だいがくを でれば、くにへ かえります。", "en": "When I graduate from university, I will return to my country." },
+      "volitional": { "ja": "がんばって、だいがくを でよう。", "en": "Let's work hard and graduate from university." },
+      "causative": { "ja": "りょうしんは むすこを だいがくまで でさせる。", "en": "The parents will put their son through university." }
+    }, "enabled": true
+  },
+  {
+    "id": "katsuyou2-minna-shokyu-1-group-2-035", "sourceVerbId": "minna-shokyu-1-group-2-035", "verificationRequired": true,
+    "dictionary": "でる", "reading": "でる", "kanji": "出る", "meaning": "get out of a bus", "verb": { "group": 2, "groupName": "グループ2" },
+    "forms": { "masu": "でます", "te": "でて", "ta": "でた", "nai": "でない", "pastNegative": "でなかった", "potential": "でられる", "ba": "でれば", "volitional": "でよう", "causative": "でさせる" },
+    "examples": {
+      "masu": { "ja": "つぎの ていりゅうじょで バスを でます。", "en": "I get off the bus at the next stop." },
+      "te": { "ja": "バスを でて、えきまで あるきます。", "en": "I get off the bus and walk to the station." },
+      "ta": { "ja": "えきまえで バスを でた。", "en": "I got off the bus in front of the station." },
+      "nai": { "ja": "ここでは バスを でない。", "en": "I will not get off the bus here." },
+      "pastNegative": { "ja": "つぎの ていりゅうじょでは バスを でなかった。", "en": "I did not get off the bus at the next stop." },
+      "potential": { "ja": "ドアが あけば、ここから バスを でられる。", "en": "When the door opens, I can get out of the bus here." },
+      "ba": { "ja": "つぎで バスを でれば、びょういんは すぐです。", "en": "If you get off the bus at the next stop, the hospital is close by." },
+      "volitional": { "ja": "つぎの ていりゅうじょで バスを でよう。", "en": "Let's get off the bus at the next stop." },
+      "causative": { "ja": "うんてんしゅは じょうきゃくを バスから でさせる。", "en": "The driver has the passengers get out of the bus." }
+    }, "enabled": true
+  },
+  {
+    "id": "katsuyou2-minna-shokyu-1-group-2-036", "sourceVerbId": "minna-shokyu-1-group-2-036", "verificationRequired": true,
+    "dictionary": "とめる", "reading": "とめる", "kanji": "止める", "meaning": "stop or park", "verb": { "group": 2, "groupName": "グループ2" },
+    "forms": { "masu": "とめます", "te": "とめて", "ta": "とめた", "nai": "とめない", "pastNegative": "とめなかった", "potential": "とめられる", "ba": "とめれば", "volitional": "とめよう", "causative": "とめさせる" },
+    "examples": {
+      "masu": { "ja": "ここに くるまを とめます。", "en": "I park the car here." },
+      "te": { "ja": "じてんしゃを とめて、みせに はいります。", "en": "I park my bicycle and enter the shop." },
+      "ta": { "ja": "えきの ちかくに くるまを とめた。", "en": "I parked the car near the station." },
+      "nai": { "ja": "ここには くるまを とめない。", "en": "I will not park the car here." },
+      "pastNegative": { "ja": "きのうは えきまえに くるまを とめなかった。", "en": "I did not park the car in front of the station yesterday." },
+      "potential": { "ja": "この ちゅうしゃじょうに くるまを とめられる。", "en": "You can park your car in this parking lot." },
+      "ba": { "ja": "ここに じてんしゃを とめれば、みせは ちかいです。", "en": "If you park your bicycle here, the shop is nearby." },
+      "volitional": { "ja": "あの ちゅうしゃじょうに くるまを とめよう。", "en": "Let's park the car in that parking lot." },
+      "causative": { "ja": "けいさつかんは うんてんしゅに くるまを とめさせる。", "en": "The police officer makes the driver stop the car." }
+    }, "enabled": true
+  }
+]
