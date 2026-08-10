@@ -1,0 +1,66 @@
+[
+  {
+    "id": "katsuyou2-minna-shokyu-1-group-2-001", "sourceVerbId": "minna-shokyu-1-group-2-001", "verificationRequired": true,
+    "dictionary": "あける", "reading": "あける", "kanji": "開ける", "meaning": "open", "verb": { "group": 2, "groupName": "グループ2" },
+    "forms": { "masu": "あけます", "te": "あけて", "ta": "あけた", "nai": "あけない", "pastNegative": "あけなかった", "potential": "あけられる", "ba": "あければ", "volitional": "あけよう", "causative": "あけさせる" },
+    "examples": {
+      "masu": { "ja": "あさ、へやの まどを あけます。", "en": "I open the window in my room in the morning." },
+      "te": { "ja": "まどを あけて、へやに かぜを いれます。", "en": "I open the window and let fresh air into the room." },
+      "ta": { "ja": "へやが あつかったから、まどを あけた。", "en": "The room was hot, so I opened the window." },
+      "nai": { "ja": "きょうは さむいから、まどを あけない。", "en": "It is cold today, so I will not open the window." },
+      "pastNegative": { "ja": "きのうは あめだったから、まどを あけなかった。", "en": "It rained yesterday, so I did not open the window." },
+      "potential": { "ja": "この まどは かるいから、こどもでも あけられる。", "en": "This window is light, so even a child can open it." },
+      "ba": { "ja": "まどを あければ、すずしい かぜが はいります。", "en": "If you open the window, cool air will come in." },
+      "volitional": { "ja": "へやが あついから、まどを あけよう。", "en": "The room is hot, so let's open the window." },
+      "causative": { "ja": "せんせいは まどの そばの がくせいに まどを あけさせる。", "en": "The teacher has the student by the window open it." }
+    }, "enabled": true
+  },
+  {
+    "id": "katsuyou2-minna-shokyu-1-group-2-002", "sourceVerbId": "minna-shokyu-1-group-2-002", "verificationRequired": true,
+    "dictionary": "あげる", "reading": "あげる", "kanji": "あげる", "meaning": "give", "verb": { "group": 2, "groupName": "グループ2" },
+    "forms": { "masu": "あげます", "te": "あげて", "ta": "あげた", "nai": "あげない", "pastNegative": "あげなかった", "potential": "あげられる", "ba": "あげれば", "volitional": "あげよう", "causative": "あげさせる" },
+    "examples": {
+      "masu": { "ja": "たんじょうびに、ともだちへ プレゼントを あげます。", "en": "I give my friend a present on their birthday." },
+      "te": { "ja": "いもうとに おかしを あげて、いっしょに たべました。", "en": "I gave my younger sister some sweets, and we ate them together." },
+      "ta": { "ja": "きのう、せんせいに おみやげを あげた。", "en": "Yesterday, I gave my teacher a souvenir." },
+      "nai": { "ja": "この しゃしんは たいせつだから、だれにも あげない。", "en": "This photo is important to me, so I will not give it to anyone." },
+      "pastNegative": { "ja": "ことしは ともだちに たんじょうびの プレゼントを あげなかった。", "en": "I did not give my friend a birthday present this year." },
+      "potential": { "ja": "あした あえるから、じぶんで ともだちに プレゼントを あげられる。", "en": "I can meet my friend tomorrow, so I can give them the present myself." },
+      "ba": { "ja": "この はなを あげれば、ははは きっと よろこびます。", "en": "If I give my mother these flowers, she will surely be happy." },
+      "volitional": { "ja": "この えほんは、いもうとに あげよう。", "en": "I will give this picture book to my younger sister." },
+      "causative": { "ja": "ははは こどもに、おばあさんへ プレゼントを あげさせる。", "en": "The mother has her child give a present to their grandmother." }
+    }, "enabled": true
+  },
+  {
+    "id": "katsuyou2-minna-shokyu-1-group-2-003", "sourceVerbId": "minna-shokyu-1-group-2-003", "verificationRequired": true,
+    "dictionary": "あつめる", "reading": "あつめる", "kanji": "集める", "meaning": "collect, gather", "verb": { "group": 2, "groupName": "グループ2" },
+    "forms": { "masu": "あつめます", "te": "あつめて", "ta": "あつめた", "nai": "あつめない", "pastNegative": "あつめなかった", "potential": "あつめられる", "ba": "あつめれば", "volitional": "あつめよう", "causative": "あつめさせる" },
+    "examples": {
+      "masu": { "ja": "りょこうへ いく まえに、まちの じょうほうを あつめます。", "en": "I gather information about the city before traveling." },
+      "te": { "ja": "しゃしんを あつめて、アルバムを つくります。", "en": "I collect photos and make an album." },
+      "ta": { "ja": "イベントの ために、みんなから はこを あつめた。", "en": "I collected boxes from everyone for the event." },
+      "nai": { "ja": "へやが せまいから、もう ふるい ざっしは あつめない。", "en": "My room is small, so I will not collect any more old magazines." },
+      "pastNegative": { "ja": "きのうは いそがしくて、レポートの しりょうを あつめなかった。", "en": "I was busy yesterday and did not gather materials for the report." },
+      "potential": { "ja": "インターネットを つかえば、ひつような じょうほうを はやく あつめられる。", "en": "If you use the internet, you can gather the necessary information quickly." },
+      "ba": { "ja": "みんなから しゃしんを あつめれば、きねんの アルバムが つくれます。", "en": "If we collect photos from everyone, we can make a commemorative album." },
+      "volitional": { "ja": "まず、レポートに ひつような しりょうを あつめよう。", "en": "First, let's gather the materials needed for the report." },
+      "causative": { "ja": "せんせいは がくせいに、まちの じょうほうを あつめさせる。", "en": "The teacher has the students gather information about the city." }
+    }, "enabled": true
+  },
+  {
+    "id": "katsuyou2-minna-shokyu-1-group-2-004", "sourceVerbId": "minna-shokyu-1-group-2-004", "verificationRequired": true,
+    "dictionary": "あびる（シャワーを）", "reading": "あびる", "kanji": "浴びる（シャワーを）", "meaning": "take a shower", "verb": { "group": 2, "groupName": "グループ2" },
+    "forms": { "masu": "あびます", "te": "あびて", "ta": "あびた", "nai": "あびない", "pastNegative": "あびなかった", "potential": "あびられる", "ba": "あびれば", "volitional": "あびよう", "causative": "あびさせる" },
+    "examples": {
+      "masu": { "ja": "まいあさ、しごとの まえに シャワーを あびます。", "en": "I take a shower every morning before work." },
+      "te": { "ja": "シャワーを あびて、きれいな ふくを きます。", "en": "I take a shower and put on clean clothes." },
+      "ta": { "ja": "うんどうの あとで、つめたい シャワーを あびた。", "en": "I took a cold shower after exercising." },
+      "nai": { "ja": "けさは じかんが ないから、シャワーを あびない。", "en": "I do not have time this morning, so I will not take a shower." },
+      "pastNegative": { "ja": "きのうは おふろに はいったから、シャワーを あびなかった。", "en": "I took a bath yesterday, so I did not take a shower." },
+      "potential": { "ja": "この ホテルでは、いつでも あたたかい シャワーを あびられる。", "en": "At this hotel, you can take a warm shower at any time." },
+      "ba": { "ja": "あさ シャワーを あびれば、すっきりします。", "en": "If I take a shower in the morning, I feel refreshed." },
+      "volitional": { "ja": "たくさん あせを かいたから、シャワーを あびよう。", "en": "I sweated a lot, so I will take a shower." },
+      "causative": { "ja": "ははは どろんこの こどもに、シャワーを あびさせる。", "en": "The mother has her muddy child take a shower." }
+    }, "enabled": true
+  }
+]

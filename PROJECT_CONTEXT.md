@@ -286,6 +286,7 @@ For `やくにたつ`, causative `やくにたたせる` is `deferred`, stored a
 
 ### Current work
 - Evidence-first batch 17 completed source ID 081, `わたる（はしを）`, with all five advanced forms and 5 advanced bilingual examples in `data/katsuyou2/part-20.json`. This completes the remaining reviewed-example gap in the Group 1 source list. Both quiz and review loaders include `part-20.json`. Full ledger: `docs/KATSUYOU2_BATCH17_2026-08-10.md`.
+- Evidence-first batch 18 starts Group 2 with source IDs 001-004: `あける`, `あげる`, `あつめる`, and `あびる（シャワーを）`. All five advanced forms are valid, adding 20 advanced bilingual examples in `data/katsuyou2/part-21.json`. Both quiz and review loaders include `part-21.json`. Full ledger: `docs/KATSUYOU2_BATCH18_2026-08-10.md`.
 - Continue the dictionary / actual-usage audit together with example creation rather than as a separate later pass.
 - Every new batch must create/update `form-verification.json` before example data is accepted.
 - Existing pre-policy curated entries will be migrated through the same evidence ledger incrementally; do not claim all legacy advanced forms are externally verified yet.
