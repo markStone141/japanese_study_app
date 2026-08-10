@@ -1,0 +1,63 @@
+[
+  {
+    "id": "katsuyou2-minna-shokyu-1-group-2-021", "sourceVerbId": "minna-shokyu-1-group-2-021", "verificationRequired": true,
+    "dictionary": "きる", "reading": "きる", "kanji": "着る", "meaning": "put on (a shirt, etc.)", "verb": { "group": 2, "groupName": "グループ2" },
+    "forms": { "masu": "きます", "te": "きて", "ta": "きた", "nai": "きない", "pastNegative": "きなかった", "potential": "きられる", "ba": "きれば", "volitional": "きよう", "causative": "きさせる" },
+    "examples": {
+      "masu": { "ja": "しろい シャツを きます。", "en": "I put on a white shirt." },
+      "te": { "ja": "コートを きて、そとへ でます。", "en": "I put on a coat and go outside." },
+      "ta": { "ja": "きのうは スーツを きた。", "en": "Yesterday, I wore a suit." },
+      "nai": { "ja": "きょうは ジャケットを きない。", "en": "I will not wear a jacket today." },
+      "pastNegative": { "ja": "きのうは あつかったから、コートを きなかった。", "en": "It was hot yesterday, so I did not wear a coat." },
+      "potential": { "ja": "この サイズなら、わたしも きられる。", "en": "If it is this size, I can wear it too." },
+      "ba": { "ja": "あつい コートを きれば、そとでも さむくないです。", "en": "If you wear a warm coat, you will not be cold outside." },
+      "volitional": { "ja": "きょうは この あおい シャツを きよう。", "en": "I will wear this blue shirt today." },
+      "causative": { "ja": "さむいから、ははは こどもに コートを きさせる。", "en": "Because it is cold, the mother makes her child wear a coat." }
+    }, "enabled": true
+  },
+  {
+    "id": "katsuyou2-minna-shokyu-1-group-2-022", "sourceVerbId": "minna-shokyu-1-group-2-022", "verificationRequired": true,
+    "dictionary": "きをつける", "reading": "きをつける", "kanji": "気を付ける", "meaning": "pay attention, take care", "verb": { "group": 2, "groupName": "グループ2" },
+    "forms": { "masu": "きをつけます", "te": "きをつけて", "ta": "きをつけた", "nai": "きをつけない", "pastNegative": "きをつけなかった", "potential": "きをつけられる", "ba": "きをつければ", "volitional": "きをつけよう", "causative": "きをつけさせる" },
+    "examples": {
+      "masu": { "ja": "くるまに きをつけます。", "en": "I watch out for cars." },
+      "te": { "ja": "あしもとに きをつけて、あるいてください。", "en": "Please watch your step while walking." },
+      "ta": { "ja": "くらい みちで、くるまに きをつけた。", "en": "I watched out for cars on the dark road." },
+      "nai": { "ja": "いそいでいると、まわりに きをつけない。", "en": "When I am in a hurry, I do not pay attention to my surroundings." },
+      "pastNegative": { "ja": "けさは いそいでいて、あしもとに きをつけなかった。", "en": "I was in a hurry this morning and did not watch my step." },
+      "potential": { "ja": "ゆっくり あるけば、まわりに きをつけられる。", "en": "If I walk slowly, I can pay attention to my surroundings." },
+      "ba": { "ja": "くるまに きをつければ、あんぜんに あるけます。", "en": "If you watch out for cars, you can walk safely." },
+      "volitional": { "ja": "つぎは もっと きをつけよう。", "en": "I will be more careful next time." },
+      "causative": { "ja": "ははは こどもに くるまに きをつけさせる。", "en": "The mother makes her child watch out for cars." }
+    }, "enabled": true
+  },
+  {
+    "id": "katsuyou2-minna-shokyu-1-group-2-023", "sourceVerbId": "minna-shokyu-1-group-2-023", "verificationRequired": true,
+    "dictionary": "くれる", "reading": "くれる", "kanji": "呉れる", "meaning": "give (me)", "verb": { "group": 2, "groupName": "グループ2" },
+    "forms": { "masu": "くれます", "te": "くれて", "ta": "くれた", "nai": "くれない", "pastNegative": "くれなかった", "potential": null, "ba": "くれれば", "volitional": null, "causative": null },
+    "examples": {
+      "masu": { "ja": "ともだちが わたしに ほんを くれます。", "en": "My friend gives me a book." },
+      "te": { "ja": "せんせいが アドバイスを くれて、たすかりました。", "en": "My teacher gave me advice, which helped me." },
+      "ta": { "ja": "ちちは とけいを くれた。", "en": "My father gave me a watch." },
+      "nai": { "ja": "かれは なにも くれない。", "en": "He does not give me anything." },
+      "pastNegative": { "ja": "あには たんじょうびに なにも くれなかった。", "en": "My older brother did not give me anything for my birthday." },
+      "ba": { "ja": "ともだちが ちずを くれれば、みちが わかります。", "en": "If my friend gives me a map, I will know the way." }
+    }, "enabled": true
+  },
+  {
+    "id": "katsuyou2-minna-shokyu-1-group-2-024", "sourceVerbId": "minna-shokyu-1-group-2-024", "verificationRequired": true,
+    "dictionary": "しめる", "reading": "しめる", "kanji": "閉める", "meaning": "close, shut", "verb": { "group": 2, "groupName": "グループ2" },
+    "forms": { "masu": "しめます", "te": "しめて", "ta": "しめた", "nai": "しめない", "pastNegative": "しめなかった", "potential": "しめられる", "ba": "しめれば", "volitional": "しめよう", "causative": "しめさせる" },
+    "examples": {
+      "masu": { "ja": "ドアを しめます。", "en": "I close the door." },
+      "te": { "ja": "まどを しめて、エアコンを つけます。", "en": "I close the window and turn on the air conditioner." },
+      "ta": { "ja": "さいごに みせの ドアを しめた。", "en": "I closed the shop door last." },
+      "nai": { "ja": "まだ まどを しめない。", "en": "I will not close the window yet." },
+      "pastNegative": { "ja": "あつかったから、へやの まどを しめなかった。", "en": "It was hot, so I did not close the room's window." },
+      "potential": { "ja": "この ドアは かるいから、こどもでも しめられる。", "en": "This door is light, so even a child can close it." },
+      "ba": { "ja": "まどを しめれば、へやが しずかに なります。", "en": "If you close the window, the room will become quiet." },
+      "volitional": { "ja": "かぜが つよいから、まどを しめよう。", "en": "The wind is strong, so let's close the window." },
+      "causative": { "ja": "せんせいは さいごの がくせいに きょうしつの ドアを しめさせる。", "en": "The teacher has the last student close the classroom door." }
+    }, "enabled": true
+  }
+]
