@@ -5,6 +5,7 @@ const html = fs.readFileSync("katsuyou2.html", "utf8");
 const indexHtml = fs.readFileSync("index.html", "utf8");
 const css = fs.readFileSync("katsuyou2.css", "utf8");
 const js = fs.readFileSync("katsuyou2.js", "utf8");
+const reviewJs = fs.readFileSync("katsuyou2-review.js", "utf8");
 const resultIndex = html.indexOf('id="result"');
 const buttonsIndex = html.indexOf('class="button-row"');
 assert.ok(resultIndex !== -1, "katsuyou2.html must contain #result");
@@ -36,6 +37,17 @@ assert.match(js, /event\.isComposing/,
   "Enter handling must not submit while a Japanese IME composition is still active");
 assert.match(js, /state\.answered\s*\?\s*nextQuestion\(\)\s*:\s*checkAnswer\(\)/,
   "Enter must check the current answer, then advance after feedback is shown");
+
+// Every curated batch must be loaded by both the quiz and review pages.
+const curatedParts = fs.readdirSync("data/katsuyou2")
+  .map((name) => name.match(/^part-(\d+)\.json$/)?.[1])
+  .filter(Boolean)
+  .map(Number);
+const latestCuratedPart = Math.max(...curatedParts);
+for (const [filename, source] of [["katsuyou2.js", js], ["katsuyou2-review.js", reviewJs]]) {
+  assert.match(source, new RegExp(`\\b${latestCuratedPart}\\b`),
+    `${filename} must load the latest curated data part-${latestCuratedPart}.json`);
+}
 
 const advanced = JSON.parse(fs.readFileSync("data/katsuyou2/advanced-examples.json", "utf8"));
 const overrides = JSON.parse(fs.readFileSync("data/content-review-overrides.json", "utf8"));

@@ -1,0 +1,63 @@
+[
+  {
+    "id": "katsuyou2-minna-shokyu-1-group-2-009", "sourceVerbId": "minna-shokyu-1-group-2-009", "verificationRequired": true,
+    "dictionary": "うまれる", "reading": "うまれる", "kanji": "生まれる", "meaning": "be born", "verb": { "group": 2, "groupName": "グループ2" },
+    "forms": { "masu": "うまれます", "te": "うまれて", "ta": "うまれた", "nai": "うまれない", "pastNegative": "うまれなかった", "potential": null, "ba": "うまれれば", "volitional": null, "causative": null },
+    "examples": {
+      "masu": { "ja": "あかちゃんは らいげつ うまれます。", "en": "The baby will be born next month." },
+      "te": { "ja": "とうきょうで うまれて、よこはまで そだちました。", "en": "I was born in Tokyo and grew up in Yokohama." },
+      "ta": { "ja": "わたしは 1989ねんに うまれた。", "en": "I was born in 1989." },
+      "nai": { "ja": "あかちゃんは まだ うまれない。", "en": "The baby will not be born yet." },
+      "pastNegative": { "ja": "よていの ひには、あかちゃんは うまれなかった。", "en": "The baby was not born on the expected day." },
+      "ba": { "ja": "あかちゃんが うまれれば、かぞくが ひとり ふえます。", "en": "When the baby is born, our family will gain one more member." }
+    }, "enabled": true
+  },
+  {
+    "id": "katsuyou2-minna-shokyu-1-group-2-010", "sourceVerbId": "minna-shokyu-1-group-2-010", "verificationRequired": true,
+    "dictionary": "おきる", "reading": "おきる", "kanji": "起きる", "meaning": "get up, wake up", "verb": { "group": 2, "groupName": "グループ2" },
+    "forms": { "masu": "おきます", "te": "おきて", "ta": "おきた", "nai": "おきない", "pastNegative": "おきなかった", "potential": "おきられる", "ba": "おきれば", "volitional": "おきよう", "causative": "おきさせる" },
+    "examples": {
+      "masu": { "ja": "まいあさ 6じに おきます。", "en": "I get up at six every morning." },
+      "te": { "ja": "はやく おきて、さんぽします。", "en": "I get up early and take a walk." },
+      "ta": { "ja": "きょうは 7じに おきた。", "en": "I got up at seven today." },
+      "nai": { "ja": "にちようびは はやく おきない。", "en": "I do not get up early on Sundays." },
+      "pastNegative": { "ja": "けさは めざましどけいが ならなくて、6じに おきなかった。", "en": "My alarm clock did not ring this morning, so I did not get up at six." },
+      "potential": { "ja": "きょうは はやく ねるから、あしたは 6じに おきられる。", "en": "I am going to bed early today, so I can get up at six tomorrow." },
+      "ba": { "ja": "6じに おきれば、あさごはんを ゆっくり たべられます。", "en": "If I get up at six, I can eat breakfast without rushing." },
+      "volitional": { "ja": "あしたは りょこうだから、5じに おきよう。", "en": "I am traveling tomorrow, so I will get up at five." },
+      "causative": { "ja": "ははは しあいに いく こどもを 6じに おきさせる。", "en": "The mother makes her child get up at six to go to the game." }
+    }, "enabled": true
+  },
+  {
+    "id": "katsuyou2-minna-shokyu-1-group-2-011", "sourceVerbId": "minna-shokyu-1-group-2-011", "verificationRequired": true,
+    "dictionary": "おしえる", "reading": "おしえる", "kanji": "教える", "meaning": "teach", "verb": { "group": 2, "groupName": "グループ2" },
+    "forms": { "masu": "おしえます", "te": "おしえて", "ta": "おしえた", "nai": "おしえない", "pastNegative": "おしえなかった", "potential": "おしえられる", "ba": "おしえれば", "volitional": "おしえよう", "causative": "おしえさせる" },
+    "examples": {
+      "masu": { "ja": "せんせいは にほんごを おしえます。", "en": "The teacher teaches Japanese." },
+      "te": { "ja": "ともだちに かんじを おしえて、いっしょに れんしゅうします。", "en": "I teach my friend kanji, and we practice together." },
+      "ta": { "ja": "きのう、いもうとに えいごを おしえた。", "en": "Yesterday, I taught my younger sister English." },
+      "nai": { "ja": "まだ こたえは おしえない。", "en": "I will not tell you the answer yet." },
+      "pastNegative": { "ja": "きのうは じかんが なくて、いもうとに えいごを おしえなかった。", "en": "I did not have time yesterday, so I did not teach my younger sister English." },
+      "potential": { "ja": "この かんじなら、わたしも こどもに おしえられる。", "en": "I can teach this kanji to a child too." },
+      "ba": { "ja": "えを つかって おしえれば、こどもにも わかります。", "en": "If you teach it using pictures, children can understand it too." },
+      "volitional": { "ja": "きょうは いもうとに ひらがなを おしえよう。", "en": "I will teach my younger sister hiragana today." },
+      "causative": { "ja": "せんせいは じょうずな がくせいに、みんなへ かんじを おしえさせる。", "en": "The teacher has a skilled student teach kanji to everyone." }
+    }, "enabled": true
+  },
+  {
+    "id": "katsuyou2-minna-shokyu-1-group-2-012", "sourceVerbId": "minna-shokyu-1-group-2-012", "verificationRequired": true,
+    "dictionary": "おしえる", "reading": "おしえる", "kanji": "教える", "meaning": "tell [an address]", "verb": { "group": 2, "groupName": "グループ2" },
+    "forms": { "masu": "おしえます", "te": "おしえて", "ta": "おしえた", "nai": "おしえない", "pastNegative": "おしえなかった", "potential": "おしえられる", "ba": "おしえれば", "volitional": "おしえよう", "causative": "おしえさせる" },
+    "examples": {
+      "masu": { "ja": "ともだちに じゅうしょを おしえます。", "en": "I tell my friend my address." },
+      "te": { "ja": "でんわばんごうを おしえて、れんらくを まちます。", "en": "I give my phone number and wait to be contacted." },
+      "ta": { "ja": "えきいんに みちを おしえた。", "en": "I told the station employee how to get there." },
+      "nai": { "ja": "しらない ひとに じゅうしょを おしえない。", "en": "I do not tell strangers my address." },
+      "pastNegative": { "ja": "ひっこしの まえだったから、ともだちに あたらしい じゅうしょを おしえなかった。", "en": "It was before my move, so I did not give my friend my new address." },
+      "potential": { "ja": "ちずが あるから、えきからの みちを おしえられる。", "en": "I have a map, so I can tell you the way from the station." },
+      "ba": { "ja": "でんわばんごうを おしえれば、あとで れんらくが きます。", "en": "If you give them your phone number, they will contact you later." },
+      "volitional": { "ja": "ホテルが きまったから、ともだちに じゅうしょを おしえよう。", "en": "The hotel is decided, so I will tell my friend its address." },
+      "causative": { "ja": "ははは こどもに、りょこうの ひとへ えきまでの みちを おしえさせる。", "en": "The mother has her child tell a traveler the way to the station." }
+    }, "enabled": true
+  }
+]
