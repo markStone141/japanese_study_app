@@ -15,7 +15,9 @@
     "audit:content": "node scripts/audit-content.mjs",
     "test:katsuyou2": "node scripts/validate-katsuyou2.mjs",
     "test:katsuyou2-ui": "node scripts/test-katsuyou2-ui.mjs",
-    "test:form-verification": "node scripts/validate-form-verification.mjs"
+    "test:form-verification": "node scripts/validate-form-verification.mjs",
+    "progress:update": "node scripts/update-progress.mjs",
+    "progress:check": "node scripts/update-progress.mjs --check"
   },
   "dependencies": {
     "firebase-admin": "^12.7.0"

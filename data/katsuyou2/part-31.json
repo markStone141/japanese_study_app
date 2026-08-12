@@ -1,0 +1,66 @@
+[
+  {
+    "id": "katsuyou2-minna-shokyu-1-group-2-041", "sourceVerbId": "minna-shokyu-1-group-2-041", "verificationRequired": true,
+    "dictionary": "みせる", "reading": "みせる", "kanji": "見せる", "meaning": "show", "verb": { "group": 2, "groupName": "グループ2" },
+    "forms": { "masu": "みせます", "te": "みせて", "ta": "みせた", "nai": "みせない", "pastNegative": "みせなかった", "potential": "みせられる", "ba": "みせれば", "volitional": "みせよう", "causative": "みせさせる" },
+    "examples": {
+      "masu": { "ja": "うけつけで パスポートを みせます。", "en": "I show my passport at reception." },
+      "te": { "ja": "パスポートを みせて、なかに はいります。", "en": "I show my passport and go inside." },
+      "ta": { "ja": "せんせいに しゅくだいを みせた。", "en": "I showed my homework to the teacher." },
+      "nai": { "ja": "まだ だれにも みせない。", "en": "I will not show it to anyone yet." },
+      "pastNegative": { "ja": "きのうは しゃしんを だれにも みせなかった。", "en": "I did not show the photo to anyone yesterday." },
+      "potential": { "ja": "この しゃしんなら みんなに みせられる。", "en": "I can show this photo to everyone." },
+      "ba": { "ja": "この けんを みせれば、なかに はいれます。", "en": "If you show this ticket, you can go inside." },
+      "volitional": { "ja": "できた えを かぞくに みせよう。", "en": "I will show the finished picture to my family." },
+      "causative": { "ja": "せんせいは がくせいに かいた ぶんを みせさせる。", "en": "The teacher has the students show the sentences they wrote." }
+    }, "enabled": true
+  },
+  {
+    "id": "katsuyou2-minna-shokyu-1-group-2-042", "sourceVerbId": "minna-shokyu-1-group-2-042", "verificationRequired": true,
+    "dictionary": "みる", "reading": "みる", "kanji": "見る", "meaning": "see, look at, watch", "verb": { "group": 2, "groupName": "グループ2" },
+    "forms": { "masu": "みます", "te": "みて", "ta": "みた", "nai": "みない", "pastNegative": "みなかった", "potential": "みられる", "ba": "みれば", "volitional": "みよう", "causative": "みさせる" },
+    "examples": {
+      "masu": { "ja": "まいばん ニュースを みます。", "en": "I watch the news every night." },
+      "te": { "ja": "ちずを みて、みちを かくにんします。", "en": "I look at the map and check the route." },
+      "ta": { "ja": "きのう、えいがを みた。", "en": "Yesterday, I watched a movie." },
+      "nai": { "ja": "きょうは テレビを みない。", "en": "I will not watch television today." },
+      "pastNegative": { "ja": "きのうは ニュースを みなかった。", "en": "I did not watch the news yesterday." },
+      "potential": { "ja": "この へやから うみが みられる。", "en": "You can see the sea from this room." },
+      "ba": { "ja": "この ちずを みれば、えきの ばしょが わかります。", "en": "If you look at this map, you will know where the station is." },
+      "volitional": { "ja": "あした、びじゅつかんで えを みよう。", "en": "Let's look at paintings at the art museum tomorrow." },
+      "causative": { "ja": "ははは こどもに すきな アニメを みさせる。", "en": "The mother lets her child watch a favorite cartoon." }
+    }, "enabled": true
+  },
+  {
+    "id": "katsuyou2-minna-shokyu-1-group-2-043", "sourceVerbId": "minna-shokyu-1-group-2-043", "verificationRequired": true,
+    "dictionary": "むかえる", "reading": "むかえる", "kanji": "迎える", "meaning": "go to meet, welcome", "verb": { "group": 2, "groupName": "グループ2" },
+    "forms": { "masu": "むかえます", "te": "むかえて", "ta": "むかえた", "nai": "むかえない", "pastNegative": "むかえなかった", "potential": "むかえられる", "ba": "むかえれば", "volitional": "むかえよう", "causative": "むかえさせる" },
+    "examples": {
+      "masu": { "ja": "えきで ともだちを むかえます。", "en": "I meet my friend at the station." },
+      "te": { "ja": "くうこうで かぞくを むかえて、ホテルへ いきます。", "en": "I meet my family at the airport and go to the hotel." },
+      "ta": { "ja": "きのう、えきで ちちを むかえた。", "en": "Yesterday, I met my father at the station." },
+      "nai": { "ja": "きょうは だれも むかえない。", "en": "I will not meet anyone today." },
+      "pastNegative": { "ja": "きのうは えきで ともだちを むかえなかった。", "en": "I did not meet my friend at the station yesterday." },
+      "potential": { "ja": "5じなら えきで かぞくを むかえられる。", "en": "I can meet my family at the station at five." },
+      "ba": { "ja": "えきで むかえれば、ともだちは あんしんします。", "en": "If you meet your friend at the station, your friend will feel at ease." },
+      "volitional": { "ja": "いっしょに くうこうで かぞくを むかえよう。", "en": "Let's meet our family at the airport together." },
+      "causative": { "ja": "ぶちょうは たなかさんに くうこうで おきゃくさんを むかえさせる。", "en": "The manager has Mr. Tanaka meet the guest at the airport." }
+    }, "enabled": true
+  },
+  {
+    "id": "katsuyou2-minna-shokyu-1-group-2-044", "sourceVerbId": "minna-shokyu-1-group-2-044", "verificationRequired": true,
+    "dictionary": "やめる", "reading": "やめる", "kanji": "辞める", "meaning": "quit or retire from [a company]", "verb": { "group": 2, "groupName": "グループ2" },
+    "forms": { "masu": "やめます", "te": "やめて", "ta": "やめた", "nai": "やめない", "pastNegative": "やめなかった", "potential": "やめられる", "ba": "やめれば", "volitional": "やめよう", "causative": "やめさせる" },
+    "examples": {
+      "masu": { "ja": "らいげつ かいしゃを やめます。", "en": "I will leave the company next month." },
+      "te": { "ja": "しごとを やめて、あたらしい べんきょうを はじめます。", "en": "I quit my job and begin studying something new." },
+      "ta": { "ja": "きょねん、かいしゃを やめた。", "en": "I left the company last year." },
+      "nai": { "ja": "いまの しごとは まだ やめない。", "en": "I will not quit my current job yet." },
+      "pastNegative": { "ja": "きょねんは かいしゃを やめなかった。", "en": "I did not leave the company last year." },
+      "potential": { "ja": "つぎの しごとが きまったら、いまの かいしゃを やめられる。", "en": "When my next job is decided, I can leave my current company." },
+      "ba": { "ja": "いまの しごとを やめれば、じかんが できます。", "en": "If I quit my current job, I will have more time." },
+      "volitional": { "ja": "ことしで この かいしゃを やめよう。", "en": "I will leave this company at the end of this year." },
+      "causative": { "ja": "しゃちょうは ぶちょうに その しごとを やめさせる。", "en": "The company president makes the manager stop that work." }
+    }, "enabled": true
+  }
+]
