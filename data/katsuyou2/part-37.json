@@ -1,0 +1,66 @@
+[
+  {
+    "id": "katsuyou2-minna-shokyu-1-group-3-021", "sourceVerbId": "minna-shokyu-1-group-3-021", "verificationRequired": true,
+    "dictionary": "でんわする", "reading": "でんわする", "kanji": "電話する", "meaning": "phone", "verb": { "group": 3, "groupName": "グループ3" },
+    "forms": { "masu": "でんわします", "te": "でんわして", "ta": "でんわした", "nai": "でんわしない", "pastNegative": "でんわしなかった", "potential": "でんわできる", "ba": "でんわすれば", "volitional": "でんわしよう", "causative": "でんわさせる" },
+    "examples": {
+      "masu": { "ja": "あとで ははに でんわします。", "en": "I will call my mother later." },
+      "te": { "ja": "びょういんに でんわして、よやくします。", "en": "I call the hospital and make an appointment." },
+      "ta": { "ja": "きのう、ともだちに でんわした。", "en": "Yesterday, I called my friend." },
+      "nai": { "ja": "よる おそくには でんわしない。", "en": "I do not call late at night." },
+      "pastNegative": { "ja": "きのうは いそがしくて、かぞくに でんわしなかった。", "en": "I was busy yesterday and did not call my family." },
+      "potential": { "ja": "この へやなら、しずかに でんわできる。", "en": "I can make a phone call quietly in this room." },
+      "ba": { "ja": "ホテルに でんわすれば、へやを よやくできます。", "en": "If you call the hotel, you can reserve a room." },
+      "volitional": { "ja": "えきに ついたら、ちちに でんわしよう。", "en": "I will call my father when I arrive at the station." },
+      "causative": { "ja": "ぶちょうは たなかさんに おきゃくさんへ でんわさせる。", "en": "The manager has Mr. Tanaka call the customer." }
+    }, "enabled": true
+  },
+  {
+    "id": "katsuyou2-minna-shokyu-1-group-3-022", "sourceVerbId": "minna-shokyu-1-group-3-022", "verificationRequired": true,
+    "dictionary": "べんきょうする", "reading": "べんきょうする", "kanji": "勉強する", "meaning": "study", "verb": { "group": 3, "groupName": "グループ3" },
+    "forms": { "masu": "べんきょうします", "te": "べんきょうして", "ta": "べんきょうした", "nai": "べんきょうしない", "pastNegative": "べんきょうしなかった", "potential": "べんきょうできる", "ba": "べんきょうすれば", "volitional": "べんきょうしよう", "causative": "べんきょうさせる" },
+    "examples": {
+      "masu": { "ja": "まいにち にほんごを べんきょうします。", "en": "I study Japanese every day." },
+      "te": { "ja": "ぶんぽうを べんきょうして、れんしゅうもんだいを します。", "en": "I study grammar and do practice exercises." },
+      "ta": { "ja": "きのう、3じかん べんきょうした。", "en": "Yesterday, I studied for three hours." },
+      "nai": { "ja": "きょうは べんきょうしない。", "en": "I will not study today." },
+      "pastNegative": { "ja": "せんしゅうは かんじを べんきょうしなかった。", "en": "I did not study kanji last week." },
+      "potential": { "ja": "としょかんでは、しずかに べんきょうできる。", "en": "I can study quietly at the library." },
+      "ba": { "ja": "まいにち べんきょうすれば、にほんごが じょうずに なります。", "en": "If you study every day, your Japanese will improve." },
+      "volitional": { "ja": "テストの まえに、いっしょに べんきょうしよう。", "en": "Let's study together before the test." },
+      "causative": { "ja": "せんせいは がくせいに この かんじを べんきょうさせる。", "en": "The teacher has the students study this kanji." }
+    }, "enabled": true
+  },
+  {
+    "id": "katsuyou2-minna-shokyu-1-group-3-023", "sourceVerbId": "minna-shokyu-1-group-3-023", "verificationRequired": true,
+    "dictionary": "もってくる", "reading": "もってくる", "kanji": "持って来る", "meaning": "bring something", "verb": { "group": 3, "groupName": "グループ3" },
+    "forms": { "masu": "もってきます", "te": "もってきて", "ta": "もってきた", "nai": "もってこない", "pastNegative": "もってこなかった", "potential": "もってこられる", "ba": "もってくれば", "volitional": "もってこよう", "causative": "もってこさせる" },
+    "examples": {
+      "masu": { "ja": "あした、じしょを もってきます。", "en": "I will bring a dictionary tomorrow." },
+      "te": { "ja": "ここに いすを もってきてください。", "en": "Please bring a chair here." },
+      "ta": { "ja": "ともだちが ケーキを もってきた。", "en": "My friend brought a cake." },
+      "nai": { "ja": "きょうは パソコンを もってこない。", "en": "I will not bring my computer today." },
+      "pastNegative": { "ja": "たなかさんは かいぎに しりょうを もってこなかった。", "en": "Mr. Tanaka did not bring the documents to the meeting." },
+      "potential": { "ja": "あしたなら、この つくえを きょうしつに もってこられる。", "en": "I can bring this desk to the classroom tomorrow." },
+      "ba": { "ja": "おべんとうを もってくれば、こうえんで たべられます。", "en": "If you bring a boxed lunch, you can eat it in the park." },
+      "volitional": { "ja": "つぎの かいぎには、パソコンも もってこよう。", "en": "I will bring my computer to the next meeting too." },
+      "causative": { "ja": "せんせいは がくせいに じしょを きょうしつへ もってこさせる。", "en": "The teacher has the student bring a dictionary to the classroom." }
+    }, "enabled": true
+  },
+  {
+    "id": "katsuyou2-minna-shokyu-1-group-3-024", "sourceVerbId": "minna-shokyu-1-group-3-024", "verificationRequired": true,
+    "dictionary": "よやくする", "reading": "よやくする", "kanji": "予約する", "meaning": "reserve, book", "verb": { "group": 3, "groupName": "グループ3" },
+    "forms": { "masu": "よやくします", "te": "よやくして", "ta": "よやくした", "nai": "よやくしない", "pastNegative": "よやくしなかった", "potential": "よやくできる", "ba": "よやくすれば", "volitional": "よやくしよう", "causative": "よやくさせる" },
+    "examples": {
+      "masu": { "ja": "ホテルを よやくします。", "en": "I will book a hotel." },
+      "te": { "ja": "レストランを よやくして、かぞくと いきます。", "en": "I reserve a restaurant and go there with my family." },
+      "ta": { "ja": "きのう、ひこうきの チケットを よやくした。", "en": "Yesterday, I booked a plane ticket." },
+      "nai": { "ja": "まだ ホテルを よやくしない。", "en": "I will not book the hotel yet." },
+      "pastNegative": { "ja": "こんしゅうの どようびは レストランを よやくしなかった。", "en": "I did not reserve a restaurant for this Saturday." },
+      "potential": { "ja": "この サイトでは、ひこうきと ホテルを いっしょに よやくできる。", "en": "On this website, you can book a flight and hotel together." },
+      "ba": { "ja": "いま よやくすれば、まどの ちかくの せきが とれます。", "en": "If you reserve now, you can get a seat near the window." },
+      "volitional": { "ja": "なつやすみの ひこうきは、きょう よやくしよう。", "en": "Let's book our summer vacation flight today." },
+      "causative": { "ja": "ぶちょうは たなかさんに かいぎしつを よやくさせる。", "en": "The manager has Mr. Tanaka reserve a meeting room." }
+    }, "enabled": true
+  }
+]
