@@ -1,0 +1,66 @@
+[
+  {
+    "id": "katsuyou2-minna-shokyu-1-group-3-017", "sourceVerbId": "minna-shokyu-1-group-3-017", "verificationRequired": true,
+    "dictionary": "せつめいする", "reading": "せつめいする", "kanji": "説明する", "meaning": "explain", "verb": { "group": 3, "groupName": "グループ3" },
+    "forms": { "masu": "せつめいします", "te": "せつめいして", "ta": "せつめいした", "nai": "せつめいしない", "pastNegative": "せつめいしなかった", "potential": "せつめいできる", "ba": "せつめいすれば", "volitional": "せつめいしよう", "causative": "せつめいさせる" },
+    "examples": {
+      "masu": { "ja": "せんせいが ぶんぽうを せつめいします。", "en": "The teacher explains the grammar." },
+      "te": { "ja": "つかいかたを せつめいして、みせます。", "en": "I explain how to use it and demonstrate it." },
+      "ta": { "ja": "きのう、ルールを せつめいした。", "en": "Yesterday, I explained the rules." },
+      "nai": { "ja": "いまは りゆうを せつめいしない。", "en": "I will not explain the reason now." },
+      "pastNegative": { "ja": "きのうの かいぎでは あたらしい ルールを せつめいしなかった。", "en": "I did not explain the new rules at yesterday's meeting." },
+      "potential": { "ja": "この えが あれば、みちを かんたんに せつめいできる。", "en": "With this picture, I can explain the route easily." },
+      "ba": { "ja": "じゅんばんに せつめいすれば、みんなが わかります。", "en": "If you explain it in order, everyone will understand." },
+      "volitional": { "ja": "つぎは わたしが この きかいの つかいかたを せつめいしよう。", "en": "Next, I will explain how to use this machine." },
+      "causative": { "ja": "せんせいは がくせいに こたえを せつめいさせる。", "en": "The teacher has the student explain the answer." }
+    }, "enabled": true
+  },
+  {
+    "id": "katsuyou2-minna-shokyu-1-group-3-018", "sourceVerbId": "minna-shokyu-1-group-3-018", "verificationRequired": true,
+    "dictionary": "せんたくする", "reading": "せんたくする", "kanji": "洗濯する", "meaning": "wash clothes", "verb": { "group": 3, "groupName": "グループ3" },
+    "forms": { "masu": "せんたくします", "te": "せんたくして", "ta": "せんたくした", "nai": "せんたくしない", "pastNegative": "せんたくしなかった", "potential": "せんたくできる", "ba": "せんたくすれば", "volitional": "せんたくしよう", "causative": "せんたくさせる" },
+    "examples": {
+      "masu": { "ja": "まいあさ ふくを せんたくします。", "en": "I wash clothes every morning." },
+      "te": { "ja": "シャツを せんたくして、そとに ほします。", "en": "I wash the shirts and hang them outside." },
+      "ta": { "ja": "きのう、シーツを せんたくした。", "en": "Yesterday, I washed the sheets." },
+      "nai": { "ja": "きょうは せんたくしない。", "en": "I will not do laundry today." },
+      "pastNegative": { "ja": "きのうは あめで、せんたくしなかった。", "en": "It rained yesterday, so I did not do laundry." },
+      "potential": { "ja": "この せんたくきなら、もうふも せんたくできる。", "en": "This washing machine can wash blankets too." },
+      "ba": { "ja": "あさ せんたくすれば、ひるまでに かわきます。", "en": "If you do the laundry in the morning, it will dry by noon." },
+      "volitional": { "ja": "てんきが いいから、きょうは シーツを せんたくしよう。", "en": "The weather is nice, so let's wash the sheets today." },
+      "causative": { "ja": "ははは むすこに じぶんの シャツを せんたくさせる。", "en": "The mother has her son wash his own shirts." }
+    }, "enabled": true
+  },
+  {
+    "id": "katsuyou2-minna-shokyu-1-group-3-019", "sourceVerbId": "minna-shokyu-1-group-3-019", "verificationRequired": true,
+    "dictionary": "そうじする", "reading": "そうじする", "kanji": "掃除する", "meaning": "clean a room", "verb": { "group": 3, "groupName": "グループ3" },
+    "forms": { "masu": "そうじします", "te": "そうじして", "ta": "そうじした", "nai": "そうじしない", "pastNegative": "そうじしなかった", "potential": "そうじできる", "ba": "そうじすれば", "volitional": "そうじしよう", "causative": "そうじさせる" },
+    "examples": {
+      "masu": { "ja": "まいにち へやを そうじします。", "en": "I clean my room every day." },
+      "te": { "ja": "へやを そうじして、まどを あけます。", "en": "I clean the room and open the window." },
+      "ta": { "ja": "きのう、だいどころを そうじした。", "en": "Yesterday, I cleaned the kitchen." },
+      "nai": { "ja": "きょうは へやを そうじしない。", "en": "I will not clean my room today." },
+      "pastNegative": { "ja": "せんしゅうは へやを そうじしなかった。", "en": "I did not clean my room last week." },
+      "potential": { "ja": "この きかいを つかえば、ゆかを はやく そうじできる。", "en": "With this machine, I can clean the floor quickly." },
+      "ba": { "ja": "いま そうじすれば、よるは ゆっくり できます。", "en": "If we clean now, we can relax tonight." },
+      "volitional": { "ja": "おきゃくさんが くるまえに、げんかんを そうじしよう。", "en": "Let's clean the entrance before the guests arrive." },
+      "causative": { "ja": "せんせいは がくせいに きょうしつを そうじさせる。", "en": "The teacher has the students clean the classroom." }
+    }, "enabled": true
+  },
+  {
+    "id": "katsuyou2-minna-shokyu-1-group-3-020", "sourceVerbId": "minna-shokyu-1-group-3-020", "verificationRequired": true,
+    "dictionary": "つれてくる", "reading": "つれてくる", "kanji": "連れて来る", "meaning": "bring someone", "verb": { "group": 3, "groupName": "グループ3" },
+    "forms": { "masu": "つれてきます", "te": "つれてきて", "ta": "つれてきた", "nai": "つれてこない", "pastNegative": "つれてこなかった", "potential": "つれてこられる", "ba": "つれてくれば", "volitional": "つれてこよう", "causative": "つれてこさせる" },
+    "examples": {
+      "masu": { "ja": "あした、ともだちを パーティーに つれてきます。", "en": "I will bring my friend to the party tomorrow." },
+      "te": { "ja": "こどもを ここに つれてきてください。", "en": "Please bring the child here." },
+      "ta": { "ja": "かれは いもうとを つれてきた。", "en": "He brought his younger sister." },
+      "nai": { "ja": "きょうは だれも つれてこない。", "en": "I will not bring anyone today." },
+      "pastNegative": { "ja": "きのう、かれは こどもを こうえんに つれてこなかった。", "en": "Yesterday, he did not bring his child to the park." },
+      "potential": { "ja": "あしたなら、いもうとを びょういんに つれてこられる。", "en": "I can bring my younger sister to the hospital tomorrow." },
+      "ba": { "ja": "ともだちを つれてくれば、パーティーが もっと たのしく なります。", "en": "If you bring a friend, the party will be more fun." },
+      "volitional": { "ja": "つぎの しあいには、かぞくも つれてこよう。", "en": "I will bring my family to the next game too." },
+      "causative": { "ja": "ぶちょうは たなかさんに あたらしい しゃいんを かいぎへ つれてこさせる。", "en": "The manager has Mr. Tanaka bring the new employee to the meeting." }
+    }, "enabled": true
+  }
+]
