@@ -1,0 +1,63 @@
+[
+  {
+    "id": "katsuyou2-minna-shokyu-1-group-1-015", "sourceVerbId": "minna-shokyu-1-group-1-015", "verificationRequired": true,
+    "dictionary": "おもう", "reading": "おもう", "kanji": "思う", "meaning": "think", "verb": { "group": 1, "groupName": "グループ1" },
+    "forms": { "masu": "おもいます", "te": "おもって", "ta": "おもった", "nai": "おもわない", "pastNegative": "おもわなかった", "potential": "おもえる", "ba": "おもえば", "volitional": "おもおう", "causative": "おもわせる" },
+    "examples": {
+      "masu": { "ja": "この ほんは おもしろいと おもいます。", "en": "I think this book is interesting." },
+      "te": { "ja": "だいじょうぶだと おもって、そのまま つづけました。", "en": "I thought it would be fine, so I continued." },
+      "ta": { "ja": "さいしょは むずかしいと おもった。", "en": "At first, I thought it was difficult." },
+      "nai": { "ja": "その けいかくが うまく いくとは おもわない。", "en": "I do not think that plan will work." },
+      "pastNegative": { "ja": "この しごとが こんなに はやく おわるとは おもわなかった。", "en": "I did not think this work would finish so quickly." },
+      "potential": { "ja": "この しゃしんを みると、なつが ちかいと おもえる。", "en": "Looking at this photo makes it feel as if summer is near." },
+      "ba": { "ja": "いいと おもえば、それを えらんで ください。", "en": "If you think it is good, please choose it." },
+      "volitional": { "ja": "しっぱいではなく、いい けいけんだと おもおう。", "en": "Let's think of it as a good experience, not a failure." },
+      "causative": { "ja": "その えいがは、かぞくの たいせつさを おもわせる。", "en": "That movie makes us think about the importance of family." }
+    }, "enabled": true
+  },
+  {
+    "id": "katsuyou2-minna-shokyu-1-group-1-016", "sourceVerbId": "minna-shokyu-1-group-1-016", "verificationRequired": true,
+    "dictionary": "およぐ", "reading": "およぐ", "kanji": "泳ぐ", "meaning": "swim", "verb": { "group": 1, "groupName": "グループ1" },
+    "forms": { "masu": "およぎます", "te": "およいで", "ta": "およいだ", "nai": "およがない", "pastNegative": "およがなかった", "potential": "およげる", "ba": "およげば", "volitional": "およごう", "causative": "およがせる" },
+    "examples": {
+      "masu": { "ja": "どようびに しみんプールで およぎます。", "en": "I swim at the public pool on Saturdays." },
+      "te": { "ja": "プールで さんじゅっぷん およいでから、シャワーを あびます。", "en": "I swim for thirty minutes in the pool and then take a shower." },
+      "ta": { "ja": "せんしゅう、みずうみで およいだ。", "en": "Last week, I swam in a lake." },
+      "nai": { "ja": "きょうは みずが つめたいから、およがない。", "en": "I will not swim today because the water is cold." },
+      "pastNegative": { "ja": "せんしゅうは かぜを ひいて、プールで およがなかった。", "en": "I had a cold last week, so I did not swim in the pool." },
+      "potential": { "ja": "いまは ひゃくメートル およげる。", "en": "I can now swim one hundred meters." },
+      "ba": { "ja": "ゆっくり およげば、ながく つづけられます。", "en": "If you swim slowly, you can keep going for a long time." },
+      "volitional": { "ja": "あしたの あさ、ホテルの プールで およごう。", "en": "Let's swim in the hotel pool tomorrow morning." },
+      "causative": { "ja": "コーチは せんしゅに プールを じゅっかい およがせる。", "en": "The coach makes the swimmer swim ten lengths of the pool." }
+    }, "enabled": true
+  },
+  {
+    "id": "katsuyou2-minna-shokyu-1-group-1-017", "sourceVerbId": "minna-shokyu-1-group-1-017", "verificationRequired": true,
+    "dictionary": "おわる", "reading": "おわる", "kanji": "終わる", "meaning": "finish", "verb": { "group": 1, "groupName": "グループ1" },
+    "forms": { "masu": "おわります", "te": "おわって", "ta": "おわった", "nai": "おわらない", "pastNegative": "おわらなかった", "potential": "おわれる", "ba": "おわれば", "volitional": "おわろう", "causative": "おわらせる" },
+    "examples": {
+      "masu": { "ja": "しごとは ごじに おわります。", "en": "Work finishes at five." },
+      "te": { "ja": "しごとが おわってから、スーパーへ いきます。", "en": "After work finishes, I will go to the supermarket." },
+      "ta": { "ja": "かいぎは よていより はやく おわった。", "en": "The meeting ended earlier than planned." },
+      "nai": { "ja": "この しごとは きょうじゅうに おわらない。", "en": "This work will not be finished today." },
+      "pastNegative": { "ja": "きのうの かいぎは、よていの じかんに おわらなかった。", "en": "Yesterday's meeting did not finish at the scheduled time." },
+      "potential": { "ja": "みんなで すれば、この しごとは ごじまでに おわれる。", "en": "If we all do it, we can finish this work by five." },
+      "ba": { "ja": "じゅぎょうが おわれば、いっしょに かえれます。", "en": "When class finishes, we can go home together." },
+      "volitional": { "ja": "きょうは はやく しごとをして、ごじに おわろう。", "en": "Let's work quickly today and finish at five." },
+      "causative": { "ja": "ぶちょうは たなかさんに この しごとを きょうじゅうに おわらせる。", "en": "The department manager makes Mr. Tanaka finish this work today." }
+    }, "enabled": true
+  },
+  {
+    "id": "katsuyou2-minna-shokyu-1-group-1-022", "sourceVerbId": "minna-shokyu-1-group-1-022", "verificationRequired": true,
+    "dictionary": "かかる", "reading": "かかる", "kanji": "掛かる", "meaning": "take, cost", "verb": { "group": 1, "groupName": "グループ1" },
+    "forms": { "masu": "かかります", "te": "かかって", "ta": "かかった", "nai": "かからない", "pastNegative": "かからなかった", "potential": null, "ba": "かかれば", "volitional": null, "causative": null },
+    "examples": {
+      "masu": { "ja": "えきまで あるいて じゅっぷん かかります。", "en": "It takes ten minutes to walk to the station." },
+      "te": { "ja": "しゅうりに おかねが かかって、たいへんでした。", "en": "The repair cost money, so it was difficult." },
+      "ta": { "ja": "びょういんまで いちじかん かかった。", "en": "It took one hour to get to the hospital." },
+      "nai": { "ja": "この みちなら、さんじゅっぷんも かからない。", "en": "This route will not take even thirty minutes." },
+      "pastNegative": { "ja": "けさは みちが すいていて、えきまで じゅっぷんも かからなかった。", "en": "The roads were clear this morning, so it did not take even ten minutes to get to the station." },
+      "ba": { "ja": "しゅうりに おかねが かかれば、まず でんわして ください。", "en": "If the repair will cost money, please call me first." }
+    }, "enabled": true
+  }
+]
