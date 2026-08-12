@@ -1,0 +1,66 @@
+[
+  {
+    "id": "katsuyou2-minna-shokyu-1-group-2-045", "sourceVerbId": "minna-shokyu-1-group-2-045", "verificationRequired": true,
+    "dictionary": "わすれる", "reading": "わすれる", "kanji": "忘れる", "meaning": "forget", "verb": { "group": 2, "groupName": "グループ2" },
+    "forms": { "masu": "わすれます", "te": "わすれて", "ta": "わすれた", "nai": "わすれない", "pastNegative": "わすれなかった", "potential": "わすれられる", "ba": "わすれれば", "volitional": "わすれよう", "causative": "わすれさせる" },
+    "examples": {
+      "masu": { "ja": "ときどき かさを わすれます。", "en": "I sometimes forget my umbrella." },
+      "te": { "ja": "さいふを わすれて、うちに もどりました。", "en": "I forgot my wallet and returned home." },
+      "ta": { "ja": "きのう、しゅくだいを わすれた。", "en": "Yesterday, I forgot my homework." },
+      "nai": { "ja": "たいせつな やくそくは わすれない。", "en": "I will not forget an important promise." },
+      "pastNegative": { "ja": "きのうは かさを わすれなかった。", "en": "I did not forget my umbrella yesterday." },
+      "potential": { "ja": "いやな ことは すぐ わすれられる。", "en": "I can quickly forget unpleasant things." },
+      "ba": { "ja": "かさを わすれれば、あめの ひに こまります。", "en": "If you forget your umbrella, you will have trouble on a rainy day." },
+      "volitional": { "ja": "きのうの しっぱいは わすれよう。", "en": "Let's forget yesterday's mistake." },
+      "causative": { "ja": "たのしい りょこうは しごとの つかれを わすれさせる。", "en": "An enjoyable trip makes me forget the fatigue from work." }
+    }, "enabled": true
+  },
+  {
+    "id": "katsuyou2-minna-shokyu-1-group-3-001", "sourceVerbId": "minna-shokyu-1-group-3-001", "verificationRequired": true,
+    "dictionary": "あんないする", "reading": "あんないする", "kanji": "案内する", "meaning": "show around, show the way", "verb": { "group": 3, "groupName": "グループ3" },
+    "forms": { "masu": "あんないします", "te": "あんないして", "ta": "あんないした", "nai": "あんないしない", "pastNegative": "あんないしなかった", "potential": "あんないできる", "ba": "あんないすれば", "volitional": "あんないしよう", "causative": "あんないさせる" },
+    "examples": {
+      "masu": { "ja": "わたしが まちを あんないします。", "en": "I will show you around the town." },
+      "te": { "ja": "おきゃくさんを へやに あんないして、おちゃを だします。", "en": "I show the guest to the room and serve tea." },
+      "ta": { "ja": "きのう、ともだちを とうきょうに あんないした。", "en": "Yesterday, I showed my friend around Tokyo." },
+      "nai": { "ja": "きょうは じかんが ないから、まちを あんないしない。", "en": "I do not have time today, so I will not show anyone around the town." },
+      "pastNegative": { "ja": "きのうは おきゃくさんを まちに あんないしなかった。", "en": "I did not show the guest around town yesterday." },
+      "potential": { "ja": "ごごなら みなさんを きょうとに あんないできる。", "en": "I can show everyone around Kyoto in the afternoon." },
+      "ba": { "ja": "おきゃくさんを えきから あんないすれば、みちに まよいません。", "en": "If I guide the guest from the station, the guest will not get lost." },
+      "volitional": { "ja": "はじめに おきゃくさんを おてらに あんないしよう。", "en": "Let's take the guest to the temple first." },
+      "causative": { "ja": "ぶちょうは たなかさんに おきゃくさんを あんないさせる。", "en": "The manager has Mr. Tanaka show the guest around." }
+    }, "enabled": true
+  },
+  {
+    "id": "katsuyou2-minna-shokyu-1-group-3-002", "sourceVerbId": "minna-shokyu-1-group-3-002", "verificationRequired": true,
+    "dictionary": "うんてんする", "reading": "うんてんする", "kanji": "運転する", "meaning": "drive", "verb": { "group": 3, "groupName": "グループ3" },
+    "forms": { "masu": "うんてんします", "te": "うんてんして", "ta": "うんてんした", "nai": "うんてんしない", "pastNegative": "うんてんしなかった", "potential": "うんてんできる", "ba": "うんてんすれば", "volitional": "うんてんしよう", "causative": "うんてんさせる" },
+    "examples": {
+      "masu": { "ja": "まいにち くるまを うんてんします。", "en": "I drive a car every day." },
+      "te": { "ja": "くるまを うんてんして、かいしゃへ いきます。", "en": "I drive to work." },
+      "ta": { "ja": "きのう、3じかん くるまを うんてんした。", "en": "Yesterday, I drove for three hours." },
+      "nai": { "ja": "おさけを のんだから、くるまを うんてんしない。", "en": "I drank alcohol, so I will not drive." },
+      "pastNegative": { "ja": "せんしゅうは くるまを うんてんしなかった。", "en": "I did not drive last week." },
+      "potential": { "ja": "らいねんは ひとりで くるまを うんてんできる。", "en": "Next year, I will be able to drive a car by myself." },
+      "ba": { "ja": "ゆっくり うんてんすれば、あんぜんです。", "en": "If you drive slowly, it is safe." },
+      "volitional": { "ja": "かえりは わたしが うんてんしよう。", "en": "I will drive on the way home." },
+      "causative": { "ja": "せんせいは がくせいに この くるまを うんてんさせる。", "en": "The instructor has the student drive this car." }
+    }, "enabled": true
+  },
+  {
+    "id": "katsuyou2-minna-shokyu-1-group-3-003", "sourceVerbId": "minna-shokyu-1-group-3-003", "verificationRequired": true,
+    "dictionary": "かいものする", "reading": "かいものする", "kanji": "買い物する", "meaning": "do shopping", "verb": { "group": 3, "groupName": "グループ3" },
+    "forms": { "masu": "かいものします", "te": "かいものして", "ta": "かいものした", "nai": "かいものしない", "pastNegative": "かいものしなかった", "potential": "かいものできる", "ba": "かいものすれば", "volitional": "かいものしよう", "causative": "かいものさせる" },
+    "examples": {
+      "masu": { "ja": "しゅうまつに スーパーで かいものします。", "en": "I shop at the supermarket on the weekend." },
+      "te": { "ja": "えきまえで かいものして、うちへ かえります。", "en": "I shop near the station and go home." },
+      "ta": { "ja": "きのう、デパートで かいものした。", "en": "Yesterday, I shopped at a department store." },
+      "nai": { "ja": "きょうは なにも かいものしない。", "en": "I will not buy anything today." },
+      "pastNegative": { "ja": "きのうは スーパーで かいものしなかった。", "en": "I did not shop at the supermarket yesterday." },
+      "potential": { "ja": "この みせなら よるも かいものできる。", "en": "You can shop at this store at night too." },
+      "ba": { "ja": "きょう かいものすれば、あしたは でかけなくても いいです。", "en": "If we shop today, we do not have to go out tomorrow." },
+      "volitional": { "ja": "しごとの あとで かいものしよう。", "en": "Let's go shopping after work." },
+      "causative": { "ja": "ははは こどもに ひとりで かいものさせる。", "en": "The mother lets her child shop alone." }
+    }, "enabled": true
+  }
+]
