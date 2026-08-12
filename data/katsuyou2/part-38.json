@@ -1,0 +1,60 @@
+[
+  {
+    "id": "katsuyou2-minna-shokyu-1-group-3-025", "sourceVerbId": "minna-shokyu-1-group-3-025", "verificationRequired": true,
+    "dictionary": "りゅうがくする", "reading": "りゅうがくする", "kanji": "留学する", "meaning": "study abroad", "verb": { "group": 3, "groupName": "グループ3" },
+    "forms": { "masu": "りゅうがくします", "te": "りゅうがくして", "ta": "りゅうがくした", "nai": "りゅうがくしない", "pastNegative": "りゅうがくしなかった", "potential": "りゅうがくできる", "ba": "りゅうがくすれば", "volitional": "りゅうがくしよう", "causative": "りゅうがくさせる" },
+    "examples": {
+      "masu": { "ja": "らいねん、カナダへ りゅうがくします。", "en": "I will study abroad in Canada next year." },
+      "te": { "ja": "にほんに りゅうがくして、にほんごを べんきょうします。", "en": "I study abroad in Japan and learn Japanese." },
+      "ta": { "ja": "あねは アメリカに りゅうがくした。", "en": "My older sister studied abroad in the United States." },
+      "nai": { "ja": "ことしは りゅうがくしない。", "en": "I will not study abroad this year." },
+      "pastNegative": { "ja": "あには だいがくせいの とき、りゅうがくしなかった。", "en": "My older brother did not study abroad when he was a university student." },
+      "potential": { "ja": "この しょうがくきんが あれば、カナダへ りゅうがくできる。", "en": "With this scholarship, I can study abroad in Canada." },
+      "ba": { "ja": "にほんへ りゅうがくすれば、まいにち にほんごを つかえます。", "en": "If you study abroad in Japan, you can use Japanese every day." },
+      "volitional": { "ja": "だいがくを そつぎょうしたら、にほんへ りゅうがくしよう。", "en": "I will study abroad in Japan after I graduate from university." },
+      "causative": { "ja": "りょうしんは むすめを いちねんかん カナダへ りゅうがくさせる。", "en": "The parents let their daughter study abroad in Canada for one year." }
+    }, "enabled": true
+  },
+  {
+    "id": "katsuyou2-minna-shokyu-1-group-1-002", "sourceVerbId": "minna-shokyu-1-group-1-002", "verificationRequired": true,
+    "dictionary": "あそぶ", "reading": "あそぶ", "kanji": "遊ぶ", "meaning": "enjoy oneself, play", "verb": { "group": 1, "groupName": "グループ1" },
+    "forms": { "masu": "あそびます", "te": "あそんで", "ta": "あそんだ", "nai": "あそばない", "pastNegative": "あそばなかった", "potential": "あそべる", "ba": "あそべば", "volitional": "あそぼう", "causative": "あそばせる" },
+    "examples": {
+      "masu": { "ja": "ほうかご、こうえんで ともだちと あそびます。", "en": "I play with my friends in the park after school." },
+      "te": { "ja": "こどもは にわで あそんで、ばんごはんを たべます。", "en": "The child plays in the garden and then eats dinner." },
+      "ta": { "ja": "せんしゅう、かぞくと うみで あそんだ。", "en": "Last week, I played at the beach with my family." },
+      "nai": { "ja": "しゅくだいが おわるまで、ゲームで あそばない。", "en": "I will not play video games until I finish my homework." },
+      "pastNegative": { "ja": "きのうは あめだったから、そとで あそばなかった。", "en": "I did not play outside yesterday because it was raining." },
+      "potential": { "ja": "この こうえんでは、ボールで あそべる。", "en": "You can play with a ball in this park." },
+      "ba": { "ja": "ともだちと あそべば、もっと たのしいです。", "en": "It is more fun if you play with friends." },
+      "volitional": { "ja": "しゅくだいの あとで、いっしょに あそぼう。", "en": "Let's play together after homework." },
+      "causative": { "ja": "ちちは こどもを こうえんで あそばせる。", "en": "The father lets his child play in the park." }
+    }, "enabled": true
+  },
+  {
+    "id": "katsuyou2-minna-shokyu-1-group-1-003", "sourceVerbId": "minna-shokyu-1-group-1-003", "verificationRequired": true,
+    "dictionary": "ある", "reading": "ある", "kanji": "有る", "meaning": "exist, be", "verb": { "group": 1, "groupName": "グループ1" },
+    "forms": { "masu": "あります", "te": "あって", "ta": "あった", "nai": "ない", "pastNegative": "なかった", "potential": null, "ba": "あれば", "volitional": null, "causative": null },
+    "examples": {
+      "masu": { "ja": "つくえの うえに じしょが あります。", "en": "There is a dictionary on the desk." },
+      "te": { "ja": "この まちには こうえんが あって、こどもが よく あそびます。", "en": "There is a park in this town, and children often play there." },
+      "ta": { "ja": "むかし、ここに ちいさい えきが あった。", "en": "There used to be a small station here." },
+      "nai": { "ja": "この へやには エアコンが ない。", "en": "There is no air conditioner in this room." },
+      "pastNegative": { "ja": "むかし、この ちかくに コンビニは なかった。", "en": "There was no convenience store near here in the past." },
+      "ba": { "ja": "えきの ちかくに みせが あれば、べんりです。", "en": "It is convenient if there is a store near the station." }
+    }, "enabled": true
+  },
+  {
+    "id": "katsuyou2-minna-shokyu-1-group-1-008", "sourceVerbId": "minna-shokyu-1-group-1-008", "verificationRequired": true,
+    "dictionary": "いる", "reading": "いる", "kanji": "要る", "meaning": "need, require", "verb": { "group": 1, "groupName": "グループ1" },
+    "forms": { "masu": "いります", "te": "いって", "ta": "いった", "nai": "いらない", "pastNegative": "いらなかった", "potential": null, "ba": "いれば", "volitional": null, "causative": null },
+    "examples": {
+      "masu": { "ja": "りょこうには パスポートが いります。", "en": "You need a passport for the trip." },
+      "te": { "ja": "この しごとは じかんが いって、たいへんです。", "en": "This job takes time and is difficult." },
+      "ta": { "ja": "ビザの しんせいには たくさんの しょるいが いった。", "en": "Many documents were needed for the visa application." },
+      "nai": { "ja": "この へやでは くつは いらない。", "en": "You do not need shoes in this room." },
+      "pastNegative": { "ja": "きのうの しごとには パソコンは いらなかった。", "en": "I did not need a computer for yesterday's work." },
+      "ba": { "ja": "コピーが いれば、ここで とれます。", "en": "If you need a copy, you can make one here." }
+    }, "enabled": true
+  }
+]
