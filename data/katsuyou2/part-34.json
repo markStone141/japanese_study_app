@@ -1,0 +1,65 @@
+[
+  {
+    "id": "katsuyou2-minna-shokyu-1-group-3-009", "sourceVerbId": "minna-shokyu-1-group-3-009", "verificationRequired": true,
+    "dictionary": "ざんぎょうする", "reading": "ざんぎょうする", "kanji": "残業する", "meaning": "work overtime", "verb": { "group": 3, "groupName": "グループ3" },
+    "forms": { "masu": "ざんぎょうします", "te": "ざんぎょうして", "ta": "ざんぎょうした", "nai": "ざんぎょうしない", "pastNegative": "ざんぎょうしなかった", "potential": "ざんぎょうできる", "ba": "ざんぎょうすれば", "volitional": "ざんぎょうしよう", "causative": "ざんぎょうさせる" },
+    "examples": {
+      "masu": { "ja": "きょうは 2じかん ざんぎょうします。", "en": "I will work two hours of overtime today." },
+      "te": { "ja": "ざんぎょうして、おそく うちへ かえります。", "en": "I work overtime and go home late." },
+      "ta": { "ja": "きのうは 9じまで ざんぎょうした。", "en": "Yesterday, I worked overtime until nine." },
+      "nai": { "ja": "きょうは ざんぎょうしない。", "en": "I will not work overtime today." },
+      "pastNegative": { "ja": "せんしゅうは いちども ざんぎょうしなかった。", "en": "I did not work overtime at all last week." },
+      "potential": { "ja": "あしたは ひつようなら ざんぎょうできる。", "en": "I can work overtime tomorrow if necessary." },
+      "ba": { "ja": "きょう ざんぎょうすれば、しごとが おわります。", "en": "If I work overtime today, I will finish the work." },
+      "volitional": { "ja": "きょうは いそがしいから、1じかん ざんぎょうしよう。", "en": "It is busy today, so I will work one hour of overtime." },
+      "causative": { "ja": "ぶちょうは しゃいんを よるまで ざんぎょうさせる。", "en": "The manager makes the employees work overtime until evening." }
+    }, "enabled": true
+  },
+  {
+    "id": "katsuyou2-minna-shokyu-1-group-3-010", "sourceVerbId": "minna-shokyu-1-group-3-010", "verificationRequired": true,
+    "dictionary": "する", "reading": "する", "kanji": "する", "meaning": "do, play", "verb": { "group": 3, "groupName": "グループ3" },
+    "forms": { "masu": "します", "te": "して", "ta": "した", "nai": "しない", "pastNegative": "しなかった", "potential": "できる", "ba": "すれば", "volitional": "しよう", "causative": "させる" },
+    "examples": {
+      "masu": { "ja": "まいしゅう テニスを します。", "en": "I play tennis every week." },
+      "te": { "ja": "しゅくだいを して、テレビを みます。", "en": "I do my homework and watch television." },
+      "ta": { "ja": "きのう、サッカーを した。", "en": "Yesterday, I played soccer." },
+      "nai": { "ja": "きょうは うんどうを しない。", "en": "I will not exercise today." },
+      "pastNegative": { "ja": "きのうは いそがしくて、しゅくだいを しなかった。", "en": "I was busy yesterday, so I did not do my homework." },
+      "potential": { "ja": "この こうえんで テニスが できる。", "en": "You can play tennis in this park." },
+      "ba": { "ja": "まいにち うんどうを すれば、からだが げんきに なります。", "en": "If you exercise every day, you will become healthier." },
+      "volitional": { "ja": "ひるから いっしょに テニスを しよう。", "en": "Let's play tennis together this afternoon." },
+      "causative": { "ja": "せんせいは がくせいに しゅくだいを させる。", "en": "The teacher makes the students do their homework." }
+    }, "enabled": true
+  },
+  {
+    "id": "katsuyou2-minna-shokyu-1-group-3-011", "sourceVerbId": "minna-shokyu-1-group-3-011", "verificationRequired": true,
+    "dictionary": "する", "reading": "する", "kanji": "する", "meaning": "put on [a tie]", "verb": { "group": 3, "groupName": "グループ3" },
+    "forms": { "masu": "します", "te": "して", "ta": "した", "nai": "しない", "pastNegative": "しなかった", "potential": null, "ba": "すれば", "volitional": "しよう", "causative": "させる" },
+    "examples": {
+      "masu": { "ja": "しごとの とき、ネクタイを します。", "en": "I wear a tie at work." },
+      "te": { "ja": "ネクタイを して、かいしゃへ いきます。", "en": "I put on a tie and go to work." },
+      "ta": { "ja": "きのうは あおい ネクタイを した。", "en": "Yesterday, I wore a blue tie." },
+      "nai": { "ja": "きょうは ネクタイを しない。", "en": "I will not wear a tie today." },
+      "pastNegative": { "ja": "きのうの パーティーでは ネクタイを しなかった。", "en": "I did not wear a tie at yesterday's party." },
+      "ba": { "ja": "この ネクタイを すれば、しろい シャツに よく あいます。", "en": "If you wear this tie, it will go well with your white shirt." },
+      "volitional": { "ja": "きょうは あかい ネクタイを しよう。", "en": "I will wear a red tie today." },
+      "causative": { "ja": "かいしゃは しゃいんに ネクタイを させる。", "en": "The company requires its employees to wear ties." }
+    }, "enabled": true
+  },
+  {
+    "id": "katsuyou2-minna-shokyu-1-group-3-012", "sourceVerbId": "minna-shokyu-1-group-3-012", "verificationRequired": true,
+    "dictionary": "しゅうりする", "reading": "しゅうりする", "kanji": "修理する", "meaning": "repair", "verb": { "group": 3, "groupName": "グループ3" },
+    "forms": { "masu": "しゅうりします", "te": "しゅうりして", "ta": "しゅうりした", "nai": "しゅうりしない", "pastNegative": "しゅうりしなかった", "potential": "しゅうりできる", "ba": "しゅうりすれば", "volitional": "しゅうりしよう", "causative": "しゅうりさせる" },
+    "examples": {
+      "masu": { "ja": "こわれた じてんしゃを しゅうりします。", "en": "I will repair the broken bicycle." },
+      "te": { "ja": "パソコンを しゅうりして、また つかいます。", "en": "I repair the computer and use it again." },
+      "ta": { "ja": "きのう、くるまを しゅうりした。", "en": "Yesterday, I repaired the car." },
+      "nai": { "ja": "この とけいは じぶんで しゅうりしない。", "en": "I will not repair this watch by myself." },
+      "pastNegative": { "ja": "きのうは じかんが なくて、じてんしゃを しゅうりしなかった。", "en": "I did not have time yesterday, so I did not repair the bicycle." },
+      "potential": { "ja": "この みせで ふるい とけいも しゅうりできる。", "en": "This shop can repair old watches too." },
+      "ba": { "ja": "この パソコンを しゅうりすれば、また つかえます。", "en": "If we repair this computer, we can use it again." },
+      "volitional": { "ja": "まず この こわれた いすを しゅうりしよう。", "en": "Let's repair this broken chair first." },
+      "causative": { "ja": "てんちょうは てんいんに じてんしゃを しゅうりさせる。", "en": "The shop manager has an employee repair the bicycle." }
+    }, "enabled": true
+  }
+]
