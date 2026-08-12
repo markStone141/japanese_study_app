@@ -1,0 +1,66 @@
+[
+  {
+    "id": "katsuyou2-minna-shokyu-1-group-3-013", "sourceVerbId": "minna-shokyu-1-group-3-013", "verificationRequired": true,
+    "dictionary": "しゅっちょうする", "reading": "しゅっちょうする", "kanji": "出張する", "meaning": "go on a business trip", "verb": { "group": 3, "groupName": "グループ3" },
+    "forms": { "masu": "しゅっちょうします", "te": "しゅっちょうして", "ta": "しゅっちょうした", "nai": "しゅっちょうしない", "pastNegative": "しゅっちょうしなかった", "potential": "しゅっちょうできる", "ba": "しゅっちょうすれば", "volitional": "しゅっちょうしよう", "causative": "しゅっちょうさせる" },
+    "examples": {
+      "masu": { "ja": "らいしゅう、おおさかへ しゅっちょうします。", "en": "I will go on a business trip to Osaka next week." },
+      "te": { "ja": "きょうとへ しゅっちょうして、かいぎに でます。", "en": "I go on a business trip to Kyoto and attend a meeting." },
+      "ta": { "ja": "せんげつ、ふくおかへ しゅっちょうした。", "en": "Last month, I went on a business trip to Fukuoka." },
+      "nai": { "ja": "こんげつは しゅっちょうしない。", "en": "I will not go on a business trip this month." },
+      "pastNegative": { "ja": "せんげつは いそがしかったが、しゅっちょうしなかった。", "en": "I was busy last month, but I did not go on a business trip." },
+      "potential": { "ja": "らいしゅうなら おおさかへ しゅっちょうできる。", "en": "I can go on a business trip to Osaka next week." },
+      "ba": { "ja": "とうきょうへ しゅっちょうすれば、ともだちにも あえます。", "en": "If I go on a business trip to Tokyo, I can also see my friend." },
+      "volitional": { "ja": "こんどの かいぎには わたしが しゅっちょうしよう。", "en": "I will go on the business trip for the next meeting." },
+      "causative": { "ja": "ぶちょうは たなかさんを なごやへ しゅっちょうさせる。", "en": "The manager sends Mr. Tanaka to Nagoya on a business trip." }
+    }, "enabled": true
+  },
+  {
+    "id": "katsuyou2-minna-shokyu-1-group-3-014", "sourceVerbId": "minna-shokyu-1-group-3-014", "verificationRequired": true,
+    "dictionary": "しょうかいする", "reading": "しょうかいする", "kanji": "紹介する", "meaning": "introduce", "verb": { "group": 3, "groupName": "グループ3" },
+    "forms": { "masu": "しょうかいします", "te": "しょうかいして", "ta": "しょうかいした", "nai": "しょうかいしない", "pastNegative": "しょうかいしなかった", "potential": "しょうかいできる", "ba": "しょうかいすれば", "volitional": "しょうかいしよう", "causative": "しょうかいさせる" },
+    "examples": {
+      "masu": { "ja": "ともだちを かぞくに しょうかいします。", "en": "I introduce my friend to my family." },
+      "te": { "ja": "あたらしい しゃいんを しょうかいして、しごとを せつめいします。", "en": "I introduce the new employee and explain the job." },
+      "ta": { "ja": "きのう、せんせいを ちちに しょうかいした。", "en": "Yesterday, I introduced my teacher to my father." },
+      "nai": { "ja": "まだ かれを かぞくに しょうかいしない。", "en": "I will not introduce him to my family yet." },
+      "pastNegative": { "ja": "きのうの かいぎでは あたらしい しゃいんを しょうかいしなかった。", "en": "I did not introduce the new employee at yesterday's meeting." },
+      "potential": { "ja": "あしたなら みなさんに あたらしい せんせいを しょうかいできる。", "en": "I can introduce the new teacher to everyone tomorrow." },
+      "ba": { "ja": "この みせを ともだちに しょうかいすれば、きっと よろこびます。", "en": "If I introduce this shop to my friend, they will surely be pleased." },
+      "volitional": { "ja": "つぎは わたしの かぞくを しょうかいしよう。", "en": "Next, I will introduce my family." },
+      "causative": { "ja": "せんせいは がくせいに じぶんの まちを しょうかいさせる。", "en": "The teacher has the students introduce their hometowns." }
+    }, "enabled": true
+  },
+  {
+    "id": "katsuyou2-minna-shokyu-1-group-3-015", "sourceVerbId": "minna-shokyu-1-group-3-015", "verificationRequired": true,
+    "dictionary": "しょくじする", "reading": "しょくじする", "kanji": "食事する", "meaning": "have a meal, dine", "verb": { "group": 3, "groupName": "グループ3" },
+    "forms": { "masu": "しょくじします", "te": "しょくじして", "ta": "しょくじした", "nai": "しょくじしない", "pastNegative": "しょくじしなかった", "potential": "しょくじできる", "ba": "しょくじすれば", "volitional": "しょくじしよう", "causative": "しょくじさせる" },
+    "examples": {
+      "masu": { "ja": "7じに かぞくと しょくじします。", "en": "I have dinner with my family at seven." },
+      "te": { "ja": "レストランで しょくじして、えいがを みます。", "en": "I dine at a restaurant and watch a movie." },
+      "ta": { "ja": "きのう、ともだちと しょくじした。", "en": "Yesterday, I had a meal with my friend." },
+      "nai": { "ja": "まだ おなかが すいていないから、しょくじしない。", "en": "I am not hungry yet, so I will not eat." },
+      "pastNegative": { "ja": "けさは いそがしくて、しょくじしなかった。", "en": "I was busy this morning, so I did not eat." },
+      "potential": { "ja": "この レストランでは そとでも しょくじできる。", "en": "You can dine outside at this restaurant too." },
+      "ba": { "ja": "いま しょくじすれば、8じの でんしゃに まにあいます。", "en": "If we eat now, we will make the eight o'clock train." },
+      "volitional": { "ja": "きょうは えきまえの みせで しょくじしよう。", "en": "Let's eat at the restaurant near the station today." },
+      "causative": { "ja": "かんごしは かんじゃを いすに すわらせて、しょくじさせる。", "en": "The nurse seats the patient in a chair and has them eat." }
+    }, "enabled": true
+  },
+  {
+    "id": "katsuyou2-minna-shokyu-1-group-3-016", "sourceVerbId": "minna-shokyu-1-group-3-016", "verificationRequired": true,
+    "dictionary": "しゅっせきする", "reading": "しゅっせきする", "kanji": "出席する", "meaning": "attend", "verb": { "group": 3, "groupName": "グループ3" },
+    "forms": { "masu": "しゅっせきします", "te": "しゅっせきして", "ta": "しゅっせきした", "nai": "しゅっせきしない", "pastNegative": "しゅっせきしなかった", "potential": "しゅっせきできる", "ba": "しゅっせきすれば", "volitional": "しゅっせきしよう", "causative": "しゅっせきさせる" },
+    "examples": {
+      "masu": { "ja": "あした、かいぎに しゅっせきします。", "en": "I will attend the meeting tomorrow." },
+      "te": { "ja": "せつめいかいに しゅっせきして、しつもんします。", "en": "I attend the information session and ask questions." },
+      "ta": { "ja": "きのう、けっこんしきに しゅっせきした。", "en": "Yesterday, I attended a wedding." },
+      "nai": { "ja": "こんかいの かいぎには しゅっせきしない。", "en": "I will not attend this meeting." },
+      "pastNegative": { "ja": "きのうは びょうきで、じゅぎょうに しゅっせきしなかった。", "en": "I was sick yesterday and did not attend class." },
+      "potential": { "ja": "しごとが 5じに おわれば、かいぎに しゅっせきできる。", "en": "If work ends at five, I can attend the meeting." },
+      "ba": { "ja": "せつめいかいに しゅっせきすれば、くわしい はなしが きけます。", "en": "If you attend the information session, you can hear the details." },
+      "volitional": { "ja": "たいせつな かいぎだから、かならず しゅっせきしよう。", "en": "It is an important meeting, so I will be sure to attend." },
+      "causative": { "ja": "ぶちょうは あたらしい しゃいんを かいぎに しゅっせきさせる。", "en": "The manager has the new employee attend the meeting." }
+    }, "enabled": true
+  }
+]
