@@ -1,0 +1,66 @@
+[
+  {
+    "id": "katsuyou2-minna-shokyu-1-group-1-011", "sourceVerbId": "minna-shokyu-1-group-1-011", "verificationRequired": true,
+    "dictionary": "うる", "reading": "うる", "kanji": "売る", "meaning": "sell", "verb": { "group": 1, "groupName": "グループ1" },
+    "forms": { "masu": "うります", "te": "うって", "ta": "うった", "nai": "うらない", "pastNegative": "うらなかった", "potential": "うれる", "ba": "うれば", "volitional": "うろう", "causative": "うらせる" },
+    "examples": {
+      "masu": { "ja": "この みせは しんせんな やさいを うります。", "en": "This shop sells fresh vegetables." },
+      "te": { "ja": "ふるい つくえを うって、いすを かいました。", "en": "I sold my old desk and bought a chair." },
+      "ta": { "ja": "きのう、よまない ほんを うった。", "en": "Yesterday, I sold books that I no longer read." },
+      "nai": { "ja": "これは たいせつな ほんだから、うらない。", "en": "I will not sell this because it is an important book." },
+      "pastNegative": { "ja": "きのうの フリーマーケットでは、じてんしゃを うらなかった。", "en": "I did not sell my bicycle at yesterday's flea market." },
+      "potential": { "ja": "この みせでは、つかわない かぐを うれる。", "en": "You can sell furniture you no longer use at this shop." },
+      "ba": { "ja": "ふるい テレビを うれば、へやが ひろく なります。", "en": "If I sell the old television, the room will become more spacious." },
+      "volitional": { "ja": "つかわない カメラを フリーマーケットで うろう。", "en": "Let's sell the camera we no longer use at the flea market." },
+      "causative": { "ja": "りょうしんは むすこに ふるい おもちゃを うらせる。", "en": "The parents let their son sell his old toys." }
+    }, "enabled": true
+  },
+  {
+    "id": "katsuyou2-minna-shokyu-1-group-1-012", "sourceVerbId": "minna-shokyu-1-group-1-012", "verificationRequired": true,
+    "dictionary": "おく", "reading": "おく", "kanji": "置く", "meaning": "put", "verb": { "group": 1, "groupName": "グループ1" },
+    "forms": { "masu": "おきます", "te": "おいて", "ta": "おいた", "nai": "おかない", "pastNegative": "おかなかった", "potential": "おける", "ba": "おけば", "volitional": "おこう", "causative": "おかせる" },
+    "examples": {
+      "masu": { "ja": "かぎを つくえの うえに おきます。", "en": "I put the key on the desk." },
+      "te": { "ja": "にもつを ここに おいて ください。", "en": "Please put your luggage here." },
+      "ta": { "ja": "れいぞうこに ケーキを おいた。", "en": "I put the cake in the refrigerator." },
+      "nai": { "ja": "ここには じてんしゃを おかない。", "en": "I will not leave my bicycle here." },
+      "pastNegative": { "ja": "けさ、テーブルに パンを おかなかった。", "en": "I did not put bread on the table this morning." },
+      "potential": { "ja": "この たなには、おおきい はこも おける。", "en": "You can put a large box on this shelf too." },
+      "ba": { "ja": "いりぐちに かさを おけば、ゆかが ぬれません。", "en": "If you leave your umbrella at the entrance, the floor will not get wet." },
+      "volitional": { "ja": "この しゃしんを つくえの うえに おこう。", "en": "Let's put this photo on the desk." },
+      "causative": { "ja": "せんせいは がくせいに にもつを きょうしつの うしろに おかせる。", "en": "The teacher has the students put their bags at the back of the classroom." }
+    }, "enabled": true
+  },
+  {
+    "id": "katsuyou2-minna-shokyu-1-group-1-013", "sourceVerbId": "minna-shokyu-1-group-1-013", "verificationRequired": true,
+    "dictionary": "おくる", "reading": "おくる", "kanji": "送る", "meaning": "send", "verb": { "group": 1, "groupName": "グループ1" },
+    "forms": { "masu": "おくります", "te": "おくって", "ta": "おくった", "nai": "おくらない", "pastNegative": "おくらなかった", "potential": "おくれる", "ba": "おくれば", "volitional": "おくろう", "causative": "おくらせる" },
+    "examples": {
+      "masu": { "ja": "ははに たんじょうびの プレゼントを おくります。", "en": "I send my mother a birthday present." },
+      "te": { "ja": "しゃしんを メールで おくって ください。", "en": "Please send the photo by email." },
+      "ta": { "ja": "きのう、かいしゃに しょるいを おくった。", "en": "Yesterday, I sent the documents to the company." },
+      "nai": { "ja": "じゅうしょが わからないから、まだ にもつを おくらない。", "en": "I do not know the address, so I will not send the package yet." },
+      "pastNegative": { "ja": "きのうは いそがしくて、メールを おくらなかった。", "en": "I was busy yesterday and did not send the email." },
+      "potential": { "ja": "この コンビニから、にもつを とうきょうへ おくれる。", "en": "You can send a package to Tokyo from this convenience store." },
+      "ba": { "ja": "きょう てがみを おくれば、らいしゅう とどきます。", "en": "If you send the letter today, it will arrive next week." },
+      "volitional": { "ja": "りょこうの しゃしんを そふに おくろう。", "en": "Let's send the travel photos to our grandfather." },
+      "causative": { "ja": "ぶちょうは たなかさんに しりょうを おきゃくさんへ おくらせる。", "en": "The department manager has Mr. Tanaka send the materials to the client." }
+    }, "enabled": true
+  },
+  {
+    "id": "katsuyou2-minna-shokyu-1-group-1-014", "sourceVerbId": "minna-shokyu-1-group-1-014", "verificationRequired": true,
+    "dictionary": "おす", "reading": "おす", "kanji": "押す", "meaning": "push, press", "verb": { "group": 1, "groupName": "グループ1" },
+    "forms": { "masu": "おします", "te": "おして", "ta": "おした", "nai": "おさない", "pastNegative": "おさなかった", "potential": "おせる", "ba": "おせば", "volitional": "おそう", "causative": "おさせる" },
+    "examples": {
+      "masu": { "ja": "エレベーターの ボタンを おします。", "en": "I press the elevator button." },
+      "te": { "ja": "あおい ボタンを おして ください。", "en": "Please press the blue button." },
+      "ta": { "ja": "まちがえて ひじょうボタンを おした。", "en": "I accidentally pressed the emergency button." },
+      "nai": { "ja": "この スイッチは きけんだから、おさない。", "en": "I will not press this switch because it is dangerous." },
+      "pastNegative": { "ja": "えきで きっぷの ボタンを おさなかった。", "en": "I did not press the ticket button at the station." },
+      "potential": { "ja": "この ボタンなら、こどもでも おせる。", "en": "Even a child can press this button." },
+      "ba": { "ja": "この ボタンを おせば、ドアが あきます。", "en": "If you press this button, the door will open." },
+      "volitional": { "ja": "つぎは わたしが エレベーターの ボタンを おそう。", "en": "I will press the elevator button next time." },
+      "causative": { "ja": "ちちは こどもに げんかんの ベルを おさせる。", "en": "The father lets his child press the doorbell." }
+    }, "enabled": true
+  }
+]
