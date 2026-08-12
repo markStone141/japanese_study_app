@@ -1,0 +1,66 @@
+[
+  {
+    "id": "katsuyou2-minna-shokyu-1-group-3-005", "sourceVerbId": "minna-shokyu-1-group-3-005", "verificationRequired": true,
+    "dictionary": "けっこんする", "reading": "けっこんする", "kanji": "結婚する", "meaning": "marry, get married", "verb": { "group": 3, "groupName": "グループ3" },
+    "forms": { "masu": "けっこんします", "te": "けっこんして", "ta": "けっこんした", "nai": "けっこんしない", "pastNegative": "けっこんしなかった", "potential": "けっこんできる", "ba": "けっこんすれば", "volitional": "けっこんしよう", "causative": "けっこんさせる" },
+    "examples": {
+      "masu": { "ja": "らいねん、けっこんします。", "en": "I will get married next year." },
+      "te": { "ja": "けっこんして、おおさかに すみます。", "en": "I will get married and live in Osaka." },
+      "ta": { "ja": "あねは きょねん けっこんした。", "en": "My older sister got married last year." },
+      "nai": { "ja": "わたしは まだ けっこんしない。", "en": "I will not get married yet." },
+      "pastNegative": { "ja": "あには きょねん けっこんしなかった。", "en": "My older brother did not get married last year." },
+      "potential": { "ja": "しごとが おちつけば、らいねん けっこんできる。", "en": "If work settles down, we can get married next year." },
+      "ba": { "ja": "けっこんすれば、ふたりで いっしょに くらせます。", "en": "If we get married, we can live together." },
+      "volitional": { "ja": "らいねん、けっこんしよう。", "en": "Let's get married next year." },
+      "causative": { "ja": "この ものがたりで、おうさまは むすこを けっこんさせる。", "en": "In this story, the king makes his son get married." }
+    }, "enabled": true
+  },
+  {
+    "id": "katsuyou2-minna-shokyu-1-group-3-006", "sourceVerbId": "minna-shokyu-1-group-3-006", "verificationRequired": true,
+    "dictionary": "けんきゅうする", "reading": "けんきゅうする", "kanji": "研究する", "meaning": "do research", "verb": { "group": 3, "groupName": "グループ3" },
+    "forms": { "masu": "けんきゅうします", "te": "けんきゅうして", "ta": "けんきゅうした", "nai": "けんきゅうしない", "pastNegative": "けんきゅうしなかった", "potential": "けんきゅうできる", "ba": "けんきゅうすれば", "volitional": "けんきゅうしよう", "causative": "けんきゅうさせる" },
+    "examples": {
+      "masu": { "ja": "だいがくで にほんの ぶんかを けんきゅうします。", "en": "I research Japanese culture at university." },
+      "te": { "ja": "この もんだいを けんきゅうして、ろんぶんを かきます。", "en": "I research this issue and write a paper." },
+      "ta": { "ja": "せんせいは その びょうきを 10ねん けんきゅうした。", "en": "The professor researched that disease for ten years." },
+      "nai": { "ja": "いまは その テーマを けんきゅうしない。", "en": "I am not researching that topic now." },
+      "pastNegative": { "ja": "きょねんは この テーマを けんきゅうしなかった。", "en": "I did not research this topic last year." },
+      "potential": { "ja": "この だいがくで うみの どうぶつを けんきゅうできる。", "en": "I can research marine animals at this university." },
+      "ba": { "ja": "よく けんきゅうすれば、あたらしい ことが わかります。", "en": "If you research it carefully, you will discover something new." },
+      "volitional": { "ja": "つぎは にほんの まつりを けんきゅうしよう。", "en": "Let's research Japanese festivals next." },
+      "causative": { "ja": "せんせいは がくせいに この はなを けんきゅうさせる。", "en": "The professor has the student research this flower." }
+    }, "enabled": true
+  },
+  {
+    "id": "katsuyou2-minna-shokyu-1-group-3-007", "sourceVerbId": "minna-shokyu-1-group-3-007", "verificationRequired": true,
+    "dictionary": "コピーする", "reading": "コピーする", "kanji": "コピーする", "meaning": "copy", "verb": { "group": 3, "groupName": "グループ3" },
+    "forms": { "masu": "コピーします", "te": "コピーして", "ta": "コピーした", "nai": "コピーしない", "pastNegative": "コピーしなかった", "potential": "コピーできる", "ba": "コピーすれば", "volitional": "コピーしよう", "causative": "コピーさせる" },
+    "examples": {
+      "masu": { "ja": "この しりょうを コピーします。", "en": "I will copy this document." },
+      "te": { "ja": "しりょうを コピーして、みんなに くばります。", "en": "I copy the document and hand it out to everyone." },
+      "ta": { "ja": "きのう、ひつような ページを コピーした。", "en": "Yesterday, I copied the necessary pages." },
+      "nai": { "ja": "この ほんは コピーしない。", "en": "I will not copy this book." },
+      "pastNegative": { "ja": "きのうは しりょうを コピーしなかった。", "en": "I did not copy the document yesterday." },
+      "potential": { "ja": "この コンビニで しりょうを コピーできる。", "en": "You can copy the document at this convenience store." },
+      "ba": { "ja": "この ページを コピーすれば、みんなに くばれます。", "en": "If you copy this page, you can hand it out to everyone." },
+      "volitional": { "ja": "じゅぎょうの まえに しりょうを コピーしよう。", "en": "Let's copy the document before class." },
+      "causative": { "ja": "ぶちょうは たなかさんに しりょうを コピーさせる。", "en": "The manager has Mr. Tanaka copy the document." }
+    }, "enabled": true
+  },
+  {
+    "id": "katsuyou2-minna-shokyu-1-group-3-008", "sourceVerbId": "minna-shokyu-1-group-3-008", "verificationRequired": true,
+    "dictionary": "さんぽする", "reading": "さんぽする", "kanji": "散歩する", "meaning": "take a walk", "verb": { "group": 3, "groupName": "グループ3" },
+    "forms": { "masu": "さんぽします", "te": "さんぽして", "ta": "さんぽした", "nai": "さんぽしない", "pastNegative": "さんぽしなかった", "potential": "さんぽできる", "ba": "さんぽすれば", "volitional": "さんぽしよう", "causative": "さんぽさせる" },
+    "examples": {
+      "masu": { "ja": "まいあさ こうえんを さんぽします。", "en": "I take a walk in the park every morning." },
+      "te": { "ja": "こうえんを さんぽして、コーヒーを のみます。", "en": "I take a walk in the park and drink coffee." },
+      "ta": { "ja": "きのう、かわの ちかくを さんぽした。", "en": "Yesterday, I took a walk near the river." },
+      "nai": { "ja": "あめだから、きょうは さんぽしない。", "en": "It is raining, so I will not take a walk today." },
+      "pastNegative": { "ja": "けさは いそがしくて、さんぽしなかった。", "en": "I was busy this morning, so I did not take a walk." },
+      "potential": { "ja": "この こうえんは よるも さんぽできる。", "en": "You can take a walk in this park at night too." },
+      "ba": { "ja": "まいあさ さんぽすれば、からだが げんきに なります。", "en": "If you take a walk every morning, you will feel healthier." },
+      "volitional": { "ja": "ばんごはんの あとで さんぽしよう。", "en": "Let's take a walk after dinner." },
+      "causative": { "ja": "いしゃは かんじゃを ゆっくり さんぽさせる。", "en": "The doctor has the patient take a slow walk." }
+    }, "enabled": true
+  }
+]

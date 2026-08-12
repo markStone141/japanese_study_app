@@ -28,6 +28,16 @@ assert.match(css, /\.prompt-box\s*\{[^}]*width\s*:\s*min\(680px,\s*100%\)[^}]*bo
 assert.match(css, /\.prompt-box\s+strong\s*\{[^}]*font-size\s*:\s*clamp\(2rem,\s*7vw,\s*3rem\)/s,
   "The target conjugation name must remain easy to identify at a glance");
 
+// Regression: a mobile software keyboard must not separate the answer input from the source verb and target form.
+assert.match(html, /id=["']mobileAnswerContext["'][\s\S]*id=["']mobileDictionary["'][\s\S]*id=["']mobileTargetForm["'][\s\S]*id=["']answerInput["']/,
+  "The compact mobile dictionary-to-target context must appear immediately before the answer input");
+assert.match(css, /@media\s*\(max-width:\s*720px\)[\s\S]*\.prompt-box\s*\{[^}]*padding\s*:\s*10px\s+12px/s,
+  "The target-form card must become compact on mobile");
+assert.match(css, /@media\s*\(max-width:\s*720px\)[\s\S]*\.mobile-answer-context\s*\{[^}]*display\s*:\s*grid/s,
+  "The dictionary-to-target context must be visible on mobile");
+assert.match(js, /mobileDictionary\.textContent\s*=\s*dictionary[\s\S]*mobileTargetForm\.textContent\s*=\s*ja/,
+  "Each question must refresh the mobile dictionary and target-form context");
+
 // Regression: Enter should act as answer-check / next even when focus is not currently in the answer input.
 assert.match(js, /document\.addEventListener\(["']keydown["']/,
   "katsuyou2.js must register a page-level keyboard handler");
